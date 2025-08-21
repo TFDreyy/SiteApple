@@ -1,0 +1,699 @@
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+
+.negrito {
+    font-weight: bold;
+	text-align: center;
+}
+
+
+.barra-items-slide {
+    background-color: #f4f0f0;
+    width: 100%;
+    z-index: 9990;
+    position: relative;
+}
+
+.slide-in-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    padding-bottom: 2rem;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 9999;
+    position: relative;
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(200px);
+                transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(200px);
+                transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 180px;
+}
+
+.item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.item a:hover {
+    color: #0071e3;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
+.item span {
+  font-size: 0.77rem;
+  margin-top: 0.1rem;
+}
+
+
+
+
+
+
+.barra-anuncio {
+    width: 100%;
+    background-color: #0071e3;
+    padding: 15px 0;
+    border-bottom: 1px solid ffff69;
+    animation: animate-color 1s ease-in-out 1.8s forwards;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes animate-color {
+  0%{
+    background-color:#0071e3 ;
+  }
+
+  100% {
+    background-color: #ffffff69;
+  }
+}
+
+.barra-anuncio p {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    color: #f4f4f0;
+    animation: color2 1s ease-in-out 1.8s forwards;
+}
+
+.barra-anuncio a {
+    color: #f4f0f0;
+    text-decoration: none;
+    animation: color 1s ease-in-out 1.8s forwards;
+}
+
+.barra-anuncio a:hover {
+    text-decoration: underline;
+}
+
+@keyframes color {
+  0% {
+    color: #f4f0f0;
+  }
+  100% {
+    color: #0071e3;
+  }
+}
+
+
+@keyframes color2 {
+  0% {
+    color: #f4f0f0;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+
+
+
+
+.card-vd {
+  width: 97%;
+
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.texto-sobreposto {
+  position: absolute;
+  bottom: 8%;
+  left: 3%;
+  color: rgb(255, 255, 255);
+  width: 95%;
+}
+
+.titulo {
+  font-size: 450%;
+  font-weight: bold;
+  margin: 0 0 1% 0;
+  font-family: arial;
+}
+
+.subtitulo {
+  font-weight: bold;
+   font-size: 120%;
+   margin: 0 0 1% 0;
+  font-family: arial;
+}
+
+.preco {
+  font-size: 105%;
+  font-weight: 500;
+  font-family: arial;
+}
+
+.obs {
+  font-size: 105%;
+  font-family: arial;
+  margin: 0;
+}
+
+.texto-sobreposto2 {
+  position: absolute;
+  bottom: 8%;
+  left: 3%;
+  color: rgb(255, 255, 255);
+  width: 95%;
+}
+
+.titulo2 {
+  font-size: 450%;
+  font-weight: bold;
+  margin: 0 0 0% 0;
+  font-family: arial;
+}
+
+.subtitulo2 {
+  font-weight: bold;
+   font-size: 120%;
+   margin: 0 0 10% 0;
+   font-family: arial;
+}
+
+.preco2{
+  font-size: 105%;
+  font-weight: 500;
+  font-family: arial;
+}
+
+.obs2 {
+  font-size: 105%;
+  font-family: arial;
+  margin: 0;
+}
+
+
+
+.bnt-saiba-mais-card {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+    position: absolute;     
+  bottom: 4%;           
+  right: 10%;            
+}
+
+
+
+.bnt-comprar-card {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 8px 10px;
+  border: 1px  solid #ffffff;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+    position: absolute;
+  bottom: 4%;           
+  right: 2%;
+   }
+
+   .bnt-saiba-mais-card2 {
+  background-color:  #0071e3;
+  color:  #ffffff;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+    position: absolute;     
+  bottom: 4%;           
+  right: 10%;            
+}
+   
+.bnt-comprar-card2 {
+  background-color: transparent;
+  color:  #0071e3;
+  padding: 8px 10px;
+  border: 1px  solid  #0071e3;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+    position: absolute;
+  bottom: 4%;           
+  right: 2%;
+   }
+
+
+
+
+
+
+.card {
+	width: 97%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	perspective: 2500px;
+	cursor: pointer;
+	border-radius: 30px;
+}
+
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 300px);
+    gap: 1rem;
+    padding-top: 25%;
+    padding-bottom: 30%;
+}
+
+.cover-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  height: auto;
+}
+
+.wrapper {
+	transition: all 0.5s;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+  border-radius: 30px;
+	background: #000;
+	
+}
+
+.wrapper img {
+	border-radius: 30px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card:hover .wrapper {
+	transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+	
+}
+
+.wrapper::before,
+.wrapper::after {
+	content: "";
+	opacity: 0;
+	width: 100%;
+	height: 80px;
+  	border-radius: 30px;
+	transition: all 0.5s;
+	position: absolute;
+	left: 0;
+
+}
+.wrapper::before {
+	top: 0;
+	height: 100%;
+	background-image: linear-gradient(to top,transparent 46%,rgba(12, 13, 19, 0.5) 68%,rgba(12, 13, 19) 97%);
+}
+
+.wrapper::after {
+	bottom: 0;
+	opacity: 1;
+	background-image: linear-gradient(to bottom,transparent 46%,rgba(12, 13, 19, 0.5) 68%,rgba(12, 13, 19) 97%);
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+	opacity: 1;
+}
+
+.card:hover .wrapper::after {
+	height: 120px;
+}
+
+.logo2 {
+	width: 30%;
+  	padding-top: 50%;
+	transition: transform 1s; 
+  	position: absolute;
+  	opacity: 0;
+}
+
+.card:hover .logo2 {
+	transform: translate3d(0%, -50px, 100px);
+  	opacity: 1;
+}
+
+.card:hover .cover-image {
+    opacity: 0.3;
+}
+
+.character {
+	width: 55%;
+	opacity: 0;
+	transition: all 1s;
+	filter: drop-shadow(2px 2px 2px #000);
+	position: absolute;
+	z-index: -1;
+}
+
+.card:hover .character {
+	opacity: 1;
+	transform: translate3d(0%, -20%, 670px);
+}
+
+.card-airpods {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.descricao {
+	text-align: justify;
+}
+
+.card2 {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+
+.card2 img {
+	width: 50%;
+  	height: auto;
+ 	border-top: auto;
+ 	justify-content: center;
+  	align-items: center;
+}
+
+.card2 h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card2 p {
+  padding: 0 1rem 1rem;
+  color: #444;
+}
+
+
+
+.botoes-card {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;             
+  align-items: center;   
+}
+
+
+.btn {
+  flex: 1;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 20px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 12px;
+}
+
+.comprar {
+  background-color: #0071e3;
+  color: white;
+}
+
+.comprar:hover {
+  background-color: #005bb5;
+}
+
+.saiba-mais {
+  background-color: transparent;
+  color: #005bb5;
+}
+
+.saiba-mais:hover {
+  background-color: #c6c6c6;
+  text-decoration: underline;
+}
+
+
+
+
+.linha {
+  margin: 16px auto 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+
+
+.titulo-cards{
+    color: #1D1D1F;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: o;
+  font-size: 90px;
+  text-align: center;
+}
+
+.container-cards {
+  display: flex;
+  gap: 20px; 
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+}
+
+
+.iphone-card {
+  flex: 0 0 auto;             
+  width: 374px;               
+  height: 677px;
+  border-radius: 15px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: black;
+}
+
+.card-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  border-radius: 28px;
+   position: relative;
+  z-index: 1;
+
+
+}
+
+.card-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+  justify-content: flex-start;
+  text-align: inherit; 
+  height: 100%;
+  position: relative;
+}
+
+
+.card-imagem {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  z-index: 0;
+}
+
+
+.card-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(66, 65, 65);
+  color: #f4f4f0;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Display
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Icons
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
+}

@@ -1,0 +1,840 @@
+/* {
+  border: 1px solid red;
+}
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.desconto {
+  color: #000000;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #f5f5f7;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100vw;
+  margin-right: -1.25rem;
+  margin-left: -1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  letter-spacing: -0.02rem;
+}
+
+.desconto h4 {
+  font-weight: normal;
+}
+
+.desconto a {
+  color: #0071e3;
+  text-decoration: none;
+  font-weight: normal;
+  display: flex;
+}
+
+.desconto a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0;
+}
+
+.titulo-e-slogan {
+  display: flex;
+  margin: 5rem;
+  margin-top: 5.5rem;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.titulo-e-slogan h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+}
+
+.slogan {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.titulo-e-slogan2 {
+  font-size: 3.5rem;
+  margin: 9rem 5rem 4rem 5rem;
+  line-height: 1.1;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.titulo-e-texto {
+  margin-top: 5rem;
+  text-align: justify;
+}
+
+.caixa-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.caixa-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.01);
+}
+
+
+.video-toggle {
+  position: absolute;
+  bottom: 2rem;
+  right: 2.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.video-toggle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-toggle:hover {
+  background: #b9b9b98a;
+}
+
+.card-conheca {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  overflow: visible;
+  padding-top: 1rem;
+}
+
+
+.card-macOS {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-image: url("Imagens_Mac/apple\ intelligence2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.card-desempenho {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-image: url("Imagens_Mac/desempenho.jpeg");
+  background-size: cover;
+  background-position: 95% center;
+  background-repeat: no-repeat;
+
+}
+
+.card-time {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-image: url("Imagens_Mac/time.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.card-apps {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-image: url("Imagens_Mac/apps\ mac.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-seguranca {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-image: url("Imagens_Mac/seguranca.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-durabilidade {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-image: url("Imagens_Mac/durabilidade.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-valores {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-image: url("Imagens_Mac/valores.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.escuro {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5cm;
+  padding-left: 0.9cm;
+  color: #686767;
+
+}
+
+.frase-escuro {
+  text-align: left;
+  font-size: 1.7rem;
+  padding-left: 0.9cm;
+  padding-right: 0.7cm;
+  color: #1a1a1a;
+
+}
+
+.descricao {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5cm;
+  padding-left: 0.9cm;
+  color: #e0e0e0;
+
+}
+
+.claro {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5cm;
+  padding-left: 0.9cm;
+  color: #fefefe;
+}
+
+.frase-impacto {
+  text-align: left;
+  font-size: 1.7rem;
+  padding-left: 0.9cm;
+  padding-right: 0.7cm;
+  color: #f5f5f5;
+
+}
+
+.card-time:hover,
+.card-macOS:hover,
+.card-desempenho:hover,
+.card-apps:hover,
+.card-seguranca:hover,
+.card-durabilidade:hover,
+.card-valores:hover {
+  transform: translateY(-1rem);
+  z-index: 2;
+  position: relative;
+}
+
+.cards img {
+  max-width: 80%;
+  max-height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top: auto;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+  color: #444;
+}
+
+.mac-carousel {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+
+.mac-carousel .iphone-scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 0 4rem;
+  scroll-padding: 4rem;
+  scroll-snap-type: x mandatory;
+}
+
+
+
+.cards>div {
+  scroll-snap-align: start;
+}
+
+
+
+.mac-carousel .iphone-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.mac-carousel .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.mac-carousel .arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f4f4f0;
+}
+
+.mac-carousel .arrow.left {
+  left: 15px;
+}
+
+.mac-carousel .arrow.right {
+  right: 15px;
+}
+
+.mac-carousel .arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.mac-produtos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 0.5rem;
+  padding-bottom: 2rem;
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  z-index: 9999;
+  position: relative;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.loja-navegacao {
+  margin: 1.5rem 0 0.25rem 0;
+}
+
+.produto-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.produto-item a {
+  text-decoration: none;
+  color: #1d1d1fd3;
+}
+
+.produto-item a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.produto-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.25rem;
+  max-width: fit-content;
+}
+
+.produto-item p {
+  font-size: 0.75rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.produto-item span {
+  display: block;
+  font-size: 0.75rem;
+  margin: 0;
+  margin-top: 0.15rem;
+  font-weight: 500;
+  color: #b64400;
+}
+
+
+.produto-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.produto-item a {
+  text-decoration: none;
+  color: #1d1d1fd3;
+}
+
+.produto-item a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.produto-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.25rem;
+  max-width: fit-content;
+}
+
+.produto-texto {
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produto-texto p {
+  font-size: 0.75rem;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.produto-texto span {
+  font-size: 0.75rem;
+  color: #b64400;
+  font-weight: 500;
+  margin-top: 0.1rem;
+  line-height: 1.2;
+}
+
+
+
+.btn-comprar {
+  background-color: #0066cc;
+  color: white !important;
+  padding: 8px 12px;
+  border-radius: 18px;
+  display: inline-block;
+}
+
+.btn-comprar:hover {
+  background-color: #0077ed;
+}
+
+@media (max-width: 768px) {
+  .loja-links {
+    gap: 15px;
+  }
+
+  .produto-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .produto-item p {
+    font-size: 11px;
+  }
+}
+
+.conheca-familia {
+  background-color: #f5f5f7;
+}
+
+.titulo-e-slogan3 {
+  font-size: 3.5rem;
+  margin: 15rem 5rem 4rem 5rem;
+  line-height: 1.1;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.titulo-e-slogan3 h2 {
+  padding-top: 9rem;
+}
+
+.link-comparar {
+  font-size: 1.1rem;
+  padding-right: 2.5rem;
+  color: #0071e3;
+  text-decoration: none;
+  letter-spacing: -0.02rem;
+}
+
+.link-comparar:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+}
+
+.mac-row {
+  display: flex;
+  margin: 0 0 5rem 7.5rem;
+  gap: 4.5rem;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+
+.cards-products {
+  display: flex;
+  margin: 8rem 7.5rem 0 7.5rem;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-width: 24rem;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  font-weight: 750;
+  margin-bottom: 0.25rem;
+}
+
+.card h4 {
+  font-size: 1rem;
+  font-weight: 625;
+}
+
+.card p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.5rem 0;
+  font-weight: 450;
+  color: #1d1d1f;
+}
+
+.card .preco {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.25rem;
+}
+
+.card .interact {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  gap: 1.75rem;
+}
+
+.card button {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f4f4f0;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #0071e3;
+  border: 0;
+}
+
+.card button:hover {
+  color: #f4f4f0;
+  background-color: #1d1d1f;
+  cursor: pointer;
+}
+
+.card a {
+  font-size: 1.1rem;
+  color: #1b6dbe;
+  text-decoration: none;
+  letter-spacing: -0.02rem;
+}
+
+.card a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+}
+
+.linha-divisoria {
+  width: 55%;
+  height: 0.01rem;
+  margin: 3rem 4rem 0 4rem;
+  background-color: #1d1d1fd3;
+  opacity: 0.25;
+  display: flex;
+}
+
+.cards-specific {
+  display: flex;
+  margin: 3rem 8.2rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.MacBook_Air_specific {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card-linha {
+  width: 24rem;
+}
+
+.card-linha h3 {
+  font-size: 2rem;
+  font-weight: 750;
+}
+
+.card-linha p {
+  font-size: 0.9rem;
+  margin: 0.8rem 0;
+  font-weight: 450;
+  color: #1d1d1f;
+}
+
+.card-linha img {
+  height: 4rem;
+  width: auto;
+  margin: -0.5rem;
+
+}
+
+.MacBook_Pro_specific {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-linha-7portas {
+  gap: 0.5rem;
+}
+
+.linha-especificacoes {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+
+/*  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  background-color: #0071e3;
+  color: #f4f4f0;
+}*/
+
+
+
+/*
+color: #0076ed;*/
+
+
+
+
+
+
+
+/* -----------------------------
+   SF Pro Text
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Display
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Icons
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
+}

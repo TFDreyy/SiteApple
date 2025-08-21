@@ -1,0 +1,839 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  letter-spacing: -.022em !important;
+  overflow-x: hidden;
+  background-color: white !important;
+
+}  
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 10px; 
+  }
+nav, header, .logo {
+  background-color: white !important;
+}
+:root {
+  --sk-button-background: #0071e3;
+  --sk-button-background-hover: #0076df;
+  --sk-button-background-active: #006edb;
+  --sk-body-link-color: #06c;
+}
+
+.header-ipad {
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+  align-items: center;
+  margin: 0 2rem;
+  gap: 2.33rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.elemento-header {
+  align-content: baseline;
+  align-items: center;
+  display: flex;
+  flex-direction: column; 
+  transition: all ease 0.3s;
+  font-size: 0.75rem;
+}
+
+.elemento-header img {
+  height: 3.5rem;
+}
+
+.elemento-header p {
+  margin-top: 0.275rem;
+}
+
+.header-ipad span {
+  font-size: 0.70rem;
+  margin-top: 0.125rem;
+}
+.elemento-header:hover {
+  cursor: pointer;
+  color: black;
+}
+.imagem-hero:hover {
+  cursor: pointer;
+}
+#previa {
+  color: #CC5500;
+  font-weight: bold;
+}
+
+#ipadOS26 {
+  transform: translateY(2px);
+}
+.fundobranco {
+  background-color: #fff;
+  padding-top: 1rem;
+  
+}
+.fundocinza {
+  background-color: #f5f5f7;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+p.negrito {
+    font-weight: 700;
+    letter-spacing: 0.4px;
+
+}
+
+h2#motivosH2 {
+  width: 30rem;
+}
+
+.titulo-e-slogan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: baseline;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  margin: 5rem;
+  font-size: 1.75rem;
+  margin-right: 7.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+
+}
+
+.ipad {
+    display: flex;
+    align-content: first baseline;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 9rem;
+    font-size: 2.5rem;
+    overflow: hidden;
+    margin-right: 7.5rem;
+    letter-spacing: -0.105em;
+}
+
+.ipad h1{
+  font-size: 4.7rem;
+  font-weight: 600;
+}
+
+.slogan {
+  letter-spacing: normal;
+}
+
+.titulo-e-slogan a {
+  font-size: 1.2rem;
+  margin-right: 3px;
+}
+
+.titulo-e-slogan .saiba-mais a {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.arrow-icon {
+  transform: translate(2px, -1.5px);
+  font-size: 0.6rem;
+  color: var(--sk-body-link-color);
+  font-weight: bold;
+}
+.titulo-e-slogan#titulo {
+  font-size: 4.5rem;
+}
+.dropdown-e-imagem {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  word-wrap: wrap;
+  overflow-wrap: break-word;
+  gap: 1.25rem;
+  height: 100%;
+}
+.slogan {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.titulo-e-texto {
+    margin-top: 5rem;
+    text-align: justify;
+}
+
+.caixa-imagem {
+    
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+video.imagem-hero {
+    width: 100%;
+    height: 95%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.2);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    position: absolute;
+    object-fit: cover;
+}
+
+
+.card-caixa {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.especificacoes-caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.especificacoes-interno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: first baseline;
+  gap: 3.2rem;
+  padding: 0 0.25rem;
+}
+
+.especificacoes-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 24rem;
+  height: 12.5rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+.especificacoes-item p {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  width: 80%;
+}
+
+.especificacoes-item h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+
+.especificacoes-item img{
+  height: 6rem;
+  width: auto;
+}
+.motivos-caixa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.descricao {
+    text-align: center;
+
+}
+
+.card {
+  border-radius: 2rem;
+  width: 27rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  padding: 4rem;
+}
+
+.card .arrow-icon {
+  transform: translateY(-1);
+  transform: translateX(4px);
+}
+
+#applepencil .arrow-icon {
+  transform: translate(5px, -1px);
+}
+
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top: auto;
+  transition: all 0.35s ease;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+  color: #444;
+}
+
+.motivos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.3rem;
+  align-items: last baseline;
+  padding: 2rem;
+  padding-top: 6rem;
+  border-radius: 1.75rem;
+  background-color: white;
+  width: 25rem;
+  height: 18rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: transform 0.2s linear;
+  text-align: left;
+  box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.2);
+  
+}
+
+.motivos:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+
+.motivos h3 {
+  height: 3rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.motivos p {
+  text-align: left;
+  padding: 0 1rem 1rem;
+  color: #444;
+  height: 13rem;
+  line-height: 1.5em;
+  margin: 2.75rem 0;
+}
+
+.motivos img {
+  margin-bottom: 0.5rem;
+}
+
+.motivos-icone {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.conheca {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+.card-conheca {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: calc(400rem / 16);
+  height: calc(700rem / 16);
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-size: cover; 
+  background-position: bottom;  
+  background-repeat: no-repeat;
+  padding: 1.4rem;
+  padding-left: 0.2rem;
+}
+.card-conheca:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+#appleintelligence{
+  background-image: url(imagensipad/fc_apple_intelligence_d7b49e300_2x.jpg);
+}
+
+#criatividade {
+  background-image: url(imagensipad/fc_creativity_81a9bde1b_2x.jpg);
+}
+
+#produtividade {
+  background-image: url(imagensipad/fc_productivity_31d9f0486_2x.jpg)
+}
+
+#entretenimento {
+  background-image: url(imagensipad/fc_entertainment_9e9eec3e2_2x.jpg)
+}
+
+#aprendizado {
+  background-image: url(imagensipad/fc_learning_23b81509f_2x.jpg);
+}
+
+.conheca-descricao {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5;
+  padding-left: 0.9cm;
+  color:#e0e0e0;
+}
+
+.conheca-frase { 
+  text-align: left;
+  font-size: 1.7rem;
+  padding-left: 0.9cm;
+  padding-right: 0.7cm;
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+button {
+  margin-right: 1.25rem;
+  background-color: var(--sk-button-background);
+  color: white;
+  border-radius: 1.6rem;
+  width: 8.25rem;
+  height: 2.75rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: all ease 0.5s;
+}
+
+a {
+  color: var(--sk-body-link-color)
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-color: var(--sk-button-background-hover);
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--sk-button-background-hover);
+}
+
+button:active {
+  background-color: var(--sk-button-background-active);
+  transform: scale(0.97)
+}
+
+.card img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.card span {
+  margin-left: 0.33em;
+  color: var(--sk-body-link-color);
+  font-weight: bold;
+  line-height: 1.25em;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.essenciais-caixa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 4rem;
+}
+
+.essenciais {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-end;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  width: 50rem;
+  height: 37.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: transform 0.3s linear;
+  text-align: left;
+  background-size: 35rem; 
+  background-position: bottom;  
+  background-repeat: no-repeat;
+  padding-top: 4rem;
+  box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.2);
+}
+
+.essenciais#appleteclado .arrow-icon {
+  transform: translateY(-0.8px);
+}
+
+
+#applepencil {
+  background-image: url(imagensipad/pencil_77849a69c_2x.png);
+}
+#appleteclado {
+  justify-content: flex-end;
+  padding-top: 0;
+  padding-bottom: 4rem;
+  background-image: url(imagensipad/keyboard_1f4fe2600_2x.png);
+  background-position: top;
+}
+.essenciais h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-weight: bold;
+}
+
+.essenciais p {
+  font-weight: 500;
+}
+
+.essenciais:hover {
+  transform: scale(1.015);
+  cursor: pointer;
+}
+
+.saiba-mais {
+  display: inline;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.saiba-mais span {
+  font-weight: bold;
+  color: var(--sk-body-link-color);
+  font-size: 0.8rem;
+}
+
+.companheiros-caixa {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  height: 95%;
+}
+.companheiros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around ;
+  align-content: flex-start;
+  align-items: space-around;
+  padding: 7.5rem;
+  border-radius: 1.75rem;
+  background-color: #f5f5f5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: all 0.2s ease-out;
+  text-align: left;
+  width: 90%;
+  height: 45rem;
+  background-size: 60%;
+  background-position: right;  
+  background-repeat: no-repeat;
+}
+
+.companheiros.ipadIphone {
+  background-image: url(imagensipad/ipad_iphone_ad1bd9288_2x.jpg);
+}
+
+.companheiros.ipadMac {
+  background-image: url(imagensipad/ipad_mac_bd95ebfe4_2x.jpg);
+}
+
+.companheiros.ipadAppleWatch {
+  background-image: url(imagensipad/ipad_watch_59b7526f7_2x.jpg);
+}
+
+.texto-companheiros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  border-bottom: 0.8px solid #ccc;
+  padding: 15px 0;
+  cursor: pointer;
+  width: 35%;
+  line-height: 25px;
+}
+#ultimoitem {
+  border: none;
+  
+}
+.texto-companheiros h2 {
+  font-size: 1.85rem;
+  font-weight: 600;
+}
+
+.texto-companheiros p {
+  display: none;
+  margin-top: 1rem;
+  color: #222111;
+  transition: all 0.2s ease;
+}
+
+.texto-companheiros.active p {
+  display: block;
+  animation: 0.5s aparecer forwards;
+
+  
+}
+.texto-companheiros.active#ultimoitem p {
+  animation: 0.5s aparecer-ultimoitem forwards;
+}
+
+.texto-companheiros .arrow-icon {
+  font-size: 1.5rem;
+  color: #8d8d8d;
+  font-weight: bold;
+  transform: rotate(180deg) translateX(-12px);
+  transition: 0.33s ease-in-out;
+}
+
+.texto-companheiros .arrow-icon:hover {
+  color: #6f6e6e;
+}
+
+.texto-companheiros.active .arrow-icon {
+  transform: rotate(0deg) translateX(12px);
+}
+.footer-iPad {
+  background-color: #fafafc;
+}
+/* -----------------------------
+   SF Pro Text
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Display
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Icons
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
+}
+
+
+@keyframes aparecer{
+  from {
+    opacity: 0;
+    height: 2px;
+    margin-bottom: 0;
+  }
+
+  to {
+    opacity: 1;
+    height: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@keyframes aparecer-ultimoitem {
+  from {
+    opacity: 0;
+    height: 2px;
+    margin-top: 0;
+  }
+
+  to {
+    opacity: 1;
+    height: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .active {
+    width: 33%;
+    max-height: 50vh;
+  }
+  .companheiros {
+    justify-content: flex-start;
+    align-content: center;
+    width: 100vw;
+    background-image: none;
+    background-position: bottom;
+  }
+
+
+  
+  .companheiros.ipadMac, .companheiros.ipadAppleWatch,   .companheiros.ipadIphone {
+    background-image: none;
+  }
+  
+  #ultimoitem {
+    border-bottom: solid 1px #ccc;
+  }
+  .dropdown-e-imagem {
+    width: 100%;
+  }
+
+  .dropdown-e-imagem .texto-companheiros {
+    width: 100%;
+  }
+  .titulo-e-slogan {
+    font-size: 1.25rem;
+  }
+  nav {
+    overflow-x: auto;
+  }
+  .imagem-hero {
+    border-radius: 0.75rem;
+    width: 100vw;
+    height: 70vh;
+  }
+  .titulo-e-slogan#titulo {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .essenciais-caixa {
+    gap: 8rem;
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+  
+  .card-caixa, .motivos-caixa {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .conheca {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+  }
+
+}
+
+
+@media (max-width: 1905px) {
+  .especificacoes-caixa {
+    display: none;
+  }
+}

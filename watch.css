@@ -1,0 +1,379 @@
+* {
+  font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+main{
+    background-color: #fff;
+}
+.items{
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.item{
+    margin-top: 1rem;
+    align-items: center;
+    text-align: center;
+    max-width: 180px;
+}
+.item img {
+  
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.item p{
+    font-weight: 500;
+    font-size: 0.77rem;
+    margin-top: 0.1rem;
+}
+.titulo{
+    text-align: justify;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.titulo p{
+    font-size: 2.0rem;
+}
+.titulo h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+.titulo_b{
+    text-align: justify;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.titulo_c{
+    text-align: justify;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 5%;
+    background-color: #f4f0f0;
+}
+.titulo_b h1{
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+.titulo_c h1{
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+.vid_cont{
+    overflow: hidden;
+    max-height: 600px;
+    border-radius: 25px;
+    margin: 60px;
+}
+.vid{
+    object-fit: cover; 
+}
+.cont_card{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.card, .card1, .card2, .card3, .card4, .card5, .card6, .card7{   
+    border-radius: 30px;
+    overflow: hidden;
+    width: 344px;
+    height: 650px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+.card1{
+    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_health__b2yo83wkzoaa_medium.jpg");
+    color: #fff;
+}
+.card2{
+    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_fitness__b5owsglf0ieu_medium.jpg");
+    color: #000;
+}
+.card3{
+    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_connectivity__cwtqydvy2laq_medium.jpg");
+    color: #000;
+}
+.card4{
+    background-image: url("https://www.apple.com/v/watch/br/images/overview/consider/feature_safety__gln97xcew2em_large.jpg");
+    color: #000;
+}
+.card5{
+    background-image: url("https://www.apple.com/v/watch/br/images/overview/consider/feature_watch_and_iphone__fiq5g9njy5qy_large.jpg");
+    color: #000;
+}
+.card6{
+    background-image: url("https://www.apple.com/v/watch/br/images/overview/consider/feature_personalization__f8bl9mx85j22_large.jpg");
+    color: #000;
+}
+.card7{
+    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_adventure__d4xvmn7guk02_large.jpg");
+    color: #000;
+}
+.card1:hover {
+  transform: translateY(-10px);
+}
+.card1, .card2, .card3, .card4, .card5, .card6, .card7 p{
+    text-align: left;
+    text-decoration: none;
+    font-size: 0.6rem;
+    padding: 0.5cm;
+    padding-left: 0.8cm;
+    font-weight: 300;
+}
+.card1, .card2, .card3, .card4, .card5, .card6, .card7 h2{
+    text-align: left;
+    font-size: 1.0rem;
+    padding-left: 0.8cm;
+    padding-right: 0.7cm;
+    font-weight: 600;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #f4f0f0;
+}
+.box{
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.box img{
+    transition: transform 0.3s ease;
+}
+.box img:hover {
+  transform: translateY(-10px);
+}
+.box h3{
+    justify-content: center;
+    margin: 0.7rem;
+    font-size: 1.5rem;
+}
+.box p{
+    padding: 0.7rem;
+}
+.negrito{
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.2rem;
+}
+.button_a{
+    background-color: rgb(0, 102, 234);
+    color: #fff;
+    padding:10px;
+    border-radius: 25px;
+    width: 110px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+.button_b{
+    color: rgb(0, 102, 234);
+    padding:15px;
+    border-radius: 25px;
+    width: 110px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+.cont_t_boxes{
+    display: flex;
+    gap: 3rem;
+    background-color: #f4f0f0;
+    justify-content: center;
+}
+.t_boxes{
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.t_box{
+    text-align: center;
+    margin: 1rem;
+}
+.t_box img{
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.t_box p{
+    font-size: 0.8rem;
+    padding-bottom: 20px;
+}
+.cont_t_card{
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #f4f0f0;
+}
+.t_card{
+    background-color: #fff;
+    border-radius: 30px;
+    justify-content: left;
+    padding: 30px;
+    width: 380px;
+}
+.t_card h2{
+    font-size: 2rem;
+}
+.t_card p{
+    padding-top: 15px;
+}
+.o_cont_card{
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.o_card{
+    border-radius: 30px;
+    margin: 20px;
+    padding-top: 20px;
+    width: 500px;
+    background-color: #f4f0f0;
+    text-align: center;
+}
+.oo_card{
+    border-radius: 30px;
+    margin: 20px;
+    padding-top: 20px;
+    width: 500px;
+    background-color: #f4f0f0;
+    text-align: center;
+}
+.o_cont_card img{
+    justify-content: end;
+    margin-top: 50px;
+    object-fit: contain;
+    flex: 1;
+}
+.o_card, .oo_card h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+}
+.o_card, .oo_card p{
+    padding-top: 15px;
+}
+
+.text_space{
+    display: flex;
+    justify-content: center;
+    background-color: #f4f0f0;
+    font-size: 0.8rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* -----------------------------
+   SF Pro Text
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Display
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Icons
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
+}

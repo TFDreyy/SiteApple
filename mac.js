@@ -1,0 +1,96 @@
+const video = document.getElementById("videoMac");
+const toggleButton = document.getElementById("videoToggle");
+const toggleIcon = document.getElementById("toggleIcon");
+
+function togglePlayPause() {
+  if (video.paused) {
+    video.play();
+    toggleIcon.src = "imagens_Mac/toggle-pause.png";
+  } else {
+    video.pause();
+    toggleIcon.src = "imagens_Mac/toggle-play.png";
+  }
+}
+
+toggleButton.addEventListener("click", togglePlayPause);
+video.addEventListener("click", togglePlayPause);
+
+const videoBox = document.querySelector('.caixa-video');
+
+const screenHeight = window.innerHeight;
+
+const startScroll = screenHeight * (390 / 1080);
+const maxScroll = screenHeight * (1200 / 1080);
+
+const minWidth = 87;
+const minHeight = 85;
+const baseHeight = 90;
+
+function easeOutQuad(x) {
+  return 1 - (1 - x) * (1 - x);
+}
+
+window.addEventListener('scroll', () => {
+  let scrollY = window.scrollY;
+
+  if (scrollY < startScroll) {
+    videoBox.style.width = '100%';
+    videoBox.style.height = `${baseHeight}vh`;
+    videoBox.style.transform = 'translateX(0)';
+    return;
+  }
+
+  let progress = Math.min((scrollY - startScroll) / (maxScroll - startScroll), 1);
+  progress = easeOutQuad(progress);
+
+  let newWidth = 100 - (100 - minWidth) * progress;
+  let newHeight = baseHeight - (baseHeight - minHeight) * (progress * 0.5);
+
+  videoBox.style.width = `${newWidth}%`;
+  videoBox.style.height = `${newHeight}vh`;
+
+  if (newWidth > 100) {
+    let offset = (newWidth - 100) / 2;
+    videoBox.style.transform = `translateX(-${offset}%)`;
+  } else {
+    videoBox.style.transform = 'translateX(0)';
+  }
+  let newRadius = 0 + (4.5 - 1.5) * progress;
+  videoBox.style.borderRadius = `${newRadius}rem`;
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const setupCarousel = (carouselId, leftId, rightId) => {
+    setTimeout(updateArrowVisibility, 100);
+    const carousel = document.getElementById(carouselId);
+    const leftArrow = document.getElementById(leftId);
+    const rightArrow = document.getElementById(rightId);
+    const cardWidth = carousel.querySelector(".cards > div").offsetWidth;
+    const cardGap = parseInt(getComputedStyle(carousel).gap) || 0;
+    const scrollAmount = cardWidth + cardGap;
+
+    function updateArrowVisibility() {
+      const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+      leftArrow.style.visibility = Math.ceil(carousel.scrollLeft) <= 1 ? 'hidden' : 'visible';
+      rightArrow.style.visibility = carousel.scrollLeft >= maxScrollLeft - 1 ? 'hidden' : 'visible';
+    }
+
+    leftArrow.addEventListener("click", () => {
+      carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      setTimeout(updateArrowVisibility, 300);
+    });
+
+    rightArrow.addEventListener("click", () => {
+      carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      setTimeout(updateArrowVisibility, 300);
+    });
+
+    carousel.addEventListener("scroll", updateArrowVisibility);
+    window.addEventListener("resize", updateArrowVisibility);
+
+    updateArrowVisibility();
+  };
+
+  setupCarousel('carouselMac', 'leftMac', 'rightMac');
+});

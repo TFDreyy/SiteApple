@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(4px);    
+    position: relative;
+    z-index: 2;
+}
+
+nav, header, .logo {
+    background-color: #e6d8d5 !important; 
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2;
+}
+.container-imagem {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transform: translateY(-50px);
+    width: 100vw;
+    max-height: 74%;
+    height: auto;
+}
+.imagem-suporte {
+    width: 100%;
+    height: 80%;
+    
+}
+.suporte-caixa {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 3.75rem;
+}
+
+.suporte-caixa h1 {
+    letter-spacing: -0.05em;
+    font-weight: 600;
+    font-size: 3.75rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+.card-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f4f4f4;
+    width: 50%;
+    border-radius: 1.25rem;
+    height: auto;
+    word-wrap: wrap;
+    overflow-wrap: break-word;
+    gap: 0.8rem;
+}
+.card-principal h1, .card-semfundo h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: -0.05em;
+}
+.card-principal p, .card-semfundo p {
+    font-weight: 300;
+    line-height: 1.5rem;
+    max-width: 80%;
+}
+.card-principal img {
+    text-align: center;
+    height: 4.75rem;
+    width: 4.75rem;
+    margin-bottom: 0.8rem;
+}
+
+.ajuda-caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 49%;
+    gap: 3rem;
+    /* background-color: red; */
+}
+
+.ajuda-interno {
+    display: flex;
+    justify-content: center;
+    align-content: last baseline;
+    flex-direction: row;  
+    gap: 3rem;
+    width: 95%;
+    /*background-color: orange;*/
+}
+
+.ajuda-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+    padding: 0.25rem;
+    gap: 1rem;
+    width: 90%;
+    text-align: left;
+    /* background-color: cyan;*/ 
+}
+
+.ajuda-item h1 {
+    font-weight: 600;
+}
+
+.ajuda-item p {
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+.ajuda-item img {
+    height: 4.75rem;
+    width: 4.75rem;
+}
+
+.saiba-mais i {
+    transform: translate(5px, -1.5px);
+}
+
+i#praesquerda {
+    transform: translateX(-1px)
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.91rem;
+    padding: 1.125rem;
+    height: 0.15rem;
+    width: 9.75rem;
+    font-weight: 400;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1.0875);
+}
+
+.ajuda-interno#gapmenor {
+    gap: 2.75rem;
+}
+
+.mini-suporte-caixa {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 3.75rem;
+}
+
+.mini-suporte-caixa h1 {
+    letter-spacing: -0.05em;
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+.ajuda-caixa.menor {
+    width: 45%;
+}
+.ajuda-caixa.maior {
+    width:  55%;
+}
+
+.ajuda-caixa#maior .ajuda-interno .ajuda-item{
+    width: 40%;
+}
+
+.ajuda-item#servico .saiba-mais{
+    transform: translateY(-5px);
+}
+
+.card-semfundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 50%;
+    border-radius: 1.25rem;
+    height: auto;
+    word-wrap: wrap;
+    overflow-wrap: break-word;
+    gap: 0.8rem;
+}
+
+h1.grande {
+    font-size: 2.5rem;
+}
+.card-semfundo img {
+    text-align: center;
+    height: auto;
+    width: 9.75rem;
+}
+
+p.paragrafomenor {
+    max-width: 25rem;
+}
+
+img#imagem-getstarted {
+    width: 30rem;
+}
+
+h1.menor {
+    font-size: 1.5rem;
+}
+
+
+
+
+/* -----------------------------
+   SF Pro Text
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Display
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Icons
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
+}
+
+@media(max-width: 1000px) {
+    .card-principal {
+        width: 85vw;
+    }
+}

@@ -1,0 +1,115 @@
+.negrito {
+    font-weight: bold;
+}
+
+:root {
+  --cor-primaria: #949494;
+  --cor-texto: #000000;
+  --cor-fundo: #f4f0f0;
+}
+
+.centralizado {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.header2 {
+  background-color: #f4f0f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.header2 h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.header2 p {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  background-color: #f4f0f0;
+  color: #000000;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.support-topics h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.grid::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 80px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.card h3,
+.card p {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+

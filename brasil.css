@@ -1,0 +1,292 @@
+* {
+  font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.titulo {
+    font-size: 48px;
+}
+
+.titulo-e-slogan {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 85px;
+  margin: 5rem;
+  font-size: 2rem;
+}
+
+.slogan {
+    margin-left: 60%;
+    font-weight: bold;
+}
+
+.imagem-hero {
+    position: relative;
+    width: 100%;
+    height: 82%;   
+    border-radius: 25px;
+    transition: transform 0.3s ease; 
+    object-fit: cover;
+    display: block;
+
+}
+
+
+.imagem-hero:hover {
+    transform: scale(0.95);
+}
+
+
+.texto_brasil {
+  text-align: left;
+  font-size: 2rem;
+  padding-left: 0.9cm;
+  padding-right: 0.7cm;
+  color: #1a1a1a;
+
+}
+
+.card-veio {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-image: url("imagens/steve-jobs-products2.jpeg");
+  background-size: cover; 
+  background-position: center;  
+  background-repeat: no-repeat;
+
+}
+
+.card-NaoTaoVeio {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-image: url("imagens/ipod-2001-690x471-1.jpeg");
+  background-size: cover; 
+  background-position: 95% center;  
+  background-repeat: no-repeat;
+
+}
+
+.card-MaisOuMenosRecente {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-image: url("imagens/iphone11.jpeg");
+  background-size: cover; 
+  background-position: center;  
+  background-repeat: no-repeat;
+
+}
+
+.card-veio:hover,
+.card-NaoTaoVeio:hover,
+.card-MaisOuMenosRecente:hover {
+  transform: translateY(-12px);
+}
+
+.card-veio::after,
+.card-NaoTaoVeio::after,
+.card-MaisOuMenosRecente::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+  border-radius: 15px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.cards img {
+  max-width: 80%;
+  max-height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top: auto;
+}
+
+.cards {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card-intro {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+  color: #444;
+}
+
+.descricao {
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5cm;
+    padding-left: 0.9cm;
+    color:#e0e0e0;
+
+}
+
+.frase-impacto {
+  text-align: left;
+  font-size: 1.7rem;
+  padding-left: 0.9cm;
+  padding-right: 0.7cm;
+  color: #f5f5f5;
+  z-index: 3;
+  position: absolute;
+  top: 60px;
+}
+
+
+.escuro {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5cm;
+  padding-left: 0.9cm;
+  color:#f5f5f5;
+  z-index: 3;
+  position: absolute;
+}
+
+.frase-escuro {
+  text-align: left;
+  font-size: 1.7rem;
+  padding-left: 0.9cm;
+  padding-right: 0.7cm;
+  color: #f5f5f5;
+  z-index: 3;
+  position: absolute;
+  top: 60px;
+}
+
+
+
+
+
+
+
+/* -----------------------------
+   SF Pro Text
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Display
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Icons
+------------------------------ */
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
+}
