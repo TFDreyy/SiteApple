@@ -126,6 +126,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+
 }
 
 .card-intro {
@@ -189,10 +190,6 @@
   position: absolute;
   top: 60px;
 }
-
-
-
-
 
 
 
