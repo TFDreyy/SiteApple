@@ -16,7 +16,7 @@ Este site tem como objetivo recriar o site da Apple para fins educacionais.
 * **Giovanni Viana** - [Giovanni Viana](https://github.com/givanyo)
 * **Kauã Matheus** - [Kauã Matheus](https://github.com/Gouveak)
 * **Eduardo Braga** - [Eduardo Braga](https://github.com/)
-* **Eduardo Yuri** - [Eduardo Yuri](https://github.com/)
+* **Eduardo Yuri** - [Eduardo Yuri](https://github.com/Godenot-print)
 * **Wendell** - [Wendell](https://github.com/Wendell-Vilela)
 * **Rodrigo** - [Rodrigo](https://github.com/)
 * **Gustavo Andrade** - [Gustavo Andrade](https://github.com/GBatata)
