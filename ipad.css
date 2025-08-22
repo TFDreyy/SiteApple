@@ -459,12 +459,12 @@ a:hover {
   cursor: pointer;
   text-decoration-color: var(--sk-button-background-hover);
 }
-button:hover {
+.card button:hover {
   cursor: pointer;
   background-color: var(--sk-button-background-hover);
 }
 
-button:active {
+.card button:active {
   background-color: var(--sk-button-background-active);
   transform: scale(0.985);
 }
