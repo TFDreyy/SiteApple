@@ -2,7 +2,6 @@
 
 <br>
 
-
 ## <img src="https://cdn.simpleicons.org/apple/ffffff" alt="Apple" width="20" title="Apple" />&nbsp;Descrição
 
 ### Este site tem como objetivo recriar o site da Apple para fins educacionais.
