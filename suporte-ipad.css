@@ -148,7 +148,7 @@ nav, header, .logo {
 i#praesquerda {
     transform: translateX(-1px)
 }
-button {
+.card-principal button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,6 +159,7 @@ button {
     width: 9.75rem;
     font-weight: 400;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 button:active {
