@@ -1,6 +1,7 @@
 <img src="https://github.com/TFDreyy/SiteApple/blob/release/banner%20github/github-header-banner.png?raw=true" width="100%"/>
+
 <br>
-<br>
+
 
 ## <img src="https://cdn.simpleicons.org/apple/ffffff" alt="Apple" width="20" title="Apple" />&nbsp;Descrição
 
@@ -53,6 +54,7 @@ Este projeto está sendo feito sobre a orientação do professor [Jefferson](htt
 
 ---
 ⌨️ por [Andrey](https://github.com/TFDreyy)💪
+
 <br>
-<br>
+
 <img src="https://github.com/TFDreyy/SiteApple/blob/release/banner%20github/github-header-banner2.png?raw=true" width="100%"/>
