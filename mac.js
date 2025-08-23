@@ -22,7 +22,7 @@ const screenHeight = window.innerHeight;
 const startScroll = screenHeight * (390 / 1080);
 const maxScroll = screenHeight * (1200 / 1080);
 
-const minWidth = 87;
+const minWidth = 89;
 const minHeight = 85;
 const baseHeight = 90;
 
@@ -94,3 +94,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setupCarousel('carouselMac', 'leftMac', 'rightMac');
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.card-icon').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cardinfoId = btn.getAttribute('data-cardinfo');
+      abrirCardinfo(cardinfoId);
+    });
+  });
+});
+
+function abrirCardinfo(id) {
+  document.getElementById(id).style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function fecharCardinfo(id) {
+  document.getElementById(id).style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
