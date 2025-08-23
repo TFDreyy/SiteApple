@@ -41,7 +41,7 @@ Este site tem como objetivo recriar o site da Apple para fins educacionais.
 * **Rodrigo** - [Rodrigo](https://github.com/)
 * **Gustavo Andrade** - [Gustavo Andrade](https://github.com/GBatata)
 
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
+Você também pode ver a lista de todos os [colaboradores](https://github.com/TFDreyy/SiteApple/graphs/contributors) que participaram deste projeto.
 
 ## 📄 Professor Responsável
 
