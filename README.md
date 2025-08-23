@@ -38,7 +38,7 @@ Este site tem como objetivo recriar o site da Apple para fins educacionais.
 * **Eduardo Braga** - [Eduardo Braga](https://github.com/)
 * **Eduardo Yuri** - [Eduardo Yuri](https://github.com/Godenot-print)
 * **Wendell** - [Wendell](https://github.com/Wendell-Vilela)
-* **Rodrigo** - [Rodrigo](https://github.com/)
+* **Rodrigo** - [Rodrigo](https://github.com/Rodrigo-Desenvolvedor)
 * **Gustavo Andrade** - [Gustavo Andrade](https://github.com/GBatata)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/TFDreyy/SiteApple/graphs/contributors) que participaram deste projeto.
