@@ -2,11 +2,31 @@
 
 Este site tem como objetivo recriar o site da Apple para fins educacionais.
 
-## 🛠️ Construído com
+## ⚙️🤖 Linguagens Utilizadas
 
-* HTML 🟠
-* CSS 🔵
-* JS 🟡
+* HTML <img 
+    align="center" 
+    alt="HTML"
+    title="HTML" 
+    width="30px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+/>
+
+* CSS <img 
+    align="center" 
+    alt="CSS" 
+    title="CSS"
+    width="30px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
+/>
+
+* JS <img 
+    align="center" 
+    alt="JavaScript" 
+    title="JavaScript"
+    width="30px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
+/>
 
 ## ✒️ Autores
 
