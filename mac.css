@@ -1,7 +1,7 @@
-* {
+/* {
   border: 1px solid red;
 }
-
+*/
 
 * {
   margin: 0;
@@ -123,116 +123,62 @@
   background: #b9b9b98a;
 }
 
-.card-conheca {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 2rem;
-  padding-top: 0;
-}
+
 
 .cards {
   display: flex;
   flex-wrap: nowrap;
-  gap: 2rem;
-  overflow: visible;
+  gap: 1.4rem;
   padding-top: 1rem;
 }
 
-
-.card-macOS {
+.card_mac {
   background-color: #f4f0f0;
-  border-radius: 15px;
-  width: 400px;
+  border-radius: 1.8rem;
+  width: 25rem;
   height: 700px;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: auto;
   transition: transform 0.3s ease;
+  box-shadow: none;
+}
+
+.card_mac:hover {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: translate(-0.1rem, -0.15rem);
+}
+
+#card-macOS {
   background-image: url("Imagens_Mac/apple\ intelligence2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
 }
 
-.card-desempenho {
-  background-color: #f4f0f0;
-  border-radius: 15px;
-  width: 400px;
-  height: 700px;
-  text-align: center;
-  transition: transform 0.3s ease;
+#card-desempenho {
   background-image: url("Imagens_Mac/desempenho.jpeg");
-  background-size: cover;
   background-position: 95% center;
-  background-repeat: no-repeat;
-
 }
 
-.card-time {
-  background-color: #f4f0f0;
-  border-radius: 15px;
-  width: 400px;
-  height: 700px;
-  text-align: center;
-  transition: transform 0.3s ease;
+#card-time {
   background-image: url("Imagens_Mac/time.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
 }
 
-.card-apps {
-  background-color: #f4f0f0;
-  border-radius: 15px;
-  width: 400px;
-  height: 700px;
-  text-align: center;
-  transition: transform 0.3s ease;
+#card-apps {
   background-image: url("Imagens_Mac/apps\ mac.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.card-seguranca {
-  background-color: #f4f0f0;
-  border-radius: 15px;
-  width: 400px;
-  height: 700px;
-  text-align: center;
-  transition: transform 0.3s ease;
+#card-seguranca {
   background-image: url("Imagens_Mac/seguranca.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.card-durabilidade {
-  background-color: #f4f0f0;
-  border-radius: 15px;
-  width: 400px;
-  height: 700px;
-  text-align: center;
-  transition: transform 0.3s ease;
+#card-durabilidade {
   background-image: url("Imagens_Mac/durabilidade.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.card-valores {
-  background-color: #f4f0f0;
-  border-radius: 15px;
-  width: 400px;
-  height: 700px;
-  text-align: center;
-  transition: transform 0.3s ease;
+#card-valores {
   background-image: url("Imagens_Mac/valores.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .escuro {
@@ -282,18 +228,6 @@
 
 }
 
-.card-time:hover,
-.card-macOS:hover,
-.card-desempenho:hover,
-.card-apps:hover,
-.card-seguranca:hover,
-.card-durabilidade:hover,
-.card-valores:hover {
-  transform: translateY(-1rem);
-  z-index: 2;
-  position: relative;
-}
-
 .cards img {
   max-width: 80%;
   max-height: auto;
@@ -326,18 +260,13 @@
   overflow-y: visible;
   scroll-behavior: smooth;
   gap: 2rem;
-  padding: 0 4rem;
-  scroll-padding: 4rem;
+  padding: 0 5rem;
+  scroll-padding: 5rem;
   scroll-snap-type: x mandatory;
+  -ms-touch-action: pan-x;
+  touch-action: pan-x;
+  overscroll-behavior-x: contain;
 }
-
-
-
-.cards>div {
-  scroll-snap-align: start;
-}
-
-
 
 .mac-carousel .iphone-scroll::-webkit-scrollbar {
   display: none;
@@ -405,38 +334,37 @@
   color: #1d1d1f;
   border: none;
   border-radius: 50%;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 800;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease;
-
+  padding-bottom: 0.25rem;
 }
 
 .card-icon:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: #f4f4f0;
+  box-shadow: none;
 }
 
-/*position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.8);
+/*
+  right: 2.5rem;
+  background: rgba(0, 0, 0, 0.5);
   border: none;
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  font-size: 20px;
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 */
 
 .cardinfo {
