@@ -1,6 +1,10 @@
-# Site Apple
+<img src="https://github.com/TFDreyy/SiteApple/blob/release/banner%20github/github-header-banner.png?raw=true" width="100%"/>
+<br>
+<br>
 
-Este site tem como objetivo recriar o site da Apple para fins educacionais.
+## <img src="https://cdn.simpleicons.org/apple/ffffff" alt="Apple" width="20" title="Apple" />&nbsp;Descrição
+
+### Este site tem como objetivo recriar o site da Apple para fins educacionais.
 
 ## ⚙️🤖 Linguagens Utilizadas
 
@@ -35,7 +39,7 @@ Este site tem como objetivo recriar o site da Apple para fins educacionais.
 * **Lucas Fonseca** - [Lucas Fonseca](https://github.com/LucasFonseca12)
 * **Giovanni Viana** - [Giovanni Viana](https://github.com/givanyo)
 * **Kauã Matheus** - [Kauã Matheus](https://github.com/Gouveak)
-* **Eduardo Braga** - [Eduardo Braga](https://github.com/)
+* **Eduardo Braga** - [Eduardo Braga](https://github.com/braga-08)
 * **Eduardo Yuri** - [Eduardo Yuri](https://github.com/Godenot-print)
 * **Wendell** - [Wendell](https://github.com/Wendell-Vilela)
 * **Rodrigo** - [Rodrigo](https://github.com/Rodrigo-Desenvolvedor)
@@ -49,3 +53,6 @@ Este projeto está sendo feito sobre a orientação do professor [Jefferson](htt
 
 ---
 ⌨️ por [Andrey](https://github.com/TFDreyy)💪
+<br>
+<br>
+<img src="https://github.com/TFDreyy/SiteApple/blob/release/banner%20github/github-header-banner2.png?raw=true" width="100%"/>
