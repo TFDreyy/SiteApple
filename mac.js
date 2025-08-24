@@ -136,3 +136,44 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const macBtn = document.getElementById('mac-menu-btn');
+const macMenu = document.getElementById('mac-menu');
+const body = document.body;
+let macMenuTimer;
+
+const showMacMenu = () => {
+  clearTimeout(macMenuTimer);
+  body.classList.add('body-blur');
+  macMenu.style.display = 'block';
+  setTimeout(() => {
+    macMenu.classList.add('show');
+  }, 10);
+};
+
+const hideMacMenu = () => {
+  macMenuTimer = setTimeout(() => {
+    macMenu.classList.remove('show');
+    setTimeout(() => {
+      macMenu.style.display = 'none';
+      body.classList.remove('body-blur');
+    }, 300);
+  }, 300);
+};
+
+if (macBtn && macMenu) {
+  macBtn.addEventListener('mouseenter', showMacMenu);
+  macMenu.addEventListener('mouseenter', showMacMenu);
+  macBtn.addEventListener('mouseleave', hideMacMenu);
+  macMenu.addEventListener('mouseleave', hideMacMenu);
+
+  macBtn.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      if (macMenu.classList.contains('show')) {
+        hideMacMenu();
+      } else {
+        showMacMenu();
+      }
+    }
+  });
+}
