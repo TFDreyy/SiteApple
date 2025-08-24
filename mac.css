@@ -87,6 +87,10 @@
   margin: 0 auto;
 }
 
+.caixa-video:hover {
+  cursor: pointer;
+}
+
 .caixa-video video {
   width: 100%;
   height: 100%;
@@ -366,88 +370,131 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   display: none;
-  justify-content: center;
-  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
   z-index: 9999;
-  overflow: auto;
-  padding: 20px;
+  padding: 3rem 1rem;
   box-sizing: border-box;
+  backdrop-filter: blur(10px);
 }
 
 .cardinfo-content {
-  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: #ffffff;
   border-radius: 2rem;
-  padding: 3.75rem 3.125rem;
+  padding: 3.75rem 4rem 0 4rem;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-  overflow-y: auto;
-  animation: cardFadeIn 0.4s ease-out;
-  margin: 2rem 5rem 0 5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: fit-content;
 }
 
-@keyframes cardFadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+/*
+position: absolute;
+bottom: 1.25rem;
+right: 1.25rem;
+width: 2rem;
+height: 2rem;
+background-color: rgba(255, 255, 255, 0.8);
+color: #1d1d1f;
+border: none;
+border-radius: 50%;
+font-size: 1.5rem;
+font-weight: 800;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.8);
+transition: all 0.3s ease;
+padding-bottom: 0.25rem;
+*/
 
 .close-btn {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1d1d1f;
   border: none;
-  font-size: 24px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 800;
   cursor: pointer;
-  color: #333;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f4f4f0;
+  box-shadow: none;
 }
 
 .cardinfo-body {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 0;
   margin: 4rem 0;
   background-color: #f5f5f7;
   border-radius: 2rem;
-  padding: 4rem 6rem;
+}
+
+.cardinfo-body img {
+  display: block;
 }
 
 .cardinfo-text {
-  flex: 1 1 300px;
-  font-size: 1.4rem;
+  font-weight: 650;
+  font-size: 1.5rem;
   line-height: 1.6;
+  padding: 4rem 10rem;
+  padding-bottom: 1rem;
+}
+
+.cardinfo-text p {
+  color: #6e6e73;
+  line-height: normal;
+}
+
+.cardinfo-text strong {
+  color: #1d1d1f;
 }
 
 .cardinfo-content h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 650;
+  line-height: 1.1;
 }
 
 .cardinfo-content h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
-/*.cardinfo-image {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.cardinfo-image-container {
+  overflow: hidden;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
-.cardinfo-image img {
+.info-image {
+  margin: 1rem 0 0 auto;
+  padding: 0;
+}
+
+.cardinfo-body img {
   max-width: 100%;
-  height: auto;
-  border-radius: 20px;
+  height: 100%;
 }
-*/
-
 
 @-webkit-keyframes slide-in-right {
   0% {

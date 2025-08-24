@@ -37,6 +37,7 @@ window.addEventListener('scroll', () => {
     videoBox.style.width = '100%';
     videoBox.style.height = `${baseHeight}vh`;
     videoBox.style.transform = 'translateX(0)';
+    videoBox.style.borderRadius = '0';
     return;
   }
 
@@ -104,12 +105,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
 function abrirCardinfo(id) {
-  document.getElementById(id).style.display = 'flex';
+  const overlay = document.getElementById(id);
+  overlay.style.display = 'flex';
   document.body.style.overflow = 'hidden';
+
+  setTimeout(() => {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) fecharCardinfo(id);
+    });
+  }, 10);
 }
 
 function fecharCardinfo(id) {
-  document.getElementById(id).style.display = 'none';
+  const overlay = document.getElementById(id);
+  overlay.style.display = 'none';
   document.body.style.overflow = 'auto';
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card_mac");
+  cards.forEach((card, index) => {
+    const id = `cardinfo${index + 1}`;
+    card.addEventListener("click", (e) => {
+      if (!e.target.classList.contains("card-icon")) {
+        abrirCardinfo(id);
+      }
+    });
+  });
+});
+
