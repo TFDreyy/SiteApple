@@ -21,50 +21,6 @@
 
 
 
-   function initCarousel(id, btnPrevSelector, btnNextSelector) {
-  const carousel = document.getElementById(id);
-  const btnPrev = document.querySelector(btnPrevSelector);
-  const btnNext = document.querySelector(btnNextSelector);
-
-  btnPrev.onclick = () => {
-    carousel.scrollLeft -= carousel.clientWidth;
-  };
-
-  btnNext.onclick = () => {
-    carousel.scrollLeft += carousel.clientWidth;
-  };
-
-  let isDragging = false;
-  let startX;
-  let startScroll;
-
-  carousel.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startX = e.pageX;
-    startScroll = carousel.scrollLeft;
-  });
-
-  document.addEventListener('mouseup', () => {
-    isDragging = false;
-  });
-
-  document.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    const diff = e.pageX - startX;
-    carousel.scrollLeft = startScroll - diff;
-  });
-}
-
-initCarousel('carousel', '.btn-prev', '.btn-next');
-
-
-
-
-
-
-
-
-
 
 
 
