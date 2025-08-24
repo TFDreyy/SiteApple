@@ -16,19 +16,18 @@ body {
 
 
 .footer {
-  background-color: #f4f0f0;
-  padding: 40px 0;
+  background-color: #323232;
+  padding: 10px 0;
 }
 
 .footer-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  color: #6e6e73;
   font-size: 12px;
 }
 
 .footer-warning {
-  background-color: #eaeaea;
+  background-color: #525252;
   padding: 10px 15px;
   border-radius: 8px;
   margin-bottom: 25px;
@@ -43,85 +42,50 @@ body {
 
 .footer-warning p {
   margin: 0;
-  color: #333336;
+  color: #f4f4f0;
   font-size: 12px;
   font-weight: bold;
 }
 
-.footer-store {
-  border-top: 1px solid #d2d2d7;
-  padding-top: 20px;
-  margin-bottom: 25px;
-}
 
-.footer-store a {
-  display: inline-flex;
-  align-items: center;
-  color: #333336;
-  text-decoration: none;
-  font-size: 14px;
+.footer-info  {
+  color: #7e7e82;
 }
-
-.footer-store a svg {
-  margin-right: 6px;
-  fill: #333336;
-}
-
-.footer-store a span {
-  margin: 0 8px;
-  font-size: 16px;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 25px;
-}
-
-.footer-links h4 {
-  color: #333336;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 6px;
-}
-
-.footer-links a {
-  color: #333336;
-  text-decoration: none;
-}
-
-.footer-info {
-  color: #333336;
-}
-
+ 
 .footer-info a {
-  color: #06c;
   text-decoration: none;
+}
+
+.brasil {
+  color: #f4f4f0;
+}
+
+.englishuk {
+  color: #7e7e82;
 }
 
 .footer-bottom {
-  border-top: 1px solid #d2d2d7;
   margin-top: 25px;
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #6e6e73;
+  color: #7e7e82;
 }
 
 .footer-bottom p {
   margin: 0;
-  color: #6e6e73;
+  color: #7e7e82;
+}
+
+.footer-bottom a {
+  margin: 0;
+  color: #f4f4f0;
+  text-decoration: none;
+}
+
+
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
 
 .footer-legal {
@@ -132,15 +96,14 @@ body {
 }
 
 .footer-legal a {
-  color: #333336;
+  color: #f4f4f0;
   text-decoration: none;
 }
 
 .footer-legal span {
-  color: #6e6e73;
+  color: #7e7e82;
 }
-.footer-links a:hover,
-.footer-store a:hover,
+
 .footer-info a:hover,
 .footer-legal a:hover {
   text-decoration: underline;
@@ -148,10 +111,6 @@ body {
 }
 
 @media (max-width: 600px) {
-  .footer-links {
-    flex-direction: column;
-    gap: 20px;
-  }
 
   .footer-bottom {
     align-items: flex-start;
@@ -161,6 +120,9 @@ body {
     gap: 5px;
   }
 }
+
+
+
 
 .container {
     height: 120vh;
