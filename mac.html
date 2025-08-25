@@ -64,8 +64,8 @@
                 <li><a href="#">Financiamento</a></li>
               </ul>
             </div>
-            <div class="mac-menu-section">
-              <h3 class="menu-section-title">Mais para o Mac</h3>
+            <div class="menu-comprar-mais">
+              <h3>Mais para o Mac</h3>
               <ul class="menu-section-list">
                 <li><a href="#">Suporte para Mac</a></li>
                 <li><a href="#">Produtos AppleCare</a></li>
@@ -529,12 +529,190 @@
         </div>
       </div>
       <div class="motivos-comprar">
-        <div class="titulo-e-slogan2">
+        <div class="titulo-e-slogan2" id="motivos-comprar-mac">
           <h2>Motivos para comprar<br>seu Mac na Apple</h2>
           <a href="#" class="link-comparar">Comprar Mac ›</a>
         </div>
-      </div>
-    </section>
+        <section class="motivos-carousel" id="motivos-carousel">
+          <button class="arrow left" id="leftMotivos">&#10094;</button>
+
+          <div class="iphone-scroll" id="carouselMotivos">
+            <div class="motivos-cards">
+              <div data-aos="fade-up" data-aos-delay="50">
+                <div class="motivo-card" id="motivo-macOS">
+                  <div class="imagem-motivo"><img src="Imagens_Mac/pagamento.svg"></div>
+                  <div class="frase-escuro2">
+                    <h4>Opções de pagamento.</h4>
+                  </div>
+                  <h3 class="escuro2">Aproveite e parcele com facilidade e<br>conveniência.</h3>
+                  <button class="motivo-icon" data-motivo="motivo-info1">+</button>
+                </div>
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="100">
+                <div class="motivo-card" id="motivo-desempenho">
+                  <div class="imagem-motivo"><img src="Imagens_Mac/configure.svg"></div>
+                  <div class="frase-escuro2">
+                    <h4>Configure seu Mac.</h4>
+                  </div>
+                  <h3 class="escuro2">Escolha o chip, a memória, o<br>armazenamento e até a cor.</h3>
+                  <button class="motivo-icon" data-motivo="motivo-info2">+</button>
+                </div>
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="150">
+                <div class="motivo-card" id="motivo-time">
+                  <div class="imagem-motivo"><img src="Imagens_Mac/frete.svg"></div>
+                  <div class="frase-escuro2">
+                    <h4>Frete grátis</h4>
+                  </div>
+                  <h3 class="escuro2">Em todo o Brasil. Em São Paulo, os<br>pedidos qualificados tem envio no
+                    dia<br>seguinte.</h3>
+                  <button class="motivo-icon" data-motivo="motivo-info3">+</button>
+                </div>
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="200">
+                <div class="motivo-card" id="motivo-apps">
+                  <div class="imagem-motivo"><img src="Imagens_Mac/compre.svg"></div>
+                  <div class="frase-escuro2">
+                    <h4>Compre com quem<br>entende de Mac</h4>
+                  </div>
+                  <h3 class="escuro2">Fale com especialistas para fazer a<br>melhor escolha. Na loja ou online</h3>
+                  <button class="motivo-icon" data-motivo="motivo-info4">+</button>
+                </div>
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="250">
+                <div class="motivo-card" id="motivo-seguranca">
+                  <div class="imagem-motivo"><img src="Imagens_Mac/experiencia.svg"></div>
+                  <div class="frase-escuro2">
+                    <h4>Uma experiência de<br>compra inspirada em<br>você.</h4>
+                  </div>
+                  <h3 class="escuro2">App Apple Store. Um jeito mais<br>pessoal de comprar.</h3>
+                  <button class="motivo-icon" data-motivo="motivo-info5">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="arrow right" id="rightMotivos">&#10095;</button>
+        </section>
+
+        <section>
+          <div id="motivo-info1" class="motivo-info">
+            <div class="motivo-info-content">
+              <button class="close-btn" onclick="fecharCardinfo('motivo-info1')">X</button>
+              <h4>Apple Intelligence e macOS</h4>
+              <h1>Muito fácil de usar.<br>Muito fácil de amar.</h1>
+              <div class="motivo-info-body">
+                <div class="motivo-info-text">
+                  <p><strong>Feito para Apple Intelligence.</strong> A Apple Intelligence é o sistema de inteligência
+                    pessoal
+                    que ajuda você a escrever, se expressar e fazer de tudo facilmente. Com proteções de privacidade
+                    revolucionárias, você tem a segurança de que ninguém vai acessar seus dados, nem mesmo a Apple¹.</p>
+                </div>
+                <div class="motivo-info-image">
+                  <div class="motivo-info-image-container">
+                    <img src="Imagens_Mac/apple intelligence-card-info.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="motivo-info2" class="motivo-info">
+            <div class="motivo-info-content">
+              <button class="close-btn" onclick="fecharCardinfo('motivo-info2')">X</button>
+              <h4>Desempenho e bateria</h4>
+              <h1>Faça rápido. De qualquer lugar.</h1>
+              <div class="motivo-info-body">
+                <div class="motivo-info-text">
+                  <p><strong>Com a potência do chip da Apple.</strong> O chip da Apple traz desempenho e velocidade
+                    impressionantes para o Mac. Ele integra a CPU, a GPU e o Neural Engine com consumo eficiente de
+                    energia,
+                    e acelera tudo o que você faz. O chip garante o rendimento extraordinário da IA no Mac para melhorar
+                    sua
+                    produtividade e criatividade.
+                  </p>
+                </div>
+                <div class="motivo-info-image">
+                  <div class="motivo-info-image-container">
+                    <img src="Imagens_Mac/durabilidade-card-info.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="motivo-info3" class="motivo-info">
+            <div class="motivo-info-content">
+              <button class="close-btn" onclick="fecharCardinfo('motivo-info3')">X</button>
+              <h4>Mac e iPhone</h4>
+              <h1>O time dos sonhos.</h1>
+              <div class="motivo-info-body">
+                <div class="motivo-info-text">
+                  <p><strong>Use seu iPhone no Mac.</strong> Com o Espelhamento do iPhone, você vê seu aparelho no Mac e
+                    controla tudo, mesmo sem ele na mão4.
+                  </p>
+                </div>
+                <div class="motivo-info-image">
+                  <div class="motivo-info-image-container">
+                    <img src="Imagens_Mac/time-card-info.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="motivo-info4" class="motivo-info">
+            <div class="motivo-info-content">
+              <button class="close-btn" onclick="fecharCardinfo('motivo-info4')">X</button>
+              <h4>Compatibilidade</h4>
+              <h1>Seus apps favoritos estão no Mac.</h1>
+              <div class="motivo-info-body">
+                <div class="motivo-info-text">
+                  <p><strong>Os apps que você adora. Também no seu Mac.</strong> Microsoft 365, Adobe Creative Cloud,
+                    Zoom e
+                    muito mais2. Todos os seus apps rodam de forma ultrarrápida e fluida no Mac.
+                  </p>
+                </div>
+                <div class="motivo-info-image">
+                  <div class="motivo-info-image-container">
+                    <img src="Imagens_Mac/apps-card-info.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="motivo-info5" class="motivo-info">
+            <div class="motivo-info-content">
+              <button class="close-btn" onclick="fecharCardinfo('motivo-info5')">X</button>
+              <h4>Privacidade e segurança</h4>
+              <h1>Seus dados são só seus.</h1>
+              <div class="motivo-info-body">
+                <div class="motivo-info-text">
+                  <p><strong>Projetado para ajudar a proteger sua privacidade.</strong> Com o Mac, você tem a liberdade
+                    de
+                    escolher o que quer compartilhar e de que jeito. Você usa apps com mais segurança, protege seus
+                    dados e
+                    navega na web com mais tranquilidade. Com proteções de privacidade revolucionárias, a Apple
+                    Intelligence
+                    oferece a segurança de que ninguém vai acessar seus dados, nem mesmo a Apple. E, graças à Computação
+                    Privada na Nuvem, seus dados nunca são armazenados e são usados somente para processar suas
+                    solicitações.
+                  </p>
+                </div>
+                <div class="motivo-info-image">
+                  <div class="motivo-info-image-container">
+                    <img src="Imagens_Mac/seguranca-card-info.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
 
 
   </main>
