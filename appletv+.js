@@ -60,4 +60,12 @@ initAutoScroll('.carousel4', '.scroll4', { velocidadeNormal: 1.5, velocidadeHove
 
 
 
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  const question = item.querySelector(".faq-question");
+  question.addEventListener("click", () => {
+    item.classList.toggle("active");
+  });
+});
 
