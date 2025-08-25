@@ -201,7 +201,6 @@
   padding-left: 0.9cm;
   padding-right: 0.7cm;
   color: #1a1a1a;
-
 }
 
 .descricao {
@@ -346,22 +345,6 @@
   box-shadow: none;
 }
 
-/*
-  right: 2.5rem;
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  padding: 0;
-  cursor: pointer;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s ease;
-*/
-
 .cardinfo {
   position: fixed;
   top: 0;
@@ -379,39 +362,18 @@
 }
 
 .cardinfo-content {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   background-color: #ffffff;
   border-radius: 2rem;
   padding: 3.75rem 4rem 0 4rem;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   position: relative;
   min-height: fit-content;
 }
-
-/*
-position: absolute;
-bottom: 1.25rem;
-right: 1.25rem;
-width: 2rem;
-height: 2rem;
-background-color: rgba(255, 255, 255, 0.8);
-color: #1d1d1f;
-border: none;
-border-radius: 50%;
-font-size: 1.5rem;
-font-weight: 800;
-cursor: pointer;
-display: flex;
-align-items: center;
-justify-content: center;
-box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.8);
-transition: all 0.3s ease;
-padding-bottom: 0.25rem;
-*/
 
 .close-btn {
   position: absolute;
@@ -650,7 +612,7 @@ padding-bottom: 0.25rem;
   z-index: 5000;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(1rem) scale(0.98);
+  transform: translateY(-1rem) scale(0.98);
   transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
   pointer-events: none;
 }
@@ -664,18 +626,14 @@ padding-bottom: 0.25rem;
 
 .mac-menu-container {
   background-color: #f5f5f7;
-  padding-left: 13rem;
 }
 
 .mac-menu {
   max-width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}
-
-.menu-explorar {
-  margin-left: 4rem;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
 }
 
 .menu-explorar h3 {
@@ -716,10 +674,6 @@ padding-bottom: 0.25rem;
   color: rgb(0, 0, 0);
 }
 
-.menu-comprar-mais {
-  margin-left: 10rem;
-}
-
 .menu-comprar-mais h3 {
   font-size: 0.75rem;
   font-weight: 450;
@@ -730,7 +684,6 @@ padding-bottom: 0.25rem;
 .menu-comprar-mais ul {
   list-style: none;
 }
-
 
 .menu-comprar-mais a {
   font-size: 0.75rem;
@@ -759,29 +712,13 @@ padding-bottom: 0.25rem;
   pointer-events: none;
 }
 
-.menu-explorar a,
-.menu-comprar-mais a {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.menu-explorar li,
-.menu-comprar-mais li {
-  width: 100%;
-}
-
-.mac-menu {
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-}
-
 .mac-menu-container {
-  padding-left: 10rem;
+  padding-left: 15rem;
 }
 
 .menu-explorar {
   margin-left: 2rem;
+  margin-right: 3rem;
 }
 
 .conheca-familia {
@@ -1020,27 +957,392 @@ padding-bottom: 0.25rem;
   transition: transform 0.3s ease;
 }
 
+.motivos-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.4rem;
+  padding-top: 1rem;
+  margin-bottom: 15rem;
+}
 
+.motivo-card {
+  background-color: #ffffff;
+  border-radius: 1.8rem;
+  width: 25rem;
+  height: 19rem;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: auto;
+  transition: transform 0.3s ease;
+  box-shadow: none;
+  border-top: 1px solid transparent;
+  position: relative;
+}
 
-/*  font-size: 18px;
-  text-decoration: none;
-  transition: 0.3s;
-  border: 1px solid transparent;
-  vertical-align: middle;
-  background-color: #0071e3;
+.motivo-card:hover {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: translate(-0.1rem, -0.15rem);
+}
+
+.motivos-carousel {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+
+.motivos-carousel .iphone-scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 0 5rem;
+  scroll-padding: 5rem;
+  scroll-snap-type: x mandatory;
+  -ms-touch-action: pan-x;
+  touch-action: pan-x;
+  overscroll-behavior-x: contain;
+}
+
+.motivos-carousel .iphone-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.motivos-carousel .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.motivos-carousel .arrow.left {
+  left: 15px;
+}
+
+.motivos-carousel .arrow.right {
+  right: 15px;
+}
+
+.motivos-carousel .arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
   color: #f4f4f0;
-}*/
+}
+
+.motivo-icon {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1d1d1f;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  padding-bottom: 0.25rem;
+}
+
+.motivo-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f4f4f0;
+  box-shadow: none;
+}
+
+.motivo-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 9999;
+  padding: 8rem 1rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(1rem);
+}
+
+#motivo-info3 {
+  padding: 5rem 1rem !important;
+}
+
+.motivo-info-content {
+  max-width: 50rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding: 4.5rem 4rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: fit-content;
+}
+
+.motivo-info-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 2rem 0 0;
+}
+
+.motivo-info-text {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  padding: 0;
+}
+
+.motivo-info-text p {
+  color: #1d1d1f;
+  line-height: normal;
+  margin-bottom: 2.5rem;
+}
+
+.motivo-info-text a {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.motivo-info-content h1 {
+  font-size: 3rem;
+  font-weight: 650;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+
+.motivo-info-content h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.escuro2 {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.5rem 1.5rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.frase-escuro2 {
+  text-align: left;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin: 0 1.5rem;
+  color: #1a1a1a;
+}
+
+.imagem-motivo {
+  margin: 2.5rem 2rem 0.25rem 2rem;
+  display: flex;
+}
 
 
-
-/*
-color: #0076ed;*/
-
-
-
+.imagem-motivo img {
+  width: auto;
+  height: auto;
+}
 
 
+.companheiros-caixa {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  height: 95%;
+}
 
+.companheiros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: space-around;
+  padding: 7.5rem;
+  border-radius: 1.75rem;
+  background-color: #f5f5f5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: all 0.2s ease-out;
+  text-align: left;
+  width: 90%;
+  height: 45rem;
+  background-size: 60%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.companheiros.ipadIphone {
+  background-image: url(Imagens_Mac/mac_e_iPhone.jpg);
+}
+
+.companheiros.ipadMac {
+  background-image: url(Imagens_Mac/mac_e_iPad.jpg);
+}
+
+.companheiros.ipadAppleWatch {
+  background-image: url(Imagens_Mac/mac_e_watch.jpg);
+}
+
+.texto-companheiros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  border-bottom: 0.8px solid #ccc;
+  padding: 15px 0;
+  cursor: pointer;
+  width: 35%;
+  line-height: 25px;
+}
+
+#ultimoitem {
+  border: none;
+
+}
+
+.texto-companheiros h2 {
+  font-size: 1.85rem;
+  font-weight: 600;
+}
+
+.texto-companheiros p {
+  display: none;
+  margin-top: 1rem;
+  color: #222111;
+  transition: all 0.2s ease;
+}
+
+.texto-companheiros.active p {
+  display: block;
+  animation: 0.5s aparecer forwards;
+
+
+}
+
+.texto-companheiros.active#ultimoitem p {
+  animation: 0.5s aparecer-ultimoitem forwards;
+}
+
+.texto-companheiros .arrow-icon {
+  font-size: 1.5rem;
+  color: #8d8d8d;
+  font-weight: bold;
+  transform: rotate(180deg) translateX(-12px);
+  transition: 0.33s ease-in-out;
+}
+
+.texto-companheiros .arrow-icon:hover {
+  color: #6f6e6e;
+}
+
+.texto-companheiros.active .arrow-icon {
+  transform: rotate(0deg) translateX(12px);
+}
+
+
+.frase-escuro3 {
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin: 0 1.5rem;
+  color: #1a1a1a;
+}
+
+.container-final {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.4rem;
+  margin: 0 5rem;
+}
+
+.cardsfinal-content {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.cardfinal {
+  box-sizing: border-box;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: #f5f5f7;
+  border-radius: 2rem;
+  height: 39rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 2rem;
+  padding-bottom: 14rem;
+}
+
+.cardfinal .conteudo-texto {
+  margin: 0 auto;
+
+}
+
+
+.imagem-final {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.8rem;
+  width: 110%;
+  pointer-events: none;
+}
+
+.imagem-final img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cardsfinal-content:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+}
 
 /* -----------------------------
    SF Pro Text

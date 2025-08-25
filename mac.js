@@ -138,6 +138,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+document.querySelectorAll('.motivo-icon').forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const id = btn.getAttribute('data-motivo');
+    abrirCardinfo(id);
+  });
+});
+
+
+document.querySelectorAll('.motivo-card').forEach((card, index) => {
+  card.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('motivo-icon')) {
+      const id = `motivo-info${index + 1}`;
+      abrirCardinfo(id);
+    }
+  });
+});
+
+
 const macBtn = document.getElementById('mac-menu-btn');
 const macMenu = document.getElementById('mac-menu');
 const header = document.querySelector('header');
@@ -244,3 +264,42 @@ if (macBtn && macMenu && header) {
 
 
 window.addEventListener('scroll', quickHideMacMenu);
+
+const primeiroitem = document.getElementById('ipad-e-iphone')
+primeiroitem.classList.add('active');
+const textoCompanheiros = document.querySelectorAll('.texto-companheiros');
+const companheiros = document.querySelector('.companheiros')
+
+companheiros.classList.add('ipadIphone');
+// efeito do texto dropdown
+
+textoCompanheiros.forEach((texto) => {
+  texto.addEventListener('click', () => {
+    // se já estiver ativo, desativa
+    if (texto.classList.contains('active')) {
+      texto.classList.toggle('active');
+      companheiros.classList.remove('ipadMac', 'ipadAppleWatch');
+    } else {
+      // desativa todos os outros e ativa o clicado
+      textoCompanheiros.forEach((el) => el.classList.remove('active'));
+      texto.classList.toggle('active');
+
+      switch (texto.id) {
+        case 'ipad-e-iphone':
+          companheiros.classList.remove('ipadMac', 'ipadAppleWatch');
+          companheiros.classList.add('ipadIphone');
+          break;
+
+        case 'ipad-e-mac':
+          companheiros.classList.remove('ipadAppleWatch');
+          companheiros.classList.add('ipadMac');
+          break;
+
+        default:
+          companheiros.classList.remove('ipadMac');
+          companheiros.classList.add('ipadAppleWatch');
+          break;
+      }
+    }
+  });
+});
