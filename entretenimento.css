@@ -281,7 +281,7 @@ color: #f4f0f0;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #f4f0f0;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
@@ -339,11 +339,11 @@ color: #f4f0f0;
   margin: 0 auto;
   text-align: center;
   font-size: 14px;
-  color: #f4f0f0;
+  color: #ffffff;
 }
 
 .barra-anuncio a {
-  color: #f4f0f0;
+  color: #ffffff;
   animation: color 1s ease-in-out 1.8s forwards;
   display: inline-flex;
   align-items: center;
@@ -352,7 +352,7 @@ color: #f4f0f0;
 
 @keyframes color {
   0% {
-    color: #f4f0f0;
+    color: #ffffff;
   }
   100% {
     color: #0071e3;
@@ -389,7 +389,7 @@ color: #f4f0f0;
   margin-top: 5rem;
   text-align: center;
   font-size: 60px;
-  color: #f4f0f0;
+  color: #ffffff;
   font-family: 'SF Pro Display', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.1;
   letter-spacing: -0.058em
@@ -410,14 +410,14 @@ color: #f4f0f0;
 
 .slogan2 .linha1 {
   font-size: 1.5rem;
-  color: #f4f0f0;
+  color: #ffffff;
   line-height: 1.4;
   font-weight: 600;
 }
 
 .slogan2 .linha2 {
   font-size: 1.5rem;
-  color: #f4f0f0;
+  color: #ffffff;
   line-height: 1.4;
   font-weight: 600;
   margin-top: -5.5px;
@@ -425,7 +425,7 @@ color: #f4f0f0;
 
 .slogan2 .linha3 {
   font-size: 1.5rem;
-  color: #f4f0f0;
+  color: #ffffff;
   line-height: 1.4;
   font-weight: 600;
   margin-top: -5.5px;
@@ -450,7 +450,7 @@ color: #f4f0f0;
 }
 
 .texto-anuncio2 p {
-    color: #f4f0f0;
+    color: #ffffff;
     font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
@@ -467,11 +467,11 @@ color: #f4f0f0;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #f4f0f0;
+  border: 1px solid #ffffff;
   border-radius: 25px;
   outline: none;
   overflow: hidden;
-  color: #f4f0f0;
+  color: #ffffff;
   transition: color 0.3s 0.1s ease-out;
   text-align: center;
   width: fit-content;
@@ -499,8 +499,8 @@ color: #f4f0f0;
 }
 
 .botao1:hover {
-  color: #f4f0f0;
-  border: 1px solid #f4f0f0;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .botao1:hover::before {
@@ -674,11 +674,11 @@ color: #f4f0f0;
   display: flex;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #f4f0f0;
+  border: 1px solid #ffffff;
   border-radius: 25px;
   outline: none;
   overflow: hidden;
-  color: #f4f0f0;
+  color: #ffffff;
   text-align: center;
   flex-shrink: 0;
   margin-bottom: 0;
@@ -702,8 +702,8 @@ color: #f4f0f0;
 }
 
 .botao-video:hover {
-  color: #f4f0f0;
-  border-color: #f4f0f0;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .botao-video:hover::before {
@@ -731,7 +731,7 @@ color: #f4f0f0;
   border-radius: 25px;
   outline: none;
   overflow: hidden;
-  color: #f4f0f0;
+  color: #ffffff;
   text-align: center;
   white-space: nowrap;
   flex-shrink: 0;
@@ -744,7 +744,7 @@ color: #f4f0f0;
 }
 
 .fundobranco {
-  background-color: #f4f0f0;
+  background-color: #ffffff;
 }
 
 
@@ -1168,7 +1168,7 @@ color: #f4f0f0;
     .botaoaovivo {
     padding: 4px 20px;
     background-color: #FF4D45;
-    color: #f4f0f0;
+    color: #ffffff;
     border: none;
     font-size: 12px;
     font-weight: 600;
@@ -1191,12 +1191,12 @@ color: #f4f0f0;
 }
 
 .botaoaovivo p {
-    color: #f4f0f0;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
 .botaoaovivo p:hover {
-    color: rgba(244, 240, 240, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -1483,7 +1483,7 @@ color: #f4f0f0;
 .botao-video2 {
   padding: 12px 22px;
   background-color: #202020;
-  color: #f4f0f0;
+  color: #ffffff;
   border: none;
   font-size: 1rem;
   font-weight: 600;
@@ -1743,7 +1743,7 @@ color: #f4f0f0;
 .botao-video3 {
   padding: 12px 22px;
   background-color: #202020;
-  color: #f4f0f0;
+  color: #ffffff;
   border: none;
   font-size: 1rem;
   font-weight: 600;
@@ -1815,7 +1815,7 @@ color: #f4f0f0;
 .botaotestegratuito {
     padding: 12px 22px;
     background-color: #202020;
-    color: #f4f0f0;
+    color: #ffffff;
     border: none;
     font-size: 17px;
     font-weight: 600;
