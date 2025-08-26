@@ -234,14 +234,14 @@ nav {
     margin-left: 13.5%;
     font-weight: 500;
     font-size: 20px;
-    color: #f4f0f0;
+    color: #ffffff;
 }
 
 
 .botaoteste {
     padding: 5px 12px;
     margin-right: 9vw;
-    background-color: #f4f4f0;
+    background-color: #ffffff;
     color: #1d1d1f;
     border: none;
     font-size: 12px;
@@ -262,7 +262,7 @@ nav {
 }
 
 .botaoteste:hover {
-    background-color: rgba(244, 244, 240, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .botaoteste a {
@@ -278,7 +278,7 @@ nav {
 
 .botaoteste2 {
     padding: 18px 32px;
-    background-color: #f4f4f0;
+    background-color: #ffffff;
     color: #1d1d1f;
     border: none;
     font-size: 18px;
@@ -298,7 +298,7 @@ nav {
 }
 
 .botaoteste2:hover {
-    background-color: rgba(244, 244, 240, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .botaoteste2 a {
@@ -337,7 +337,7 @@ nav {
     line-height: 1.0555555556;
     font-weight: 700;
     letter-spacing: -0.10em;
-  color: #f4f4f0;
+  color: #ffffff;
   padding-left: 15%;
 }
 
@@ -350,7 +350,7 @@ nav {
   padding-top: 20%;
   text-align: left;
   font-size: 22px;
-  color: #f4f4f0;
+  color: #ffffff;
   line-height: 1.1;
 }
 .slogan2 h1 {
@@ -362,7 +362,7 @@ nav {
   padding-top: 60px;
   text-align: left;
   font-size: 22px;
-  color: #f4f4f0;
+  color: #ffffff;
   line-height: 1.1;
 }
 .slogan3 h1 {
@@ -374,7 +374,7 @@ nav {
   padding-top: 60px;
   text-align: left;
   font-size: 22px;
-  color: #f4f4f0;
+  color: #ffffff;
   line-height: 1.1;
 }
 .slogan4 h1 {
@@ -410,18 +410,18 @@ nav {
     margin: 0 auto;
     text-align: center;
     font-size: 14px;
-    color: #f4f0f0;
+    color: #ffffff;
 }
 
 .barra-anuncio a {
-    color: #f4f0f0;
+    color: #ffffff;
     text-decoration: none;
     animation: color 1s ease-in-out 1.8s forwards;
 }
 
 @keyframes color {
   0% {
-    color: #f4f0f0;
+    color: #ffffff;
   }
   100% {
     color: #0071e3;
@@ -453,7 +453,7 @@ nav {
 .card2 h3 {
   text-align: left;
   font-size: 16px;
-  color: #f4f4f0;
+  color: #ffffff;
   line-height: 1.1;
   font-weight: bold;
 }
@@ -462,7 +462,7 @@ nav {
   text-align: left;
   font-size: 35px;
   font-weight: bold;
-  color: #f4f4f0;
+  color: #ffffff;
   line-height: 1.1;
   padding-top: 10px;
 }
@@ -470,7 +470,7 @@ nav {
 .descricao {
   text-align: left;
   font-size: 17px;
-  color: rgba(244, 244, 240, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
   padding-top: 15px;
   padding-bottom: 20px;
@@ -526,7 +526,7 @@ nav {
 .btn {
     padding: 12px 22px;
     margin: 10px;
-    background-color: #f4f0f0;
+    background-color: #ffffff;
     color: #000;
     border: none;
     font-size: 15px;
@@ -546,13 +546,13 @@ nav {
 }
 
 .btn:hover {
-    background-color: rgba(244, 244, 240, 0.7)
+    background-color: rgba(255, 255, 255, 0.7)
 }
 
 .descricao2 {
   text-align: left;
   font-size: 17px;
-  color: rgba(244, 244, 240, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
   padding-top: 15px;
   padding-bottom: 20px;
@@ -561,7 +561,7 @@ nav {
 .descricao3 {
   text-align: left;
   font-size: 17px;
-  color: rgba(244, 244, 240, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
   padding-top: 15px;
   padding-bottom: 30px;
@@ -683,7 +683,7 @@ nav {
 
     .btn-prev svg,
     .btn-next svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next:hover,
@@ -830,11 +830,11 @@ nav {
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #f4f0f0;
+  border: 1px solid #ffffff;
   border-radius: 25px;
   outline: none;
   overflow: hidden;
-  color: #f4f0f0;
+  color: #ffffff;
   text-align: center;
   width: fit-content;
   left: 50%;
@@ -842,15 +842,15 @@ nav {
 }
 
 .botaocatalogo:hover {
-    color: rgba(244, 244, 240, 0.8);
-    border: 1px solid rgba(244, 244, 240, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 
 
 
 .fundobranco {
-  background-color: #f4f0f0;
+  background-color: #ffffff;
 }
 
 
