@@ -341,7 +341,7 @@ video.imagem-hero {
 }
 
 .motivos:hover {
-  transform: scale(1.01);
+  transform: translateY(-7.5px);
   cursor: pointer;
 }
 
@@ -372,11 +372,57 @@ video.imagem-hero {
 .conheca {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
   gap: 2rem;
   flex-wrap: nowrap;
   padding: 1rem;
-  overflow-x: hidden;
+  position: relative;
+}
+
+#carouselId {
+  transition: transform 0.85s ease-out;
+}
+
+.conheca-wrapper {
+  position: relative;
+  padding: 1rem 2 rem; 
+}
+
+.conheca-wrapper button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  color: black;
+  font-size: 1.25rem;
+  box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.175s ease;
+}
+.conheca-wrapper button#prevBtn {
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.conheca-wrapper button#nextBtn {
+  right: -1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.conheca-wrapper button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 1px 1px 4px 4px rgba(255, 255, 255, 0.3);
 }
 .card-conheca {
   display: flex;
@@ -470,7 +516,7 @@ a:hover {
 }
 
 .card img:hover {
-  transform: scale(1.02);
+  transform: translateY(-7.5px);
   cursor: pointer;
 }
 .card span {
@@ -538,7 +584,7 @@ a:hover {
 }
 
 .essenciais:hover {
-  transform: scale(1.015);
+  transform: translateY(-7.5px);
   cursor: pointer;
 }
 
@@ -862,10 +908,21 @@ a:hover {
     font-size: 2.5rem;
     text-align: center;
   }
+  .conheca {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+  }
 
+  #prevBtn, #nextBtn {
+    display: none !important;
+  }
   .essenciais-caixa {
     gap: 8rem;
   }
+
 }
 
 @media (max-width: 1000px) {
@@ -881,13 +938,7 @@ a:hover {
     flex-direction: column;
   }
   
-  .conheca {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    overflow-y: hidden;
-  }
+
   .companheiros {
     justify-content: flex-start;
     align-content: center;
