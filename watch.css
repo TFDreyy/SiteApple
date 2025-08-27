@@ -8,6 +8,53 @@
 main{
     background-color: #fff;
 }
+
+
+.barra-items-slide {
+    width: 100%;
+    z-index: 9990;
+    position: relative;
+}
+
+.slide-in-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    padding-bottom: 2rem;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 9999;
+    position: relative;
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(200px);
+                transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(200px);
+                transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .items{
     justify-content: center;
     gap: 3rem;
@@ -64,73 +111,170 @@ main{
 }
 .vid_cont{
     overflow: hidden;
-    max-height: 600px;
+    max-height: 650px;
+    width:auto;
     border-radius: 25px;
     margin: 60px;
 }
 .vid{
-    object-fit: cover; 
+    object-fit:fill; 
 }
+
+
+.card-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding-left: 50px;
+}
+.card-scroll {
+  display: flex;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 20px; 
+  padding: 20px 0;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;  
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+.card-scroll::-webkit-scrollbar {
+  display: none; 
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f4f4f0;
+}
+
+.arrow.left {
+  left: 15px;
+}
+
+.arrow.right {
+  right: 15px;
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.carousel1 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+  justify-content: flex-start;
+  text-align: inherit; 
+  height: 100%;
+  position: relative;
+  gap: 20px;
+}
+
+
+
 .cont_card{
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
     padding: 2rem;
+    max-height: 780px;
 }
-.card, .card1, .card2, .card3, .card4, .card5, .card6, .card7{   
+.card{   
     border-radius: 30px;
     overflow: hidden;
-    width: 344px;
-    height: 650px;
-    margin: 20px;
+    min-width: 360px;
+    height: 690px;
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+    
+
 }
-.card1{
-    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_health__b2yo83wkzoaa_medium.jpg");
-    color: #fff;
+.card img{
+    position: absolute;
+    z-index: 1;
+    object-fit: contain;
 }
-.card2{
-    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_fitness__b5owsglf0ieu_medium.jpg");
-    color: #000;
-}
-.card3{
-    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_connectivity__cwtqydvy2laq_medium.jpg");
-    color: #000;
-}
-.card4{
-    background-image: url("https://www.apple.com/v/watch/br/images/overview/consider/feature_safety__gln97xcew2em_large.jpg");
-    color: #000;
-}
-.card5{
-    background-image: url("https://www.apple.com/v/watch/br/images/overview/consider/feature_watch_and_iphone__fiq5g9njy5qy_large.jpg");
-    color: #000;
-}
-.card6{
-    background-image: url("https://www.apple.com/v/watch/br/images/overview/consider/feature_personalization__f8bl9mx85j22_large.jpg");
-    color: #000;
+.card7 img{
+    position: absolute;
+    z-index: 1;
 }
 .card7{
-    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_adventure__d4xvmn7guk02_large.jpg");
-    color: #000;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 360px;
+    height: 690px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
-.card1:hover {
+
+.card7texto {
+    color: #f4f4f0;
+    position: absolute;
+    z-index: 3;
+}
+
+.card7::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+    z-index: 2;
+    width: 360px;
+    height: 690px;
+}
+
+.card:hover {
   transform: translateY(-10px);
 }
-.card1, .card2, .card3, .card4, .card5, .card6, .card7 p{
+.card7:hover {
+  transform: translateY(-10px);
+}
+.card p{
     text-align: left;
     text-decoration: none;
     font-size: 0.6rem;
     padding: 0.5cm;
     padding-left: 0.8cm;
     font-weight: 300;
+    z-index: 4;
+    position: absolute;
 }
-.card1, .card2, .card3, .card4, .card5, .card6, .card7 h2{
+.card h2{
     text-align: left;
     font-size: 1.0rem;
     padding-left: 0.8cm;
     padding-right: 0.7cm;
     font-weight: 600;
+    z-index: 4;
+    position: absolute;
 }
 .boxes{
     display: flex;
@@ -150,7 +294,7 @@ main{
     transition: transform 0.3s ease;
 }
 .box img:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
 }
 .box h3{
     justify-content: center;
@@ -206,6 +350,7 @@ main{
 .t_box p{
     font-size: 0.8rem;
     padding-bottom: 20px;
+    line-height: 13px;
 }
 .cont_t_card{
     display: flex;
@@ -214,56 +359,97 @@ main{
     flex-wrap: wrap;
     padding: 2rem;
     background-color: #f4f0f0;
+
 }
 .t_card{
     background-color: #fff;
     border-radius: 30px;
     justify-content: left;
     padding: 30px;
-    width: 380px;
+    min-width: 380px;
 }
 .t_card h2{
     font-size: 2rem;
 }
 .t_card p{
     padding-top: 15px;
+    
 }
 .o_cont_card{
     display: flex;
     justify-content: center;
-    gap: 0.6rem;
     flex-wrap: wrap;
-    padding: 2rem;
 }
 .o_card{
     border-radius: 30px;
     margin: 20px;
     padding-top: 20px;
-    width: 500px;
+    width: 600px;
+    height: 650px;
     background-color: #f4f0f0;
     text-align: center;
+    position: relative;
 }
-.oo_card{
-    border-radius: 30px;
-    margin: 20px;
-    padding-top: 20px;
-    width: 500px;
-    background-color: #f4f0f0;
-    text-align: center;
-}
-.o_cont_card img{
-    justify-content: end;
-    margin-top: 50px;
+.o_card img{
+    width: 600px;
+    height: 650px;
     object-fit: contain;
     flex: 1;
 }
-.o_card, .oo_card h2{
+.o_card h2 {
     font-size: 2rem;
     text-align: center;
-    margin-top: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
-.o_card, .oo_card p{
-    padding-top: 15px;
+
+.o_card p {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.o_card1{
+    border-radius: 30px;
+    margin: 20px;
+    padding-top: 20px;
+    width: 600px;
+    height: 650px;
+    background-color: #f4f0f0;
+    text-align: center;
+    position: relative;
+}
+
+.o_card1 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding-top: 224px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.o_card1 h2 {
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.o_card1 p {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .text_space{
@@ -273,6 +459,7 @@ main{
     font-size: 0.8rem;
     padding-top: 10px;
     padding-bottom: 10px;
+    line-height: 25px;
 }
 
 
