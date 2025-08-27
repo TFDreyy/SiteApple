@@ -84,7 +84,15 @@ input {
   backdrop-filter: blur(3px);
 }
 
-input::placeholder {
+
+
+input {
+  font-size: 0.75rem;
+  color: white;
+  font-weight: 700;
+}
+
+input::placeholder{
   color: rgba(255, 255, 255, 0.8)
 }
 .formulario-caixa button {
