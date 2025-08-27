@@ -61,7 +61,7 @@ window.addEventListener('scroll', () => {
 
 });
 
-  // ===== Modal CardInfo =====
+
   function abrirCardinfo(id) {
     const el = document.getElementById(id);
     if (el) {
@@ -98,7 +98,7 @@ window.addEventListener('scroll', () => {
     });
   });
 
-  // ===== Accordion =====
+
   function toggleAccordion(element, index) {
     const wasActive = element.classList.contains('active');
 
@@ -128,9 +128,9 @@ window.addEventListener('scroll', () => {
       }, 600);
     }
   }
-  window.toggleAccordion = toggleAccordion; // torna acessível no HTML
+  window.toggleAccordion = toggleAccordion; 
 
-  // ===== Carrossel =====
+
   const setupCarousel = (carouselId, leftId, rightId) => {
     const carousel = document.getElementById(carouselId);
     const leftArrow = document.getElementById(leftId);
@@ -168,7 +168,7 @@ window.addEventListener('scroll', () => {
 
   setupCarousel('carousel1', 'left1', 'right1');
 
-  // ===== Intersection Observer =====
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -189,7 +189,7 @@ let tooltipTimer;
 function showTooltip() {
   clearTimeout(tooltipTimer);
   iphoneTooltip.classList.remove('hidden');
-  void iphoneTooltip.offsetWidth; // força reflow
+  void iphoneTooltip.offsetWidth; 
   iphoneTooltip.classList.add('show');
 }
 
@@ -200,7 +200,7 @@ function hideTooltip() {
       if (!iphoneTooltip.classList.contains('show')) {
         iphoneTooltip.classList.add('hidden');
       }
-    }, 280); // igual ao tempo da transição
+    }, 280);
   }, 80);
 }
 
@@ -242,4 +242,4 @@ if (iphoneBtn && iphoneTooltip) {
       atualizarImagens();
     }
   }
-}); // << só fecha uma vez aqui no final
+}); 
