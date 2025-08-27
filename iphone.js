@@ -1,4 +1,67 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("videoMac");
+const toggleButton = document.getElementById("videoToggle");
+const toggleIcon = document.getElementById("toggleIcon");
+
+function togglePlayPause() {
+  if (video.paused) {
+    video.play();
+    toggleIcon.src = "imagens_Mac/toggle-pause.png";
+  } else {
+    video.pause();
+    toggleIcon.src = "imagens_Mac/toggle-play.png";
+  }
+}
+
+toggleButton.addEventListener("click", togglePlayPause);
+video.addEventListener("click", togglePlayPause);
+
+const videoBox = document.querySelector('.caixa-video');
+
+const screenHeight = window.innerHeight;
+
+const startScroll = screenHeight * (390 / 1080);
+const maxScroll = screenHeight * (1200 / 1080);
+
+const minWidth = 87;
+const minHeight = 85;
+const baseHeight = 90;
+
+function easeOutQuad(x) {
+  return 1 - (1 - x) * (1 - x);
+}
+
+window.addEventListener('scroll', () => {
+  let scrollY = window.scrollY;
+
+  if (scrollY < startScroll) {
+    videoBox.style.width = '100%';
+    videoBox.style.height = `${baseHeight}vh`;
+    videoBox.style.transform = 'translateX(0)';
+    return;
+  }
+
+  let progress = Math.min((scrollY - startScroll) / (maxScroll - startScroll), 1);
+  progress = easeOutQuad(progress);
+
+  let newWidth = 100 - (100 - minWidth) * progress;
+  let newHeight = baseHeight - (baseHeight - minHeight) * (progress * 0.5);
+
+  videoBox.style.width = `${newWidth}%`;
+  videoBox.style.height = `${newHeight}vh`;
+
+  if (newWidth > 100) {
+    let offset = (newWidth - 100) / 2;
+    videoBox.style.transform = `translateX(-${offset}%)`;
+  } else {
+    videoBox.style.transform = 'translateX(0)';
+  }
+  let newRadius = 0 + (4.5 - 1.5) * progress;
+  videoBox.style.borderRadius = `${newRadius}rem`;
+
+});
+
+  // ===== Modal CardInfo =====
   function abrirCardinfo(id) {
     const el = document.getElementById(id);
     if (el) {
@@ -15,18 +78,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  document.querySelectorAll(".card-icon").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const targetId = btn.getAttribute("data-cardinfo");
+      if (targetId) abrirCardinfo(targetId);
+    });
+  });
+
+  document.querySelectorAll(".close-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const targetId = btn.closest(".cardinfo")?.id;
+      if (targetId) fecharCardinfo(targetId);
+    });
+  });
+
+  document.querySelectorAll('.cardinfo').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.target === card) fecharCardinfo(card.id);
+    });
+  });
+
+  // ===== Accordion =====
   function toggleAccordion(element, index) {
     const wasActive = element.classList.contains('active');
-    
+
     document.querySelectorAll('.accordion-item').forEach(item => {
       item.classList.remove('active');
       item.querySelector('.accordion-arrow').setAttribute('aria-expanded', 'false');
     });
-    
+
     if (!wasActive) {
       element.classList.add('active');
       element.querySelector('.accordion-arrow').setAttribute('aria-expanded', 'true');
-      
+
       const image = document.getElementById('integration-image');
       const images = [
         'imagens iphone/iphonemac.jpg.png',
@@ -34,48 +118,57 @@ document.addEventListener("DOMContentLoaded", () => {
         'imagens iphone/iphoneairpods-removebg-preview.png',
         'imagens iphone/iphoneipad-removebg-preview.png'
       ];
-      
+
       if (image && images[index]) {
         image.src = images[index];
       }
-
 
       setTimeout(() => {
         element.classList.remove('animate-darkmode');
       }, 600);
     }
   }
+  window.toggleAccordion = toggleAccordion; // torna acessível no HTML
 
-
+  // ===== Carrossel =====
   const setupCarousel = (carouselId, leftId, rightId) => {
+    const carousel = document.getElementById(carouselId);
+    const leftArrow = document.getElementById(leftId);
+    const rightArrow = document.getElementById(rightId);
 
+    if (!carousel || !leftArrow || !rightArrow) return;
+
+    const updateArrowVisibility = () => {
+      const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+      leftArrow.style.visibility = carousel.scrollLeft <= 1 ? 'hidden' : 'visible';
+      rightArrow.style.visibility = carousel.scrollLeft >= maxScrollLeft - 1 ? 'hidden' : 'visible';
+    };
+
+    const getScrollAmount = () => {
+      const card = carousel.querySelector('.iphone-card');
+      if (!card) return 300;
+      const cardWidth = card.offsetWidth;
+      const cardGap = parseInt(getComputedStyle(carousel).gap) || 0;
+      return cardWidth + cardGap;
+    };
+
+    leftArrow.addEventListener("click", () => {
+      carousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+    });
+
+    rightArrow.addEventListener("click", () => {
+      carousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+    });
+
+    carousel.addEventListener("scroll", updateArrowVisibility);
+    window.addEventListener("resize", updateArrowVisibility);
+
+    updateArrowVisibility();
   };
 
-
   setupCarousel('carousel1', 'left1', 'right1');
-  setupCarousel('carousel2', 'left2', 'right2');
 
-
-  document.querySelectorAll('.card-icon, .card-icon2').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const cardinfoId = btn.getAttribute('data-cardinfo');
-      if (cardinfoId) {
-        abrirCardinfo(cardinfoId);
-      }
-    });
-  });
-
-
-  document.querySelectorAll('.cardinfo').forEach(card => {
-    card.addEventListener('click', (e) => {
-      if (e.target === card) {
-        fecharCardinfo(card.id);
-      }
-    });
-  });
-
-
+  // ===== Intersection Observer =====
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -88,57 +181,54 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 
+const iphoneBtn = document.getElementById('iphone-menu-btn');
+const iphoneTooltip = document.getElementById('iphone-tooltip');
 
-  const iphoneBtn = document.getElementById('iphone-menu-btn');
-  const iphoneMenu = document.getElementById('iphone-menu');
-  const body = document.body;
-  let menuTimer;
+let tooltipTimer;
 
-  const showMenu = () => {
-    clearTimeout(menuTimer);
-    body.classList.add('body-blur');
-    iphoneMenu.style.display = 'block';
+function showTooltip() {
+  clearTimeout(tooltipTimer);
+  iphoneTooltip.classList.remove('hidden');
+  void iphoneTooltip.offsetWidth; // força reflow
+  iphoneTooltip.classList.add('show');
+}
+
+function hideTooltip() {
+  tooltipTimer = setTimeout(() => {
+    iphoneTooltip.classList.remove('show');
     setTimeout(() => {
-      iphoneMenu.classList.add('show');
-    }, 10);
-  };
+      if (!iphoneTooltip.classList.contains('show')) {
+        iphoneTooltip.classList.add('hidden');
+      }
+    }, 280); // igual ao tempo da transição
+  }, 80);
+}
 
-  const hideMenu = () => {
-    menuTimer = setTimeout(() => {
-      iphoneMenu.classList.remove('show');
-      setTimeout(() => {
-        iphoneMenu.style.display = 'none';
-        body.classList.remove('body-blur');
-      }, 300);
-    }, 300);
-  };
+if (iphoneBtn && iphoneTooltip) {
+  iphoneBtn.addEventListener('mouseenter', showTooltip);
+  iphoneTooltip.addEventListener('mouseenter', showTooltip);
+  iphoneBtn.addEventListener('mouseleave', hideTooltip);
+  iphoneTooltip.addEventListener('mouseleave', hideTooltip);
+} 
+ const trilho = document.querySelector('.trilho');
 
-  if (iphoneBtn && iphoneMenu) {
-    iphoneBtn.addEventListener('mouseenter', showMenu);
-    iphoneMenu.addEventListener('mouseenter', showMenu);
-    iphoneBtn.addEventListener('mouseleave', hideMenu);
-    iphoneMenu.addEventListener('mouseleave', hideMenu);
-
-    iphoneBtn.addEventListener('click', (e) => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        if (iphoneMenu.classList.contains('show')) {
-          hideMenu();
-        } else {
-          showMenu();
-        }
+  function atualizarImagens() {
+    document.querySelectorAll("img[data-dark]").forEach(img => {
+      if (document.body.classList.contains("dark-mode")) {
+        img.dataset.light = img.dataset.light || img.src; 
+        img.src = img.dataset.dark; 
+      } else {
+        img.src = img.dataset.light || img.src; 
       }
     });
   }
-});
 
-const trilho = document.querySelector('.trilho');
-  const indicador = document.querySelector('.indicador');
-
-  if (trilho && indicador) {
+  if (trilho) {
     trilho.addEventListener('click', function() {
       document.body.classList.toggle('dark-mode');
       trilho.classList.toggle('dark');
+      atualizarImagens();
+
       if (document.body.classList.contains('dark-mode')) {
         localStorage.setItem('darkMode', 'enabled');
       } else {
@@ -149,5 +239,7 @@ const trilho = document.querySelector('.trilho');
     if (localStorage.getItem('darkMode') === 'enabled') {
       document.body.classList.add('dark-mode');
       trilho.classList.add('dark');
+      atualizarImagens();
     }
   }
+}); // << só fecha uma vez aqui no final
