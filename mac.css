@@ -1,30 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+
 .desconto {
-  color: #000000;
+  animation: animate-color 1s ease-in-out 1.8s forwards;
   font-size: 1rem;
   text-align: center;
-  background-color: #f5f5f7;
+  background-color: #0071e3;
   padding: 1rem;
-  box-sizing: border-box;
-  margin: 0;
-  width: 101vw;
-  margin-right: -1.25rem;
-  margin-left: -1.25rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
   letter-spacing: -0.02rem;
+  z-index: 1;
+  position: relative;
+}
+
+@keyframes color2 {
+  0% {
+    color: #ffffff;
+  }
+
+  100% {
+    color: #1a1a1a;
+  }
+}
+
+@keyframes animate-color {
+  0% {
+    background-color: #0071e3;
+  }
+
+  100% {
+    background-color: #f5f5f7;
+  }
 }
 
 .desconto h4 {
   font-weight: normal;
+  animation: color2 1s ease-in-out 1.8s forwards;
+  color: #ffffff;
 }
 
 .desconto a {
-  color: #0071e3;
+  color: #ffffff;
+  animation: color 1s ease-in-out 1.8s forwards;
   text-decoration: none;
   font-weight: normal;
   display: flex;
+}
+
+@keyframes color {
+  0% {
+    color: #ffffff;
+  }
+
+  100% {
+    color: #0071e3;
+  }
 }
 
 .desconto a:hover {
@@ -476,6 +516,9 @@
 
 .loja-navegacao {
   margin: 1.5rem 0 0.25rem 0;
+  z-index: 2;
+  position: relative;
+  background-color: #ffffff;
 }
 
 .produto-item {
@@ -1075,8 +1118,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   display: none;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 9999;
   padding: 8rem 1rem;
   box-sizing: border-box;
@@ -1256,7 +1298,7 @@
   font-size: 1.5rem;
   color: #8d8d8d;
   font-weight: bold;
-  transform: rotate(180deg) translateX(-0.75rem);
+  transform: scaleY(-1);
   transition: 0.33s ease-in-out;
 }
 
@@ -1265,7 +1307,7 @@
 }
 
 .texto-companheiros.active .arrow-icon {
-  transform: rotate(0deg) translateX(0.75rem);
+  transform: scaleY(1);
 }
 
 
