@@ -91,6 +91,19 @@
 
 }
 
+.card-eco {
+  background-color: #f5f5f7;
+  border-radius: 15px;
+  width: 400px;
+  height: 366px;
+  text-align: justify;
+  transition: transform 0.3s ease;
+  background-size: cover; 
+  background-position: center;  
+  background-repeat: no-repeat;
+  
+}
+
 .card-veio:hover,
 .card-NaoTaoVeio:hover,
 .card-MaisOuMenosRecente:hover {
@@ -157,6 +170,23 @@
 
 }
 
+.descricao2 {
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 0.5cm;
+    padding-left: 0.9cm;
+    color:#000000;
+
+}
+
+.subliverde {
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-size: 100% .2em;
+  background-image: url(imagens/sublinhado.svg);
+}
+
 .frase-impacto {
   text-align: left;
   font-size: 1.7rem;
@@ -191,7 +221,9 @@
   top: 60px;
 }
 
-
+.backgroundbranco{
+  background-color: white;
+}
 
 /* -----------------------------
    SF Pro Text
