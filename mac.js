@@ -303,3 +303,10 @@ textoCompanheiros.forEach((texto) => {
     }
   });
 });
+
+document.querySelectorAll('.motivo-info a').forEach(link => {
+  link.addEventListener('click', () => {
+    const overlay = link.closest('.motivo-info');
+    if (overlay) fecharCardinfo(overlay.id);
+  });
+});
