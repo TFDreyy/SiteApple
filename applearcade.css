@@ -271,14 +271,14 @@ nav {
 .game-info h2 {
   font-size: 2.5rem;
   text-align: justify;
-  color: #f4f0f0;
+  color: #ffffff;
 }
 
 .game-info h3 {
   font-size: 1.5rem;
   opacity: 0.8;
   text-align: justify;
-  color: #f4f0f0;
+  color: #ffffff;
 }
 
 .game-info p {
@@ -286,7 +286,7 @@ nav {
   line-height: 1.6;
   max-width: 500px;
   text-align: justify;
-  color: #f4f0f0;
+  color: #ffffff;
 }
 
 #Botao {
@@ -295,14 +295,14 @@ nav {
   font-weight: bold;
   border: none;
   background: #e93d3d;
-  color: #f4f0f0;
+  color: #ffffff;
   border-radius: 30px;
   cursor: pointer;
   width: fit-content;
 }
 #Botao a {
   text-decoration: none;
-  color: #f4f0f0;
+  color: #ffffff;
 }
 @keyframes heartbeat-normal {from { transform: scale(1); transform-origin: center center; animation-timing-function: ease-out; } 10% { transform: scale(0.91); animation-timing-function: ease-in; } 17% { transform: scale(0.98); animation-timing-function: ease-out; } 33% { transform: scale(0.87); animation-timing-function: ease-in; } 45% { transform: scale(1); animation-timing-function: ease-out;} }
 
@@ -329,7 +329,7 @@ nav {
   height: 50px;
   cursor: pointer;
   transition: background-color 0.3s;
-  border: #f4f0f0 2px solid;
+  border: #ffffff 2px solid;
   background: transparent;
   border-radius: 50px;
 }
@@ -439,7 +439,7 @@ nav {
 }
 
 .fundobranco {
-  background-color: #f4f0f0;
+  background-color: #ffffff;
 }
 
 .barraapple {
@@ -463,7 +463,7 @@ nav {
     margin-left: 13.5%;
     font-weight: 500;
     font-size: 20px;
-    color: #f4f0f0;
+    color: #ffffff;
 }
 
 .visaogeral {
@@ -472,7 +472,7 @@ nav {
   line-height: 22px;
   text-decoration: none;
   font-size: 12px;
-  color: #f4f0f0;
+  color: #ffffff;
   position: relative;
   z-index: 1002;
   bottom: -2px;
@@ -481,7 +481,7 @@ nav {
 }
 
 .visaogeral:hover {
-  color: #f4f0f0af;
+  color: #ffffffaf;
 }
 
 .barraapple-borda {
@@ -489,7 +489,7 @@ nav {
   display: block;
   width: 63px;
   height: 1px;
-  background-color: #f4f0f0;
+  background-color: #ffffff;
   position: absolute;
   bottom: -16px;
   left: 0;
@@ -497,7 +497,7 @@ nav {
 }
 
 .visaogeral:hover .barraapple-borda {
-  background-color: #f4f0f0af;
+  background-color: #ffffffaf;
 }
 
 .jogoslink {
@@ -505,7 +505,7 @@ nav {
   line-height: 22px;
   text-decoration: none;
   font-size: 12px;
-  color: #f4f0f0af;
+  color: #ffffffaf;
   position: relative;
   z-index: 1002;
   bottom: -2px;
@@ -514,14 +514,14 @@ nav {
 }
 
 .jogoslink:hover{
-  color: #f4f0f0;
+  color: #ffffff;
 }
 
 .botaoteste {
     padding: 5px 12px;
     margin-right: 9vw;
     background-color: #FF4D45;
-    color: #f4f0f0;
+    color: #ffffff;
     border: none;
     font-size: 12px;
     font-weight: 600;
@@ -546,12 +546,12 @@ nav {
 
 .botaoteste a {
     text-decoration: none;
-    color: #f4f0f0;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
 .botaoteste a:hover {
-    color: rgba(244, 240, 240, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -655,18 +655,18 @@ nav {
     margin: 0 auto;
     text-align: center;
     font-size: 14px;
-    color: #f4f0f0;
+    color: #ffffff;
 }
 
 .barra-anuncio a {
-    color: #f4f0f0;
+    color: #ffffff;
     text-decoration: none;
     animation: color 1s ease-in-out 1.8s forwards;
 }
 
 @keyframes color {
   0% {
-    color: #f4f0f0;
+    color: #ffffff;
   }
   100% {
     color: #0071e3;
@@ -770,7 +770,7 @@ nav {
     padding: 12px 22px;
     margin: 10px;
     background-color: #FF4D45;
-    color: #f4f0f0;
+    color: #ffffff;
     border: none;
     font-size: 1rem;
     font-weight: 600;
@@ -877,7 +877,7 @@ nav {
 .botaotestegratuito {
     padding: 16px 28px;
     background-color: #202020;
-    color: #f4f0f0;
+    color: #ffffff;
     border: none;
     font-size: 17px;
     font-weight: 600;
