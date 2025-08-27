@@ -1,15 +1,3 @@
-/* {
-  border: 1px solid red;
-}
-*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
 .desconto {
   color: #000000;
   font-size: 1rem;
@@ -18,7 +6,7 @@
   padding: 1rem;
   box-sizing: border-box;
   margin: 0;
-  width: 100vw;
+  width: 101vw;
   margin-right: -1.25rem;
   margin-left: -1.25rem;
   display: flex;
@@ -140,7 +128,7 @@
   background-color: #f4f0f0;
   border-radius: 1.8rem;
   width: 25rem;
-  height: 700px;
+  height: 43.75rem;
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -225,8 +213,8 @@
 .cards img {
   max-width: 80%;
   max-height: auto;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   border-top: auto;
 }
 
@@ -273,16 +261,16 @@
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
@@ -292,11 +280,11 @@
 }
 
 .mac-carousel .arrow.left {
-  left: 15px;
+  left: 1rem;
 }
 
 .mac-carousel .arrow.right {
-  right: 15px;
+  right: 1rem;
 }
 
 .mac-carousel .arrow:disabled {
@@ -315,7 +303,7 @@
   animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   z-index: 9999;
   position: relative;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(6.25rem, 1fr));
 }
 
 .card-icon {
@@ -460,8 +448,8 @@
 
 @-webkit-keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
+    -webkit-transform: translateX(12.5rem);
+    transform: translateX(12.5rem);
     opacity: 0;
   }
 
@@ -474,8 +462,8 @@
 
 @keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
+    -webkit-transform: translateX(12.5rem);
+    transform: translateX(12.5rem);
     opacity: 0;
   }
 
@@ -577,8 +565,8 @@
 .btn-comprar {
   background-color: #0066cc;
   color: white !important;
-  padding: 8px 12px;
-  border-radius: 18px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1.125rem;
   display: inline-block;
 }
 
@@ -586,18 +574,18 @@
   background-color: #0077ed;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .loja-links {
-    gap: 15px;
+    gap: 1rem;
   }
 
   .produto-item img {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
   }
 
   .produto-item p {
-    font-size: 11px;
+    font-size: 0.6875rem;
   }
 }
 
@@ -701,13 +689,13 @@
 .body-blur::before {
   content: '';
   position: fixed;
-  top: var(--nav-height, 60px);
+  top: var(--nav-height, 3.75rem);
   left: 0;
   width: 100vw;
-  height: calc(100vh - var(--nav-height, 60px));
+  height: calc(100vh - var(--nav-height, 3.75rem));
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(12px) saturate(1.1);
-  -webkit-backdrop-filter: blur(12px) saturate(1.1);
+  backdrop-filter: blur(0.75rem) saturate(1.1);
+  -webkit-backdrop-filter: blur(0.75rem) saturate(1.1);
   z-index: 2000;
   pointer-events: none;
 }
@@ -757,7 +745,7 @@
   display: flex;
   margin: 0 0 5rem 7.5rem;
   gap: 4.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   flex-wrap: wrap;
 }
 
@@ -873,7 +861,7 @@
 }
 
 .card-linha h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 750;
 }
 
@@ -951,18 +939,23 @@
   margin-left: auto;
 }
 
+.motivos-comprar {
+  padding-bottom: 15rem;
+}
+
 .card-resolve:hover {
   cursor: pointer;
   transform: scale(1.01);
   transition: transform 0.3s ease;
 }
 
+
 .motivos-cards {
   display: flex;
   flex-wrap: nowrap;
   gap: 1.4rem;
   padding-top: 1rem;
-  margin-bottom: 15rem;
+
 }
 
 .motivo-card {
@@ -1021,25 +1014,25 @@
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .motivos-carousel .arrow.left {
-  left: 15px;
+  left: 1rem;
 }
 
 .motivos-carousel .arrow.right {
-  right: 15px;
+  right: 1rem;
 }
 
 .motivos-carousel .arrow:hover {
@@ -1100,7 +1093,7 @@
   background-color: #ffffff;
   border-radius: 2rem;
   padding: 4.5rem 4rem;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -1183,7 +1176,7 @@
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   height: 95%;
 }
 
@@ -1225,10 +1218,10 @@
   justify-content: center;
   text-align: justify;
   border-bottom: 0.8px solid #ccc;
-  padding: 15px 0;
+  padding: 1rem 0;
   cursor: pointer;
   width: 35%;
-  line-height: 25px;
+  line-height: 1.5rem;
 }
 
 #ultimoitem {
@@ -1263,7 +1256,7 @@
   font-size: 1.5rem;
   color: #8d8d8d;
   font-weight: bold;
-  transform: rotate(180deg) translateX(-12px);
+  transform: rotate(180deg) translateX(-0.75rem);
   transition: 0.33s ease-in-out;
 }
 
@@ -1272,7 +1265,7 @@
 }
 
 .texto-companheiros.active .arrow-icon {
-  transform: rotate(0deg) translateX(12px);
+  transform: rotate(0deg) translateX(0.75rem);
 }
 
 
@@ -1343,6 +1336,117 @@
   transform: scale(1.01);
   transition: transform 0.3s ease;
 }
+
+.link-final {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #0071e3;
+  text-decoration: none;
+  letter-spacing: -0.02rem;
+}
+
+.link-final:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+}
+
+.escuro3 {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 1.5rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.frases-final {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.conheca-familia2 {
+  background-color: #f5f5f7;
+  overflow: auto;
+  margin-top: 10rem;
+}
+
+.menu-final {
+  display: flex;
+  top: 2.75rem;
+  left: 0;
+  width: 100%;
+  background: #f5f5f7;
+  padding: 0.5rem 5rem 10rem 5rem;
+  gap: 3.5rem;
+}
+
+.menu-explorar-final {
+  margin-right: 3.5rem;
+}
+
+.menu-explorar-final h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  margin-right: 7rem;
+  color: rgb(110, 110, 115);
+}
+
+.menu-explorar-final a {
+  font-size: 1.8rem;
+  font-weight: 625;
+  text-decoration: none;
+  color: #1d1d1f;
+  margin-top: 0.25rem;
+}
+
+.menu-explorar-final a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.menu-explorar-final ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.menu-explorar-final h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.menu-explorar-final h4:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.menu-comprar-final h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: rgb(110, 110, 115);
+}
+
+.menu-comprar-final ul {
+  list-style: none;
+}
+
+.menu-comprar-final a {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #1d1d1f;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu-comprar-final a:hover {
+  color: rgb(0, 0, 0);
+}
+
 
 /* -----------------------------
    SF Pro Text
