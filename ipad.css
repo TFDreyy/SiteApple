@@ -337,7 +337,7 @@ video.imagem-hero {
   overflow-wrap: break-word;
   transition: all ease 0.3s;
   text-align: left;
-  box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.2);
+  box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.6);
 }
 
 .motivos:hover {
@@ -407,6 +407,7 @@ video.imagem-hero {
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: 0.175s ease;
+  padding-bottom: 0.1em;
 }
 .conheca-wrapper button#prevBtn {
   left: 0px;
