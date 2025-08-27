@@ -227,12 +227,12 @@ main {
 .iphone-carousel {
   position: relative;
   width: 100%;
-  overflow: visible; /* Permite que o hover transborde */
+  overflow: visible; 
   display: flex;
   align-items: center;
   margin: 1.25rem 0;
   padding: 0 auto;
-  z-index: 1; /* Garante que fique acima de outros elementos */
+  z-index: 1; 
 }
 
 .arrow {
@@ -281,7 +281,7 @@ main {
   padding: 20px 0;
   width: 100%;
   -webkit-overflow-scrolling: touch;
-  overflow-y: visible; /* Permite hover para cima/baixo */
+  overflow-y: visible; 
   scrollbar-width: none;
   -ms-overflow-style: none;
   contain: none;
@@ -305,7 +305,7 @@ main {
   border-radius: 28px;
   position: relative;
   color: white;
-  overflow: hidden; /* Restaurado para cortar conteúdo fora do card */
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -318,7 +318,6 @@ main {
 
 .iphone-card:hover {
   transform: translateY(-5px);
-  /* Removido z-index: 100 */
   box-shadow: 0 8px 32px rgba(0,0,0,0.25);
 }
 
@@ -781,7 +780,7 @@ main {
   border-radius: 28px;
   position: relative;
   color: rgb(0, 0, 0);
-  overflow: hidden; /* Restaurado */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -797,7 +796,6 @@ main {
 .iphone-card2:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  /* Removido z-index: 100 */
 }
 .card-textos2 {
   display: flex;
@@ -858,7 +856,7 @@ main {
   border-radius: 28px;
   position: relative;
   color: white;
-  overflow: hidden; /* Restaurado */
+  overflow: hidden; 
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px;
@@ -871,7 +869,6 @@ main {
 
 .acessorio-card:hover {
   transform: translateY(-5px);
-  /* Removido z-index: 100 */
   box-shadow: 0 8px 32px rgba(0,0,0,0.22);
 }
 
@@ -1066,7 +1063,6 @@ main {
 
 
 
-/* Blur global quando menu está aberto */
 .body-blur::before {
   content: '';
   position: fixed;
@@ -1176,7 +1172,7 @@ main {
 
 .tooltip {
   position: absolute;
-  top: 40px; /* ajusta conforme seu header/nav */
+  top: 40px; 
   left: 50%;
   transform: translateX(-50%) translateY(10px);
   background: #1d1d1f;
@@ -1195,7 +1191,6 @@ main {
   display: none;
 }
 
-/* Estado visível */
 .tooltip.show {
   display: block;
   opacity: 1;
@@ -1203,7 +1198,6 @@ main {
   transform: translateX(-50%) translateY(0);
 }
 
-/* Container interno */
 .tooltip-container {
   animation: tooltipIn 0.28s ease forwards;
 }
@@ -1221,7 +1215,7 @@ main {
 .barra-items-slide {
     background-color: #f4f0f0; 
     width: 100%;
-    z-index: 3990; /* abaixo do menu suspenso */
+    z-index: 3990; 
     position: relative;
 }
 
@@ -1421,7 +1415,7 @@ body.dark-mode .acessorio-textos h5 {
   color: #ffffff !important;
   
 }
-/* Animação para o botão de dark mode */
+
 @keyframes darkmode-rotate {
   0% { transform: rotate(0deg) scale(1); }
   60% { transform: rotate(360deg) scale(1.15); }
@@ -1440,10 +1434,10 @@ body.dark-mode .acessorio-textos h5 {
   display: flex;
   align-items: center;
   padding: 8px;
-  z-index: 9999; /* Garante que fique acima de outros elementos */
+  z-index: 9999; 
 }
 
-/* Novo CSS para o parágrafo dentro do trilho */
+
 
 
 .trilho .indicador {
