@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Music - Apple (BR)</title>
     <link rel="stylesheet" href="applemusic.css">
-    <link rel="stylesheet" href="style_mac.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="shortcut icon" href="imagens/appleicon.ico" type="image/png">
@@ -32,7 +32,7 @@
                 <a href="história.html">História</a>
                 <a href="brasil.html">Brasil</a>
                 <a href="iphone.html">iPhone</a>
-                <a href="mac.html" id="mac-menu-btn">Mac</a>
+                <a href="mac.html">Mac</a>
                 <a href="ipad.html">iPad</a>
                 <a href="watch.html">Watch</a>
                 <a href="airpods.html">AirPods</a>
@@ -42,7 +42,7 @@
         </nav>
     </header>
 
-    <section class="depois-cabecalho">
+    <section class="depois-cabecalho" data-aos="fade-in">
         <div class="nome-app">
             <h4>Apple Music</h4>
         </div>
@@ -58,21 +58,46 @@
         </div>
 
         <section class="container-hero">
-            <div class="slogan" data-aos="fade-down">
-                <div class="logo-hero"><img src="Imagens_Music/icon_apple_music.png"></div>
-
-                <h1 data-aos="fade-up" data-aos-delay="800">Por amor</h1>
-                <h1 data-aos="fade-up" data-aos-delay="900">à música.</h1>
+            <div class="slogan" data-aos="fade-in" style="--delay: 1s;">
+                <div class="logo-hero">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361 96" class="music-logo">
+                        <path fill="#fff"
+                            d="m142.14441 78.62595v-53.76757h-.35449l-22.02344 53.76758h-8.4043l-22.07422-53.76758h-.35449v53.76758h-10.32812v-73.05762h13.11328l23.64355 58.22363h.40527l23.59277-58.22363h13.16309v73.05762h-10.3789z">
+                        </path>
+                        <path fill="#fff"
+                            d="m209.62585 78.62595h-10.47949v-9.01172h-.25391c-2.93555 6.37891-8.35352 9.97363-16.50488 9.97363-11.59375 0-18.68164-7.54395-18.68164-19.74512v-34.47851h10.93555v32.35254c0 8.10059 3.84766 12.4541 11.3916 12.4541 7.89844 0 12.65723-5.46777 12.65723-13.77051v-31.03613h10.93555v53.26172z">
+                        </path>
+                        <path fill="#fff"
+                            d="m239.59558 24.40232c12.4043 0 20.4541 6.88574 20.80859 16.70801h-10.27832c-.60742-5.16406-4.4043-8.4043-10.53027-8.4043-5.92383 0-9.87305 2.88574-9.87305 7.13867 0 3.34082 2.43066 5.61914 8.20215 6.93555l8.65723 1.97461c10.88574 2.53125 15.03711 6.78418 15.03711 14.47949 0 9.7207-9.0625 16.4043-21.61816 16.4043-13.31543 0-21.31543-6.53125-22.32812-16.65723h10.83496c1.0127 5.56934 4.80957 8.30371 11.49316 8.30371 6.58105 0 10.63184-2.73438 10.63184-7.08789 0-3.44336-1.97461-5.46875-7.79688-6.78516l-8.65723-2.02441c-10.12598-2.3291-15.13867-7.18945-15.13867-14.93555 0-9.51855 8.30371-16.0498 20.55566-16.0498z">
+                        </path>
+                        <path fill="#fff"
+                            d="m269.26257 11.3408c0-3.49414 2.83496-6.27832 6.32812-6.27832 3.54395 0 6.37988 2.78418 6.37988 6.27832 0 3.44238-2.83594 6.22656-6.37988 6.22656-3.49316 0-6.32812-2.78418-6.32812-6.22656zm.86035 14.02343h10.93555v53.26172h-10.93555z">
+                        </path>
+                        <path fill="#fff"
+                            d="m327.22742 43.69236c-1.11328-5.6709-5.36621-10.17676-12.50488-10.17676-8.45508 0-14.02441 7.03711-14.02441 18.47949 0 11.69531 5.62012 18.47949 14.12598 18.47949 6.7334 0 11.1377-3.69531 12.40332-9.87207h10.53125c-1.16504 11.34082-10.22754 19.03613-23.03613 19.03613-15.23926 0-25.16211-10.42969-25.16211-27.64355 0-16.91016 9.92285-27.59277 25.06055-27.59277 13.7207 0 22.07422 8.80957 23.03613 19.29004z">
+                        </path>
+                        <path fill="#fff"
+                            d="m43.8732 12.6988c2.73304-3.41843 4.58766-8.00841 4.09852-12.6988-4.00079.19894-8.88298 2.63946-11.70954 6.06057-2.53794 2.92966-4.78422 7.7118-4.19863 12.20557 4.49109.38958 8.97803-2.24481 11.80965-5.56734">
+                        </path>
+                        <path fill="#fff"
+                            d="m47.92068 19.14357c-6.52215-.3885-12.06756 3.70163-15.18223 3.70163-3.11637 0-7.88593-3.50585-13.0446-3.41137-6.71433.09862-12.94446 3.89497-16.3517 9.93291-7.00811 12.07887-1.84944 29.99609 4.96557 39.83367 3.30953 4.86696 7.29806 10.22584 12.55359 10.03336 4.96557-.19486 6.91187-3.2153 12.94775-3.2153 6.03144 0 7.78463 3.2153 13.04101 3.1179 5.45099-.09746 8.85883-4.86939 12.1683-9.74109 3.79665-5.54809 5.35085-10.90521 5.44862-11.1993-.09777-.0974-10.51105-4.0922-10.6076-16.07069-.09831-10.02977 8.17558-14.80048 8.56499-15.09633-4.67232-6.91041-11.97275-7.68961-14.5037-7.88539">
+                        </path>
+                    </svg>
+                </div>
+                <div class="h1s-amor">
+                    <h1 data-aos="fade-up" data-aos-delay="800">Por amor</h1>
+                    <h1 data-aos="fade-up" data-aos-delay="900">à música.</h1>
+                </div>
                 <p class="p_cinza" data-aos="fade-up" data-aos-delay="950">Mais de 100 milhões de músicas, sempre sem
                     comerciais.<br>Ouça som de alta qualidade com Áudio
                     Espacial¹ e Lossless².<br>Solte a voz com o Apple Music Sing. Tenha acesso exclusivo
                     a<br>entrevistas e shows ao vivo. E toque em todos os seus aparelhos,<br>on ou offline. Se você ama
                     música, este é seu app.</p>
-                <button class="button-slogan-hero" data-aos="fade-up" data-aos-delay="970">Teste grátis por um
+                <button class="button-slogan-hero" data-aos="fade-in">Teste grátis por um
                     mês*</button>
             </div>
             <div class="opcoes-hero">
-                <div class="assinatura">
+                <div class="assinatura" data-aos="fade-in" data-aos-delay="50">
                     <div class="titulo_e_linha">
                         <h2>Novas assinaturas<br>ganham 1 mês</h2>
                         <div class="linha-divisoria"></div>
@@ -81,7 +106,7 @@
                         21,90 por mês.</p>
                     <button class="button-opcoes">Teste gratuito*</button>
                 </div>
-                <div class="mes_de_graca">
+                <div class="mes_de_graca" data-aos="fade-in" data-aos-delay="100">
                     <div class="titulo_e_linha">
                         <h2>1 mês de graça<br> no Apple One</h2>
                         <div class="linha-divisoria"></div>
@@ -92,7 +117,7 @@
                     <button class="button-opcoes-link">Teste gratuito do Apple One³</button>
                     <ul class="link_simbolo"><a href="#">Comparar planos</a></ul>
                 </div>
-                <div class="estudante">
+                <div class="estudante" data-aos="fade-in" data-aos-delay="150">
                     <div class="titulo_e_linha">
                         <h2>Assinatura Universitária<br>com Apple TV+</h2>
                         <div class="linha-divisoria"></div>
@@ -104,14 +129,164 @@
             </div>
             <div class="faixa-hero">
                 <p class="p_cinza2">Ganhe 3 meses de Apple Music na compra de aparelhos qualificados◊.</p>
-                <div class="link_simbolo2"><a href="#"> Consultar os requisitos</a></div>
+                <div class="link_simbolo2"><a href="#"> Consultar os requisitos ></a></div>
             </div>
         </section>
 
-        <h2>Opaaaa</h2>
-        <p>ggyefyggyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-            g yyyyyyyyyyyyyyyyyyyyyyy j dcdchdhcih
-            iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+        <section class="container-main-cards">
+            <div class="main-cards">
+                <div class="card" id="card-audio">
+                    <div class="container-texto">
+                        <p class="p_cinza-cards">Qualidade de áudio</p>
+                        <div class="container-titulo-main">
+                            <h1 class="titulo-main-branco">Venha para uma</h1>
+                            <h1 class="titulo-main-branco">nova dimensão do som</h1>
+                        </div>
+                    </div>
+                    <div class="conteudo-hover" id="hover-audio">
+                        <div class="texto-hover">
+                            <p class="p_cinza-hover">Recursos integrados elevam as músicas a outro nível.
+                                Com <strong>Áudio Espacial e Dolby Atmos</strong> o som parece vir de todos
+                                os lados, envolvendo você¹. E o <strong>áudio Lossless</strong> preserva cada detalhe
+                                das gravações originais². Tenha uma grande experiência sonora toda vez que você ouvir.
+                            </p>
+                        </div>
+                        <div class="imagem-hover"><img src="Imagens_Music/hover-card-audio2.png"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-cards">
+                <div class="card" id="card-descoberta">
+                    <div class="container-texto">
+                        <p class="p_cinza-cards">Descoberta musical</p>
+                        <div class="container-titulo-main">
+                            <h1 class="titulo-main-degrade">Um mundo de</h1>
+                            <h1 class="titulo-main-degrade">músicas querendo</h1>
+                            <h1 class="titulo-main-degrade">conhecer você.</h1>
+                        </div>
+                    </div>
+                    <div class="conteudo-hover" id="hover-descoberta">
+                        <div class="texto-hover">
+                            <p class="p_cinza-hover">Curta <strong>mais de 100 milhões de músicas</strong> Ouça
+                                <strong>playlists personalizadas</strong> e as estações na aba Início, ou confira as
+                                novidades na estação Descobertas. Explore vários gêneros na aba Novo e receba
+                                notificações automáticas para não perder nada sobre suas bandas e vozes favoritas. Use o
+                                app Shazam para descobrir o que está tocando, salve nas suas playlists e não deixe
+                                nenhuma música boa escapar.
+                            </p>
+                        </div>
+                        <div class="imagem-hover"><img src="Imagens_Music/hover-card-descoberta.png"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-cards">
+                <div class="card" id="card-bastidor">
+                    <div class="container-texto">
+                        <p class="p_cinza-cards">Conteúdo exclusivo</p>
+                        <div class="container-titulo-main">
+                            <h1 class="titulo-main-branco">Os bastidores da música.</h1>
+                            <h1 class="titulo-main-branco">É por aqui.</h1>
+                        </div>
+                    </div>
+                    <div class="conteudo-hover" id="hover-bastidor">
+                        <div class="texto-hover">
+                            <p class="p_cinza-hover">Assista a shows ao vivo da primeira fila no <strong>Apple Music
+                                    Live</strong>. Acesse <strong>entrevistas</strong> que revelam as histórias por trás
+                                das músicas e artistas que você adora. Sintonize 24 horas por dia rádios locais e
+                                internacionais e <strong>programas</strong> e estações apresentadas por artistas. E
+                                explore os discos mais marcantes nos 100 melhores álbuns do Apple Music.
+                            </p>
+                            <a class="link_card" href="#">Ouça ao vivo de graça ></a>
+                        </div>
+                        <div class="imagem-hover"><img src="Imagens_Music/hover-card-bastidor.png"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-cards">
+                <div class="card" id="card-sing">
+                    <div class="container-texto">
+                        <p class="p_cinza-cards">Apple Music Sing</p>
+                        <div class="container-titulo-main">
+                            <h1 class="titulo-main-degrade">Agora é</h1>
+                            <h1 class="titulo-main-degrade">com vocês.</h1>
+                        </div>
+                    </div>
+                    <div class="conteudo-hover" id="hover-sing">
+                        <div class="texto-hover">
+                            <p class="p_cinza-hover">No <strong>Apple Music Sing</strong>, você e sua turma cantam
+                                juntos milhões de músicas. <strong>Letras em tempo real</strong> acompanham o ritmo e
+                                <strong>vocais ajustáveis</strong> dão o controle sobre o volume do vocalista — você
+                                escolhe se faz a voz principal ou a de fundo. A visualização em dueto exibe a parte de
+                                cada pessoa em lados opostos, para ninguém perder sua parte.
+                            </p>
+                        </div>
+                        <div class="imagem-hover"><img src="Imagens_Music/hover-card-sing.jpg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-cards">
+                <div class="card" id="card-playlist">
+                    <div class="container-texto">
+                        <p class="p_cinza-cards">Ouvir em Grupo</p>
+                        <div class="container-titulo-main">
+                            <h1 class="titulo-main-branco">Libere a</h1>
+                            <h1 class="titulo-main-branco">playlist para</h1>
+                            <h1 class="titulo-main-branco">a galera.</h1>
+
+                        </div>
+                    </div>
+                    <div class="conteudo-hover" id="hover-playlist">
+                        <div class="texto-hover">
+                            <p class="p_cinza-hover">Escute música com amigas e amigos de onde você estiver. Nas
+                                <strong>playlists colaborativas</strong>, você convida sua turma para adicionar, remover
+                                mudar a ordem e reagir às músicas, para interagir mesmo a quilômetros de distância7. E,
+                                no <strong>CarPlay com SharePlay</strong> , todo mundo pode contribuir na trilha sonora
+                                da viagem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-cards">
+                <div class="card" id="card-classic">
+                    <div class="container-texto">
+                        <p class="p_cinza-cards">Apple Music Classical</p>
+                        <div class="container-titulo-main">
+                            <h1 class="titulo-main-branco">O app definitivo</h1>
+                            <h1 class="titulo-main-branco">da música clássica.</h1>
+                        </div>
+                    </div>
+                    <div class="conteudo-hover" id="hover-classic">
+                        <div class="texto-hover">
+                            <p class="p_cinza-hover">O <strong>app Apple Music Classical </strong>é todo dedicado ao
+                                gênero clássico. Ouça o maior catálogo de música clássica do mundo com a mais alta
+                                qualidade de áudio disponível e aproveite uma ferramenta poderosa de busca, projetada
+                                especificamente para as nuances desse gênero. <strong>Tudo incluído na sua assinatura do
+                                    Apple Music.</strong>
+                            </p>
+                            <a class="link_card" href="#">Ouvir agora ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="aparelhos">
+                <div class="container-titulos">
+                    <h1 class="titulo-main-preto">O Apple Music toca</h1>
+                    <h1 class="titulo-main-degrade">em todos os seus</h1>
+                    <h1 class="titulo-main-degrade">aparelhos favoritos.</h1>
+                </div>
+            </div>!-->
+
+        </section>
+        <script src="applemusic.js"></script>
 </body>
+
+
 
 </html>
