@@ -8,7 +8,39 @@
 main{
     background-color: #fff;
 }
+body {
+    background-color: #ffffff;
+    color: #1d1d1f;
+}
 
+header {
+    background-color: #ffffff;
+    padding: 0 1.5rem;
+    height: 2.75rem;
+    display: flex;
+    width: 100%;
+}
+.items{
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.item{
+    margin-top: 1rem;
+    align-items: center;
+    text-align: center;
+    max-width: 180px;
+}
+.item img {
+  
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.item p{
+    font-weight: 500;
+    font-size: 0.77rem;
+    margin-top: 0.1rem;
+}
 
 .barra-items-slide {
     width: 100%;
@@ -55,27 +87,6 @@ main{
     }
 }
 
-.items{
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-}
-.item{
-    margin-top: 1rem;
-    align-items: center;
-    text-align: center;
-    max-width: 180px;
-}
-.item img {
-  
-  object-fit: cover;
-  margin-bottom: 0.5rem;
-}
-.item p{
-    font-weight: 500;
-    font-size: 0.77rem;
-    margin-top: 0.1rem;
-}
 .titulo{
     text-align: justify;
     padding-bottom: 5%;
@@ -99,7 +110,7 @@ main{
     padding-bottom: 5%;
     padding-top: 5%;
     padding-left: 5%;
-    background-color: #f4f0f0;
+    background-color: #f5f5f7;
 }
 .titulo_b h1{
     font-size: 3.3rem;
@@ -116,120 +127,70 @@ main{
     border-radius: 25px;
     margin: 60px;
 }
-.vid{
+.vid_cont video{
     object-fit:fill; 
-}
+    width: 100%;
 
-
-.card-carousel {
-  position: relative;
-  width: 100%;
-  overflow: hidden; 
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-  padding-left: 50px;
 }
-.card-scroll {
-  display: flex;
-  overflow-x: auto; 
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  gap: 20px; 
-  padding: 20px 0;
-  width: 100%;
-  -webkit-overflow-scrolling: touch;  
-  scrollbar-width: none; 
-  -ms-overflow-style: none;
-}
-.card-scroll::-webkit-scrollbar {
-  display: none; 
-}
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 20px;
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-}
-
-.arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #f4f4f0;
-}
-
-.arrow.left {
-  left: 15px;
-}
-
-.arrow.right {
-  right: 15px;
-}
-
-.arrow:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
-}
-.carousel1 {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch; 
-  justify-content: flex-start;
-  text-align: inherit; 
-  height: 100%;
-  position: relative;
-  gap: 20px;
-}
-
-
 
 .cont_card{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 2rem;
-    max-height: 780px;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 0 5rem;
+  scroll-padding: 5rem;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
 }
-.card{   
+
+
+.card, .card1, .card2, .card3, .card4, .card5, .card6, .card7{   
     border-radius: 30px;
     overflow: hidden;
     min-width: 360px;
-    height: 690px;
+    min-height: 690px;
     transition: transform 0.3s ease;
-    position: relative;
-    z-index: 1;
-    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 
 }
-.card img{
-    position: absolute;
-    z-index: 1;
-    object-fit: contain;
+.card1{
+    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_health__b2yo83wkzoaa_large.jpg");
+    color: #fff;
 }
-.card7 img{
-    position: absolute;
-    z-index: 1;
+.card2{
+    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_fitness__b5owsglf0ieu_large.jpg");
+    color: #000;
+}
+.card3{
+    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_connectivity__cwtqydvy2laq_large.jpg");
+    color: #000;
+}
+.card4{
+    background-image: url("https://www.apple.com/v/watch/br/images/overview/consider/feature_safety__gln97xcew2em_large.jpg");
+    color: #000;
+}
+.card5{
+    background-image: url("https://www.apple.com/v/watch/br/images/overview/consider/feature_watch_and_iphone__fiq5g9njy5qy_large.jpg");
+    color: #000;
+}
+.card6{
+    background-image: url("https://www.apple.com/v/watch/br/images/overview/consider/feature_personalization__f8bl9mx85j22_large.jpg");
+    color: #000;
 }
 .card7{
-    border-radius: 30px;
-    overflow: hidden;
-    width: 360px;
-    height: 690px;
-    margin: 20px;
-    transition: transform 0.3s ease;
+    background-image: url("https://www.apple.com/br/watch/images/overview/consider/feature_adventure__d4xvmn7guk02_large.jpg");
     position: relative;
     z-index: 1;
 }
@@ -251,30 +212,43 @@ main{
     height: 690px;
 }
 
-.card:hover {
+.card1:hover {
+  transform: translateY(-10px);
+}
+.card2:hover {
+  transform: translateY(-10px);
+}
+.card3:hover {
+  transform: translateY(-10px);
+}
+.card4:hover {
+  transform: translateY(-10px);
+}
+.card5:hover {
+  transform: translateY(-10px);
+}
+.card6:hover {
   transform: translateY(-10px);
 }
 .card7:hover {
   transform: translateY(-10px);
 }
-.card p{
+.card1, .card2, .card3, .card4, .card5, .card6, .card7{
     text-align: left;
     text-decoration: none;
     font-size: 0.6rem;
     padding: 0.5cm;
     padding-left: 0.8cm;
     font-weight: 300;
-    z-index: 4;
-    position: absolute;
+    margin-bottom: 40px;
 }
-.card h2{
+.card1, .card2, .card3, .card4, .card5, .card6, .card7{
     text-align: left;
     font-size: 1.0rem;
     padding-left: 0.8cm;
     padding-right: 0.7cm;
     font-weight: 600;
-    z-index: 4;
-    position: absolute;
+    margin-bottom: 40px;
 }
 .boxes{
     display: flex;
@@ -282,7 +256,7 @@ main{
     gap: 7rem;
     flex-wrap: wrap;
     padding: 2rem;
-    background-color: #f4f0f0;
+    background-color: #f5f5f7;
 }
 .box{
     border-radius: 15px;
@@ -332,7 +306,7 @@ main{
 .cont_t_boxes{
     display: flex;
     gap: 3rem;
-    background-color: #f4f0f0;
+    background-color: #f5f5f7;
     justify-content: center;
 }
 .t_boxes{
@@ -350,16 +324,24 @@ main{
 .t_box p{
     font-size: 0.8rem;
     padding-bottom: 20px;
-    line-height: 13px;
+    line-height: 13px;/*peso da linha*/
 }
 .cont_t_card{
+    position: relative;
+    width: 100%;
+    overflow: visible;
     display: flex;
-    justify-content: center;
-    gap: 1.4rem;
-    flex-wrap: wrap;
-    padding: 2rem;
-    background-color: #f4f0f0;
-
+    align-items: center;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    gap: 2rem;
+    padding: 0 5rem;
+    scroll-padding: 5rem;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    background-color: #f5f5f7;
 }
 .t_card{
     background-color: #fff;
@@ -367,6 +349,8 @@ main{
     justify-content: left;
     padding: 30px;
     min-width: 380px;
+    min-height: 18rem;
+    margin-bottom: 3rem;
 }
 .t_card h2{
     font-size: 2rem;
@@ -386,7 +370,7 @@ main{
     padding-top: 20px;
     width: 600px;
     height: 650px;
-    background-color: #f4f0f0;
+    background-color: #f5f5f7;
     text-align: center;
     position: relative;
 }
@@ -420,7 +404,7 @@ main{
     padding-top: 20px;
     width: 600px;
     height: 650px;
-    background-color: #f4f0f0;
+    background-color: #f5f5f7;
     text-align: center;
     position: relative;
 }
@@ -452,10 +436,50 @@ main{
     z-index: 2;
 }
 
+.b_card{
+    
+    position: relative;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+    height: 800px;
+    background-color: #f5f5f7;
+    border-radius: 30px;
+    text-align: left;
+    line-height: 40px;
+    display: flex;
+    gap: 15rem;
+}
+.b_cardt{
+    justify-content: left;
+    margin-left: 4rem;
+}
+.b_card h2{
+    font-size: 2rem;
+    margin-top: 50px;
+}
+.b_card p{
+    margin-top: 30px;
+    line-height: 20px;
+}
+.cont_img{
+    min-width: 400px;
+    min-height: 400px;
+}
+.cont_img img{
+    width: 470px;
+    object-fit: contain;   
+}
+
+
 .text_space{
     display: flex;
     justify-content: center;
-    background-color: #f4f0f0;
+    background-color: #f5f5f7;
     font-size: 0.8rem;
     padding-top: 10px;
     padding-bottom: 10px;
