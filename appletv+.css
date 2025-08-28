@@ -1202,8 +1202,11 @@ nav {
   list-style: none;
 }
 
+
+
 .parteapplemusic {
-  margin-top: 80px;
+  margin-top: 30px;
+  padding-bottom: 60px;
 }
 
 
@@ -1211,16 +1214,34 @@ nav {
   position: relative;
 }
 
-.applemusic img {
-  width: 100vw;
-  padding-right: 35px;
+.applemusic .fundoapplemusic {
+  width: 100%;
+  padding-right: 20px;
   padding-left: 20px;
   height: auto;
   pointer-events: none;
   z-index: 1;
 }
 
+.logosapplemusicetv {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  gap: 10px;
+  top: 65px;
+}
 
+.logoapplemusic {
+  width: 75px;
+  height: auto;
+}
+
+.logoappletv {
+  width: 75px;
+  height: auto;
+}
 
 .slogan5partebranca {
   position: absolute;
@@ -1236,9 +1257,9 @@ nav {
 
 .slogan5partebranca h1 {
   margin: 0;
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.10em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
 }
 
 
@@ -1267,6 +1288,11 @@ nav {
     color: rgba(0, 0, 0, 0.8);
     background-color: rgba(255, 255, 255, 0.8);
 }
+
+
+
+
+
 
 
 /* -----------------------------
