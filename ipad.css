@@ -685,7 +685,7 @@ a:hover {
   font-size: 1.5rem;
   color: #8d8d8d;
   font-weight: bold;
-  transform: rotate(180deg) translateX(-12px);
+  transform: scaleY(-1);
   transition: 0.33s ease-in-out;
 }
 
@@ -694,7 +694,7 @@ a:hover {
 }
 
 .texto-companheiros.active .arrow-icon {
-  transform: rotate(0deg) translateX(12px);
+  transform: scaleY(1);
 }
 .footer-iPad {
   background-color: #fafafc;
@@ -862,29 +862,29 @@ a:hover {
 
 @keyframes aparecer {
   from {
-    opacity: 0;
-    height: 2px;
-    margin-bottom: 0;
+    opacity: 0.5;
+    height: 80%;
+    margin-bottom: 0.25rem;
   }
 
   to {
     opacity: 1;
     height: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 @keyframes aparecer-ultimoitem {
   from {
-    opacity: 0;
-    height: 2px;
-    margin-top: 0;
+    opacity: 0.5;
+    height: 80%;
+    margin-top: 0.75rem;
   }
 
   to {
     opacity: 1;
     height: 100%;
-    margin-top: 1rem;
+    margin-top: 1.25rem;
   }
 }
 
