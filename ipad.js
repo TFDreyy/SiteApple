@@ -57,4 +57,73 @@ textoCompanheiros.forEach((texto) => {
       }
     }
   });
+<<<<<<< Updated upstream
 });
+=======
+});
+
+// botoes de navegacao
+document.addEventListener("DOMContentLoaded", () => {
+
+  let currentSlide = 0;
+  const carousel = document.getElementById('carouselId');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const cards = carousel.querySelectorAll('.card-conheca');
+  const totalCards = cards.length;
+  const cardWidth = 420;
+  
+  const scrollDistance = 300;
+
+  function getVisibleCards() {
+    const containerWidth = window.innerWidth - 200;
+    return Math.floor(containerWidth / cardWidth) || 1;
+  }
+
+  function updateCarousel() {
+    const translateX = -currentSlide * scrollDistance;
+    carousel.style.transform = `translateX(${translateX}px)`;
+    updateButtons();
+  }
+
+  function updateButtons() {
+    const containerWidth = carousel.offsetWidth;
+    const totalWidth = totalCards * cardWidth;
+    const maxTranslate = totalWidth - containerWidth;
+    const maxSlide = Math.ceil(maxTranslate / scrollDistance);
+    
+    prevBtn.style.opacity = currentSlide === 0 ? '0.3' : '1';
+    prevBtn.style.pointerEvents = currentSlide === 0 ? 'none' : 'auto';
+    
+    nextBtn.style.opacity = currentSlide >= maxSlide ? '0.3' : '1';
+    nextBtn.style.pointerEvents = currentSlide >= maxSlide ? 'none' : 'auto';
+  }
+
+  prevBtn.addEventListener('click', () => {
+    if (currentSlide > 0) {
+      currentSlide--;
+      updateCarousel();
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    const containerWidth = carousel.offsetWidth;
+    const totalWidth = totalCards * cardWidth;
+    const maxTranslate = totalWidth - containerWidth;
+    const maxSlide = Math.ceil(maxTranslate / scrollDistance);
+    
+    if (currentSlide < maxSlide) {
+      currentSlide++;
+      updateCarousel();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    currentSlide = 0;
+    updateCarousel();
+  });
+
+  updateButtons();
+});
+
+>>>>>>> Stashed changes

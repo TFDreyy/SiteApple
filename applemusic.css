@@ -15,13 +15,14 @@
     justify-content: space-between;
     align-items: center;
     margin: 1rem 19rem;
+
 }
 
 .nome-app {
     text-align: left;
     font-size: 1.25rem;
     color: #1d1d1f;
-    padding: 0;
+    padding-left: 1.5rem;
 }
 
 
@@ -33,6 +34,7 @@
     padding: 0.25rem 0.5rem;
     border-radius: 1.5rem;
     border: none;
+    margin-right: 1.5rem;
 }
 
 .testar-button:hover {
@@ -408,7 +410,9 @@
     background: linear-gradient(90deg, rgb(110, 110, 115), rgb(255, 121, 27), rgb(255, 48, 55));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
     letter-spacing: -0.05em;
+    background-size: 150% auto;
 }
 
 .card:hover .conteudo-principal {
@@ -629,7 +633,7 @@
 .container-devices2 {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
     align-items: center;
     justify-content: center;
     margin-bottom: 7rem;
@@ -658,7 +662,7 @@
 }
 
 .titulo-pequeno {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-weight: 600;
     color: #f4f4f0;
     text-align: center;
@@ -666,7 +670,7 @@
 }
 
 .container-texto-plano {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .container-opcoes-plano {
@@ -684,55 +688,195 @@
     background-image: url(Imagens_Music/fundo_hero2.png);
 }
 
-/*
-.lugares-image img {
-    width: auto;
-    height: 3.5rem;
-}
 
-.play img {
-    height: 2rem;
-    width: auto;
-}*/
-
-/*
-.imagem-hover {
-
-}
-
-/*
-.texto-hover {
-    
-
-}*/
-
-/*
-.carousel {
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.scroll {
+.container-cardspreto {
     display: flex;
-    width: max-content;
-    animation: scroll-left 120s linear infinite;
-    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.4rem;
+    margin: 0 16rem;
+    margin-top: 4rem;
 }
 
-.scroll iframe {
-    flex-shrink: 0;
+.cardspreto-content {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.3s ease;
 }
 
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-5440px);
-    }
-}*/
+.cardspreto-content:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.cardpreto {
+    box-sizing: border-box;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+
+.imagem-preto img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cardsfinal-content:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.cardpreto-link {
+    margin: 1rem 3.5rem;
+    height: fit-content;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cardpreto a {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #0071e3;
+    text-decoration: none;
+    letter-spacing: -0.02rem;
+}
+
+.cardpreto a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    color: #0071e3;
+}
+
+.cardpreto-imagem {
+    margin: 4rem 3rem 0 3rem;
+    height: fit-content;
+}
+
+.cardpreto-imagem img {
+    width: 100%;
+    height: auto;
+}
+
+
+.frase-escuro3 {
+    text-align: left;
+    line-height: 2rem;
+    padding: 0 3.5rem;
+    color: #1a1a1a;
+    width: 100%;
+}
+
+.frase-escuro3 h4 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.5;
+}
+
+.cardpreto-logo {
+    height: fit-content;
+    margin-left: 3.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.cardpreto-logo img {
+    width: 100%;
+    height: auto;
+}
+
+#apple_music {
+    width: 7.5rem;
+}
+
+#apple_one {
+    width: 6rem;
+}
+
+.container-assinatura {
+    width: 66%;
+    height: 23.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+.card-assinatura {
+    width: 100%;
+    border-radius: 1rem;
+    height: 100%;
+    background-image: url(Imagens_Music/fundo_card-assinatura.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.card-assinatura:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.card-assinatura h2 {
+    color: #f4f4f0;
+}
+
+.button-assinatura {
+    width: fit-content;
+    height: fit-content;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.button-opcoes2 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 1.75rem;
+    border: none;
+    padding: 0.75rem 1.25rem;
+}
+
+.button-opcoes2:hover {
+    background-color: rgb(210, 210, 215);
+    cursor: pointer;
+}
+
+.link-branco {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: -0.02rem;
+}
+
+.link-branco:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    color: rgb(255, 255, 255);
+}
+
 
 
 
