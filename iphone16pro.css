@@ -80,6 +80,7 @@ main {
     padding:20px;
     flex-direction: column;
     align-items: center;
+    background-color: #000000;
 
 }
 
@@ -137,7 +138,81 @@ main {
     color: #000;
   }
 }
+.iphonetitulo {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  text-align: center;
+  gap: 0.25em;               
+  position: relative;
+  z-index: 2;
+}
+.iphonetitulo h6 {
+    color: #e4d5c6;
+    font-size: 50px;
+    padding-top: 50px;
+    margin: 0;
+    padding-bottom: 50px;
+    padding: 70px;
+}
+.iphonetitulo h5,
+.iphonetitulo h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.05;
+}
+.exploredetalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    margin: 0 0 100px 0;
+}
+.exploredetalhes-section {
+    background-color: #1d1d1f;
+}
+.exploredetalhes .card {
+    background: black;
+    border-radius: 20px;
+    padding: 25px;
+    width: 85%;
+    max-width: 900px;
+    max-height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.exploredetalhes .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.exploredetalhes .card img {
+    max-width: 100%;
+    max-height: auto;
+    max-height: 500px;
+    max-width: 500px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+.exploretitulo {
+  margin: 120px 0 80px 0;
+  text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .exploredetalhes .card {
+        width: 95%;
+        padding: 15px;
+    }
+}
 .titulo-iphone {
     color: #1D1D1F;
     font-size: 70px;
@@ -150,25 +225,53 @@ main {
     color: #e4d5c6;
     font-size: 50px;
     padding-top: 50px;
-    margin: 0;
+    margin: 200px;
+    margin-bottom: 100px;
     padding-bottom: 50px;
     padding: 70px;
 }
 .titulo-iphone3 {
-    display: relative;
-    color: #e4d5c6;
-    font-size: 50px;
-    padding-top: 50px;
-    margin: 0;
-    padding-bottom: 50px;
-    padding: 70px;
-    text-shadow: 0px 0px 10px #a57152, 0px 0px 20px #a57152, 0px 0px 40px #a57152,0px 0px 80px #a57152;
+   font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  text-shadow: 
+    0 0 10px rgba(255, 180, 100, 0.8), 
+    0 0 20px rgba(255, 140, 0, 0.6), 
+    0 0 30px rgba(255, 100, 0, 0.4);
 }
+
 .titulo-iphone2,
 .titulo-iphone3 {
   display: inline-block; 
   margin: 0;
   padding: 5px;
+}
+.iphonetitulo {
+  text-align: center; 
+  margin: 100px 0;
+}
+
+.titulo-iphone-gray {
+  font-size: 4vw; /* tamanho relativo à largura da viewport */
+  font-weight: 1000;
+  color: #bfbfbf; 
+  margin: 0;
+}
+
+.titulo-iphone-glow {
+  font-size: 6rem;
+  font-weight: 1000;
+  color: #fff;
+  margin: 0;
+  text-shadow: 
+    0 0 10px rgba(255, 180, 100, 0.8), 
+    0 0 20px rgba(255, 140, 0, 0.6), 
+    0 0 30px rgba(255, 100, 0, 0.4),
+   0 0 100px rgba(255, 200, 100, 1),
+    0 0 200px rgba(255, 150, 50, 0.9),
+    0 0 300px rgba(255, 100, 0, 0.8),
+    0 0 500px rgba(255, 50, 0, 0.6);
 }
 .t-linha {
     display: flex;
@@ -176,6 +279,11 @@ main {
     justify-content: space-between;
     padding: 10px 20px;
 
+}
+.titulo-iphone-gray,
+.titulo-iphone-glow {
+  display: block;   
+  margin: 0;       
 }
 .caixa-video {
   position: relative;
@@ -199,7 +307,85 @@ main {
   object-fit: cover;
   transition: opacity 0.3s ease;
 }
+.titanio .cards2-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px 0;
+}
 
+.titanio .card {
+  padding: 30px;
+  border-radius: 20px;
+  background: black;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  width: 450px;
+  text-align: center;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titanio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.titanio .card2 {
+  padding: 0; /* Remove o padding */
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow:
+    0 0 10px rgba(255, 180, 100, 0.8), 
+    0 0 20px rgba(255, 140, 0, 0.6), 
+    0 0 30px rgba(255, 100, 0, 0.4),
+    0 0 300px rgba(255, 100, 0, 0.8),
+    0 0 500px rgba(255, 50, 0, 0.6);
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(100, 180, 255, 0.3);
+  backdrop-filter: blur(10px);
+  margin: 15px auto;
+  overflow: hidden; /* Impede que a imagem ultrapasse os limites */
+}
+
+.titanio .card2 img {
+  width: 100%; /* Ocupa 100% da largura */
+  height: 100%; /* Ocupa 100% da altura */
+  object-fit: cover; /* Preenche todo o espaço mantendo a proporção */
+  border-radius: 12px;
+  margin: 0;
+  padding: 0;
+}
+.titanio .card2 h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 0 20px rgba(100, 180, 255, 0.7);
+  letter-spacing: 0.5px;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.titanio .card h5 {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.5;
+}
 .video-poster {
   opacity: 1;
   position: absolute;
