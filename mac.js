@@ -22,7 +22,7 @@ const screenHeight = window.innerHeight;
 const startScroll = screenHeight * (390 / 1080);
 const maxScroll = screenHeight * (1200 / 1080);
 
-const minWidth = 87;
+const minWidth = 89;
 const minHeight = 85;
 const baseHeight = 90;
 
@@ -37,6 +37,7 @@ window.addEventListener('scroll', () => {
     videoBox.style.width = '100%';
     videoBox.style.height = `${baseHeight}vh`;
     videoBox.style.transform = 'translateX(0)';
+    videoBox.style.borderRadius = '0';
     return;
   }
 
@@ -66,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const carousel = document.getElementById(carouselId);
     const leftArrow = document.getElementById(leftId);
     const rightArrow = document.getElementById(rightId);
-    const cardWidth = carousel.querySelector(".cards > div").offsetWidth;
+    const cardWidth = carousel.querySelector(".cards > div, .motivos-cards > div").offsetWidth;
     const cardGap = parseInt(getComputedStyle(carousel).gap) || 0;
     const scrollAmount = cardWidth + cardGap;
 
@@ -93,4 +94,219 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   setupCarousel('carouselMac', 'leftMac', 'rightMac');
+  setupCarousel('carouselMotivos', 'leftMotivos', 'rightMotivos');
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.card-icon').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cardinfoId = btn.getAttribute('data-cardinfo');
+      abrirCardinfo(cardinfoId);
+    });
+  });
+});
+
+
+function abrirCardinfo(id) {
+  const overlay = document.getElementById(id);
+  overlay.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+
+  setTimeout(() => {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) fecharCardinfo(id);
+    });
+  }, 10);
+}
+
+function fecharCardinfo(id) {
+  const overlay = document.getElementById(id);
+  overlay.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card_mac");
+  cards.forEach((card, index) => {
+    const id = `cardinfo${index + 1}`;
+    card.addEventListener("click", (e) => {
+      if (!e.target.classList.contains("card-icon")) {
+        abrirCardinfo(id);
+      }
+    });
+  });
+});
+
+
+document.querySelectorAll('.motivo-icon').forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const id = btn.getAttribute('data-motivo');
+    abrirCardinfo(id);
+  });
+});
+
+
+document.querySelectorAll('.motivo-card').forEach((card, index) => {
+  card.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('motivo-icon')) {
+      const id = `motivo-info${index + 1}`;
+      abrirCardinfo(id);
+    }
+  });
+});
+
+
+const macBtn = document.getElementById('mac-menu-btn');
+const macMenu = document.getElementById('mac-menu');
+const header = document.querySelector('header');
+const body = document.body;
+
+let macMenuTimer;
+let openGuardUntil = 0;
+
+const showMacMenu = () => {
+  clearTimeout(macMenuTimer);
+  body.classList.add('body-blur');
+  macMenu.style.display = 'block';
+  header.classList.add('active');
+  setTimeout(() => {
+    macMenu.classList.add('show');
+    openGuardUntil = Date.now() + 150;
+  }, 10);
+};
+
+const hideMacMenu = () => {
+  macMenuTimer = setTimeout(() => {
+    macMenu.classList.remove('show');
+    header.classList.remove('active');
+    setTimeout(() => {
+      macMenu.style.display = 'none';
+      body.classList.remove('body-blur');
+    }, 300);
+  }, 300);
+};
+
+const quickHideMacMenu = () => {
+  clearTimeout(macMenuTimer);
+  macMenuTimer = setTimeout(() => {
+    macMenu.classList.remove('show');
+    header.classList.remove('active');
+    setTimeout(() => {
+      macMenu.style.display = 'none';
+      body.classList.remove('body-blur');
+    }, 10);
+  }, 10);
+};
+
+function closestAnchor(el) {
+  return el ? el.closest('a') : null;
+}
+
+if (macBtn && macMenu && header) {
+
+  macBtn.addEventListener('mouseenter', showMacMenu);
+
+
+  macMenu.addEventListener('mouseenter', showMacMenu);
+
+
+  macMenu.addEventListener('mouseleave', hideMacMenu);
+
+
+  header.addEventListener('mousemove', (e) => {
+    const anchor = closestAnchor(e.target);
+    const overMenu = e.target.closest('#mac-menu')
+    const isOpen = macMenu.classList.contains('show');
+    const inGuard = Date.now() < openGuardUntil;
+
+    if (overMenu) {
+
+      showMacMenu();
+      return;
+    }
+
+    if (anchor) {
+
+      if (anchor === macBtn) {
+
+        showMacMenu();
+      } else {
+
+        if (!inGuard) hideMacMenu();
+      }
+    } else {
+
+      if (isOpen || inGuard) {
+        showMacMenu();
+      } else {
+
+      }
+    }
+  });
+
+
+  header.addEventListener('mouseleave', hideMacMenu);
+
+
+  macBtn.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      if (macMenu.classList.contains('show')) {
+        quickHideMacMenu();
+      } else {
+        showMacMenu();
+      }
+    }
+  });
+}
+
+
+window.addEventListener('scroll', quickHideMacMenu);
+
+const primeiroitem = document.getElementById('ipad-e-iphone')
+primeiroitem.classList.add('active');
+const textoCompanheiros = document.querySelectorAll('.texto-companheiros');
+const companheiros = document.querySelector('.companheiros')
+
+companheiros.classList.add('ipadIphone');
+// efeito do texto dropdown
+
+textoCompanheiros.forEach((texto) => {
+  texto.addEventListener('click', () => {
+    // se já estiver ativo, desativa
+    if (texto.classList.contains('active')) {
+      texto.classList.toggle('active');
+      companheiros.classList.remove('ipadMac', 'ipadAppleWatch');
+    } else {
+      // desativa todos os outros e ativa o clicado
+      textoCompanheiros.forEach((el) => el.classList.remove('active'));
+      texto.classList.toggle('active');
+
+      switch (texto.id) {
+        case 'ipad-e-iphone':
+          companheiros.classList.remove('ipadMac', 'ipadAppleWatch');
+          companheiros.classList.add('ipadIphone');
+          break;
+
+        case 'ipad-e-mac':
+          companheiros.classList.remove('ipadAppleWatch');
+          companheiros.classList.add('ipadMac');
+          break;
+
+        default:
+          companheiros.classList.remove('ipadMac');
+          companheiros.classList.add('ipadAppleWatch');
+          break;
+      }
+    }
+  });
+});
+
+document.querySelectorAll('.motivo-info a').forEach(link => {
+  link.addEventListener('click', () => {
+    const overlay = link.closest('.motivo-info');
+    if (overlay) fecharCardinfo(overlay.id);
+  });
 });
