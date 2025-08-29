@@ -20,7 +20,7 @@
 .nome-app {
     text-align: left;
     font-size: 1.25rem;
-    color: #1a1a1a;
+    color: #1d1d1f;
     padding: 0;
 }
 
@@ -501,6 +501,199 @@
     text-decoration: underline;
 }
 
+.titulo-main-preto {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-top: 0;
+    color: #1d1d1f;
+    letter-spacing: -0.05em;
+}
+
+.aparelhos {
+    margin-bottom: 7rem;
+}
+
+.container-titulos {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.container-devices {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-device {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.device-nome {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #1d1d1f;
+}
+
+.linha1 {
+    display: flex;
+}
+
+.device-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.device-image img {
+    width: 7rem;
+    height: auto;
+}
+
+.linha2 {
+    display: flex;
+}
+
+.link-device a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    color: #0071e3;
+    text-decoration: none;
+    letter-spacing: -0.02rem;
+}
+
+.link-device:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    color: #0071e3;
+}
+
+.titulo-medio {
+    font-size: 1.5rem;
+    font-weight: 625;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+.texto-lugares {
+    margin-bottom: 4rem;
+}
+
+.lugares-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.card-device img {
+    height: 2rem;
+    width: auto;
+}
+
+.lg-tv img {
+    height: 2.75rem;
+    width: auto;
+}
+
+.alexa img {
+    height: 2.75rem;
+    width: auto;
+}
+
+.sonos img {
+    height: 2.75rem;
+    width: auto;
+}
+
+.nest img {
+    height: 3rem;
+    width: auto;
+}
+
+.container-devices2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.escolher-plano {
+    background-color: #161617;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.container-logo-apple-music {
+    width: 5.5rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.container-logo-apple-music img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+}
+
+.titulo-pequeno {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #f4f4f0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.container-texto-plano {
+    margin-bottom: 3rem;
+}
+
+.container-opcoes-plano {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    align-items: center;
+    text-align: center;
+    color: #f4f4f0;
+    gap: 4rem;
+    background-image: url(Imagens_Music/fundo_hero2.png);
+}
+
+/*
+.lugares-image img {
+    width: auto;
+    height: 3.5rem;
+}
+
+.play img {
+    height: 2rem;
+    width: auto;
+}*/
 
 /*
 .imagem-hover {
