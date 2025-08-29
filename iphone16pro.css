@@ -173,19 +173,21 @@ main {
 }
 .exploredetalhes-section {
     background-color: #1d1d1f;
+    padding: 20px;
 }
 .exploredetalhes .card {
     background: black;
     border-radius: 20px;
     padding: 25px;
     width: 85%;
-    max-width: 900px;
-    max-height: auto;
+    max-width: 1000px;
+    height: 500px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: center;
 }
 
 .exploredetalhes .card:hover {
@@ -196,10 +198,10 @@ main {
 .exploredetalhes .card img {
     max-width: 100%;
     max-height: auto;
-    max-height: 500px;
-    max-width: 500px;
+    max-height: 600px;
+    max-width: 600px;
     object-fit: contain;
-    border-radius: 12px;
+    border-radius: 16px;
 }
 .exploretitulo {
   margin: 120px 0 80px 0;
@@ -319,8 +321,8 @@ main {
 .titanio .card {
   padding: 30px;
   border-radius: 20px;
-  background: black;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0);
   width: 450px;
   text-align: center;
   min-height: 100px;
@@ -333,8 +335,12 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
 }
+
+
 
 .titanio .card2 {
   padding: 0; /* Remove o padding */
@@ -343,9 +349,7 @@ main {
   box-shadow:
     0 0 10px rgba(255, 180, 100, 0.8), 
     0 0 20px rgba(255, 140, 0, 0.6), 
-    0 0 30px rgba(255, 100, 0, 0.4),
-    0 0 300px rgba(255, 100, 0, 0.8),
-    0 0 500px rgba(255, 50, 0, 0.6);
+    0 0 30px rgba(255, 100, 0, 0.4);
   width: 400px;
   height: 400px;
   display: flex;
@@ -646,7 +650,7 @@ main {
   }
 }
 .iphone-menu-container {
-  background-color: #f4f4f0;
+  background-color: #000000;
   padding: 40px 20px;
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -662,7 +666,7 @@ main {
 .iphone-menu-title {
   font-size: 32px;
   font-weight: 600;
-  color: #1d1d1f;
+  color: #ffffff;
   margin-bottom: 30px;
   grid-column: 1 / -1;
 }
@@ -670,7 +674,7 @@ main {
 .menu-section-title {
   font-size: 18px;
   font-weight: 600;
-  color: #1d1d1f;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 
@@ -685,7 +689,7 @@ main {
 }
 
 .menu-section-list a {
-  color: #000000;
+  color: #bdbdbd;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.2s;
