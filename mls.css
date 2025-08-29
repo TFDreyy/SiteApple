@@ -16,19 +16,18 @@ body {
 
 
 .footer {
-  background-color: #f4f0f0;
-  padding: 40px 0;
+  background-color: #323232;
+  padding: 10px 0;
 }
 
 .footer-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  color: #6e6e73;
   font-size: 12px;
 }
 
 .footer-warning {
-  background-color: #eaeaea;
+  background-color: #525252;
   padding: 10px 15px;
   border-radius: 8px;
   margin-bottom: 25px;
@@ -43,85 +42,50 @@ body {
 
 .footer-warning p {
   margin: 0;
-  color: #333336;
+  color: #f4f4f0;
   font-size: 12px;
   font-weight: bold;
 }
 
-.footer-store {
-  border-top: 1px solid #d2d2d7;
-  padding-top: 20px;
-  margin-bottom: 25px;
-}
 
-.footer-store a {
-  display: inline-flex;
-  align-items: center;
-  color: #333336;
-  text-decoration: none;
-  font-size: 14px;
+.footer-info  {
+  color: #7e7e82;
 }
-
-.footer-store a svg {
-  margin-right: 6px;
-  fill: #333336;
-}
-
-.footer-store a span {
-  margin: 0 8px;
-  font-size: 16px;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 25px;
-}
-
-.footer-links h4 {
-  color: #333336;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 6px;
-}
-
-.footer-links a {
-  color: #333336;
-  text-decoration: none;
-}
-
-.footer-info {
-  color: #333336;
-}
-
+ 
 .footer-info a {
-  color: #06c;
   text-decoration: none;
+}
+
+.brasil {
+  color: #f4f4f0;
+}
+
+.englishuk {
+  color: #7e7e82;
 }
 
 .footer-bottom {
-  border-top: 1px solid #d2d2d7;
   margin-top: 25px;
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #6e6e73;
+  color: #7e7e82;
 }
 
 .footer-bottom p {
   margin: 0;
-  color: #6e6e73;
+  color: #7e7e82;
+}
+
+.footer-bottom a {
+  margin: 0;
+  color: #f4f4f0;
+  text-decoration: none;
+}
+
+
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
 
 .footer-legal {
@@ -132,15 +96,14 @@ body {
 }
 
 .footer-legal a {
-  color: #333336;
+  color: #f4f4f0;
   text-decoration: none;
 }
 
 .footer-legal span {
-  color: #6e6e73;
+  color: #7e7e82;
 }
-.footer-links a:hover,
-.footer-store a:hover,
+
 .footer-info a:hover,
 .footer-legal a:hover {
   text-decoration: underline;
@@ -148,10 +111,6 @@ body {
 }
 
 @media (max-width: 600px) {
-  .footer-links {
-    flex-direction: column;
-    gap: 20px;
-  }
 
   .footer-bottom {
     align-items: flex-start;
@@ -161,6 +120,7 @@ body {
     gap: 5px;
   }
 }
+
 
 .container {
     height: 120vh;
@@ -267,7 +227,7 @@ body {
 
 
 .botaopreto {
-    color: #f4f0f0;
+    color: #ffffff;
     background-color: rgba(4, 4, 4, 0.7);
     font-size: 12px;
     font-weight: 600;
@@ -295,7 +255,7 @@ body {
 
 
 .botaovermelho {
-    color: #f4f0f0;
+    color: #ffffff;
     background-color: #ff3157;
     font-size: 12px;
     font-weight: 600;
@@ -346,7 +306,7 @@ body {
 
 .product-tag {
     font-size: 15px;
-    color: #f4f0f0;
+    color: #ffffff;
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -403,7 +363,7 @@ body {
 .btn {
     padding: 12px 16px;
     margin: 10px 10px 0 10px;
-    border: 2px solid #f4f0f0;
+    border: 2px solid #ffffff;
     background-color: transparent;
     font-size: 1rem;
     font-weight: 600;
@@ -416,7 +376,7 @@ body {
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: #f4f0f0;
+    color: #ffffff;
     text-align: center;
     white-space: nowrap;
     flex-shrink: 0;
@@ -438,7 +398,7 @@ body {
 
 .btn:hover {
     color: #000000;
-    background-color: #f4f0f0;
+    background-color: #ffffff;
 }
 
 
@@ -492,7 +452,7 @@ body {
 }
 
 .dot.active {
-    background-color: #f4f0f0;
+    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
@@ -676,7 +636,7 @@ nav {
 }
 
 .nav-link2 {
-  color: #f4f0f0;
+  color: #ffffff;
   text-decoration: none;
   letter-spacing: -0.022em;
   transition: opacity 0.3s ease;
@@ -687,14 +647,14 @@ nav {
 }
 
 .nav-link {
-  color: rgba(245, 245, 247, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   letter-spacing: -0.022em;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #f4f0f0;
+  color: #ffffff;
 }
 
 .nav-right {
@@ -713,7 +673,7 @@ nav {
   animation: color 1s ease-in-out 1.8s forwards;
   border-radius: 6px;
   padding: 5px 8px;
-  border: #f4f0f0 1px solid;
+  border: #ffffff 1px solid;
 }
 
 .search-icon {
@@ -721,7 +681,7 @@ nav {
   width: 13px;
   margin-right: 6px;
   opacity: 0.6;
-  fill: #f4f0f0;
+  fill: #ffffff;
 }
 
 .search-input {
@@ -881,7 +841,7 @@ nav {
 
     .btn-prev4 svg,
     .btn-next4 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next4:hover,
@@ -922,7 +882,7 @@ nav {
 
     .titulo4 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -1027,7 +987,7 @@ nav {
 
     .btn-prev5 svg,
     .btn-next5 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next5:hover,
@@ -1050,7 +1010,7 @@ nav {
 
       .titulo5 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -1076,21 +1036,21 @@ nav {
 
 
     .descriptioncard {
-      color: rgba(244, 240, 240, 0.6);
+      color: rgba(255, 255, 255, 0.6);
       font-size: 13px;
       font-weight: 500;
       padding-top: 2px;
     }
 
       .descriptioncard1 {
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 14px;
       font-weight: 500;
       padding-top: 5px;
     }
 
       .descriptioncard2 {
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 12px;
       font-weight: 500;
       padding-top: 5px;
@@ -1101,7 +1061,7 @@ nav {
     }
 
       .descriptioncard3 {
-      color: rgba(244, 240, 240, 0.6);
+      color: rgba(255, 255, 255, 0.6);
       font-size: 11px;
       font-weight: 600;
       padding-top: 5px;
@@ -1109,7 +1069,7 @@ nav {
 
 
       .descriptioncard4 {
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 14px;
       font-weight: 500;
       padding-top: 5px;
@@ -1117,7 +1077,7 @@ nav {
 
 
       .descriptioncard5 {
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 16px;
       font-weight: 600;
       bottom: 30px;
@@ -1136,7 +1096,7 @@ nav {
 
 
       .descriptioncard6 {
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 16px;
       font-weight: 600;
       bottom: 30px;
@@ -1176,7 +1136,7 @@ nav {
     .botaoaovivo {
     padding: 2px 10px;
     background-color: #FF4D45;
-    color: #f4f0f0;
+    color: #ffffff;
     border: none;
     font-size: 12px;
     font-weight: 600;
@@ -1199,12 +1159,12 @@ nav {
 }
 
 .botaoaovivo p {
-    color: #f4f0f0;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
 .botaoaovivo p:hover {
-    color: rgba(244, 240, 240, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -1333,7 +1293,7 @@ nav {
 
     .btn-prev2 svg,
     .btn-next2 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next2:hover,
@@ -1356,7 +1316,7 @@ nav {
 
     .titulo2 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -1422,7 +1382,7 @@ nav {
 
     .textodestaque1 {
       position: absolute;
-      color: #f4f0f0;
+      color: #ffffff;
       z-index: 2;
       top: 55px;
       left: 35px;
@@ -1433,7 +1393,7 @@ nav {
 
       .textodestaque2 {
       position: absolute;
-      color: rgba(244, 240, 240, 0.64);
+      color: rgba(255, 255, 255, 0.64);
       font-size: 18px;
       font-weight: 600;
       text-align: left;
@@ -1522,7 +1482,7 @@ nav {
 
     .btn-prev3 svg,
     .btn-next3 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next3:hover,
@@ -1545,7 +1505,7 @@ nav {
 
     .titulo3 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -1644,7 +1604,7 @@ nav {
 
     .btn-prev svg,
     .btn-next svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next:hover,
@@ -1667,7 +1627,7 @@ nav {
 
     .titulo {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -1765,7 +1725,7 @@ nav {
 
     .btn-prev6 svg,
     .btn-next6 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next6:hover,
@@ -1788,7 +1748,7 @@ nav {
 
     .titulo6 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -1853,7 +1813,7 @@ nav {
 
     .textodestaque3 {
       position: absolute;
-      color: #f4f0f0;
+      color: #ffffff;
       z-index: 2;
       top: 100px;
       left: 35px;
@@ -1864,7 +1824,7 @@ nav {
 
       .textodestaque4 {
       position: absolute;
-      color: rgba(244, 240, 240, 0.64);
+      color: rgba(255, 255, 255, 0.64);
       font-size: 18px;
       font-weight: 600;
       text-align: left;
@@ -1953,7 +1913,7 @@ nav {
 
     .btn-prev7 svg,
     .btn-next7 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next7:hover,
@@ -1976,7 +1936,7 @@ nav {
 
     .titulo7 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -2071,7 +2031,7 @@ nav {
 
     .btn-prev8 svg,
     .btn-next8 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next8:hover,
@@ -2094,7 +2054,7 @@ nav {
 
     .titulo8 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -2114,7 +2074,7 @@ nav {
 
       .titulo81 {
       text-decoration: none;
-      color: rgba(244, 240, 240, 0.64);
+      color: rgba(255, 255, 255, 0.64);
       font-size: 15px;
       font-weight: 500;
       padding-left: 51px;
@@ -2220,7 +2180,7 @@ nav {
 
     .btn-prev9 svg,
     .btn-next9 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next9:hover,
@@ -2243,7 +2203,7 @@ nav {
 
     .titulo9 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -2408,7 +2368,7 @@ nav {
 
     .btn-prev10 svg,
     .btn-next10 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next10:hover,
@@ -2431,7 +2391,7 @@ nav {
 
       .titulo10 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -2529,7 +2489,7 @@ nav {
 
     .btn-prev11 svg,
     .btn-next11 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next11:hover,
@@ -2552,7 +2512,7 @@ nav {
 
     .titulo11 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -2572,7 +2532,7 @@ nav {
 
       .titulo111 {
       text-decoration: none;
-      color: rgba(244, 240, 240, 0.64);
+      color: rgba(255, 255, 255, 0.64);
       font-size: 15px;
       font-weight: 500;
       padding-left: 51px;
@@ -2689,7 +2649,7 @@ nav {
 
     .titulo12 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -2784,7 +2744,7 @@ nav {
 
     .btn-prev13 svg,
     .btn-next13 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next13:hover,
@@ -2807,7 +2767,7 @@ nav {
 
     .titulo13 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -2827,7 +2787,7 @@ nav {
 
       .titulo133 {
       text-decoration: none;
-      color: rgba(244, 240, 240, 0.64);
+      color: rgba(255, 255, 255, 0.64);
       font-size: 15px;
       font-weight: 500;
       padding-left: 51px;
@@ -2914,7 +2874,7 @@ nav {
 
     .btn-prev14 svg,
     .btn-next14 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next14:hover,
@@ -2937,7 +2897,7 @@ nav {
 
     .titulo14 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -3032,7 +2992,7 @@ nav {
 
     .btn-prev15 svg,
     .btn-next15 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next15:hover,
@@ -3055,7 +3015,7 @@ nav {
 
     .titulo15 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -3152,7 +3112,7 @@ nav {
 
     .btn-prev16 svg,
     .btn-next16 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next16:hover,
@@ -3175,7 +3135,7 @@ nav {
 
     .titulo16 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -3195,7 +3155,7 @@ nav {
 
       .titulo166 {
       text-decoration: none;
-      color: rgba(244, 240, 240, 0.64);
+      color: rgba(255, 255, 255, 0.64);
       font-size: 15px;
       font-weight: 500;
       padding-left: 51px;
@@ -3286,7 +3246,7 @@ nav {
 
     .btn-prev17 svg,
     .btn-next17 svg {
-      fill: #f4f0f0af;
+      fill: #ffffffaf;
     }
 
     .btn-next17:hover,
@@ -3309,7 +3269,7 @@ nav {
 
     .titulo17 {
       text-decoration: none;
-      color: #f4f0f0;
+      color: #ffffff;
       font-size: 20px;
       font-weight: 500;
       padding-left: 51px;
@@ -3374,7 +3334,7 @@ nav {
 
     .textodestaque6 {
       position: absolute;
-      color: #f4f0f0;
+      color: #ffffff;
       z-index: 2;
       top: 50px;
       left: 35px;
@@ -3385,7 +3345,7 @@ nav {
 
       .textodestaque7 {
       position: absolute;
-      color: rgba(244, 240, 240, 0.64);
+      color: rgba(255, 255, 255, 0.64);
       font-size: 18px;
       font-weight: 600;
       text-align: left;
@@ -3538,7 +3498,7 @@ nav {
 }
 
 .texto-anuncio2 p {
-  color: #f4f0f0;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   margin: 0;
@@ -3555,7 +3515,7 @@ nav {
   padding: 0px 10px;
   width: 170px;
   height: 28px;
-  background-color: #f4f0f0;
+  background-color: #ffffff;
   color: #000;
   border: none;
   font-size: 13px;
@@ -3573,7 +3533,7 @@ nav {
 }
 
 .botaosaibamais {
-  color: #f4f0f0;
+  color: #ffffff;
   background-color: transparent;
   border: none;
   font-size: 11px;
@@ -3595,7 +3555,7 @@ nav {
 }
 
 .fundobranco {
-  background-color: #f4f0f0;
+  background-color: #ffffff;
 }
 
 
@@ -3924,7 +3884,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
-  bottom: 0;
+  padding-bottom: 60px;
 }
 
 .faq-section h1 {
