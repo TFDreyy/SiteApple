@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
-  font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'SF Pro Text', 'SF Pro Display', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 header, nav, .menu, .logo {
   background: transparent !important;
@@ -17,6 +17,11 @@ header{
 .menu a, .logo {
   color: rgba(255, 255, 255, 0.75);
 }
+
+.menu a:hover {
+  color: #76b5dcdd;
+}
+
 body {
   background-image: linear-gradient(to bottom right, #ff3861, #1e8acd);
   color: white;
@@ -24,30 +29,32 @@ body {
 .fundobranco {
   background-color: transparent;
 }
+
 .formulario-caixa {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   background-color: rgba(250, 250, 250, 0.3);
   backdrop-filter: blur(3px);
   padding: 5.5rem;
+  padding-top: 2rem;
   border-radius: 1.75rem;
   border: solid #ccc 0.5px;
   box-shadow: 0px 2px 2px 2px rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
 }
-.centralizar {
-  margin: 0;
-  padding: 0;
-}
+
 .fundo-formulario {
-  width: 80%;
-  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
 }
 .formulario-caixa form {
   display: flex;
@@ -130,7 +137,7 @@ form button:hover {
 }
 
 a.textobranco {
-  color: white;
+  color: #f3b8c4;
 }
 
 .footer-warning {

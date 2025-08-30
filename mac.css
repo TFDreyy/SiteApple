@@ -1,3 +1,11 @@
+<<<<<<< Updated upstream
+* {
+  border: 1px solid red;
+}
+
+
+=======
+>>>>>>> Stashed changes
 * {
   margin: 0;
   padding: 0;
@@ -485,6 +493,130 @@
   max-width: 100%;
   height: 100%;
 }
+
+.card-icon {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1d1d1f;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+
+}
+
+.card-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f4f4f0;
+}
+
+/*position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+*/
+
+.cardinfo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cardinfo-content {
+  position: relative;
+  background-color: #f4f4f0;
+  width: 85%;
+  max-width: 800px;
+  max-height: 90vh;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  animation: cardFadeIn 0.4s ease-out;
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.cardinfo-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.cardinfo-text {
+  flex: 1 1 300px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.cardinfo-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardinfo-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+
 
 @-webkit-keyframes slide-in-right {
   0% {
@@ -982,10 +1114,13 @@
   margin-left: auto;
 }
 
+<<<<<<< Updated upstream
+=======
 .motivos-comprar {
   padding-bottom: 15rem;
 }
 
+>>>>>>> Stashed changes
 .card-resolve:hover {
   cursor: pointer;
   transform: scale(1.01);
@@ -993,6 +1128,15 @@
 }
 
 
+<<<<<<< Updated upstream
+
+/*  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  background-color: #0071e3;
+=======
 .motivos-cards {
   display: flex;
   flex-wrap: nowrap;
@@ -1080,6 +1224,7 @@
 
 .motivos-carousel .arrow:hover {
   background-color: rgba(0, 0, 0, 0.8);
+>>>>>>> Stashed changes
   color: #f4f4f0;
 }
 

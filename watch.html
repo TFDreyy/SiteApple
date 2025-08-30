@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="watch.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="shortcut icon" href="imagens/appleicon.ico" type="image/png">
 </head>
 <body>
-    <header>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+
+
+  <header>
         <nav>
             <div class="logo">Apple</div>
             <a href="home.html"><img src="imagens/simbolo_da_apple.png" class="simbolo_apple"></a>
@@ -27,7 +39,9 @@
             </div>
         </nav>
     </header>
-        <nav class="items">
+    <div class="barra-items-slide">
+      <div class="slide-in-right">
+        <div class="items">
             <div class="menu">
               <div class="item">
                 <b href="Apple_Watch.html">
@@ -66,7 +80,7 @@
                 </b>                
               </div> 
               <div class="item">
-                <b href="Apple_Watch.html">
+                <b href="airpods.html">
                   <img src="https://www.apple.com/v/watch/br/images/chapternav/watch_nav_airpods__e4gjf5dricq6_large.svg">
                   <p>Air Pods</p>
                 </b>                
@@ -95,60 +109,86 @@
                   <p>Comparar<br>Apple Watch</p>
                 </b>                
               </div>                    
-            </div>
-        </nav>
-        <main>
-        <!--minha parte-->
-        <div class="text_space">
-          <p>Treine 3 meses de graça com o Apple Fitness+ na compra de um Apple Watch1. Comprar Apple Watch</p>
         </div>
-        <nav class="titulo">
-            <h1>Apple Watch</h1>
-            <p>O aparelho ideal <br> para uma vida saudável.</p>
-        </nav>
+      </div>
+    </div>
+  </div>
+        <main>
 
-        <div class="vid_cont">
-          <video class="vid" autoplay muted loop playsinline>
-            <source src="https://www.apple.com/105/media/ww/watch/2024/f0b51c31-e8a5-44d7-b23d-51bd2858454a/anim/hero/large.mp4" width="50%" type="video/mp4">
-          </video> 
-        </div>  
+    <div class="desconto" data-aos="fade-down">
+      <h4>Treine 3 meses de graça com o Apple Fitness+ na compra de um Apple Watch <span>1</span>.</h4>
+      <a href="#">Comprar Apple Watch ></a>
+    </div>
+
+
+
+
+        <div class="ipad" data-aos="fade-down">
+          <h1 id="titulo">Apple Watch</h1>
+          <p class="slogan" data-aos="fade-down" data-aos-delay="100">O aparelho ideal <br> para uma vida saudável.</p>
+        </div>
+        <br>
+      <div class="centralizar" >
+        <div class="caixa-imagem" id="containerHero">
+          <video autoplay muted loop class="imagem-hero" id="videoHero">
+            <source src="https://www.apple.com/105/media/ww/watch/2024/f0b51c31-e8a5-44d7-b23d-51bd2858454a/anim/hero/large.mp4" type="video/mp4">
+          </video>
+          <button id="botaoDePause">
+            <img src="imagensipad/toggle-pause.png" id="imagemBotao">
+          </button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
         <nav class="titulo_b">
             <h1>Conheça melhor<br>o Apple Watch.</h1>
         </nav>
 
-        <div class="cont_card">
-          <div class="card1">
-            <p>Saúde</p>
-            <h2>Escuta seu coração.</h2>
-          </div>
-          <div class="card2">
-            <p>Fitness</p>
-            <h2>Cada movimento conta.</h2> 
-          </div>
-          <div class="card3">
-            <p>Conectividade</p>
-            <h2>Mantenha a conexão,<br>contato ou contatinho.</h2>
-          </div>
-          <div class="card4">
-            <p>Segurança</p>
-            <h2>Ajuda sempre<br>à mão.</h2>
-          </div>
-          <div class="card5">
-            <p>Apple Watch + Iphone</p>
-            <h2>Uma união de forças.</h2>
-          </div>
-          <div class="card6">
-            <p>Personalização</p>
-            <h2>Deixe do seu jeito.</h2>
-          </div>
-          <div class="card7">
-            <p>Apple Watch Ultra 2</p>
-            <h2>O relógio definitivo para<br>esportes e aventuras.</h2>
-          </div>
+          <div class="cont_card">
+            <div class="card1">
+              <p>Saúde</p>
+              <h2>Escuta seu coração.</h2>
+            </div>
+            <div class="card2">
+              <p>Fitness</p>
+              <h2>Cada movimento conta.</h2> 
+            </div>
+            <div class="card3">
+              <p>Conectividade</p>
+              <h2>Mantenha a conexão,<br>contato ou contatinho.</h2>
+            </div>
+            <div class="card4">
+              <p>Segurança</p>
+              <h2>Ajuda sempre<br>à mão.</h2>
+            </div>
+            <div class="card5">
+              <p>Apple Watch + Iphone</p>
+              <h2>Uma união de forças.</h2>
+            </div>
+            <div class="card6">
+              <p>Personalização</p>
+              <h2>Deixe do seu jeito.</h2>
+            </div>
+            <div class="card7">
+              <div class="card7texto">
+              <p>Apple Watch Ultra 2</p>
+              <h2>O relógio definitivo para<br>esportes e aventuras.</h2>
+              </div>
+            </div>
         </div>
+        
+    </section>
         <div class="titulo_c">
             <h1>Conheça a família.</h1>
         </div>
+
         <div class="boxes">
           <div class="box">
             <img src="https://www.apple.com/v/watch/br/images/overview/select/product_se__c83w8hz9gre6_large.png">
@@ -156,31 +196,34 @@
             <p>Tudo que é essencial <br> ao alcance do seu pulso.</p>
             <p class="negrito" >A partir de R$ 274,92/mês <br> ou R$ 3.299</p>
             <div class="buttons">
-              <div class="button_a">Saiba mais</div>
-              <div class="button_b">Comprar</div>
+              <a href="#" class="button_a nodecoration"><div><span>Saiba mais</span></div></a>
+              <a href="#" class="button_b nodecoration"><div><span>Comprar</span></div></a>
             </div>
           </div>
+
           <div class="box">
             <img src="https://www.apple.com/v/watch/br/images/overview/select/product_s10__c724044usymq_large.png">
             <h3>Apple Watch Series 10</h3>
             <p>O mais fino. Com a maior tela.Δ <br>E recursos avançados de saúde.</p>
             <p class="negrito" >A partir de R$ 458,25/mês <br> ou R$ 5.499◊</p>
             <div class="buttons">
-              <div class="button_a">Saiba mais</div>
-              <div class="button_b">Comprar</div>
+              <a href="#" class="button_a nodecoration"><div><span>Saiba mais</span></div></a>
+              <a href="#" class="button_b nodecoration"><div><span>Comprar</span></div></a>
             </div>
           </div>
+
           <div class="box">
             <img src="https://www.apple.com/br/watch/images/overview/select/product_u2__hedpiz396nue_large.png">
             <h3>Apple Watch Ultra 2</h3>
             <p>O relógio definitivo <br> para esportes e aventura.</p>
             <p class="negrito">A partir de R$ 874,92/mês <br> ou R$ 10.499◊</p>
             <div class="buttons">
-              <div class="button_a">Saiba mais</div>
-              <div class="button_b">Comprar</div>
+              <a href="#" class="button_a nodecoration"><div><span>Saiba mais</span></div></a>
+              <a href="#" class="button_b nodecoration"><div><span>Comprar</span></div></a>
             </div>
           </div>
         </div>
+
         <div class="cont_t_boxes">
           <div class="t_boxes">
             <div class="t_box">
@@ -252,88 +295,74 @@
           </div>
 
         </div>
-                <div class="titulo_c">
+        <div class="titulo_c">
           <h1>Motivos para comprar seu<br>Apple Watch na Apple.</h1>
         </div>
         <div class="cont_t_card">
-          <div class="t_card">
-            <img src="https://www.apple.com/br/watch/images/overview/incentive/icon_apple_card__cqqvo9cxav2a_large.png">
-            <h2>Opções de<br>pagamento.</h2>
-            <p>Aproveite e parcele com facilidade<br>e conveniência</p>
+
+            
+              <div class="t_card">
+                <img src="https://www.apple.com/br/watch/images/overview/incentive/icon_apple_card__cqqvo9cxav2a_large.png">
+                <h2>Opções de<br>pagamento.</h2>
+                <p>Aproveite e parcele com facilidade<br>e conveniência</p>
+              </div>
+              <div class="t_card">
+                <img src="https://www.apple.com/v/watch/br/images/overview/incentive/icon_delivery__fyzt43z8dfu6_large.png">
+                <h2>Frete grátis.</h2>
+                <p>Em todo o Brasil. Em São Paulo,<br>os pedidos qualificados têm envio<br>no dia seguinte.</p>
+              </div>
+              <div class="t_card">
+                <img src="https://www.apple.com/br/watch/images/overview/incentive/icon_specialist_alt__fwx7pesuftme_large.png">
+                <h2>Compre com quem<br>entende de<br>Apple Watch.</h2>
+                <p>Fale com especialistas para fazer<br>a melhor escolha. Na loja ou<br>online</p>
+              </div>
+              <div class="t_card">
+                <img src="https://www.apple.com/v/watch/br/images/overview/incentive/icon_asa__o48x6o2ctqqa_large.png">
+                <h2>Uma experiência de<br>combra inspirada<br>em você.</h2>
+                <p>App Apple Store. Um jeito mais<br>pessoal de comprar.</p>
+              </div>
+            
           </div>
-          <div class="t_card">
-            <img src="https://www.apple.com/v/watch/br/images/overview/incentive/icon_delivery__fyzt43z8dfu6_large.png">
-            <h2>Frete grátis.</h2>
-            <p>Em todo o Brasil. Em São Paulo,<br>os pedidos qualificados têm envio<br>no dia seguinte.</p>
-          </div>
-          <div class="t_card">
-            <img src="https://www.apple.com/br/watch/images/overview/incentive/icon_specialist_alt__fwx7pesuftme_large.png">
-            <h2>Compre com quem<br>entende de<br>Apple Watch.</h2>
-            <p>Fale com especialistas para fazer<br>a melhor escolha. Na loja ou<br>online</p>
-          </div>
-          <div class="t_card">
-            <img src="https://www.apple.com/v/watch/br/images/overview/incentive/icon_asa__o48x6o2ctqqa_large.png">
-            <h2>Uma experiência de<br>combra inspirada<br>em você.</h2>
-            <p>App Apple Store. Um jeito mais<br>pessoal de comprar.</p>
-          </div>
-        </div>
 
         <div class="titulo_b">
           <h1>Essenciais para<br>o Apple Watch.</h1>
+          
         </div>
         <div class="o_cont_card">
-          <div class="o_card">
+          <div class="o_card1">
             <h2>Espalhe suas cores.</h2>
+            <p>Comprar pulseiras para Apple Watch></p>
             <img src="https://www.apple.com/v/watch/br/images/overview/essentials/banner_bands__cd5m1690azaq_large.jpg">
           </div>
-          
-          <div class="oo_card">
-            <h2>A magia<br>vem de família</h2>
-            <p>Descubra todos os modelos de<br>AirPods e encontre os que mais<br>combinam com você.</p>
-            <img src="https://www.apple.com/br/watch/images/overview/essentials/banner_airpods__dc2h7dg71l0m_small.jpg">
-          </div>       
+          <a href="airpods.html">
+            <div class="o_card">
+              <h2>A magia<br>vem de família</h2>
+              <p>Descubra todos os modelos de<br>AirPods e encontre os que mais<br>combinam com você.<br>Saiba mais></p>
+              <img src="https://www.apple.com/br/watch/images/overview/essentials/banner_airpods__dc2h7dg71l0m_medium.jpg">
+            </div> 
+          </a>      
+        </div>
+        <div class="titulo_b">
+          <h1>Feitos um para o outro.</h1>
+        </div>
+        <div class="b_card">
+          <div class="b_cardt">
+            <h2>Apple Watch<br>e Iphone</h2>
+            <p>Usar o Apple Watch com o iPhone<br>abre um mundo de recursos que<br>deixa os dois aparelhos ainda<br>melhores. Crie uma rota<br>personalizada com o Mapas no<br>iPhone e baixe no relógio para usar a<br>qualquer momento. Ou inicie um<br>exercício de Bicicleta no Apple Watch<br>e ele aparecerá automaticamente<br>como Atividade ao Vivo no iPhone.</p>
+            <h2>Apple Watch<br>e Apple Fitness+</h2>
+            <h2>Apple Watch<br>e AirPods</h2>
+          </div> 
+          <div class="cont_img">
+            <img src="https://www.apple.com/br/watch/images/overview/augment/accordion_watch_and_iphone__c4of7nzjhc8y_xlarge.jpg">
+          </div>
         </div>
 
 
-        
-        <!--minha parte-->
         </main>
 
 <footer class="footer">
   <div class="footer-container">
-    <div class="text_space">
-      <p>* O papel de parede para iPhone requer iOS 18.5. O mostrador Harmonia do Orgulho requer watchOS 11.5. O papel de parede para iPad requer iPadOS 18.5.
-◊ Parcelamento sem juros ou 10% de desconto à vista. Para saber mais sobre as opções de pagamento, clique aqui.
-Δ Em comparação com as gerações anteriores.
-O Apple Fitness+ requer iPhone 8 ou posterior ou Apple Watch Series 3 ou posterior emparelhado com iPhone 6s ou posterior. Somente para novas assinaturas. R$ 29,90 por mês após o período de teste. A assinatura é renovada automaticamente até que seja cancelada. Aplicam-se termos.
-O app Oxigênio no Sangue não se destina ao uso médico e deve ser usado apenas para fins de bem-estar.
-O app ECG está disponível no Apple Watch Series 4 e posterior (exceto no Apple Watch SE) e consegue gerar um eletrocardiograma de derivação única. Uso destinado a pessoas de 22 anos de idade ou mais.
-A notificação de ritmo cardíaco irregular requer a versão mais recente do watchOS e do iOS. Ela não é recomendada para menores de 22 anos de idade nem para pessoas que já foram diagnosticadas com fibrilação atrial.
-O app Sinais Vitais não se destina ao uso médico e deve ser usado apenas para fins de bem-estar.
-O recurso de notificações de apneia do sono está disponível no Apple Watch Series 9 e posterior e Apple Watch Ultra 2. O objetivo deste recurso é detectar indícios de apneia do sono moderada a grave para pessoas com mais de 18 anos que não tenham um diagnóstico de apneia do sono.
-O recurso Sensor de Temperatura não se destina ao uso médico. O recurso Sensor de Temperatura está disponível no Apple Watch Series 8 e posterior e em todos os modelos do Apple Watch Ultra.
-O app Acompanhamento de Ciclo não deve ser usado como método contraceptivo nem para diagnosticar problemas de saúde.
-O Apple Watch SE e o Apple Watch Series 10 têm classificação de 50 metros de resistência à água segundo a norma ISO 22810:2010 e podem ser usados para atividades aquáticas em pouca profundidade, como nadar em uma piscina ou no mar. O Apple Watch Series 10 também pode ser usado para mergulho com snorkel até 6 metros. Eles não devem ser usados para mergulho com cilindro, esqui aquático ou outras atividades que envolvam velocidade na água ou submersão mais profunda. O Apple Watch Ultra 2 tem classificação de 100 metros de resistência à água segundo a norma ISO 22810:2010 e pode ser usado para esportes aquáticos de alta velocidade e mergulho recreativo até 40 metros (com um app de terceiros compatível da App Store). Ele não deve ser usado para mergulhos de mais de 40 metros de profundidade. A resistência à água não é uma condição permanente e pode diminuir com o tempo. Consulte support.apple.com/pt-br/HT205000 para obter mais informações. O Apple Watch Series 10 e o Apple Watch Ultra 2 também têm classificação IP6X de resistência à poeira.
-O Apple Watch Series 10 e o Apple Watch Ultra 2 têm classificação IP6X de resistência à poeira.
-O serviço de rede celular requer um plano de dados sem fio. Entre em contato com sua operadora para obter mais informações. A conexão pode variar de acordo com a disponibilidade da rede. Consulte as operadoras compatíveis e os requisitos em apple.com/br/watch/cellular. Acesse support.apple.com/pt-br/HT207578 para ver outras instruções de configuração.
-O Apple Pay não está disponível em todos os países. Para ver a lista dos países e regiões com Apple Pay, consulte support.apple.com/pt-br/HT207957.
-Disponível somente com alguns parceiros e locais. Requer aparelho qualificado e versão de sistema operacional compatível. Consulte apple.com/br/wallet para obter mais detalhes.
-É preciso ter uma assinatura do Apple Music. O Apple Music é fornecido pela Apple Services LATAM LLC.
-O SOS de Emergência requer uma conexão de rede celular ou chamadas Wi-Fi com conexão de internet do seu Apple Watch ou do seu iPhone, que precisa estar por perto.
-O recurso Chegou Bem requer watchOS 11 ou posterior para quem envia e o iOS 17 ou posterior para quem recebe. O compartilhamento de localização pode não estar disponível em todas as regiões devido às leis locais.
-Requer chip de banda ultralarga de segunda geração no iPhone e no Apple Watch. A disponibilidade de banda ultralarga varia de acordo com a região.
-Com base nas rotas no mapa e na precisão da distância em ambientes urbanos desafiadores.
-A duração da bateria por vários dias é calculada com base no seguinte uso durante 36 horas: 600 verificações de hora, 180 notificações, 30 minutos de uso de apps e um treino de 60 minutos com reprodução de música no Apple Watch por Bluetooth. O uso do Apple Watch Ultra 2 (GPS + Cellular) inclui um total de 8 horas de conexão LTE e 28 horas de conexão com o iPhone por Bluetooth durante todo o teste de 36 horas. A duração da bateria no Modo Pouca Energia é calculada com base no seguinte uso durante 72 horas: 1200 verificações de hora, 360 notificações, 60 minutos de uso de apps e dois treinos de 60 minutos com reprodução de música no Apple Watch por Bluetooth. O uso do Apple Watch Ultra 2 (GPS + Cellular) inclui conexão LTE sob demanda e 60 horas de conexão com o iPhone por Bluetooth durante todo o teste de 72 horas. Testes conduzidos pela Apple em agosto de 2024 usando unidades em pré-produção do Apple Watch Ultra 2 (GPS + Cellular) emparelhadas com um iPhone. Todos os aparelhos foram testados com software em versão preliminar. A duração da bateria varia de acordo com o uso, a configuração, a rede celular, a potência do sinal e muitos outros fatores. Os resultados reais podem variar.
-A duração da bateria para o dia todo é calculada com base no seguinte uso durante 18 horas: 90 verificações de hora, 90 notificações, 45 minutos de uso de apps e um treino de 60 minutos com reprodução de música no Apple Watch por Bluetooth. O uso do Apple Watch SE (2ª geração, GPS) inclui conexão com o iPhone por Bluetooth durante todo o teste de 18 horas. O uso do Apple Watch SE (2ª geração, GPS + Cellular) inclui um total de 4 horas de conexão LTE e 14 horas de conexão com o iPhone por Bluetooth durante todo o teste de 18 horas. Testes conduzidos pela Apple em agosto de 2022 usando unidades em pré-produção do Apple Watch SE (2ª geração, GPS) e do Apple Watch SE (2ª geração, GPS + Cellular), cada uma delas emparelhada com um iPhone. Todos os aparelhos foram testados com software em versão preliminar. A duração da bateria varia de acordo com o uso, a configuração, a rede celular, a potência do sinal e muitos outros fatores. Os resultados reais podem variar.
-A duração da bateria para o dia todo é calculada com base no seguinte uso durante 18 horas: 300 verificações de hora, 90 notificações, 15 minutos de uso de apps e um treino de 60 minutos com reprodução de música no Apple Watch por Bluetooth. O uso do Apple Watch Series 10 (GPS) inclui conexão com o iPhone por Bluetooth durante todo o teste de 18 horas. O uso do Apple Watch Series 10 (GPS + Cellular) inclui um total de 4 horas de conexão LTE e 14 horas de conexão com o iPhone por Bluetooth durante todo o teste de 18 horas. A duração da bateria no Modo Pouca Energia é calculada com base no seguinte uso durante 36 horas: 600 verificações de hora, 180 notificações, 30 minutos de uso de apps e um treino de 60 minutos com reprodução de música no Apple Watch por Bluetooth. O uso do Apple Watch Series 10 (GPS) inclui conexão com o iPhone por Bluetooth durante todo o teste de 36 horas. O uso do Apple Watch Series 10 (GPS + Cellular) inclui conexão LTE sob demanda e 28 horas de conexão com o iPhone por Bluetooth durante todo o teste de 36 horas. Testes conduzidos pela Apple em agosto de 2024 usando unidades em pré-produção do Apple Watch Series 10 (GPS) e do Apple Watch Series 10 (GPS + Cellular), cada uma delas emparelhada com um iPhone. Todos os aparelhos foram testados com software em versão preliminar. A duração da bateria varia de acordo com o uso, a configuração, a rede celular, a potência do sinal e muitos outros fatores. Os resultados reais podem variar.
-A recarga rápida é compatível com o Apple Watch Series 7 ou posterior, incluindo todos os modelos de Apple Watch Ultra. Não é compatível com nenhum modelo de Apple Watch SE.
-É preciso ter uma assinatura do Apple Fitness+.
-É preciso ter uma assinatura do Oceanic+. Disponível na App Store. O Apple Watch Series 10 pode ser usado para mergulho com snorkel até 6 metros. O Apple Watch Ultra 2 pode ser usado para mergulho com cilindro até 40 metros. Siga sempre os protocolos de mergulho, mergulhe sempre em sistema de duplas e tenha sempre um aparelho de redundância.
-O Apple Watch Ultra 2, o Apple Watch Series 10 e o Apple Watch SE requerem iPhone XS ou posterior com iOS 18 ou posterior.
-Os recursos estão sujeitos a mudanças. Alguns recursos, apps e serviços podem não estar disponíveis em todas as regiões ou idiomas. Clique aqui para ver a lista completa.
-As pulseiras estão sujeitas a disponibilidade.
-Os treinos e as meditações do Apple Fitness+ serão em inglês com opção de legendas em português do Brasil, francês, espanhol, alemão, italiano e russo.</p>
-    </div>
+
 
     <div class="footer-warning">
       <span>❗</span>
@@ -392,6 +421,12 @@ Os treinos e as meditações do Apple Fitness+ serão em inglês com opção de 
           <li><a href="suporte.html">Suporte</a></li>
         </ul>
       </div>
+      <div>
+        <h4>Login</h4>
+        <ul>
+          <li><a href="login.html">Página de login</a></li>
+        </ul>
+      </div>
 
     </div>
 
@@ -412,5 +447,7 @@ Os treinos e as meditações do Apple Fitness+ serão em inglês com opção de 
 
   </div>
 </footer>
+<script src="watch.js"></script>
+
 </body>
 </html>

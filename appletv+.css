@@ -2,7 +2,7 @@
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
@@ -1202,8 +1202,11 @@ nav {
   list-style: none;
 }
 
+
+
 .parteapplemusic {
-  margin-top: 80px;
+  margin-top: 30px;
+  padding-bottom: 60px;
 }
 
 
@@ -1211,16 +1214,34 @@ nav {
   position: relative;
 }
 
-.applemusic img {
-  width: 100vw;
-  padding-right: 35px;
+.applemusic .fundoapplemusic {
+  width: 100%;
+  padding-right: 20px;
   padding-left: 20px;
   height: auto;
   pointer-events: none;
   z-index: 1;
 }
 
+.logosapplemusicetv {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  gap: 10px;
+  top: 65px;
+}
 
+.logoapplemusic {
+  width: 75px;
+  height: auto;
+}
+
+.logoappletv {
+  width: 75px;
+  height: auto;
+}
 
 .slogan5partebranca {
   position: absolute;
@@ -1236,9 +1257,9 @@ nav {
 
 .slogan5partebranca h1 {
   margin: 0;
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.10em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
 }
 
 
@@ -1267,6 +1288,153 @@ nav {
     color: rgba(0, 0, 0, 0.8);
     background-color: rgba(255, 255, 255, 0.8);
 }
+
+
+
+
+.cardsdofim {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.textocardfim {
+  font-size: 38px;
+  font-weight: 700;
+  color: #202020;
+  line-height: 1.1666666667;
+  letter-spacing: -0.05em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.cardtv4k {
+  width: 800px;
+  height: auto;
+  min-height: 720px;
+  text-align: center;
+  position: relative;
+  background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+
+}
+
+.appletv4klogo {
+  width: 125px;
+  height: 37px;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.appletv4ktvbox {
+  width: 663px;
+  height: 494px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin: 0;
+  flex: 0;
+}
+
+.cardairplay {
+  width: 800px;
+  height: auto;
+  min-height: 720px;
+  text-align: center;
+  position: relative;
+  background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+
+}
+
+
+.airplayfoto {
+  width: 663px;
+  height: 515px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin: 0;
+  flex: 0;
+}
+
+.airplaytexto {
+  font-size: 32px;
+  font-weight: 400;
+  color: #202020;
+  line-height: 1.1666666667;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'SF Pro Display', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.botaocomprarfim {
+    padding: 12px 22px;
+    background-color: #06c;
+    color: #ffffff;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 980px;
+    outline: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+}
+
+.botaocomprarfim:hover {
+    background-color: rgba(0, 102, 204, 0.8);
+}
+
+.botaosaibamaisfim {
+    color: #06c;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.botaosaibamaisfim p {
+    padding-right: 5px;
+}
+
+.botaosaibamaisfim:hover p {
+    text-decoration: underline;
+}
+
+.botoesfim {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+
 
 
 /* -----------------------------
