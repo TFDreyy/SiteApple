@@ -1,24 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'SF Pro Text', 'SF Pro Display', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header, nav, .menu, .logo {
+  background: transparent !important;
+  
+  
+}
+header{
+  border: 0.1px solid rgba(255, 255, 255, 0.6);
+  border-top: 0;
+}
+
+.menu a, .logo {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.menu a:hover {
+  color: #76b5dcdd;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #ff3861, #1e8acd);
+  color: white;
+}
+.fundobranco {
+  background-color: transparent;
+}
+
 .formulario-caixa {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-color: #fafafc;
-  padding: 5.5rem;
-  border-radius: 1.25rem;
-  border: solid #ccc 0.5px;
-  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
-.centralizar {
-  margin: 0;
-  padding: 0;
-}
-.fundo-formulario {
   width: 80%;
   height: 80%;
+  background-color: rgba(250, 250, 250, 0.3);
+  backdrop-filter: blur(3px);
+  padding: 5.5rem;
+  padding-top: 2rem;
+  border-radius: 1.75rem;
+  border: solid #ccc 0.5px;
+  box-shadow: 0px 2px 2px 2px rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.fundo-formulario {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
 }
 .formulario-caixa form {
   display: flex;
@@ -32,7 +68,9 @@
   position: relative;
 }
 .formulario-caixa h1 {
+  font-size: 1.5rem;
   letter-spacing: 0.75px;
+  font-weight: 600;
 }
 form h3 {
   text-align: left;
@@ -42,17 +80,33 @@ input {
   height: 3rem;
   border-radius: 0.5rem;
   padding: 1rem;
-  border: solid black 0.5px;
+  box-shadow: 0 2px 1px 2px rgba(255, 255, 255, 0.5);
+  border: none;
+  outline: none;
   width: 100%;
   text-align: justify;
   transition: 0.4s ease;
   font-size: 0.75rem;
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+}
+
+
+
+input {
+  font-size: 0.75rem;
+  color: white;
+  font-weight: 700;
+}
+
+input::placeholder{
+  color: rgba(255, 255, 255, 0.8)
 }
 .formulario-caixa button {
   margin-left: 1rem;
-  background-color: #107acc;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 0.25rem;
-  box-shadow: 0 2px 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 1px 2px rgba(255, 255, 255, 0.5);
   letter-spacing: 1.25px;
   font-weight: 700;
   color: white;
@@ -61,7 +115,6 @@ input {
 
 input:hover {
   transform: translateY(-1.75px);
-  box-shadow: 2px 2px 8px 3px rgba(147, 145, 145, 0.4);
 }
 
 form button:hover {
@@ -75,4 +128,122 @@ form button:hover {
   transform: translateY(-50px);
   width: 100vw;
   height: 70vh;
+}
+
+.footer, .footer-links a, .footer-links h4, p.footer-info, p, .footer-legal a, .footer-bottom p {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+}
+
+a.textobranco {
+  color: #f3b8c4;
+}
+
+.footer-warning {
+  background-color: rgba(255, 255, 255, 0.5)
+}
+
+i.fas {
+  transform: translateY(2px);
+  color: white;
+  margin-right: 10px
+}
+p#faleconosco {
+  transform: translateY(1.975px);
+}
+
+/* -----------------------------
+   SF Pro Text
+------------------------------ */
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 300;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 500;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+ SF Pro Display
+------------------------------ */
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Display/sf-pro-display_semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Display/sf-pro-display_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+ SF Pro Icons
+------------------------------ */
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 300;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 500;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
 }
