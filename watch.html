@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="watch.css">
-    <link rel="stylesheet" href="ipad.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="shortcut icon" href="imagens/appleicon.ico" type="image/png">
 </head>
 <body>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+
+
   <header>
         <nav>
             <div class="logo">Apple</div>
@@ -101,21 +112,41 @@
         </div>
       </div>
     </div>
+  </div>
         <main>
-        <!--faz o L-->
-        <div class="text_space">
-          <p>Treine 3 meses de graça com o Apple Fitness+ na compra de um Apple Watch1. Comprar Apple Watch</p>
-        </div>
-        <nav class="titulo">
-            <h1>Apple Watch</h1>
-            <p>O aparelho ideal <br> para uma vida saudável.</p>
-        </nav>
 
-        <div class="vid_cont">
-          <video autoplay muted loop playsinline>
-            <source src="https://www.apple.com/105/media/ww/watch/2024/f0b51c31-e8a5-44d7-b23d-51bd2858454a/anim/hero/large.mp4" width="50%" type="video/mp4">
-          </video> 
-        </div>  
+    <div class="desconto" data-aos="fade-down">
+      <h4>Treine 3 meses de graça com o Apple Fitness+ na compra de um Apple Watch <span>1</span>.</h4>
+      <a href="#">Comprar Apple Watch ></a>
+    </div>
+
+
+
+
+        <div class="ipad" data-aos="fade-down">
+          <h1 id="titulo">Apple Watch</h1>
+          <p class="slogan" data-aos="fade-down" data-aos-delay="100">O aparelho ideal <br> para uma vida saudável.</p>
+        </div>
+        <br>
+      <div class="centralizar" >
+        <div class="caixa-imagem" id="containerHero">
+          <video autoplay muted loop class="imagem-hero" id="videoHero">
+            <source src="https://www.apple.com/105/media/ww/watch/2024/f0b51c31-e8a5-44d7-b23d-51bd2858454a/anim/hero/large.mp4" type="video/mp4">
+          </video>
+          <button id="botaoDePause">
+            <img src="imagensipad/toggle-pause.png" id="imagemBotao">
+          </button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
         <nav class="titulo_b">
             <h1>Conheça melhor<br>o Apple Watch.</h1>
         </nav>
@@ -157,6 +188,7 @@
         <div class="titulo_c">
             <h1>Conheça a família.</h1>
         </div>
+
         <div class="boxes">
           <div class="box">
             <img src="https://www.apple.com/v/watch/br/images/overview/select/product_se__c83w8hz9gre6_large.png">
@@ -164,31 +196,34 @@
             <p>Tudo que é essencial <br> ao alcance do seu pulso.</p>
             <p class="negrito" >A partir de R$ 274,92/mês <br> ou R$ 3.299</p>
             <div class="buttons">
-              <div class="button_a">Saiba mais</div>
-              <div class="button_b">Comprar</div>
+              <a href="#" class="button_a nodecoration"><div><span>Saiba mais</span></div></a>
+              <a href="#" class="button_b nodecoration"><div><span>Comprar</span></div></a>
             </div>
           </div>
+
           <div class="box">
             <img src="https://www.apple.com/v/watch/br/images/overview/select/product_s10__c724044usymq_large.png">
             <h3>Apple Watch Series 10</h3>
             <p>O mais fino. Com a maior tela.Δ <br>E recursos avançados de saúde.</p>
             <p class="negrito" >A partir de R$ 458,25/mês <br> ou R$ 5.499◊</p>
             <div class="buttons">
-              <div class="button_a">Saiba mais</div>
-              <div class="button_b">Comprar</div>
+              <a href="#" class="button_a nodecoration"><div><span>Saiba mais</span></div></a>
+              <a href="#" class="button_b nodecoration"><div><span>Comprar</span></div></a>
             </div>
           </div>
+
           <div class="box">
             <img src="https://www.apple.com/br/watch/images/overview/select/product_u2__hedpiz396nue_large.png">
             <h3>Apple Watch Ultra 2</h3>
             <p>O relógio definitivo <br> para esportes e aventura.</p>
             <p class="negrito">A partir de R$ 874,92/mês <br> ou R$ 10.499◊</p>
             <div class="buttons">
-              <div class="button_a">Saiba mais</div>
-              <div class="button_b">Comprar</div>
+              <a href="#" class="button_a nodecoration"><div><span>Saiba mais</span></div></a>
+              <a href="#" class="button_b nodecoration"><div><span>Comprar</span></div></a>
             </div>
           </div>
         </div>
+
         <div class="cont_t_boxes">
           <div class="t_boxes">
             <div class="t_box">
@@ -412,5 +447,7 @@
 
   </div>
 </footer>
+<script src="watch.js"></script>
+
 </body>
 </html>
