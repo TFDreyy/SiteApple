@@ -2,18 +2,27 @@
     border: 2px solid red;
 }*/
 
-* .depois-cabecalho {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.depois-cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1rem 19rem;
+
 }
 
 .nome-app {
     text-align: left;
     font-size: 1.25rem;
-    color: #1a1a1a;
-    padding: 0;
+    color: #1d1d1f;
+    padding-left: 1.5rem;
 }
 
 
@@ -25,6 +34,7 @@
     padding: 0.25rem 0.5rem;
     border-radius: 1.5rem;
     border: none;
+    margin-right: 1.5rem;
 }
 
 .testar-button:hover {
@@ -32,34 +42,67 @@
     cursor: pointer;
 }
 
+
 .desconto {
-    color: #000000;
+    animation: animate-color 1s ease-in-out 1.8s forwards;
     font-size: 1rem;
     text-align: center;
-    background-color: #f5f5f7;
+    background-color: #fa243c;
     padding: 1rem;
-    box-sizing: border-box;
-    margin: 0;
-    width: 101vw;
-    margin-right: -1.25rem;
-    margin-left: -1.25rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
     letter-spacing: -0.02rem;
+    z-index: 1;
+    position: relative;
+}
+
+@keyframes color2 {
+    0% {
+        color: #ffffff;
+    }
+
+    100% {
+        color: #1a1a1a;
+    }
+}
+
+@keyframes animate-color {
+    0% {
+        background-color: #fa243c;
+    }
+
+    100% {
+        background-color: #f5f5f7;
+    }
 }
 
 .desconto h4 {
     font-weight: normal;
+    animation: color2 1s ease-in-out 1.8s forwards;
+    color: #ffffff;
 }
 
 .desconto a {
-    color: #0071e3;
+    color: #ffffff;
+    animation: color 1s ease-in-out 1.8s forwards;
     text-decoration: none;
     font-weight: normal;
     display: flex;
 }
+
+@keyframes color {
+    0% {
+        color: #ffffff;
+    }
+
+    100% {
+        color: #0071e3;
+    }
+}
+
 
 .desconto a:hover {
     text-decoration: underline;
@@ -67,7 +110,6 @@
 }
 
 .container-hero {
-    height: 185vh;
     width: 100%;
     background-image: url(Imagens_Music/fundo_hero.png);
     background-repeat: no-repeat;
@@ -75,6 +117,8 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     align-items: center;
     text-align: center;
     color: #f4f4f0;
@@ -93,6 +137,11 @@
     margin-bottom: 1rem;
     align-items: center;
     justify-content: center;
+    line-height: 0;
+}
+
+.h1s-amor {
+    margin-bottom: 1.75rem;
 }
 
 .slogan h1 {
@@ -100,7 +149,7 @@
     font-size: 8rem;
     line-height: 1;
     font-weight: 600;
-    margin-bottom: 1.75rem;
+    margin-top: 0;
 }
 
 .p_cinza {
@@ -208,7 +257,7 @@
 
 .faixa-hero {
     background-color: rgba(29, 29, 31, .5);
-    padding: 3rem 0;
+    padding: 2.5rem 0;
     margin-top: 2rem;
     width: 100%;
     justify-content: center;
@@ -219,14 +268,14 @@
 
 .p_cinza2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 550;
     color: rgb(210, 210, 215);
     letter-spacing: normal;
 }
 
 .link_simbolo2 a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 625;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -239,33 +288,595 @@
     flex-wrap: wrap;
 }
 
-/*
-.carousel {
-    overflow: hidden;
+.music-logo {
+    width: 10rem;
+    height: auto;
+    display: block;
+}
+
+.container-main-cards {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    height: fit-content;
+    align-items: center;
 }
 
-.scroll {
+.main-cards {
+    height: fit-content;
+    margin: 2rem 8.5rem;
+    align-items: center;
+    align-self: center;
+    gap: 2rem;
+}
+
+.card {
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    border-radius: 1.75rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    width: max-content;
-    animation: scroll-left 120s linear infinite;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.scroll iframe {
-    flex-shrink: 0;
+#card-audio {
+    background-image: url(Imagens_Music/card-audio.png);
 }
 
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-5440px);
-    }
-}*/
+#hover-audio {
+    background-image: url(Imagens_Music/AxlRose.png);
+}
+
+#card-descoberta {
+    background-image: url(Imagens_Music/card-descoberta.png);
+}
+
+#hover-descoberta {
+    background-image: url(Imagens_Music/BryanAdams.png);
+}
+
+#card-bastidor {
+    background-image: url(Imagens_Music/card-bastidor.png);
+    padding-top: 30%;
+}
+
+#hover-bastidor {
+    background-image: url(Imagens_Music/bon_jovi\ \(2\).png);
+}
+
+#card-sing {
+    background-image: url(Imagens_Music/card-sing.jpg);
+    padding-bottom: 35%;
+    padding-left: 55%;
+}
+
+#hover-sing {
+    background-image: url(Imagens_Music/BruceSprigsteen.png);
+}
+
+#card-playlist {
+    background-image: url(Imagens_Music/card-playlist.png);
+    background-position: left center;
+    padding-right: 55%;
+}
+
+#hover-playlist {
+    background-image: url(Imagens_Music/hover-card-playlist.jpg);
+}
+
+#card-classic {
+    background-image: url(Imagens_Music/card-classic.png);
+}
+
+#hover-classic {
+    background-image: url(Imagens_Music/hover-card-classical.png);
+}
+
+.p_cinza-cards {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 550;
+    color: #6e6e73;
+    letter-spacing: normal;
+}
+
+.container-titulo-main {
+    width: fit-content;
+    height: auto;
+    margin-top: 0.75rem;
+}
+
+.titulo-main-branco {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-top: 0;
+    color: #f4f4f0;
+    letter-spacing: -0.05em;
+}
+
+.titulo-main-degrade {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-top: 0;
+    background: linear-gradient(90deg, rgb(110, 110, 115), rgb(255, 121, 27), rgb(255, 48, 55));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
+    letter-spacing: -0.05em;
+    background-size: 150% auto;
+}
+
+.card:hover .conteudo-principal {
+    opacity: 0;
+}
+
+.card .conteudo-hover {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    transition-delay: 0s;
+}
+
+.card:hover .conteudo-hover {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.conteudo-hover {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    opacity: 0;
+    transition: opacity .5s ease;
+    border-radius: 1.75rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.texto-hover {
+    max-width: 67%;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.79);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.texto-hover strong {
+    color: #fa243c;
+}
+
+.conteudo-hover h2,
+.conteudo-hover p {
+    z-index: 2;
+}
+
+.card:hover .conteudo-hover {
+    opacity: 1;
+}
+
+.p_cinza-hover {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: rgb(210, 210, 215);
+    letter-spacing: normal;
+}
+
+.imagem-hover {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    margin-top: 4rem;
+}
+
+.conteudo-hover img {
+    height: 40rem;
+    width: auto;
+    object-fit: contain;
+    margin-top: 2.75rem;
+}
+
+.link_card {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    letter-spacing: normal;
+    text-decoration: none;
+}
+
+.link_card:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.titulo-main-preto {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-top: 0;
+    color: #1d1d1f;
+    letter-spacing: -0.05em;
+}
+
+.aparelhos {
+    margin-bottom: 7rem;
+}
+
+.container-titulos {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.container-devices {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-device {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.device-nome {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #1d1d1f;
+}
+
+.linha1 {
+    display: flex;
+}
+
+.device-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.device-image img {
+    width: 7rem;
+    height: auto;
+}
+
+.linha2 {
+    display: flex;
+}
+
+.link-device a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    color: #0071e3;
+    text-decoration: none;
+    letter-spacing: -0.02rem;
+}
+
+.link-device:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    color: #0071e3;
+}
+
+.titulo-medio {
+    font-size: 1.5rem;
+    font-weight: 625;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+.texto-lugares {
+    margin-bottom: 4rem;
+}
+
+.lugares-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.card-device img {
+    height: 2rem;
+    width: auto;
+}
+
+.lg-tv img {
+    height: 2.75rem;
+    width: auto;
+}
+
+.alexa img {
+    height: 2.75rem;
+    width: auto;
+}
+
+.sonos img {
+    height: 2.75rem;
+    width: auto;
+}
+
+.nest img {
+    height: 3rem;
+    width: auto;
+}
+
+.container-devices2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.escolher-plano {
+    background-color: #161617;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.container-logo-apple-music {
+    width: 5.5rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.container-logo-apple-music img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+}
+
+.titulo-pequeno {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    color: #f4f4f0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.container-texto-plano {
+    margin-bottom: 4rem;
+}
+
+.container-opcoes-plano {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    align-items: center;
+    text-align: center;
+    color: #f4f4f0;
+    gap: 4rem;
+    background-image: url(Imagens_Music/fundo_hero2.png);
+}
+
+
+.container-cardspreto {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.4rem;
+    margin: 0 16rem;
+    margin-top: 4rem;
+}
+
+.cardspreto-content {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.cardspreto-content:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.cardpreto {
+    box-sizing: border-box;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+
+.imagem-preto img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cardsfinal-content:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.cardpreto-link {
+    margin: 1rem 3.5rem;
+    height: fit-content;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cardpreto a {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #0071e3;
+    text-decoration: none;
+    letter-spacing: -0.02rem;
+}
+
+.cardpreto a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    color: #0071e3;
+}
+
+.cardpreto-imagem {
+    margin: 4rem 3rem 0 3rem;
+    height: fit-content;
+}
+
+.cardpreto-imagem img {
+    width: 100%;
+    height: auto;
+}
+
+
+.frase-escuro3 {
+    text-align: left;
+    line-height: 2rem;
+    padding: 0 3.5rem;
+    color: #1a1a1a;
+    width: 100%;
+}
+
+.frase-escuro3 h4 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.5;
+}
+
+.cardpreto-logo {
+    height: fit-content;
+    margin-left: 3.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.cardpreto-logo img {
+    width: 100%;
+    height: auto;
+}
+
+#apple_music {
+    width: 7.5rem;
+}
+
+#apple_one {
+    width: 6rem;
+}
+
+.container-assinatura {
+    width: 66%;
+    height: 23.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+.card-assinatura {
+    width: 100%;
+    border-radius: 1rem;
+    height: 100%;
+    background-image: url(Imagens_Music/fundo_card-assinatura.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.card-assinatura:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.card-assinatura h2 {
+    color: #f4f4f0;
+}
+
+.button-assinatura {
+    width: fit-content;
+    height: fit-content;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.button-opcoes2 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 1.75rem;
+    border: none;
+    padding: 0.75rem 1.25rem;
+}
+
+.button-opcoes2:hover {
+    background-color: rgb(210, 210, 215);
+    cursor: pointer;
+}
+
+.link-branco {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: -0.02rem;
+}
+
+.link-branco:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    color: rgb(255, 255, 255);
+}
+
 
 
 
