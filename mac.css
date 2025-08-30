@@ -1,11 +1,3 @@
-<<<<<<< Updated upstream
-* {
-  border: 1px solid red;
-}
-
-
-=======
->>>>>>> Stashed changes
 * {
   margin: 0;
   padding: 0;
@@ -1114,13 +1106,10 @@
   margin-left: auto;
 }
 
-<<<<<<< Updated upstream
-=======
 .motivos-comprar {
   padding-bottom: 15rem;
 }
 
->>>>>>> Stashed changes
 .card-resolve:hover {
   cursor: pointer;
   transform: scale(1.01);
@@ -1128,15 +1117,6 @@
 }
 
 
-<<<<<<< Updated upstream
-
-/*  font-size: 18px;
-  text-decoration: none;
-  transition: 0.3s;
-  border: 1px solid transparent;
-  vertical-align: middle;
-  background-color: #0071e3;
-=======
 .motivos-cards {
   display: flex;
   flex-wrap: nowrap;
@@ -1224,7 +1204,6 @@
 
 .motivos-carousel .arrow:hover {
   background-color: rgba(0, 0, 0, 0.8);
->>>>>>> Stashed changes
   color: #f4f4f0;
 }
 
