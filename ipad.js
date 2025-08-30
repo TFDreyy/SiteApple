@@ -159,4 +159,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateButtons();
 });
-
