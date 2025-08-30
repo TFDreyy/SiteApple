@@ -227,7 +227,7 @@ video {
 }
 
 .titulo2 {
-  font-size: 450%;
+  font-size: 400%;
   font-weight: bold;
   margin: 0 0 0% 0;
   font-family: arial;
@@ -236,7 +236,7 @@ video {
 .subtitulo2 {
   font-weight: bold;
    font-size: 120%;
-   margin: 0 0 10% 0;
+   margin: 0 0 0% 0;
    font-family: arial;
 }
 
@@ -307,6 +307,15 @@ video {
   bottom: 4%;           
   right: 2%;
    }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -427,6 +436,8 @@ video {
 	transform: translate3d(0%, -20%, 670px);
 }
 
+
+
 .card-airpods {
   display: flex;
   justify-content: center;
@@ -434,40 +445,62 @@ video {
   padding: 2rem;
 }
 
-.descricao {
-	text-align: justify;
-}
-
 .card2 {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   width: 300px;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
+  padding: 1rem;
 }
+
 
 
 .card2 img {
-	width: 50%;
-  	height: auto;
- 	border-top: auto;
- 	justify-content: center;
-  	align-items: center;
+  width: 200px;  
+  height: 200px;    
+  object-fit: contain;
+  margin-bottom: 1rem;
 }
+
+
 
 .card2 h3 {
-  margin: 1rem 0 0.5rem;
+  margin: 0.5rem 0;
+  min-height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card2 p {
-  padding: 0 1rem 1rem;
+
+.card2 .descricao {
+  min-height: 60px;
+  padding: 0 1rem;
   color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.card2 .negrito {
+  font-weight: bold;
+  margin: 0.5rem 0;
+  min-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 
 .botoes-card {
-  margin-top: 10px;
+  margin-top: auto;
   display: flex;
   flex-direction: column; 
   gap: 10px;             
@@ -506,13 +539,64 @@ video {
 }
 
 
-
-
 .linha {
-  margin: 16px auto 0;
-  width: 100%;
-  height: 1px;
-  background-color: #ccc;
+   margin: 16px auto 0; 
+ width: 250px;
+  height: 1px; 
+background-color: #ccc; 
+}
+
+
+.especificacoes-caixa {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+.especificacoes-interno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: first baseline;
+  gap: 3.2rem;
+  padding: 0 0.25rem;
+}
+
+.especificacoes-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 16rem;
+  height: 10rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+.especificacoes-item p {
+
+    white-space: nowrap;
+}
+
+.comparar a {
+  text-decoration: none;  
+  color: #0082d8; 
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2 0 200px 0;
+  font-size: 20px;
+  text-align: center;  
+}
+
+.comparar a:hover {
+  text-decoration: underline; 
 }
 
 
@@ -523,75 +607,52 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: o;
+  margin: 0;
   font-size: 90px;
   text-align: center;
 }
 
-.container-cards {
+.titulo-cards2{
+    color: #1D1D1F;
+  margin-top: 50px;
   display: flex;
-  gap: 20px; 
-  overflow-x: auto;
-  padding: 20px;
-  scroll-behavior: smooth;
+  align-items: center;
+  justify-content: center;
+  margin: 10 0 0 0;
+  font-size: 90px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+.card-conheca {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.cards {
+
+  display: flex;
   flex-wrap: nowrap;
+  gap: 2rem;
+  overflow: visible;
+  padding-top: 1rem;
 }
 
 
-.iphone-card {
-  flex: 0 0 auto;             
-  width: 374px;               
-  height: 677px;
-  border-radius: 15px;
-  position: relative;
-  color: white;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: black;
-}
-
-.card-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding: 20px;
-  border-radius: 28px;
-   position: relative;
-  z-index: 1;
 
 
-}
-
-.card-textos {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch; 
-  justify-content: flex-start;
-  text-align: inherit; 
-  height: 100%;
-  position: relative;
-}
-
-
-.card-imagem {
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   
-  z-index: 0;
-}
-
-
-.card-icon {
+.card-icon2 {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   right: 20px;
   width: 32px;
   height: 32px;
@@ -602,6 +663,312 @@ video {
   font-size: 20px;
   cursor: pointer;
   z-index: 2;
+}
+
+
+.texto-card-maior{
+    text-align: left;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5cm;
+  padding-left: 0.9cm;
+  padding-top: 40px;
+  color: #e0e0e0;
+
+}
+
+.texto-card-maior-siri {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5cm;
+  padding-left: 0.9cm;
+  padding-top: 40px;
+  color: #000000;
+
+}
+
+
+.card-fone {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 374px;
+  height: 677px;
+  text-align: center;
+
+  background-image: url("imagensair/Airpods-card.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.card-spacial {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+   width: 374px;
+  height: 677px;
+  text-align: center;
+  
+  background-image: url("imagensair/card-spacial.jpg");
+  background-size: cover;
+  background-position: 95% center;
+  background-repeat: no-repeat;
+
+}
+
+.card-mulher {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+   width: 374px;
+  height: 677px;
+  text-align: center;
+  
+  background-image: url("imagensair/mulher-airpods.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.card-siri {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 374px;
+  height: 677px;
+  text-align: center;
+
+  background-image: url("imagensair/siricard.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-cllfone {
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: 374px;
+  height: 677px;
+  text-align: center;
+
+  background-image: url("imagensair/iphone-airpods.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.container-cards {
+  display: flex;
+  gap: 20px; 
+  overflow-x: auto;
+  padding: 30px 90px;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+}
+
+
+
+.mac-carousel {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+
+.mac-carousel .iphone-scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 0 4rem;
+  scroll-padding: 4rem;
+  scroll-snap-type: x mandatory;
+}
+
+
+
+.cards>div {
+  scroll-snap-align: start;
+}
+
+
+
+.mac-carousel .iphone-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.mac-carousel .arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  
+}
+
+.mac-carousel .arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f4f4f0;
+}
+
+.mac-carousel .arrow.left {
+  left: 15px;
+}
+
+.mac-carousel .arrow.right {
+  right: 15px;
+}
+
+.mac-carousel .arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+.card-music {
+  justify-content: space-between;
+  padding: 60px;
+  width: 100%;
+  height: 500px;
+  background-color: #fafafa;
+  margin-top: 210px;
+
+}
+
+
+
+.imagem-music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 0 168px
+
+  
+
+}
+
+
+.texto-music {
+  max-width: 40%;
+  font-size: 30px;
+  margin: 0px 130px;
+}
+
+.texto-music a {
+  display: inline-block;
+  margin-top: 30px;
+  color: #0071e3;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.texto-music a:hover {
+  text-decoration: underline;
+}
+
+
+.alinhar {
+  align-items: center;
+  display: flex;
+
+}
+
+.img-fundo-music {
+  display: flex;
+  align-items: center;
+  width: 2000px;
+  height: 0px;
+  text-align: center;
+
+
+}
+
+
+
+
+
+.informaçoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+.informaçoes-finais {
+  display: flex;
+  flex-direction: row;
+  align-content: first baseline;
+  align-items: flex start;
+  gap: 1px;
+  padding: 0 0.25rem;
+  margin-left: 160px;
+}
+
+.info-finais {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 20rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+.info-finais p {
+
+    white-space: nowrap;
+}
+
+.titulo-info{
+
+  font-size: 1.1rem;
+
+  font-weight: bold;
+
+}
+
+
+.saiba-mais-info a{
+
+  margin-top: 30px;
+  color: #0071e3;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+.saiba-mais-info a:hover {
+  text-decoration: underline;
 }
 
 
