@@ -511,6 +511,7 @@ nav {
     margin-top: 0;
     background: linear-gradient(90deg, rgb(110, 110, 115), rgb(255, 121, 27), rgb(255, 48, 55));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 100% 100%;
     letter-spacing: -0.05em;

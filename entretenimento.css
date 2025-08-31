@@ -356,7 +356,7 @@ nav {
 
 .barra-anuncio {
   width: 100%;
-  background-color: #0071e3;
+  background-color: rgb(0, 113, 227);
   padding: 18px 0;
   border-bottom: 1px solid #202020;
   animation: animate-color 1s ease-in-out 1.8s forwards;
@@ -366,7 +366,7 @@ nav {
 
 @keyframes animate-color {
   0% {
-    background-color: #0071e3;
+    background-color: rgb(0, 113, 227);
   }
   100% {
     background-color: #202020;
@@ -383,6 +383,7 @@ nav {
 
 .barra-anuncio a {
   color: #ffffff;
+  fill: #ffffff;
   animation: color 1s ease-in-out 1.8s forwards;
   display: inline-flex;
   align-items: center;
@@ -392,14 +393,16 @@ nav {
 @keyframes color {
   0% {
     color: #ffffff;
+    fill: #ffffff;
   }
   100% {
-    color: #0071e3;
+    color: rgb(41, 151, 255);
+    fill: rgb(41, 151, 255);
   }
 }
 
 .botaosaibamais4 {
-  color: #0071e3;
+  color: rgb(41, 151, 255);
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
@@ -417,10 +420,10 @@ nav {
 }
 
 .seta2 {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  margin-left: 0.3em;
   text-decoration: none !important;
-  font-size: 14px;
-  align-items: center;
+  display: inline-flex;
 }
 
 
@@ -1907,7 +1910,13 @@ nav {
 
 
 
-
+.seta3 {
+  font-family: SF Pro Icons;
+  margin-left: 0.05em;
+  text-decoration: none !important;
+  align-items: center;
+  display: inline-flex;
+}
 
 
 
