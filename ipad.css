@@ -337,7 +337,7 @@ video.imagem-hero {
   overflow-wrap: break-word;
   transition: all ease 0.3s;
   text-align: left;
-  box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.2);
+  box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.6);
 }
 
 .motivos:hover {
@@ -407,6 +407,10 @@ video.imagem-hero {
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: 0.175s ease;
+<<<<<<< HEAD
+=======
+  padding-bottom: 0.1em;
+>>>>>>> d3798b21565c4044d5b44921fc33c51eea6f620e
 }
 .conheca-wrapper button#prevBtn {
   left: 0px;
@@ -684,7 +688,7 @@ a:hover {
   font-size: 1.5rem;
   color: #8d8d8d;
   font-weight: bold;
-  transform: rotate(180deg) translateX(-12px);
+  transform: scaleY(-1);
   transition: 0.33s ease-in-out;
 }
 
@@ -693,7 +697,7 @@ a:hover {
 }
 
 .texto-companheiros.active .arrow-icon {
-  transform: rotate(0deg) translateX(12px);
+  transform: scaleY(1);
 }
 .footer-iPad {
   background-color: #fafafc;
@@ -861,29 +865,29 @@ a:hover {
 
 @keyframes aparecer {
   from {
-    opacity: 0;
-    height: 2px;
-    margin-bottom: 0;
+    opacity: 0.5;
+    height: 80%;
+    margin-bottom: 0.25rem;
   }
 
   to {
     opacity: 1;
     height: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 @keyframes aparecer-ultimoitem {
   from {
-    opacity: 0;
-    height: 2px;
-    margin-top: 0;
+    opacity: 0.5;
+    height: 80%;
+    margin-top: 0.75rem;
   }
 
   to {
     opacity: 1;
     height: 100%;
-    margin-top: 1rem;
+    margin-top: 1.25rem;
   }
 }
 

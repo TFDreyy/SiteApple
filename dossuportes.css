@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+=======
+>>>>>>> d3798b21565c4044d5b44921fc33c51eea6f620e
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -326,7 +329,6 @@ section h1 {
   background-color: #f5f5f7;
   text-align: center;
   padding: 60px 20px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #eaeaea;
 }
 
@@ -476,7 +478,6 @@ section h1 {
   margin-bottom: 6px;
 }
 
-/* Notas finais */
 .specs-notas {
   max-width: 700px;
   margin: 60px auto;
@@ -959,7 +960,6 @@ section h1 {
   flex-direction: column;
   background: transparent;
   padding: 80px 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
@@ -1017,7 +1017,6 @@ section h1 {
   text-align: left;
   background-color: #f5f5f7;
   padding: 100px 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
@@ -1069,7 +1068,6 @@ section h1 {
 .apple-tv-info-section {
   background-color: #f5f5f7;
   padding: 80px 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .info-grid {

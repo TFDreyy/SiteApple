@@ -1,15 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
 
 body {
 background-color: #f4f0f0; 
 color: rgba(0, 0, 0, 0.767);         
-transition: 0.5s;  
+transition: 0.0s;  
 }      
 
 header {
@@ -66,13 +65,6 @@ color: rgb(0, 0, 0);
 }
 
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
 
 
 main {
@@ -90,30 +82,62 @@ main {
 }
 
 
-.desconto {
-    color:#000000 ;
+.barra-anuncio {
+    width: 100%;
+    background-color: #0071e3;
+    padding: 15px 0;
+    border-bottom: 1px solid ffff69;
+    animation: animate-color 1s ease-in-out 1.8s forwards;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes animate-color {
+  0%{
+    background-color:#0071e3 ;
+  }
+
+  100% {
+    background-color: #ffffff69;
+  }
+}
+
+.barra-anuncio p {
+    max-width: 980px;
+    margin: 0 auto;
     text-align: center;
-    background-color: #dadada ;
-    padding: 5px;
-    box-sizing: border-box;
-    margin: 0;
-    width: 100vw;
-    margin-right: -20px;
-    margin-left: -20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #f4f4f0;
+    animation: color2 1s ease-in-out 1.8s forwards;
 }
-.desconto a {
-    color: #347fca;
+
+.barra-anuncio a {
+    color: #f4f0f0;
     text-decoration: none;
-    font-weight: 500;
-    display: flex;
+    animation: color 1s ease-in-out 1.8s forwards;
 }
-.desconto a:hover {
+
+.barra-anuncio a:hover {
     text-decoration: underline;
+}
+
+@keyframes color {
+  0% {
+    color: #f4f0f0;
+  }
+  100% {
+    color: #0071e3;
+  }
+}
+
+
+@keyframes color2 {
+  0% {
+    color: #f4f0f0;
+  }
+  100% {
+    color: #000;
+  }
 }
 
 .titulo-iphone {
@@ -195,12 +219,13 @@ main {
 .iphone-carousel {
   position: relative;
   width: 100%;
-  overflow: visible;
+  overflow: visible; 
   display: flex;
   align-items: center;
   margin: 1.25rem 0;
+  padding: 0 auto;
+  z-index: 1; 
 }
-
 
 .arrow {
   position: absolute;
@@ -241,21 +266,20 @@ main {
 
 .iphone-scroll {
   display: flex;
-  overflow-x: auto; 
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  gap: 20px; 
+  gap: 20px;
   padding: 20px 0;
   width: 100%;
-  -webkit-overflow-scrolling: touch; 
-  
-  scrollbar-width: none; 
+  -webkit-overflow-scrolling: touch;
+  overflow-y: visible; 
+  scrollbar-width: none;
   -ms-overflow-style: none;
+  contain: none;
+  z-index: 1;
 }
 
-.iphone-scroll::-webkit-scrollbar {
-  display: none; 
-}
 .iphone-carousel .iphone-scroll {
   display: flex;
   overflow-x: auto;
@@ -267,23 +291,26 @@ main {
   scroll-snap-type: x mandatory;
 }
 .iphone-card {
-  flex: 0 0 auto;             
-  width: 300px;               
+  flex: 0 0 auto;
+  width: 300px;
   height: 550px;
   border-radius: 28px;
   position: relative;
   color: white;
-  overflow: hidden;
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   background-color: black;
+  transition: z-index 0.2s;
+  z-index: 1;
 }
 
 .iphone-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
 }
 
 .card-textos {
@@ -390,6 +417,16 @@ main {
   height: 100%;
   padding: 20px;
   border-radius: 28px;
+  gap: 20px;
+}
+.card-overlay2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  border-radius: 28px;
+  gap: 20px;
 }
 .card-tres {
   background: linear-gradient(135deg, #07002c 0%, #3f002f 100%);
@@ -596,8 +633,8 @@ main {
 }
 
 .iphone-row.images img {
-  width: 100%;
-  max-width: 250px;
+  width: auto;
+  max-width: 100%;
 }
 
 .iphone-row.descriptions h3 {
@@ -627,7 +664,7 @@ main {
   text-decoration: none;
   transition: 0.3s;
   border: 1px solid transparent;
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .iphone-row.buttons .btn.blue {
@@ -642,7 +679,7 @@ main {
 .iphone-specs-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 100px;
 }
 
 .iphone-specs {
@@ -729,8 +766,8 @@ main {
 }
 
 .iphone-card2 {
-  flex: 0 0 auto;             
-  width: 370px;               
+  flex: 0 0 auto;
+  width: 370px;
   height: 300px;
   border-radius: 28px;
   position: relative;
@@ -742,9 +779,16 @@ main {
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   background-color: rgb(255, 255, 255);
-  margin: auto;
+  margin: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  z-index: 1;
 }
 
+.iphone-card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
 .card-textos2 {
   display: flex;
   flex-direction: column;
@@ -754,10 +798,6 @@ main {
   height: 100%;
   position: relative;
   gap: 20px;
-}
-.iphone-card2:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
 }
 .card-imagem2 {
   width: 30%;
@@ -783,13 +823,15 @@ main {
   padding: 0 40px; 
   margin: 0;
   width: 100%;
+  color: #1d1d1f
 }
 
 .motivos-header .titulo h1 {
   font-size: 50px;
-  color: #1d1d1f;
+  color: #1d1d1f; 
   margin: 0;
   line-height: 1.2;
+  padding: 20px 0;
 }
 
 .comprar-link {
@@ -805,9 +847,8 @@ main {
   height: 600px;
   border-radius: 28px;
   position: relative;
-  color: #f4f4f0;
-  overflow: hidden;
-  display: flex;
+  color: white;
+  overflow: hidden; 
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px;
@@ -815,6 +856,17 @@ main {
   background-color: rgb(243, 243, 243);
   margin: 0 auto;
   transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.acessorio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+}
+
+.acessorio-overlay img {
+  width: 85%;
+  height: auto;
 }
 
 .acessorio-card:hover {
@@ -835,7 +887,7 @@ main {
   color: #313131cc;
   margin: 0 0 4px;
   position: relative;
-  padding: 20px;
+  padding: 30px;
 }
 
 .acessorio-overlay {
@@ -843,6 +895,7 @@ main {
   justify-content: center;
   padding: 20px;
   border-radius: 28px;
+  background-color: white;
 }
 .acessorio-textos h2 {
   font-size: 30px;
@@ -864,7 +917,8 @@ main {
   flex-wrap: wrap; 
   gap: 20px;      
   justify-content: center;
-  padding: 40px 20px;
+  padding: 40px 40px;
+  background-color: #f4f4f0;
 }
 
 .iphone-integration {
@@ -1000,44 +1054,6 @@ main {
 }
 
 
-#iphone-menu {
-  position: fixed;
-  top: 40px;
-  left: 0;
-  width: 100vw;
-  background: #f4f0f0; 
-  backdrop-filter: blur(24px) saturate(1.2);
-  -webkit-backdrop-filter: blur(24px) saturate(1.2);
-  padding: 48px 0 40px 0;
-  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
-  box-shadow: 0 16px 48px 0 rgba(0,0,0,0.18), 0 1.5px 0 rgba(0,0,0,0.04);
-  z-index: 5000;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(16px) scale(0.98);
-  transition: opacity 0.25s cubic-bezier(.4,0,.2,1), transform 0.25s cubic-bezier(.4,0,.2,1), visibility 0.25s;
-  pointer-events: none;
-  border-radius: 0 0 24px 24px;
-  border-top: 1px solid rgba(0,0,0,0.05);
-}
-
-#iphone-menu.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0) scale(1);
-  pointer-events: auto;
-  animation: slideDownMenu 0.32s cubic-bezier(.4,0,.2,1);
-}
-
-#iphone-menu::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: #ffffff;
-  z-index: -1;
-  border-radius: 0 0 24px 24px;
-}
-
 
 .body-blur::before {
   content: '';
@@ -1146,10 +1162,52 @@ main {
   opacity: 1;
 }
 
+.tooltip {
+  position: absolute;
+  top: 40px; 
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #1d1d1f;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s ease;
+  white-space: nowrap;
+  z-index: 5000;
+}
+
+.tooltip.hidden {
+  display: none;
+}
+
+.tooltip.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.tooltip-container {
+  animation: tooltipIn 0.28s ease forwards;
+}
+
+@keyframes tooltipIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .barra-items-slide {
     background-color: #f4f0f0; 
     width: 100%;
-    z-index: 3990;
+    z-index: 3990; 
     position: relative;
 }
 
@@ -1197,8 +1255,9 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 180px;
+    max-width: 80px;
 }
+
 
 .item a {
     display: flex;
@@ -1210,8 +1269,8 @@ main {
 }
 
 .item img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     margin-bottom: 0.5rem;
     transition: transform 0.3s ease;
@@ -1230,12 +1289,31 @@ main {
     font-size: 0.77rem;
     margin-top: 0.1rem;
 }
+.item p {
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+}
 
-
+.ios img {
+    width: 35px;
+    height: auto;
+    align-self: center;
+    justify-content: center;
+    transform: translateY(15px);
+}
+.ios span {
+  color: #CC5500;
+  font-weight: bold;
+}
 body.dark-mode {
   background: #18181a !important;
   color: #f4f4f0 !important;
 }
+body.dark-node .comparison-header a,
+body.dark-mode .compare-link {
+  color: #0071e3 !important;
+}
+
 
 body.dark-mode .accordion-arrow,
 body.dark-mode .accordion-content,
@@ -1244,12 +1322,10 @@ body.dark-mode .accordion-item,
 body.dark-mode .active,
 body.dark-mode .arrow,
 body.dark-mode .barra-items-slide,
-body.dark-mode .blue,
+
 body.dark-mode .body-blur,
-body.dark-mode .btn,
 body.dark-mode .buttons,
 body.dark-mode .caixa-video,
-body.dark-mode .compare-link,
 body.dark-mode .comparison-header,
 body.dark-mode .desktop 
 body.dark-mode .item,
@@ -1258,8 +1334,7 @@ body.dark-mode .iphone-comparison,
 body.dark-mode .iphone-integration,
 body.dark-mode .iphone-menu,
 body.dark-mode .iphone-menu-container,
-body.dark-mode .iphone-menu-title,
-body.dark-mode .iphone-row,
+body.dark_mode .iphone-menu-title,
 body.dark-mode .iphone-specs,
 body.dark-mode .iphone-specs-container,
 body.dark-mode .iphonevideo,
@@ -1283,8 +1358,13 @@ body.dark-mode .video-toggle,
 body.dark-mode .slide-in-right,
 body.dark-mode .item,
 body.dark-mode .item span,
-body.dark-mode .iphone-row.buttons .btn,
-body.dark-mode .iphone-row.buttons .btn.blue {
+body.dark-mode .section-ace,
+body.dark-mode footer,
+body.dark-mode footer a,
+body.dark-mode footer h4,
+body.dark-mode footer p,
+body.dark-mode .iphone-menu h2,
+body.dark-mode .footer-warning {
   background-color: #18181a !important;
   color: #f4f4f0 !important;
   
@@ -1296,29 +1376,49 @@ body.dark-mode .accordion-arrow svg,
 body.dark-mode .menu-section-list a,
 body.dark-mode .accordion-header h3,
 body.dark-mode .accordion-content p,
-.motivos-header .titulo h1 {
+body.dark-mode .motivos-header .titulo h1, 
+body.dark-mode .motivos-header .titulo,
+body.dark-mode .motivos-header h1 {
   color: #f4f4f0 !important;
 }
-body.dark-mode .desconto {
+body.dark-mode nav,
+body.dark-mode head,
+body.dark-mode header,
+body.dark-mode .logo {
+  background:#18181a;
   color: #f4f4f0 !important;
-  background-color: #2c2c2e !important;
+}
+body.dark-mode nav,
+body.dark-mode head a,
+body.dark-mode header a {
+  background:#18181a;
+  color: #f4f4f0 !important;
+}
+body.dark-mode .ios span {
+  color: #CC5500 !important;
+}
+body.dark-mode .card-overlay2,
+body.dark-mode .iphone-card2,
+body.dark-mode .acessorio-card,
+body.dark-mode .acessorio-overlay,
+body.dark-mode .acessorio-textos h2,
+body.dark-mode .acessorio-textos h5 {
+  background-color: #202020 !important;
+  color: #ffffff !important;
+  
 }
 
-/* Animação para o botão de dark mode */
 @keyframes darkmode-rotate {
   0% { transform: rotate(0deg) scale(1); }
   60% { transform: rotate(360deg) scale(1.15); }
   100% { transform: rotate(360deg) scale(1); }
 }
 
-#toggle-dark-mode.animate-darkmode {
-  animation: darkmode-rotate 0.6s cubic-bezier(.4,0,.2,1);
-}
 
 
 .trilho {
-  width: 150px;
-  height: 60px;
+  width: 100px;
+  height: 40px;
   background-color: #a5a5a5;
   border-radius: 300px;
   position: relative;
@@ -1326,14 +1426,18 @@ body.dark-mode .desconto {
   display: flex;
   align-items: center;
   padding: 8px;
+  z-index: 9999; 
 }
 
+
+
+
 .trilho .indicador {
-  width: 47px;
-  height: 44px;
+  width: 25px;
+  height: 25px;
   background-color: #ffffff;
   color: #fff;
-  border-radius: 24px;
+  border-radius: 25px;
   border: none;
   font-size: 1rem;
   cursor: pointer;
@@ -1350,80 +1454,100 @@ body.dark-mode .desconto {
 }
 
 .trilho.dark .indicador {
-  transform: translateX(calc(150px - 47px - 16px)); /* Trilho (150px) - Indicador (47px) - Padding (8px + 8px) */
+  transform: translateX(60px);
   background-color: #000000;
   color: #fff;
 }
 
-/* Opcional: texto do botão some ao deslizar */
-.trilho .indicador span {
-  transition: opacity 0.2s;
-}
 .trilho.dark .indicador span {
   opacity: 1;
 }
 
-/* Switch dark mode moderno */
-.darkmode-switch {
-  width: 70px;
-  height: 34px;
-  background: #756b6b;
-  border-radius: 34px;
-  position: relative;
-  cursor: pointer;
-  transition: background 0.3s;
-  display: flex;
-  align-items: center;
-  border: none;
-  outline: none;
-  padding: 0;
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_light.woff2') format('woff2');
 }
 
-.darkmode-switch.dark {
-  background: #0071e3;
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
 }
 
-.darkmode-switch .switch-circle {
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  border-radius: 50%;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  transition: left 0.3s cubic-bezier(.4,0,.2,1), background 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_medium.woff2') format('woff2');
 }
 
-.darkmode-switch.dark .switch-circle {
-  left: 8px;
-  background: #fff;
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_semibold.woff2') format('woff2');
 }
 
-.darkmode-switch .switch-label {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.85rem;
-  color: #222;
-  left: 8px;
-  opacity: 0;
-  transition: opacity 0.2s;
-  pointer-events: none;
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_bold.woff2') format('woff2');
 }
 
-.darkmode-switch.dark .switch-label {
-  left: 8px;
-  color: #fff;
-  opacity: 1;
+
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_semibold.woff2') format('woff2');
 }
 
-.darkmode-switch:not(.dark) .switch-label {
-  opacity: 1;
-  left: 8px;
-  color: #222;
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Display/sf-pro-display_bold.woff2') format('woff2');
+}
+
+
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 300;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 500;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
 }
