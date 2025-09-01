@@ -44,8 +44,14 @@ header {
 
 .barra-items-slide {
     width: 100%;
+<<<<<<< HEAD
     z-index: 9990;
     position: relative;
+=======
+    z-index: 2;
+    position: relative;
+    background-color: #ffffff;
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .slide-in-right {
@@ -284,6 +290,7 @@ header {
 .buttons{
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     padding-top: 1.2rem;
 }
 .button_a{
@@ -303,6 +310,64 @@ header {
     margin-bottom: 10px;
     margin-right: 25px;
 }
+=======
+    align-items: center;
+    gap: 10px;
+}
+.button_a{
+    padding: 12px 22px;
+    background-color: #0071e3;
+    color: #ffffff;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 980px;
+    outline: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button_a span, .button_b span {
+    text-decoration: none;
+}
+
+.button_a:hover {
+    background-color: rgba(0, 113, 227, 0.8);
+}
+
+.button_b{
+    color: #0071e3;
+    background-color: #f5f5f7;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    transition: background-color 0.1s;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.button_b:hover {
+    text-decoration: underline;
+}
+
+
+.nodecoration {
+    text-decoration: none;
+}
+
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 .cont_t_boxes{
     display: flex;
     gap: 3rem;
@@ -388,6 +453,10 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+<<<<<<< HEAD
+=======
+    color: #000;
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .o_card p {
@@ -396,6 +465,10 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+<<<<<<< HEAD
+=======
+    color: #000;
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .o_card1{
@@ -494,6 +567,196 @@ header {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo-e-slogan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: baseline;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  margin: 5rem;
+  font-size: 1.75rem;
+  margin-right: 7.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.ipad {
+  display: flex;
+  align-content: first baseline;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 9rem;
+  font-size: 2.5rem;
+  overflow: hidden;
+  margin-right: 7.5rem;
+  letter-spacing: -0.105em;
+  position: relative;
+  z-index: 10;
+}
+
+.ipad h1 {
+  font-size: 4.7rem;
+  font-weight: 600;
+}
+
+.slogan {
+  letter-spacing: normal;
+}
+
+.titulo-e-slogan a {
+  font-size: 1.2rem;
+  margin-right: 3px;
+}
+
+.titulo-e-slogan .saiba-mais a {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.arrow-icon {
+  transform: translate(2px, -1.5px);
+  font-size: 0.6rem;
+  color: var(--sk-body-link-color);
+  font-weight: bold;
+}
+.titulo-e-slogan#titulo {
+  font-size: 4.5rem;
+}
+.dropdown-e-imagem {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  word-wrap: wrap;
+  overflow-wrap: break-word;
+  gap: 1.25rem;
+  height: 100%;
+}
+.slogan {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.titulo-e-texto {
+  margin-top: 5rem;
+  text-align: justify;
+}
+
+.caixa-imagem {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  transition: all ease 0.2s;
+  height: 100%;
+  width: 100%;
+}
+.caixa-imagem button {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 70%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  right: 20px;
+  bottom: 30px;
+}
+
+.caixa-imagem button:active {
+  background-color: white;
+}
+
+.caixa-imagem img {
+  width: 2.8rem;
+  height: 2.8rem;
+  transition: 0.5s all ease;
+}
+
+.caixa-imagem button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+video.imagem-hero {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.2);
+  position: relative;
+  object-fit: cover;
+}
+.centralizar {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+
+
+.desconto {
+  animation: animate-color 1s ease-in-out 1.8s forwards;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #f5f5f7;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  letter-spacing: -0.02rem;
+  z-index: 1;
+  position: relative;
+}
+
+
+
+.desconto h4 {
+  font-weight: normal;
+  color: #1a1a1a;
+    font-size: 12px;
+}
+
+.desconto a {
+  color: #0071e3;
+  text-decoration: none;
+  font-weight: normal;
+  display: flex;
+  font-size: 12px;
+}
+
+.desconto span {
+    text-underline-offset: -0.28em;
+    font-feature-settings: "numr";
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.desconto a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0;
+}
+
+
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 /* -----------------------------
    SF Pro Text
 ------------------------------ */

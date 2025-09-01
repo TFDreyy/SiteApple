@@ -23,6 +23,7 @@ header {
 
 header.active {
     background-color: #000;
+<<<<<<< HEAD
 }
 
 
@@ -35,6 +36,20 @@ nav {
     gap: 2.5rem;
 }
 
+=======
+}
+
+
+nav {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 .logo {
     font-size: 0.9rem;
     font-weight: bold;
@@ -78,7 +93,7 @@ nav {
 
 
 .footer {
-  background-color: #f4f0f0;
+  background-color: rgb(245, 245, 247);
   padding: 40px 0;
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -112,28 +127,46 @@ nav {
 }
 
 .footer-store {
-  border-top: 1px solid #d2d2d7;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
   padding-top: 20px;
   margin-bottom: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-store span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.72);
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0;
 }
 
 .footer-store a {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   color: #333336;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
+  margin-bottom: 0; 
 }
 
-.footer-store a svg {
-  margin-right: 6px;
-  fill: #333336;
+.footer-store a .svg1 {
+  fill: #414141;
+  margin-right: 7px;
+
 }
 
-.footer-store a span {
-  margin: 0 8px;
-  font-size: 16px;
+.footer-store a .svg1:hover {
+  fill: rgb(36, 36, 38);
 }
+
+.footer-store .svg2 {
+  fill: rgba(55, 55, 55, 0.72);
+  margin-right: 14px;
+
+}
+
+
 
 .footer-links {
   display: flex;
@@ -143,10 +176,13 @@ nav {
 }
 
 .footer-links h4 {
-  color: #333336;
-  font-size: 14px;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 12px;
   margin-bottom: 10px;
 }
+
+
 
 .footer-links ul {
   list-style: none;
@@ -155,16 +191,20 @@ nav {
 }
 
 .footer-links li {
-  margin-bottom: 6px;
+  padding-bottom: 9px;
 }
 
 .footer-links a {
-  color: #333336;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 12px;
   text-decoration: none;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 .footer-info {
-  color: #333336;
+  color: #6e6e73;
 }
 
 .footer-info a {
@@ -173,7 +213,7 @@ nav {
 }
 
 .footer-bottom {
-  border-top: 1px solid #d2d2d7;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
   margin-top: 25px;
   padding-top: 20px;
   display: flex;
@@ -331,7 +371,7 @@ nav {
 
 .barra-anuncio {
   width: 100%;
-  background-color: #0071e3;
+  background-color: rgb(0, 113, 227);
   padding: 18px 0;
   border-bottom: 1px solid #202020;
   animation: animate-color 1s ease-in-out 1.8s forwards;
@@ -341,7 +381,7 @@ nav {
 
 @keyframes animate-color {
   0% {
-    background-color: #0071e3;
+    background-color: rgb(0, 113, 227);
   }
   100% {
     background-color: #202020;
@@ -358,6 +398,10 @@ nav {
 
 .barra-anuncio a {
   color: #ffffff;
+<<<<<<< HEAD
+=======
+  fill: #ffffff;
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   animation: color 1s ease-in-out 1.8s forwards;
   display: inline-flex;
   align-items: center;
@@ -367,14 +411,23 @@ nav {
 @keyframes color {
   0% {
     color: #ffffff;
+<<<<<<< HEAD
+=======
+    fill: #ffffff;
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   }
   100% {
-    color: #0071e3;
+    color: rgb(41, 151, 255);
+    fill: rgb(41, 151, 255);
   }
 }
 
 .botaosaibamais4 {
+<<<<<<< HEAD
   color: #0071e3;
+=======
+  color: rgb(41, 151, 255);
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
@@ -392,10 +445,10 @@ nav {
 }
 
 .seta2 {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  margin-left: 0.3em;
   text-decoration: none !important;
-  font-size: 14px;
-  align-items: center;
+  display: inline-flex;
 }
 
 
@@ -1882,7 +1935,13 @@ nav {
 
 
 
-
+.seta3 {
+  font-family: SF Pro Icons;
+  margin-left: 0.05em;
+  text-decoration: none !important;
+  align-items: center;
+  display: inline-flex;
+}
 
 
 

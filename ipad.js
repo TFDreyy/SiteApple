@@ -158,5 +158,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   updateButtons();
+<<<<<<< HEAD
 });
 
+=======
+});
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b

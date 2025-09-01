@@ -76,7 +76,7 @@ nav {
 }
 
 .footer {
-  background-color: #f4f0f0;
+  background-color: rgb(245, 245, 247);
   padding: 40px 0;
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -110,28 +110,46 @@ nav {
 }
 
 .footer-store {
-  border-top: 1px solid #d2d2d7;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
   padding-top: 20px;
   margin-bottom: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-store span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.72);
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0;
 }
 
 .footer-store a {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   color: #333336;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
+  margin-bottom: 0; 
 }
 
-.footer-store a svg {
-  margin-right: 6px;
-  fill: #333336;
+.footer-store a .svg1 {
+  fill: #414141;
+  margin-right: 7px;
+
 }
 
-.footer-store a span {
-  margin: 0 8px;
-  font-size: 16px;
+.footer-store a .svg1:hover {
+  fill: rgb(36, 36, 38);
 }
+
+.footer-store .svg2 {
+  fill: rgba(55, 55, 55, 0.72);
+  margin-right: 14px;
+
+}
+
+
 
 .footer-links {
   display: flex;
@@ -141,10 +159,13 @@ nav {
 }
 
 .footer-links h4 {
-  color: #333336;
-  font-size: 14px;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 12px;
   margin-bottom: 10px;
 }
+
+
 
 .footer-links ul {
   list-style: none;
@@ -153,16 +174,20 @@ nav {
 }
 
 .footer-links li {
-  margin-bottom: 6px;
+  padding-bottom: 9px;
 }
 
 .footer-links a {
-  color: #333336;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 12px;
   text-decoration: none;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 .footer-info {
-  color: #333336;
+  color: #6e6e73;
 }
 
 .footer-info a {
@@ -171,7 +196,7 @@ nav {
 }
 
 .footer-bottom {
-  border-top: 1px solid #d2d2d7;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
   margin-top: 25px;
   padding-top: 20px;
   display: flex;
@@ -234,7 +259,7 @@ nav {
     justify-content: flex-start;
 }
 
-.barraapple p {
+.barraapplelink1 {
     max-width: 980px;
     margin: 0 auto;
     text-align: left;

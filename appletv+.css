@@ -74,7 +74,7 @@ nav {
 }
 
 .footer {
-  background-color: #f4f0f0;
+  background-color: rgb(245, 245, 247);
   padding: 40px 0;
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -108,28 +108,46 @@ nav {
 }
 
 .footer-store {
-  border-top: 1px solid #d2d2d7;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
   padding-top: 20px;
   margin-bottom: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-store span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.72);
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0;
 }
 
 .footer-store a {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   color: #333336;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
+  margin-bottom: 0; 
 }
 
-.footer-store a svg {
-  margin-right: 6px;
-  fill: #333336;
+.footer-store a .svg1 {
+  fill: #414141;
+  margin-right: 7px;
+
 }
 
-.footer-store a span {
-  margin: 0 8px;
-  font-size: 16px;
+.footer-store a .svg1:hover {
+  fill: rgb(36, 36, 38);
 }
+
+.footer-store .svg2 {
+  fill: rgba(55, 55, 55, 0.72);
+  margin-right: 14px;
+
+}
+
+
 
 .footer-links {
   display: flex;
@@ -139,10 +157,13 @@ nav {
 }
 
 .footer-links h4 {
-  color: #333336;
-  font-size: 14px;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 12px;
   margin-bottom: 10px;
 }
+
+
 
 .footer-links ul {
   list-style: none;
@@ -151,16 +172,20 @@ nav {
 }
 
 .footer-links li {
-  margin-bottom: 6px;
+  padding-bottom: 9px;
 }
 
 .footer-links a {
-  color: #333336;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 12px;
   text-decoration: none;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 .footer-info {
-  color: #333336;
+  color: #6e6e73;
 }
 
 .footer-info a {
@@ -169,7 +194,7 @@ nav {
 }
 
 .footer-bottom {
-  border-top: 1px solid #d2d2d7;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
   margin-top: 25px;
   padding-top: 20px;
   display: flex;
@@ -237,7 +262,7 @@ nav {
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.18);
 }
 
-.barraapple p {
+.barraapplelink1 {
     max-width: 980px;
     margin: 0 auto;
     text-align: center;
@@ -399,7 +424,7 @@ nav {
 
 .barra-anuncio {
     width: 100%;
-    background-color: #0071e3;
+    background-color: rgb(0, 113, 227);
     padding: 18px 0;
     border-bottom: 1px solid #202020;
     animation: animate-color 1s ease-in-out 1.8s forwards;
@@ -409,7 +434,7 @@ nav {
 
 @keyframes animate-color {
   0%{
-    background-color:#0071e3 ;
+    background-color:rgb(0, 113, 227);
   }
 
   100% {
@@ -427,6 +452,10 @@ nav {
 
 .barra-anuncio a {
     color: #ffffff;
+<<<<<<< HEAD
+=======
+    fill: #ffffff;
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
     text-decoration: none;
     animation: color 1s ease-in-out 1.8s forwards;
 }
@@ -434,9 +463,14 @@ nav {
 @keyframes color {
   0% {
     color: #ffffff;
+<<<<<<< HEAD
+=======
+    fill: #ffffff;
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   }
   100% {
-    color: #0071e3;
+    color: rgb(41, 151, 255);
+    fill: rgb(41, 151, 255);
   }
 }
 
@@ -489,11 +523,13 @@ nav {
 }
 
 .botaosaibamais {
-  color: #0a84ff;
+  color: rgb(41, 151, 255);
+  fill: rgb(41, 151, 255);
   font-size: 17px;
   text-decoration: none;
   text-align: left;
   cursor: pointer;
+  align-items: center;
   display: inline-flex;
 }
 
@@ -506,12 +542,16 @@ nav {
 }
 
 .seta {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  fill: rgb(41, 151, 255);
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex !important;
 }
 
 
 .botaosaibamais2 {
-  color: #0a84ff;
+  color: rgb(41, 151, 255);
   font-size: 14px;
   text-decoration: none;
   text-align: left;
@@ -529,7 +569,10 @@ nav {
 }
 
 .seta2 {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex;
 }
 
 
@@ -837,26 +880,61 @@ nav {
   position: relative;
   margin-bottom: 60px;
   padding: 14px 18px;
+<<<<<<< HEAD
   display: flex;
+=======
+  display: inline-flex;
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
   border: 1px solid #ffffff;
   border-radius: 25px;
+<<<<<<< HEAD
   outline: none;
   overflow: hidden;
   color: #ffffff;
   text-align: center;
   width: fit-content;
+=======
+  color: #ffffff;
+  text-align: center;
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   left: 50%;
   transform: translate(-50%);
 }
 
+<<<<<<< HEAD
 .botaocatalogo:hover {
     color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
+=======
+.botaocatalogo:hover{
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.botaocatalogo span:hover, .botaocatalogo .setabranca:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.setabranca {
+  font-family: SF Pro Icons;
+  fill: #ffffff;
+  margin-left: 0.2em;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-flex !important;
+}
+
+
+
+.fundobranco {
+  background-color: #ffffff;
+}
+>>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 
 
 
@@ -1425,6 +1503,587 @@ nav {
 .botaosaibamaisfim:hover p {
     text-decoration: underline;
 }
+
+.botoesfim {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+
+
+
+.partebranca {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 120px;
+}
+
+
+
+
+.appletvlogo {
+  width: 75px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  display: flex;
+}
+
+.appletvlogo img {
+  fill: #000;
+}
+
+
+
+.sloganpartebranca {
+  padding-top: 27px;
+  text-align: center;
+  font-size: 45px;
+  color: #202020;
+  line-height: 1.1;
+  letter-spacing: -0.10em;
+}
+
+.sloganpartebranca h1 {
+  margin: 0;
+  font-weight: bold;
+  left: 50%;
+}
+
+.slogan2partebranca {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 12px;
+  color: #202020;
+  line-height: 1.47;
+  letter-spacing: -0.012em;
+}
+
+.slogan2partebranca h1 {
+  margin: 0;
+  font-weight: 400;
+  left: 50%;
+}
+
+
+.slogan2partebranca a {
+  color: #06c;
+}
+
+
+.slogan2partebranca a:hover {
+  text-decoration: underline;
+}
+
+.faq-section {
+  max-width: 1000px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  padding-bottom: 60px;
+}
+
+.faq-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 70px;
+  color: #202020;
+  line-height: 1.1;
+  font-weight: bold;
+  letter-spacing: -0.06em;
+}
+
+.faq-item:nth-child(-n+7) {
+  border-bottom: 1px solid rgb(190, 188, 188);
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+  font-size: 23px;
+  color: #202020;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.faq-question svg {
+  transition: transform 0.4s ease;
+  height: 12px;
+  width: 27px;
+}
+
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+  
+}
+
+.faq-answer p {
+  padding: 10px 0 20px;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: -.0004em;
+  line-height: 1.47;
+  text-align: justify;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.faq-item.active .faq-question svg {
+  transform: scaleY(-1);
+}
+
+.azul {
+  color: #0a84ff;
+  text-decoration: none;
+}
+
+.azul:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+.slogan3partebranca {
+  padding-top: 80px;
+  text-align: center;
+  font-size: 27px;
+  color: #202020;
+  line-height: 1.1;
+  letter-spacing: -0.10em;
+}
+
+.slogan3partebranca h1 {
+  margin: 0;
+  font-weight: 600;
+  left: 50%;
+}
+
+.slogan4partebranca {
+  padding-top: 18px;
+  text-align: center;
+  font-size: 16px;
+  color: #202020;
+  line-height: 1.47;
+  letter-spacing: -0.012em;
+}
+
+
+
+
+
+
+
+.botaosaibamais3 {
+  color: #06c;
+  fill: #06c;
+  font-size: 17px;
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+}
+
+.botaosaibamais3:hover {
+  text-decoration: none;
+}
+
+.botaosaibamais3:hover .texto-link3 {
+  text-decoration: underline;
+}
+
+.seta3 {
+  font-family: SF Pro Icons;
+  fill: #06c;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex !important;
+}
+
+
+
+
+
+
+.imagensfinais1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.imagensfinais2 {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin: 0 40px;
+  margin-top: 0;
+}
+
+
+.samsung {
+  background-image: url(imagens/samsung2.png);
+  background-size: 124px 102px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 124px;
+  height: 102px;
+  list-style: none;
+}
+
+.LG {
+  background-image: url(imagens/LG2.png);
+  background-size: 200px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 40px;
+  list-style: none;
+  margin: 0;
+}
+
+.vizio {
+  background-image: url(imagens/vizio2.png);
+  background-size: 114px 92px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 114px;
+  height: 92px;
+  list-style: none;
+}
+
+.sony {
+  background-image: url(imagens/sony2.png);
+  background-size: 124px 102px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 124px;
+  height: 102px;
+  list-style: none;
+}
+
+
+
+
+.roku {
+  background-image: url(imagens/roku2.png);
+  background-size: 114px 92px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 114px;
+  height: 92px;
+  list-style: none;
+}
+
+.firetv {
+  background-image: url(imagens/firetv2.png);
+  background-size: 114px 92px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 114px;
+  height: 92px;
+  list-style: none;
+}
+
+
+
+.clarotv {
+  background-image: url(imagens/clarotv+.png);
+  background-size: 130px 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 130px;
+  height: 35px;
+  list-style: none;
+}
+
+
+
+
+.playstation {
+  background-image: url(imagens/playstation2.png);
+  background-size: 154px 122px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 154px;
+  height: 122px;
+  list-style: none;
+}
+
+.xbox {
+  background-image: url(imagens/xbox2.png);
+  background-size: 134px 112px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 134px;
+  height: 112px;
+  list-style: none;
+}
+
+
+
+.parteapplemusic {
+  margin-top: 30px;
+  padding-bottom: 60px;
+}
+
+
+.applemusic {
+  position: relative;
+}
+
+.applemusic .fundoapplemusic {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.logosapplemusicetv {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  gap: 10px;
+  top: 65px;
+}
+
+.logoapplemusic {
+  width: 75px;
+  height: auto;
+}
+
+.logoappletv {
+  width: 75px;
+  height: auto;
+}
+
+.slogan5partebranca {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 27px;
+  color: #ffffff;
+  width: max-content;
+  z-index: 2;
+}
+
+.slogan5partebranca h1 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+
+
+.botaoapplemusic {
+  position: absolute;
+  z-index: 2;
+  bottom: 80px;
+  padding: 14px 18px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  overflow: hidden;
+  color: #000000;
+  background-color: #fff;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.botaoapplemusic:hover {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+.cardsdofim {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.textocardfim {
+  font-size: 38px;
+  font-weight: 700;
+  color: #202020;
+  line-height: 1.1666666667;
+  letter-spacing: -0.05em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.cardtv4k {
+  width: 800px;
+  height: auto;
+  min-height: 720px;
+  text-align: center;
+  position: relative;
+  background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+
+}
+
+.appletv4klogo {
+  width: 125px;
+  height: 37px;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.appletv4ktvbox {
+  width: 663px;
+  height: 494px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin: 0;
+  flex: 0;
+}
+
+.cardairplay {
+  width: 800px;
+  height: auto;
+  min-height: 720px;
+  text-align: center;
+  position: relative;
+  background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+
+}
+
+
+.airplayfoto {
+  width: 663px;
+  height: 515px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin: 0;
+  flex: 0;
+}
+
+.airplaytexto {
+  font-size: 32px;
+  font-weight: 400;
+  color: #202020;
+  line-height: 1.1666666667;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'SF Pro Display', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.botaocomprarfim {
+    padding: 12px 22px;
+    background-color: #06c;
+    color: #ffffff;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 980px;
+    outline: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+}
+
+.botaocomprarfim:hover {
+    background-color: rgba(0, 102, 204, 0.8);
+}
+
+
+.botaosaibamaisfim {
+  color: #06c;
+  fill: #06c;
+  font-size: 17px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+  top: 15px;
+}
+
+.botaosaibamaisfim:hover {
+  text-decoration: none;
+}
+
+.botaosaibamaisfim:hover .texto-linkfim {
+  text-decoration: underline;
+}
+
+.setafim {
+  font-family: SF Pro Icons;
+  fill: #06c;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex !important;
+}
+
+
+
+
+
 
 .botoesfim {
     display: flex;
