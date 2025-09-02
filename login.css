@@ -36,6 +36,22 @@ body {
   align-content: center;
   align-items: center;
   flex-direction: column;
+<<<<<<< HEAD
+  width: 100%;
+  height: 100%;
+  background-color: #fafafc;
+  padding: 5.5rem;
+  border-radius: 1.25rem;
+  border: solid #ccc 0.5px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.centralizar {
+  margin: 0;
+  padding: 0;
+}
+.fundo-formulario {
+=======
+>>>>>>> d3798b21565c4044d5b44921fc33c51eea6f620e
   width: 80%;
   height: 80%;
   background-color: rgba(250, 250, 250, 0.3);
@@ -68,9 +84,13 @@ body {
   position: relative;
 }
 .formulario-caixa h1 {
+<<<<<<< HEAD
+  letter-spacing: 0.75px;
+=======
   font-size: 1.5rem;
   letter-spacing: 0.75px;
   font-weight: 600;
+>>>>>>> d3798b21565c4044d5b44921fc33c51eea6f620e
 }
 form h3 {
   text-align: left;
@@ -115,6 +135,10 @@ input::placeholder{
 
 input:hover {
   transform: translateY(-1.75px);
+<<<<<<< HEAD
+  box-shadow: 2px 2px 8px 3px rgba(147, 145, 145, 0.4);
+=======
+>>>>>>> d3798b21565c4044d5b44921fc33c51eea6f620e
 }
 
 form button:hover {
@@ -129,6 +153,8 @@ form button:hover {
   width: 100vw;
   height: 70vh;
 }
+<<<<<<< HEAD
+=======
 
 .footer, .footer-links a, .footer-links h4, p.footer-info, p, .footer-legal a, .footer-bottom p {
   background: transparent;
@@ -247,3 +273,4 @@ p#faleconosco {
   font-style: normal;
   src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
 }
+>>>>>>> d3798b21565c4044d5b44921fc33c51eea6f620e

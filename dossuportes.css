@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+=======
+>>>>>>> d3798b21565c4044d5b44921fc33c51eea6f620e
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -106,7 +112,6 @@
   width: 100%;
   height: auto;
   display: block;
-  max-height: 500px;
 }
 
 

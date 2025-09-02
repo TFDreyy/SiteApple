@@ -34,6 +34,18 @@
 
 ## ✒️ Autores
 
+<<<<<<< HEAD
+* **Andrey** - [Andrey](https://github.com/TFDreyy)
+* **Eric** - [Eric](https://github.com/AragaosHouse)
+* **Lucas Fonseca** - [Lucas Fonseca](https://github.com/LucasFonseca12)
+* **Giovanni Viana** - [Giovanni Viana](https://github.com/givanyo)
+* **Kauã Matheus** - [Kauã Matheus](https://github.com/Gouveak)
+* **Eduardo Braga** - [Eduardo Braga](https://github.com/braga-08)
+* **Eduardo Yuri** - [Eduardo Yuri](https://github.com/Godenot-print)
+* **Wendell** - [Wendell](https://github.com/Wendell-Vilela)
+* **Rodrigo** - [Rodrigo](https://github.com/Rodrigo-Desenvolvedor)
+* **Gustavo Andrade** - [Gustavo Andrade](https://github.com/GBatata)
+=======
 * **Andrey** - [Andrey](https://github.com/TFDreyy)  
 * **Eduardo Braga** - [Eduardo Braga](https://github.com/braga-08)  
 * **Eduardo Yuri** - [Eduardo Yuri](https://github.com/Godenot-print)  
@@ -44,6 +56,7 @@
 * **Lucas Fonseca** - [Lucas Fonseca](https://github.com/LucasFonseca12)  
 * **Rodrigo** - [Rodrigo](https://github.com/Rodrigo-Desenvolvedor)  
 * **Wendell** - [Wendell](https://github.com/Wendell-Vilela)
+>>>>>>> d3798b21565c4044d5b44921fc33c51eea6f620e
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/TFDreyy/SiteApple/graphs/contributors) que participaram deste projeto.
 

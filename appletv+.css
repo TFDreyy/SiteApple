@@ -262,7 +262,7 @@ nav {
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.18);
 }
 
-.barraapplelink1 {
+.barraapple p {
     max-width: 980px;
     margin: 0 auto;
     text-align: center;
@@ -424,7 +424,7 @@ nav {
 
 .barra-anuncio {
     width: 100%;
-    background-color: rgb(0, 113, 227);
+    background-color: #0071e3;
     padding: 18px 0;
     border-bottom: 1px solid #202020;
     animation: animate-color 1s ease-in-out 1.8s forwards;
@@ -434,7 +434,7 @@ nav {
 
 @keyframes animate-color {
   0%{
-    background-color:rgb(0, 113, 227);
+    background-color:#0071e3 ;
   }
 
   100% {
@@ -452,7 +452,6 @@ nav {
 
 .barra-anuncio a {
     color: #ffffff;
-    fill: #ffffff;
     text-decoration: none;
     animation: color 1s ease-in-out 1.8s forwards;
 }
@@ -460,11 +459,9 @@ nav {
 @keyframes color {
   0% {
     color: #ffffff;
-    fill: #ffffff;
   }
   100% {
-    color: rgb(41, 151, 255);
-    fill: rgb(41, 151, 255);
+    color: #0071e3;
   }
 }
 
@@ -517,13 +514,11 @@ nav {
 }
 
 .botaosaibamais {
-  color: rgb(41, 151, 255);
-  fill: rgb(41, 151, 255);
+  color: #0a84ff;
   font-size: 17px;
   text-decoration: none;
   text-align: left;
   cursor: pointer;
-  align-items: center;
   display: inline-flex;
 }
 
@@ -536,16 +531,12 @@ nav {
 }
 
 .seta {
-  font-family: SF Pro Icons;
-  fill: rgb(41, 151, 255);
-  margin-left: 0.3em;
-  text-decoration: none !important;
-  display: inline-flex !important;
+  margin-left: 5px;
 }
 
 
 .botaosaibamais2 {
-  color: rgb(41, 151, 255);
+  color: #0a84ff;
   font-size: 14px;
   text-decoration: none;
   text-align: left;
@@ -563,10 +554,7 @@ nav {
 }
 
 .seta2 {
-  font-family: SF Pro Icons;
-  margin-left: 0.3em;
-  text-decoration: none !important;
-  display: inline-flex;
+  margin-left: 5px;
 }
 
 
@@ -874,36 +862,27 @@ nav {
   position: relative;
   margin-bottom: 60px;
   padding: 14px 18px;
-  display: inline-flex;
+  display: flex;
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
   border: 1px solid #ffffff;
   border-radius: 25px;
+  outline: none;
+  overflow: hidden;
   color: #ffffff;
   text-align: center;
+  width: fit-content;
   left: 50%;
   transform: translate(-50%);
 }
 
-.botaocatalogo:hover{
+.botaocatalogo:hover {
     color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-.botaocatalogo span:hover, .botaocatalogo .setabranca:hover {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.setabranca {
-  font-family: SF Pro Icons;
-  fill: #ffffff;
-  margin-left: 0.2em;
-  text-align: center;
-  text-decoration: none !important;
-  display: inline-flex !important;
-}
 
 
 
@@ -1103,13 +1082,12 @@ nav {
 
 .botaosaibamais3 {
   color: #06c;
-  fill: #06c;
-  font-size: 17px;
+  font-size: 16px;
   text-decoration: none;
   text-align: left;
   cursor: pointer;
-  align-items: center;
   display: inline-flex;
+  align-items: center;
 }
 
 .botaosaibamais3:hover {
@@ -1121,11 +1099,7 @@ nav {
 }
 
 .seta3 {
-  font-family: SF Pro Icons;
-  fill: #06c;
-  margin-left: 0.3em;
-  text-decoration: none !important;
-  display: inline-flex !important;
+  margin-left: 5px;
 }
 
 
@@ -1453,40 +1427,29 @@ nav {
     background-color: rgba(0, 102, 204, 0.8);
 }
 
-
 .botaosaibamaisfim {
-  color: #06c;
-  fill: #06c;
-  font-size: 17px;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  align-items: center;
-  display: inline-flex;
-  position: relative;
-  top: 15px;
+    color: #06c;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
-.botaosaibamaisfim:hover {
-  text-decoration: none;
+.botaosaibamaisfim p {
+    padding-right: 5px;
 }
 
-.botaosaibamaisfim:hover .texto-linkfim {
-  text-decoration: underline;
+.botaosaibamaisfim:hover p {
+    text-decoration: underline;
 }
-
-.setafim {
-  font-family: SF Pro Icons;
-  fill: #06c;
-  margin-left: 0.3em;
-  text-decoration: none !important;
-  display: inline-flex !important;
-}
-
-
-
-
-
 
 .botoesfim {
     display: flex;
