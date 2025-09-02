@@ -3534,24 +3534,31 @@ nav {
 
 .botaosaibamais {
   color: #ffffff;
-  background-color: transparent;
-  border: none;
+  fill: #ffffff;
   font-size: 11px;
   font-weight: 600;
   text-decoration: none;
+  text-align: left;
   outline: none;
   cursor: pointer;
-  display: flex;
   align-items: center;
+  display: inline-flex;
 }
 
-.botaosaibamais p {
-  padding-right: 5px;
-  margin: 0;
+.botaosaibamais:hover {
+  text-decoration: none;
 }
 
-.botaosaibamais:hover p {
+.botaosaibamais:hover .texto-link {
   text-decoration: underline;
+}
+
+.seta {
+  font-family: SF Pro Icons;
+  fill: #ffffff;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex !important;
 }
 
 .fundobranco {
