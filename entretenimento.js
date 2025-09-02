@@ -67,96 +67,62 @@ const body = document.body;
 let entretenimentoMenuTimer;
 let openGuardUntil = 0;
 
+
 const showEntretenimentoMenu = () => {
   clearTimeout(entretenimentoMenuTimer);
   body.classList.add('body-blur');
   entretenimentoMenu.style.display = 'block';
   header.classList.add('active');
   header.style.backgroundColor = '#161617';
+
   setTimeout(() => {
-    entretenimentoMenu.classList.add('show');
-    openGuardUntil = Date.now() + 150;
+    entretenimentoMenu.classList.add('show'); 
+    openGuardUntil = Date.now() + 150; 
   }, 10);
 };
+
 
 const hideEntretenimentoMenu = () => {
+  clearTimeout(entretenimentoMenuTimer);
+
+  entretenimentoMenu.classList.remove('show'); 
+  header.classList.remove('active');
+  header.style.backgroundColor = '';
+
   entretenimentoMenuTimer = setTimeout(() => {
-    entretenimentoMenu.classList.remove('show');
-    header.classList.remove('active');
-    header.style.backgroundColor = '';
-    setTimeout(() => {
-      entretenimentoMenu.style.display = 'none';
-      body.classList.remove('body-blur');
-    }, 300);
-  }, 300);
+    entretenimentoMenu.style.display = 'none';
+    body.classList.remove('body-blur');
+  }, 0);
 };
 
-const quickHideEntretenimentoMenu = () => {
-  clearTimeout(entretenimentoMenuTimer);
-  entretenimentoMenuTimer = setTimeout(() => {
-    entretenimentoMenu.classList.remove('show');
-    header.classList.remove('active');
-    header.style.backgroundColor = '';
-    setTimeout(() => {
-      entretenimentoMenu.style.display = 'none';
-      body.classList.remove('body-blur');
-    }, 10);
-  }, 10);
-};
 
 function closestAnchor(el) {
   return el ? el.closest('a') : null;
 }
 
+
 if (entretenimentoBtn && entretenimentoMenu && header) {
 
   entretenimentoBtn.addEventListener('mouseenter', showEntretenimentoMenu);
-
   entretenimentoMenu.addEventListener('mouseenter', showEntretenimentoMenu);
-
   entretenimentoMenu.addEventListener('mouseleave', hideEntretenimentoMenu);
+
 
   header.addEventListener('mousemove', (e) => {
     const anchor = closestAnchor(e.target);
-    const overMenu = e.target.closest('#entretenimento-menu')
+    const overMenu = e.target.closest('#entretenimento-menu');
     const isOpen = entretenimentoMenu.classList.contains('show');
     const inGuard = Date.now() < openGuardUntil;
 
-    if (overMenu) {
-
+    if (overMenu || anchor === entretenimentoBtn) {
       showEntretenimentoMenu();
-      return;
-    }
-
-    if (anchor) {
-
-      if (anchor === entretenimentoBtn) {
-
-        showEntretenimentoMenu();
-      } else {
-
-        if (!inGuard) hideEntretenimentoMenu();
-      }
-    } else {
-
-      if (isOpen || inGuard) {
-        showEntretenimentoMenu();
-      } else {
-
-      }
+    } else if (!inGuard) {
+      hideEntretenimentoMenu();
+    } else if (isOpen) {
+      showEntretenimentoMenu();
     }
   });
+
 
   header.addEventListener('mouseleave', hideEntretenimentoMenu);
-
-  entretenimentoBtn.addEventListener('click', (e) => {
-    if (window.innerWidth <= 768) {
-      e.preventDefault();
-      if (entretenimentoMenu.classList.contains('show')) {
-        quickHideEntretenimentoMenu();
-      } else {
-        showEntretenimentoMenu();
-      }
-    }
-  });
 }
