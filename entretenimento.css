@@ -22,7 +22,7 @@ header {
 }
 
 header.active {
-    background-color: #000;
+    background-color: #161617;
 }
 
 
@@ -1933,27 +1933,25 @@ nav {
 
 
 
-
 #entretenimento-menu {
   position: fixed;
   top: 44px;
   left: 0;
   width: 100%;
   background: #161617;
-  backdrop-filter: blur(1rem);
   padding: 32px 0 40px;
   z-index: 10000;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-1rem) scale(0.98);
-  transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
+  transform: translateY(-15px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: none;
 }
 
 #entretenimento-menu.show {
   opacity: 1;
+  transform: translateY(0);
   visibility: visible;
-  transform: translateY(0) scale(1);
   pointer-events: auto;
 }
 
@@ -2043,13 +2041,13 @@ nav {
 .body-blur::before {
   content: '';
   position: fixed;
-  top:  3.75rem;
+  top: 3.75rem;
   left: 0;
   width: 100vw;
   height: calc(100vh - 3.75rem);
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(0.75rem) saturate(1.1);
-  -webkit-backdrop-filter: blur(0.75rem) saturate(1.1);
+  backdrop-filter: blur(0.15rem);
+  -webkit-backdrop-filter: blur(0.15rem);
   z-index: 2000;
   pointer-events: none;
 }
@@ -2061,6 +2059,8 @@ nav {
 .menu-explorar {
   margin-right: 3rem;
 }
+
+
 
 
 
