@@ -34,7 +34,6 @@
 
 ## ✒️ Autores
 
-<<<<<<< HEAD
 * **Andrey** - [Andrey](https://github.com/TFDreyy)
 * **Eric** - [Eric](https://github.com/AragaosHouse)
 * **Lucas Fonseca** - [Lucas Fonseca](https://github.com/LucasFonseca12)
