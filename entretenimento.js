@@ -48,3 +48,81 @@ initAutoScroll('.carousel3', '.scroll3', { velocidadeNormal: 1.5, velocidadeHove
 initAutoScroll('.carousel4', '.scroll4', { velocidadeNormal: 1.5, velocidadeHover: 0.5 });
 initAutoScroll('.carousel5', '.scroll5', { velocidadeNormal: 1.5, velocidadeHover: 0.5 });
 initAutoScroll('.carousel6', '.scroll6', { velocidadeNormal: 1.5, velocidadeHover: 0.5 });
+
+
+
+
+
+
+
+
+
+
+
+const entretenimentoBtn = document.getElementById('entretenimento-menu-btn');
+const entretenimentoMenu = document.getElementById('entretenimento-menu');
+const header = document.querySelector('header');
+const body = document.body;
+
+let entretenimentoMenuTimer;
+let openGuardUntil = 0;
+
+
+const showEntretenimentoMenu = () => {
+  clearTimeout(entretenimentoMenuTimer);
+  body.classList.add('body-blur');
+  entretenimentoMenu.style.display = 'block';
+  header.classList.add('active');
+  header.style.backgroundColor = '#161617';
+
+  setTimeout(() => {
+    entretenimentoMenu.classList.add('show'); 
+    openGuardUntil = Date.now() + 150; 
+  }, 10);
+};
+
+
+const hideEntretenimentoMenu = () => {
+  clearTimeout(entretenimentoMenuTimer);
+
+  entretenimentoMenu.classList.remove('show'); 
+  header.classList.remove('active');
+  header.style.backgroundColor = '';
+
+  entretenimentoMenuTimer = setTimeout(() => {
+    entretenimentoMenu.style.display = 'none';
+    body.classList.remove('body-blur');
+  }, 0);
+};
+
+
+function closestAnchor(el) {
+  return el ? el.closest('a') : null;
+}
+
+
+if (entretenimentoBtn && entretenimentoMenu && header) {
+
+  entretenimentoBtn.addEventListener('mouseenter', showEntretenimentoMenu);
+  entretenimentoMenu.addEventListener('mouseenter', showEntretenimentoMenu);
+  entretenimentoMenu.addEventListener('mouseleave', hideEntretenimentoMenu);
+
+
+  header.addEventListener('mousemove', (e) => {
+    const anchor = closestAnchor(e.target);
+    const overMenu = e.target.closest('#entretenimento-menu');
+    const isOpen = entretenimentoMenu.classList.contains('show');
+    const inGuard = Date.now() < openGuardUntil;
+
+    if (overMenu || anchor === entretenimentoBtn) {
+      showEntretenimentoMenu();
+    } else if (!inGuard) {
+      hideEntretenimentoMenu();
+    } else if (isOpen) {
+      showEntretenimentoMenu();
+    }
+  });
+
+
+  header.addEventListener('mouseleave', hideEntretenimentoMenu);
+}
