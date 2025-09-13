@@ -88,7 +88,7 @@ nav {
 .barraapple {
     width: 100%;
     background-color: #ffffff;
-    padding: 15px 0;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -102,15 +102,15 @@ nav {
     text-align: left;
     justify-content: center;
     align-items: center;
-    padding-left: 20vw;
-    font-weight: 600;
+    padding-left: 21.5vw;
+    font-weight: 800;
     font-size: 1.25rem;
     color: #1d1d1f;
 }
 
 .testar-button {
     padding: 0.25rem 0.5rem;
-    margin-right: 18vw;
+    margin-right: 21.5vw;
     background-color: #fa243c;
     color: #ffffff;
     border: none;
@@ -156,11 +156,13 @@ nav {
         margin-top: -3rem;
         opacity: 0;
     }
+
     100% {
         margin-top: 0;
         opacity: 1;
     }
 }
+
 @keyframes color2 {
     0% {
         color: #ffffff;
@@ -391,6 +393,7 @@ nav {
 }
 
 .music-logo {
+    margin-top: 8rem;
     width: 10rem;
     height: auto;
     display: block;
@@ -981,10 +984,155 @@ nav {
 
 
 
+.faq-section {
+    max-width: 62.5rem;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.25rem;
+    margin-bottom: 8rem;
+}
+
+.faq-section h1 {
+    text-align: center;
+    margin-bottom: 1.875rem;
+    font-size: 4.375rem;
+    color: #202020;
+    line-height: 1.1;
+    font-weight: bold;
+    letter-spacing: -0.06em;
+}
+
+.faq-item:nth-child(-n+15) {
+    border-bottom: 0.0625rem solid rgb(190, 188, 188);
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 1.25rem 0;
+    text-align: left;
+    font-size: 1.4375rem;
+    color: #202020;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.faq-question svg {
+    transition: transform 0.4s ease;
+    height: 0.75rem;
+    width: 1.6875rem;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+    opacity: 0;
+}
+
+.faq-answer p {
+    padding: 0.625rem 0 1.25rem;
+    color: #000000;
+    font-size: 1rem;
+    letter-spacing: -.00
+}
+
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.faq-item.active .faq-question svg {
+    transform: scaleY(-1);
+}
+
+.azul {
+    color: #0071e3;
+    text-decoration: underline;
+}
 
 
 
+.sua-musica {
+    background-color: #f5f5f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8rem 0;
+}
 
+.container-logo-sua-musica {
+    width: 3.75rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.container-logo-sua-musica img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+.titulo-sua-musica {
+    margin-bottom: 1rem;
+}
+
+.titulo-sua-musica h2 {
+    font-size: 2.5rem;
+    font-weight: 625;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+.sua-musica-texto {
+    margin-top: 1.5rem;
+    padding: 0;
+    text-align: center;
+}
+
+.sua-musica-texto p {
+    color: #1d1d1f;
+    font-size: 1rem;
+    letter-spacing: -.00
+}
+
+.container-texto-sua-musica {
+    margin: 0;
+}
+
+.container-sua-musica-link {
+    height: fit-content;
+    display: flex;
+    gap: 0;
+}
+
+.sua-musica-link {
+    padding: 0;
+    margin: 0;
+}
+
+.sua-musica a {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #0071e3;
+    text-decoration: none;
+    letter-spacing: -0.02rem;
+}
+
+.sua-musica a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    color: #0071e3;
+}
 
 /* -----------------------------
    SF Pro Text
