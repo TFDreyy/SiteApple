@@ -121,3 +121,13 @@ faqItems.forEach(item => {
     item.classList.toggle("active");
   });
 });
+
+const barraApple = document.querySelector('.barraapple');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    barraApple.classList.add('scrolled');
+  } else {
+    barraApple.classList.remove('scrolled');
+  }
+});

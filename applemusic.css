@@ -194,24 +194,24 @@ nav {
 }
 
 
-.depois-cabecalho {
-    align-items: center;
-    justify-content: center;
-}
-
-
 .barraapple {
     width: 100%;
     background-color: #ffffff;
-    padding: 1rem 0;
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.3s ease;
 }
 
+.barraapple.scrolled {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2rem);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1818181818);
+}
 
 .barraapplelink1 {
     text-align: left;
@@ -369,6 +369,14 @@ nav {
     line-height: 1;
     font-weight: 600;
     margin-top: 0;
+}
+
+.p_cinza-grande {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: rgb(210, 210, 215);
+    letter-spacing: normal;
 }
 
 .p_cinza {
@@ -530,7 +538,7 @@ nav {
 
 .card {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background-color: #1a1a1a;
     border-radius: 1.75rem;
     background-size: cover;
@@ -925,12 +933,6 @@ nav {
     display: flex;
     text-align: center;
     align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.cardspreto-content:hover {
-    transform: scale(1.01);
-    transition: transform 0.3s ease;
 }
 
 .cardpreto {
@@ -1049,12 +1051,6 @@ nav {
     position: relative;
     flex-direction: column;
     display: flex;
-    transition: transform 0.3s ease;
-}
-
-.card-assinatura:hover {
-    transform: scale(1.01);
-    transition: transform 0.3s ease;
 }
 
 .card-assinatura h2 {
