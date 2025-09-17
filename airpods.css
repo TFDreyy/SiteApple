@@ -18,7 +18,7 @@ body {
 
 
 .barra-items-slide {
-    background-color: #f4f0f0;
+    background-color:#ffffff;
     width: 100%;
     z-index: 9990;
     position: relative;
@@ -68,7 +68,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 180px;
+    max-width: 6,25rem;
 }
 
 .item a {
@@ -86,7 +86,7 @@ body {
   object-fit: cover;
   margin-bottom: 0.5rem;
   transition: transform 0.3s ease;
-  border-radius: 8px;
+  border-radius: o.5rem;
 }
 
 .item a:hover {
@@ -123,7 +123,8 @@ body {
   }
 
   100% {
-    background-color: #ffffff69;
+     background-color: #f4f0f0;
+
   }
 }
 
@@ -131,7 +132,7 @@ body {
     max-width: 980px;
     margin: 0 auto;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #f4f4f0;
     animation: color2 1s ease-in-out 1.8s forwards;
 }
@@ -260,7 +261,7 @@ video {
   padding: 8px 10px;
   border: none;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
     position: absolute;     
   bottom: 4%;           
@@ -328,7 +329,7 @@ video {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0 20px;
+	padding: 0 1.25rem;
 	perspective: 2500px;
 	cursor: pointer;
 	border-radius: 30px;
@@ -448,7 +449,7 @@ video {
 .card2 {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
-  width: 300px;
+  width: 18.75rem;
   display: flex;
   flex-direction: column;  
   align-items: center;
@@ -458,10 +459,9 @@ video {
 }
 
 
-
 .card2 img {
-  width: 200px;  
-  height: 200px;    
+  width: 12.5rem;  
+  height: 12.5rem;    
   object-fit: contain;
   margin-bottom: 1rem;
 }
@@ -470,7 +470,7 @@ video {
 
 .card2 h3 {
   margin: 0.5rem 0;
-  min-height: 40px; 
+  min-height: 2.5rem; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -478,7 +478,7 @@ video {
 
 
 .card2 .descricao {
-  min-height: 60px;
+  min-height: 3.75rem;
   padding: 0 1rem;
   color: #444;
   display: flex;
@@ -491,7 +491,7 @@ video {
 .card2 .negrito {
   font-weight: bold;
   margin: 0.5rem 0;
-  min-height: 25px;
+  min-height: 1.5625rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -503,20 +503,20 @@ video {
   margin-top: auto;
   display: flex;
   flex-direction: column; 
-  gap: 10px;             
+  gap: 0.625rem;             
   align-items: center;   
 }
 
 
 .btn {
   flex: 1;
-  padding: 6px 8px;
+  padding: 0.375rem 0.5rem;
   border: none;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   font-weight: normal;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .comprar {
@@ -540,9 +540,9 @@ video {
 
 
 .linha {
-   margin: 16px auto 0; 
- width: 250px;
-  height: 1px; 
+   margin: 1rem auto 0; 
+ width: 15.625rem;
+  height: 0.0625rem; 
 background-color: #ccc; 
 }
 
@@ -586,12 +586,12 @@ background-color: #ccc;
 .comparar a {
   text-decoration: none;  
   color: #0082d8; 
-  margin-top: 50px;
+  margin-top: 3.125rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2 0 200px 0;
-  font-size: 20px;
+  margin: 2 0 12.5rem 0;
+  font-size: 1.25rem;
   text-align: center;  
 }
 
@@ -603,23 +603,23 @@ background-color: #ccc;
 
 .titulo-cards{
     color: #1D1D1F;
-  margin-top: 50px;
+  margin-top: 3.125rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
-  font-size: 90px;
+  font-size: 5.625rem;
   text-align: center;
 }
 
 .titulo-cards2{
     color: #1D1D1F;
-  margin-top: 50px;
+  margin-top: 3.125rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10 0 0 0;
-  font-size: 90px;
+  font-size: 5.625rem;
   text-align: center;
 }
 
@@ -652,15 +652,15 @@ background-color: #ccc;
 
 .card-icon2 {
   position: absolute;
-  bottom: 40px;
-  right: 20px;
-  width: 32px;
-  height: 32px;
+  bottom: 2.5rem;
+  right: 1.25rem;
+  width: 2rem;
+  height: 2rem;
   background-color: rgb(66, 65, 65);
   color: #f4f4f0;
   border: none;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 1.25rem;
   cursor: pointer;
   z-index: 2;
 }
@@ -670,9 +670,9 @@ background-color: #ccc;
     text-align: left;
   text-decoration: none;
   font-size: 1.2rem;
-  padding: 0.5cm;
-  padding-left: 0.9cm;
-  padding-top: 40px;
+  padding: 1.181rem;
+  padding-left: 1.417rem;
+  padding-top: 2.5rem;
   color: #e0e0e0;
 
 }
@@ -681,9 +681,9 @@ background-color: #ccc;
   text-align: left;
   text-decoration: none;
   font-size: 1.2rem;
-  padding: 0.5cm;
-  padding-left: 0.9cm;
-  padding-top: 40px;
+  padding: 1.181rem;
+  padding-left: 1.417rem;
+  padding-top: 2.5rem;
   color: #000000;
 
 }
@@ -691,9 +691,9 @@ background-color: #ccc;
 
 .card-fone {
   background-color: #f4f0f0;
-  border-radius: 15px;
-  width: 374px;
-  height: 677px;
+  border-radius: 0.9375rem;
+  width: 23.375rem;
+  height: 42.3125rem;
   text-align: center;
 
   background-image: url("imagensair/Airpods-card.jpg");
@@ -705,9 +705,9 @@ background-color: #ccc;
 
 .card-spacial {
   background-color: #f4f0f0;
-  border-radius: 15px;
-   width: 374px;
-  height: 677px;
+  border-radius: 0.9375rem;
+   width: 23.375rem;
+  height: 42.3125rem;
   text-align: center;
   
   background-image: url("imagensair/card-spacial.jpg");
@@ -719,9 +719,9 @@ background-color: #ccc;
 
 .card-mulher {
   background-color: #f4f0f0;
-  border-radius: 15px;
-   width: 374px;
-  height: 677px;
+  border-radius: 0.9375rem;
+   width: 23.375rem;
+  height: 42.3125rem;
   text-align: center;
   
   background-image: url("imagensair/mulher-airpods.jpg");
@@ -733,9 +733,9 @@ background-color: #ccc;
 
 .card-siri {
   background-color: #f4f0f0;
-  border-radius: 15px;
-  width: 374px;
-  height: 677px;
+  border-radius: 0.9375rem;
+  width: 23.375rem;
+  height: 42.3125rem;
   text-align: center;
 
   background-image: url("imagensair/siricard.jpeg");
@@ -746,9 +746,9 @@ background-color: #ccc;
 
 .card-cllfone {
   background-color: #f4f0f0;
-  border-radius: 15px;
-  width: 374px;
-  height: 677px;
+  border-radius: 0.9375rem;
+  width: 23.375rem;
+  height: 42.3125rem;
   text-align: center;
 
   background-image: url("imagensair/iphone-airpods.jpg");
@@ -763,12 +763,13 @@ background-color: #ccc;
 
 .container-cards {
   display: flex;
-  gap: 20px; 
+  gap: 1.25rem; 
   overflow-x: auto;
-  padding: 30px 90px;
+  padding: 1.875rem 5.625rem;
   scroll-behavior: smooth;
   flex-wrap: nowrap;
 }
+
 
 
 .mac-carousel {
@@ -792,6 +793,7 @@ background-color: #ccc;
 }
 
 
+
 .cards>div {
   scroll-snap-align: start;
 }
@@ -808,16 +810,16 @@ background-color: #ccc;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
   
 }
 
@@ -827,11 +829,11 @@ background-color: #ccc;
 }
 
 .mac-carousel .arrow.left {
-  left: 15px;
+  left: 0.9375rem;
 }
 
 .mac-carousel .arrow.right {
-  right: 15px;
+  right: 0.9375rem;
 }
 
 .mac-carousel .arrow:disabled {
@@ -840,13 +842,16 @@ background-color: #ccc;
 }
 
 
+
+
+
 .card-music {
   justify-content: space-between;
-  padding: 60px;
+  padding: 3.75rem;
   width: 100%;
-  height: 500px;
+  height: 31.25rem;
   background-color: #fafafa;
-  margin-top: 210px;
+  margin-top: 13.125rem;
 
 }
 
@@ -858,26 +863,27 @@ background-color: #ccc;
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   text-align: center;
-  margin: 0 168px;
+  margin: 0 10.5rem
+
   
 }
 
 
 .texto-music {
   max-width: 40%;
-  font-size: 30px;
-  margin: 0px 130px;
+  font-size: 1.875rem;
+  margin: 0rem 8.125rem;
 }
 
 .texto-music a {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 1.875rem;
   color: #0071e3;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.0625rem;
 }
 
 .texto-music a:hover {
@@ -894,9 +900,10 @@ background-color: #ccc;
 .img-fundo-music {
   display: flex;
   align-items: center;
-  width: 2000px;
-  height: 0px;
+  width: 125rem;
+  height: 0rem;
   text-align: center;
+
 
 }
 
@@ -904,7 +911,7 @@ background-color: #ccc;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 0.625rem;
   flex-wrap: wrap;
   padding: 0 2rem;
 }
@@ -912,47 +919,44 @@ background-color: #ccc;
 .informaçoes-finais {
   display: flex;
   flex-direction: row;
-  align-content: first baseline;
-  align-items: flex start;
-  gap: 1px;
+  align-items: flex-start;
+  gap: 0.625rem;
   padding: 0 0.25rem;
-  margin-left: 160px;
+  margin-left: 0;      
+  justify-content: center;
+  flex-wrap: wrap;     
 }
 
 .info-finais {
-  min-height: 300px;
+  flex: 1 1 300px;     
+  max-width: 400px;     
+  min-height: 18.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 20rem;
+  height: auto;         
   text-align: center;
   padding: 4rem;
+  box-sizing: border-box;
 }
 
 .info-finais p {
-
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-.titulo-info{
-
+.titulo-info {
   font-size: 1.1rem;
-
   font-weight: bold;
-
 }
 
-
-.saiba-mais-info a{
-
-  margin-top: 30px;
+.saiba-mais-info a {
+  margin-top: 1.875rem;
   color: #0071e3;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
-
 
 .saiba-mais-info a:hover {
   text-decoration: underline;
@@ -1038,14 +1042,14 @@ background-color: #ccc;
     src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
 }
 
-@font-face {
+@font-face { 
     font-family: 'SF Pro Icons';
     font-weight: 600;
     font-style: normal;
     src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
 }
 
-@font-face {
+@font-face { 
     font-family: 'SF Pro Icons';
     font-weight: 700;
     font-style: normal;
