@@ -1236,26 +1236,3 @@ section h1 {
   max-width: 1000px;
   margin: 0 auto;
 }
-
-
-
-.card-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.card-container {
-  display: flex;
-  overflow: hidden;
-  width: 300px; /* Ajuste conforme necessário */
-  scroll-behavior: smooth;
-}
-
-.card {
-  min-width: 300px;
-  flex-shrink: 0;
-  margin-right: 10px;
-  transition: transform 0.3s ease;
-}
