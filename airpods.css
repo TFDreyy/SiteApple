@@ -771,7 +771,6 @@ background-color: #ccc;
 }
 
 
-
 .mac-carousel {
   position: relative;
   width: 100%;
@@ -791,7 +790,6 @@ background-color: #ccc;
   scroll-padding: 4rem;
   scroll-snap-type: x mandatory;
 }
-
 
 
 .cards>div {
@@ -842,10 +840,6 @@ background-color: #ccc;
 }
 
 
-
-
-
-
 .card-music {
   justify-content: space-between;
   padding: 60px;
@@ -867,10 +861,8 @@ background-color: #ccc;
   width: 50px;
   height: 50px;
   text-align: center;
-  margin: 0 168px
-
+  margin: 0 168px;
   
-
 }
 
 
@@ -906,12 +898,7 @@ background-color: #ccc;
   height: 0px;
   text-align: center;
 
-
 }
-
-
-
-
 
 .informaçoes {
   display: flex;
