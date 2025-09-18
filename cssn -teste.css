@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-color: #f4f0f0; 
+    color: rgba(0, 0, 0, 0.767);           
+}      
+
+header {
+    background-color: #f4f0f0;      
+    padding: 0 24px;
+    height: 44px;
+    display: flex;                           
+    width: 100%;                   
+    top: 0;                          
+}
+
+nav {
+    max-width: 1200px;               
+    margin: 0 auto;                   
+    display: flex;                    
+    justify-content: space-between;    
+    align-items: center;    
+    gap: 45px;        
+}
+
+.menu {
+    display: flex;
+    gap: 0.9rem;
+}
+
+.menu a {
+    font-size: 0.77rem;
+    text-decoration: none;           
+    color: #27272d;                          
+    transition: color 0.3s;
+    margin-right: 2rem;
+}
+
+.menu a:hover {
+    color: rgb(0, 0, 0);        
+}
+
+/* Mantive apenas o essencial das fontes */
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
