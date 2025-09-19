@@ -217,3 +217,39 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+const primeiroitem = document.getElementById("ipad-e-iphone");
+primeiroitem.classList.add("active");
+const textoCompanheiros = document.querySelectorAll(".texto-companheiros");
+const companheiros = document.querySelector(".companheiros");
+
+companheiros.classList.add("ipadIphone");
+// efeito do texto dropdown
+
+textoCompanheiros.forEach((texto) => {
+  texto.addEventListener("click", () => {
+    if (texto.classList.contains("active")) {
+      texto.classList.toggle("active");
+      companheiros.classList.remove("ipadMac", "ipadAppleWatch");
+    } else {
+      textoCompanheiros.forEach((el) => el.classList.remove("active"));
+      texto.classList.toggle("active");
+
+      switch (texto.id) {
+        case "ipad-e-iphone":
+          companheiros.classList.remove("ipadMac", "ipadAppleWatch");
+          companheiros.classList.add("ipadIphone");
+          break;
+
+        case "ipad-e-mac":
+          companheiros.classList.remove("ipadAppleWatch");
+          companheiros.classList.add("ipadMac");
+          break;
+
+        default:
+          companheiros.classList.remove("ipadMac");
+          companheiros.classList.add("ipadAppleWatch");
+          break;
+      }
+    }
+  });
+});
