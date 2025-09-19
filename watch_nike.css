@@ -35,7 +35,7 @@ header {
 }
 .cont_img_g img{
     height: 600px;
-    object-fit: contain;
+    object-fit: fill;
 }
 .hero{
     padding: 40px;
@@ -44,6 +44,7 @@ header {
 }
 .hero img{
     margin: 20px;
+    object-fit: fill;
 }
 .hero_bt{
     margin-bottom: 20px;
@@ -139,8 +140,10 @@ header {
 .img_card img{
     overflow: hidden;
     object-fit: fill;
-    width: 600px;
-    height: 700px;    
+    min-width: 600px;
+    height: 700px;
+    border-radius: 25px;
+    margin: 10px;
 }
 .b_card p{
     color: #86868b;
@@ -148,7 +151,7 @@ header {
     font-weight: bold;
 }
 .b_card h5{
-    font-size: 23px;
+    font-size: 50px;
 }
 .cont_t_card{
     display: flex;
