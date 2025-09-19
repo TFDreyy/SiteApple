@@ -12,7 +12,7 @@ transition: 0.0s;
 }      
 
 header {
-    background-color: #ffffff;
+    background-color: #f4f0f0;
     padding: 0 1.5rem;
     height: 2.75rem;
     display: flex;
@@ -21,7 +21,7 @@ header {
 }
 
 header.active {
-    background-color: #f5f5f7;
+    background-color: #f4f0f0;
     transition: background-color 0.3s ease;
 }
 
@@ -102,7 +102,7 @@ main {
   }
 
   100% {
-    background-color: #ffffff69;
+    background-color: #f4f0f0;
   }
 }
 
@@ -1181,7 +1181,109 @@ a:hover {
     z-index: 3990; 
     position: relative;
 }
+.companheiros-caixa {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  height: 95%;
+}
+.companheiros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: space-around;
+  padding: 7.5rem;
+  border-radius: 1.75rem;
+  background-color: #f5f5f5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: all 0.2s ease-out;
+  text-align: left;
+  width: 90%;
+  height: 45rem;
+  background-size: 60%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
 
+.companheiros.ipadIphone {
+  background-image: url("imagens iphone/iphonemac.jpg\ \(2\).png");
+}
+
+.companheiros.ipadMac {
+  background-image: url("imagens iphone/iphoneapplewatch.jpg\ \(2\).png");
+}
+
+.companheiros.ipadAppleWatch {
+  background-image: url("imagens iphone/iphoneairpods-removebg-preview\ \(2\).png");
+}
+
+.texto-companheiros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  border-bottom: 0.8px solid #ccc;
+  padding: 15px 0;
+  cursor: pointer;
+  width: 35%;
+  line-height: 25px;
+}
+.dropdown-e-imagem {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  word-wrap: wrap;
+  overflow-wrap: break-word;
+  gap: 1.25rem;
+  height: 100%;
+}
+.texto-companheiros i {
+  font-size: 0.25rem;
+}
+#ultimoitem {
+  border: none;
+}
+.texto-companheiros h2 {
+  font-size: 1.85rem;
+  font-weight: 600;
+}
+
+.texto-companheiros p {
+  display: none;
+  margin-top: 1rem;
+  color: #222111;
+  transition: all 0.2s ease;
+}
+
+.texto-companheiros.active p {
+  display: block;
+  animation: 0.5s aparecer forwards;
+}
+.texto-companheiros.active#ultimoitem p {
+  animation: 0.5s aparecer-ultimoitem forwards;
+}
+
+.texto-companheiros .arrow-icon {
+  font-size: 1.5rem;
+  color: #8d8d8d;
+  font-weight: bold;
+  transform: scaleY(-1);
+  transition: 0.33s ease-in-out;
+}
+
+.texto-companheiros .arrow-icon:hover {
+  color: #6f6e6e;
+}
+
+.texto-companheiros.active .arrow-icon {
+  transform: scaleY(1);
+}
 .slide-in-right {
     display: flex;
     justify-content: center;
@@ -1264,7 +1366,184 @@ a:hover {
     font-size: 0.8rem;
     margin-top: 1.4rem;
 }
+.conheca-familia2 {
+  background-color: #f5f5f7;
+  overflow: auto;
+  margin-top: 10rem;
+}
 
+.menu-final {
+  display: flex;
+  top: 2.75rem;
+  left: 0;
+  width: 100%;
+  background: #f5f5f7;
+  padding: 0.5rem 5rem 10rem 5rem;
+  gap: 3.5rem;
+}
+
+.menu-explorar-final {
+  margin-right: 3.5rem;
+}
+
+.menu-explorar-final h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  margin-right: 7rem;
+  color: rgb(110, 110, 115);
+}
+
+.menu-explorar-final a {
+  font-size: 1.8rem;
+  font-weight: 625;
+  text-decoration: none;
+  color: #1d1d1f;
+  margin-top: 0.25rem;
+}
+
+.menu-explorar-final a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.menu-explorar-final ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.menu-explorar-final h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.menu-explorar-final h4:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.menu-comprar-final h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: rgb(110, 110, 115);
+}
+
+.menu-comprar-final ul {
+  list-style: none;
+}
+
+.menu-comprar-final a {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #1d1d1f;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu-comprar-final a:hover {
+  color: rgb(0, 0, 0);
+}
+
+
+/* -----------------------------
+   SF Pro Text
+------------------------------ */
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 300;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 500;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Display
+------------------------------ */
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Display/sf-pro-display_semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Display/sf-pro-display_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Icons
+------------------------------ */
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 300;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 500;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
+}
 .ios img {
     width: 35px;
     height: auto;
