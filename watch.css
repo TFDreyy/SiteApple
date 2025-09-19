@@ -134,6 +134,80 @@ header {
 
 }
 
+
+.mac-carousel {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+
+.mac-carousel .iphone-scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 0 4rem;
+  scroll-padding: 4rem;
+  scroll-snap-type: x mandatory;
+}
+
+
+
+.cards>div {
+  scroll-snap-align: start;
+}
+
+
+
+.mac-carousel .iphone-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.mac-carousel .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.mac-carousel .arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f4f4f0;
+}
+
+.mac-carousel .arrow.left {
+  left: 15px;
+}
+
+.mac-carousel .arrow.right {
+  right: 15px;
+}
+
+.mac-carousel .arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+
+
+
 .cont_card{
   position: relative;
   width: 100%;
