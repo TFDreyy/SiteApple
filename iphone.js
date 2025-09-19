@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // =========================
-  // Vídeo play/pause toggle
-  // =========================
+
   const video = document.getElementById("videoMac");
   const toggleButton = document.getElementById("videoToggle");
   const toggleIcon = document.getElementById("toggleIcon");
@@ -21,9 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if(toggleButton) toggleButton.addEventListener("click", togglePlayPause);
   if(video) video.addEventListener("click", togglePlayPause);
 
-  // =========================
-  // Video box scroll animation
-  // =========================
+
   const videoBox = document.querySelector('.caixa-video');
   if(videoBox) {
     const screenHeight = window.innerHeight;
@@ -63,9 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // =========================
-  // Abrir / fechar card info
-  // =========================
+  
   function abrirCardinfo(id) {
     const el = document.getElementById(id);
     if(el) {
@@ -102,9 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // =========================
-  // Accordion toggle
-  // =========================
+
   function toggleAccordion(element, index) {
     const wasActive = element.classList.contains('active');
     document.querySelectorAll('.accordion-item').forEach(item => {
@@ -132,9 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   window.toggleAccordion = toggleAccordion;
 
-  // =========================
-  // Carousel funcional
-  // =========================
+
   const carousel = document.getElementById("carouselId");
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
@@ -154,9 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // =========================
-  // Intersection observer para animações
-  // =========================
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if(entry.isIntersecting) entry.target.classList.add('animated');
@@ -167,9 +155,6 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 
-  // =========================
-  // Tooltip iphone
-  // =========================
   const iphoneBtn = document.getElementById('iphone-menu-btn');
   const iphoneTooltip = document.getElementById('iphone-tooltip');
   let tooltipTimer;
@@ -197,9 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
     iphoneTooltip.addEventListener('mouseleave', hideTooltip);
   }
 
-  // =========================
-  // Dark mode toggle
-  // =========================
+
   const trilho = document.querySelector('.trilho');
 
   function atualizarImagens() {

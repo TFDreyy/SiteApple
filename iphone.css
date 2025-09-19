@@ -234,7 +234,7 @@ main {
   scroll-behavior: smooth;
 }
 .iphone-carousel::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none; 
 }
 
 #carouselId {
@@ -345,7 +345,7 @@ main {
   font-weight: 700;
 }
 
-/* Regras globais de botão */
+
 button {
   margin-right: 1.25rem;
   background-color: var(--sk-button-background);
@@ -478,8 +478,8 @@ a:hover {
 
 .close-btn {
   position: absolute;
-  top: 20px;   /* ajusta vertical */
-  right: 15px; /* ajusta horizontal — aumenta pra jogar mais pra direita */
+  top: 20px;  
+  right: 15px; 
   background: none;
   border: none;
   font-size: 24px;
@@ -636,7 +636,7 @@ a:hover {
   padding: 1.5rem;
   border-radius: 1.5rem;
   background-color: white;
-  width: 22rem; /* largura menor para caber 4 na mesma linha */
+  width: 22rem; 
   height: 18rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
