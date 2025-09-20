@@ -11,6 +11,12 @@ body {
   color: #000;
 }
 
+header {
+  position: sticky;
+  z-index: 1000;
+  background-color: rgba(255,255,255,0.8);
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -72,6 +78,7 @@ body {
   font-weight: bold;
   background: linear-gradient(90deg, #ff3b30, #ff9500, #34c759, #007aff, #af52de);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 15px 0 5px;
 }
