@@ -407,7 +407,10 @@ video.imagem-hero {
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: 0.175s ease;
+<<<<<<< HEAD
+=======
   padding-bottom: 0.1em;
+>>>>>>> d3798b21565c4044d5b44921fc33c51eea6f620e
 }
 .conheca-wrapper button#prevBtn {
   left: 0px;
