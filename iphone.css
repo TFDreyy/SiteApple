@@ -12,56 +12,60 @@ transition: 0.0s;
 }      
 
 header {
-background-color: #f4f0f0;      
-padding: 0 24px;
-height: 44px;
-display: flex;                           
-width: 100%;                   
-top: 0;                          
+    background-color: #f4f0f0;
+    padding: 0 1.5rem;
+    height: 2.75rem;
+    display: flex;
+    width: 100%;
+    top: 0;
 }
 
+header.active {
+    background-color: #f4f0f0;
+    transition: background-color 0.3s ease;
+}
+
+
 nav {
-max-width: 1200px;               
-margin: 0 auto;                   
-display: flex;                    
-justify-content: space-between;    
-align-items: center;    
-gap: 45px;        
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .logo {
-font-size: 0.9rem;               
-font-weight: bold;              
-color: #27272d;   
-flex-shrink: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #1d1d1f;
+    flex-shrink: 0;
 
 }
 
 .simbolo_apple {
-height: 18.5px;
-width: auto;
-margin: 0 16px;
-flex-shrink: 0;
-font-weight: bold;
+    height: 1rem;
+    width: auto;
+    margin: 0 1rem;
+    flex-shrink: 0;
+    font-weight: bold;
 }
 
 .menu {
     display: flex;
-    gap:0.9rem;
+    gap: 2.5rem;
 
 }
 
 .menu a {
-font-size: 0.77rem;
-text-decoration: none;           
-color: #27272d;                          
-transition: color 0.3s;
-margin-right: 2rem;
-     
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #1d1d1fd3;
+    transition: color 0.3s;
 }
 
 .menu a:hover {
-color: rgb(0, 0, 0);        
+    color: rgb(0, 0, 0);
 }
 
 
@@ -98,7 +102,7 @@ main {
   }
 
   100% {
-    background-color: #ffffff69;
+    background-color: #f4f0f0;
   }
 }
 
@@ -217,301 +221,220 @@ main {
 }
 
 .iphone-carousel {
-  position: relative;
-  width: 100%;
-  overflow: visible; 
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
   align-items: center;
-  margin: 1.25rem 0;
-  padding: 0 auto;
-  z-index: 1; 
+  gap: 2rem;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  position: relative;
+   overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.iphone-carousel::-webkit-scrollbar {
+  display: none; 
 }
 
-.arrow {
+#carouselId {
+  transition: transform 0.85s ease-out;
+}
+
+.iphone-carousel-wrapper {
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.iphone-carousel-wrapper button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  cursor: pointer;
   position: absolute;
+  z-index: 2;
+  background-color: white;
+  color: black;
+  font-size: 1.25rem;
+  box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.175s ease;
+  padding-bottom: 0.1em;
+}
+
+.iphone-carousel-wrapper button#prevBtn {
+  left: 0px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 20px;
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+}
+.iphone-carousel-wrapper button#nextBtn {
+  right: -1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #f4f4f0;
-}
-
-.arrow.left {
-  left: 15px;
-}
-.arrow.right {
-  right: 15px;
-}
-
-.arrow:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
-}
-
-.iphone-scroll {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  gap: 20px;
-  padding: 20px 0;
-  width: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: visible; 
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  contain: none;
-  z-index: 1;
-}
-
-.iphone-carousel .iphone-scroll {
-  display: flex;
-  overflow-x: auto;
-  overflow-y: visible;
-  scroll-behavior: smooth;
-  gap: 2rem;
-  padding: 0 4rem;
-  scroll-padding: 4rem;
-  scroll-snap-type: x mandatory;
-}
-.iphone-card {
-  flex: 0 0 auto;
-  width: 300px;
-  height: 550px;
-  border-radius: 28px;
-  position: relative;
-  color: white;
-  overflow: hidden; 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.iphone-carousel-wrapper button:hover {
   background-color: black;
-  transition: z-index 0.2s;
-  z-index: 1;
+  color: white;
+  box-shadow: 1px 1px 4px 4px rgba(255, 255, 255, 0.3);
 }
 
-.iphone-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-}
-
-.card-textos {
+.iphone-card {
   display: flex;
   flex-direction: column;
-  align-items: stretch; 
-  justify-content: flex-start;
-  text-align: inherit; 
-  height: 100%;
+  gap: 1rem;
+  background-color: #f4f0f0;
+  border-radius: 15px;
+  width: calc(400rem / 16);
+  height: calc(700rem / 16);
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 1.4rem;
+  flex: 0 0 auto;
+  padding-left: 0.2rem;
   position: relative;
+  overflow: hidden;
 }
-
-.card-textos h5 {
-  font-size: 14px;
-  color: #ffffffcc;
-  margin: 0 0 4px;
-  position: relative;
-}
-
-.card-textos h2 {
-  font-size: 20px;
-  color: #f4f4f0;
-  margin: 0;
-  line-height: 1.3;
-  font-weight: bold;
-  z-index: 2;
-}
-
 .card-icon {
   position: absolute;
   bottom: 20px;
-  right: 20px;
-  width: 32px;
-  height: 32px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #f4f4f0;
+  right: 0px;
+  background: rgb(104, 104, 104);
+  color: rgb(82, 82, 82);
   border: none;
   border-radius: 50%;
+  width: 30px;
+  height: 30px;
   font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
-  z-index: 2;
-}
-.card-imagem {
-  position: relative;
-  width: 410px;
-  margin: 16px 0 0 -95px; 
-  height: auto;
-  object-fit: contain;
-  border-radius: 16px;
-  margin-bottom: 16px;
+  transition: transform 0.2s, background 0.3s;
 }
 
-.iphone-carousel .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.8);
+.card-icon:hover {
+  transform: scale(1.15);
+  background: #444;
+}
+.iphone-card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.iphone-card-title {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5;
+  padding-left: 0.9cm;
+  color: #e0e0e0;
+}
+
+.iphone-card-text {
+  text-align: left;
+  font-size: 1.7rem;
+  padding-left: 0.9cm;
+  padding-right: 0.7cm;
+  color: #f5f5f5;
+  font-weight: 700;
+}
+
+
+button {
+  margin-right: 1.25rem;
+  background-color: var(--sk-button-background);
+  color: white;
+  border-radius: 1.6rem;
+  width: 8.25rem;
+  height: 2.75rem;
+  text-align: center;
   border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  outline: none;
+  font-size: 1rem;
+  transition: all ease 0.5s;
+}
+
+a {
+  color: var(--sk-body-link-color);
+}
+
+a:hover {
+  text-decoration: underline;
   cursor: pointer;
-  font-size: 20px;
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  text-decoration-color: var(--sk-button-background-hover);
 }
 
-.iphone-carousel .arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #f4f4f0;
+.card button:hover {
+  cursor: pointer;
+  background-color: var(--sk-button-background-hover);
 }
 
-.iphone-carousel .arrow.left {
-  left: 15px;
+.card button:active {
+  background-color: var(--sk-button-background-active);
+  transform: scale(0.985);
 }
 
-.iphone-carousel .arrow.right {
-  right: 15px;
+.card img:hover {
+  transform: translateY(-7.5px);
+  cursor: pointer;
 }
 
-.iphone-carousel .arrow:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
+.card span {
+  margin-left: 0.33em;
+  color: var(--sk-body-link-color);
+  font-weight: bold;
+  line-height: 1.25em;
+  text-align: center;
+  font-size: 1rem;
 }
-
-
-.card-img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  object-fit: cover;
-  display: block;
-  margin-bottom: 16px;
+#appleintelligence {
+  background-image: url("imagens iphone/iphonecardgif1.gif");
 }
-.card-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding: 20px;
-  border-radius: 28px;
-  gap: 20px;
-}
-.card-overlay2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding: 20px;
-  border-radius: 28px;
-  gap: 20px;
-}
-.card-tres {
+#criatividade {
   background: linear-gradient(135deg, #07002c 0%, #3f002f 100%);
-  margin: 0 0 0 0;
 }
-.card-quatro {
-  background: white;
-  color:  black;
-}
-.card-quatro, .card-quatro .card-textos, .card-quatro .card-textos h2, .card-quatro .card-textos h5 {
-  color: black;
-}
-.card-cinco {
-  background: linear-gradient(120deg, #e6e1c5, #b6a96b, #1f1f09, #e6e1c5);
-  position: relative;
-  overflow: hidden;
-  animation: card5-gradient-rotate 6s linear infinite;
-}
-
-@keyframes card5-gradient-rotate {
-  0% {
-    background: linear-gradient(120deg, #e6e1c5, #b6a96b, #1f1f09, #e6e1c5);
-  }
-  100% {
-    background: linear-gradient(480deg, #e6e1c5, #b6a96b, #1f1f09, #e6e1c5);
-  }
-}
-.card-sete {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.card-textos {
-  position: relative;
-  z-index: 1;
-}
-
-.brilho-animado {
-  position: relative;
-  display: flex;
-  justify-content: center;
+#criatividade img {
   align-items: center;
-  overflow: visible;
+  justify-content: center;
+  width: 200px;
+  height: auto;
+  padding: 125px 0 100px 0;
+  margin: 0 auto;
 }
 
-.brilho-animado::before {
-  content: "";
-  position: absolute;
-  top: 50%; left: 50%;
-  width: 200px; 
-  height: 200px; 
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 4px solid transparent;
-  border-top: 4px solid rgba(255,255,255,0.7);
-  border-right: 4px solid rgba(255,255,255,0.3);
-  border-bottom: 4px solid rgba(255,255,255,0.1);
-  border-left: 4px solid rgba(255,255,255,0.3);
-  pointer-events: none;
-  z-index: 2;
-  animation: brilho-circular 2.5s linear infinite;
-  margin-top: 50px;
+#produtividade {
+ background-color: #000;
+}
+#produtividade img {
+   align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 10px 100px 10px 10px;
+  margin: 0 auto;
 }
 
-@keyframes brilho-circular {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
+#entretenimento {
+  background: linear-gradient(120deg, #e6e1c5, #b6a96b, #1f1f09, #e6e1c5);
 }
 
-@keyframes luz-girando {
-  100% {
-    transform: rotate(360deg);
-  }
+#aprendizado {
+  background-image: url("imagens iphone/iphonecard4gif.gif");
+}
+#inovacao {
+  background-color: black;
+}
+#personalizacao {
+  background-image: url("imagens iphone/applegif (2).gif");
+}
+#tranquilidade {
+  background-image: url("imagens iphone/cardgif8 (2).gif");
 }
 .cardinfo {
   position: fixed;
@@ -555,24 +478,13 @@ main {
 
 .close-btn {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;  
+  right: 15px; 
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
   color: #333;
-}
-
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
 }
 .cardinfo-body {
   display: flex;
@@ -695,7 +607,88 @@ main {
   margin-bottom: 15px;
   color: #1d1d1f;
 }
+.caixa-beneficios {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  overflow-x: auto;
+}
+.caixa-beneficios img{
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.5rem;
+}
 
+.texto-beneficio {
+  text-align: center;
+}
+
+.beneficio {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-evenly;
+  gap: 0.3rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  width: 22rem; 
+  height: 18rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: all ease 0.3s;
+  text-align: left;
+  box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.6);
+}
+
+.beneficio:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.beneficio .botao-plus {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.beneficio .botao-plus:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+.beneficio h3 {
+  height: 3rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.beneficio p {
+  text-align: left;
+  padding: 0 1rem 1rem;
+  color: #000000;
+  height: 13rem;
+  line-height: 1.5em;
+  margin: 2.75rem 0;
+}
+
+.beneficio img {
+  margin-bottom: 0.5rem;
+}
 .spec-item hr {
   width: 20px;
   border: none;
@@ -765,30 +758,8 @@ main {
   border-radius: 20px;
 }
 
-.iphone-card2 {
-  flex: 0 0 auto;
-  width: 370px;
-  height: 300px;
-  border-radius: 28px;
-  position: relative;
-  color: rgb(0, 0, 0);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: rgb(255, 255, 255);
-  margin: 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  will-change: transform;
-  z-index: 1;
-}
 
-.iphone-card2:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
+
 .card-textos2 {
   display: flex;
   flex-direction: column;
@@ -1210,7 +1181,109 @@ main {
     z-index: 3990; 
     position: relative;
 }
+.companheiros-caixa {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  height: 95%;
+}
+.companheiros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: space-around;
+  padding: 7.5rem;
+  border-radius: 1.75rem;
+  background-color: #f5f5f5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: all 0.2s ease-out;
+  text-align: left;
+  width: 90%;
+  height: 45rem;
+  background-size: 60%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
 
+.companheiros.ipadIphone {
+  background-image: url("imagens iphone/iphonemac.jpg\ \(2\).png");
+}
+
+.companheiros.ipadMac {
+  background-image: url("imagens iphone/iphoneapplewatch.jpg\ \(2\).png");
+}
+
+.companheiros.ipadAppleWatch {
+  background-image: url("imagens iphone/iphoneairpods-removebg-preview\ \(2\).png");
+}
+
+.texto-companheiros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  border-bottom: 0.8px solid #ccc;
+  padding: 15px 0;
+  cursor: pointer;
+  width: 35%;
+  line-height: 25px;
+}
+.dropdown-e-imagem {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  word-wrap: wrap;
+  overflow-wrap: break-word;
+  gap: 1.25rem;
+  height: 100%;
+}
+.texto-companheiros i {
+  font-size: 0.25rem;
+}
+#ultimoitem {
+  border: none;
+}
+.texto-companheiros h2 {
+  font-size: 1.85rem;
+  font-weight: 600;
+}
+
+.texto-companheiros p {
+  display: none;
+  margin-top: 1rem;
+  color: #222111;
+  transition: all 0.2s ease;
+}
+
+.texto-companheiros.active p {
+  display: block;
+  animation: 0.5s aparecer forwards;
+}
+.texto-companheiros.active#ultimoitem p {
+  animation: 0.5s aparecer-ultimoitem forwards;
+}
+
+.texto-companheiros .arrow-icon {
+  font-size: 1.5rem;
+  color: #8d8d8d;
+  font-weight: bold;
+  transform: scaleY(-1);
+  transition: 0.33s ease-in-out;
+}
+
+.texto-companheiros .arrow-icon:hover {
+  color: #6f6e6e;
+}
+
+.texto-companheiros.active .arrow-icon {
+  transform: scaleY(1);
+}
 .slide-in-right {
     display: flex;
     justify-content: center;
@@ -1293,7 +1366,184 @@ main {
     font-size: 0.8rem;
     margin-top: 1.4rem;
 }
+.conheca-familia2 {
+  background-color: #f5f5f7;
+  overflow: auto;
+  margin-top: 10rem;
+}
 
+.menu-final {
+  display: flex;
+  top: 2.75rem;
+  left: 0;
+  width: 100%;
+  background: #f5f5f7;
+  padding: 0.5rem 5rem 10rem 5rem;
+  gap: 3.5rem;
+}
+
+.menu-explorar-final {
+  margin-right: 3.5rem;
+}
+
+.menu-explorar-final h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  margin-right: 7rem;
+  color: rgb(110, 110, 115);
+}
+
+.menu-explorar-final a {
+  font-size: 1.8rem;
+  font-weight: 625;
+  text-decoration: none;
+  color: #1d1d1f;
+  margin-top: 0.25rem;
+}
+
+.menu-explorar-final a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.menu-explorar-final ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.menu-explorar-final h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.menu-explorar-final h4:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.menu-comprar-final h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: rgb(110, 110, 115);
+}
+
+.menu-comprar-final ul {
+  list-style: none;
+}
+
+.menu-comprar-final a {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #1d1d1f;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu-comprar-final a:hover {
+  color: rgb(0, 0, 0);
+}
+
+
+/* -----------------------------
+   SF Pro Text
+------------------------------ */
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 300;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 500;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Text/sf-pro-text_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Display
+------------------------------ */
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Display/sf-pro-display_semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Display/sf-pro-display_bold.woff2') format('woff2');
+}
+
+
+/* -----------------------------
+   SF Pro Icons
+------------------------------ */
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 300;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 500;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
+}
 .ios img {
     width: 35px;
     height: auto;
@@ -1363,7 +1613,9 @@ body.dark-mode footer,
 body.dark-mode footer a,
 body.dark-mode footer h4,
 body.dark-mode footer p,
+body.dark-mode .texto-beneficio,
 body.dark-mode .iphone-menu h2,
+body.dark-mode .beneficio,
 body.dark-mode .footer-warning {
   background-color: #18181a !important;
   color: #f4f4f0 !important;
@@ -1398,7 +1650,6 @@ body.dark-mode .ios span {
   color: #CC5500 !important;
 }
 body.dark-mode .card-overlay2,
-body.dark-mode .iphone-card2,
 body.dark-mode .acessorio-card,
 body.dark-mode .acessorio-overlay,
 body.dark-mode .acessorio-textos h2,
