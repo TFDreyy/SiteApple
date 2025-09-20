@@ -1,0 +1,152 @@
+* {
+  font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+main {
+    background-color: #f4f0f0;
+}
+
+.vid_cont {
+    overflow: hidden;
+    border-radius: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+.text_vid {
+    position: absolute;
+    z-index: 3;
+    font-size: 2rem;
+    padding-top: 600px;
+    margin-left: 200px;
+}
+
+.vid {
+    object-fit: cover; 
+    width: 100%;
+    z-index: 1;
+}
+
+.text_title {
+    margin-top: 10rem;
+    margin-left: 5rem;
+    position: relative;
+    z-index: 3;
+    font-size: 2rem;
+    background-color: #f4f0f0;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.titulo_c {
+    text-align: justify;
+    padding: 5% 0 5% 5%;
+    background-color: #f4f0f0;
+}
+
+.titulo_c h1 {
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+
+.cont_t_card {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #f4f0f0;
+}
+
+.t_card {
+    background-color: #fff;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 30px;
+    width: 380px;
+}
+
+.t_card h2 {
+    font-size: 2rem;
+}
+
+.t_card p {
+    padding-top: 15px;
+}
+
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
+}
+
+/* Container do carrossel */
+.carousel {
+  position: relative;
+  max-width: 100%; /* ocupa toda a largura */
+  margin: 80px auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Faixa de slides */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Cada slide */
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background: #ffffff;
+  color: #000000;
+  padding: 60px 20px; /* aumentei a altura */
+}
+
+.carousel-item img {
+  max-width: 80%;   /* antes 60% */
+  margin-bottom: 30px;
+  border-radius: 12px;
+  justify-content: center;
+}
+
+/* Botões */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.2);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  color: #000000;
+  transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
