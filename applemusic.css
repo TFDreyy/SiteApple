@@ -197,7 +197,7 @@ nav {
 .barraapple {
     width: 100%;
     background-color: #ffffff;
-    padding: 15px 0;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -217,7 +217,7 @@ nav {
     text-align: left;
     justify-content: center;
     align-items: center;
-    padding-left: 21.5vw;
+    padding-left: 22.5vw;
     font-weight: 800;
     font-size: 1.25rem;
     color: #1d1d1f;
@@ -225,7 +225,7 @@ nav {
 
 .testar-button {
     padding: 0.25rem 0.5rem;
-    margin-right: 21.5vw;
+    margin-right: 22.5vw;
     background-color: #fa243c;
     color: #ffffff;
     border: none;
@@ -429,13 +429,13 @@ nav {
 }
 
 .linha-divisoria {
-    width: 100%;
+    width: 80%;
     height: 0.05rem;
-    margin: 0;
     background-color: rgb(210, 210, 215);
     opacity: 0.25;
     display: flex;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    display: block;
 }
 
 .button-opcoes {
@@ -608,10 +608,16 @@ nav {
 
 .p_cinza-cards {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 550;
-    color: #6e6e73;
-    letter-spacing: normal;
+    color: rgb(134, 134, 139);
+}
+
+.p_cinza-cards2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 550;
+    color: #f4f4f0;
 }
 
 .container-titulo-main {
@@ -623,6 +629,16 @@ nav {
 .titulo-main-branco {
     text-align: center;
     font-size: 5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-top: 0;
+    color: #f4f4f0;
+    letter-spacing: -0.05em;
+}
+
+.titulo-main-branco2 {
+    text-align: center;
+    font-size: 4rem;
     line-height: 1;
     font-weight: 600;
     margin-top: 0;
@@ -697,7 +713,7 @@ nav {
 }
 
 .p_cinza-hover {
-    text-align: left;
+    text-align: justify;
     font-size: 1.5rem;
     font-weight: 550;
     color: rgb(210, 210, 215);
@@ -892,10 +908,15 @@ nav {
 
 .titulo-pequeno {
     margin-top: 1.5rem;
-    font-weight: 600;
     color: #f4f4f0;
     text-align: center;
-    font-size: 1rem;
+}
+
+.titulo-pequeno h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+
 }
 
 .container-texto-plano {
@@ -923,11 +944,11 @@ nav {
     justify-content: center;
     align-items: stretch;
     gap: 1.4rem;
-    margin: 0 16rem;
-    margin-top: 4rem;
+    width: 66%;
+    margin: 4rem auto 0 auto;
 }
 
-.cardspreto-content {
+a .cardspreto-content {
     flex: 1 1 0;
     min-width: 0;
     display: flex;
@@ -1035,6 +1056,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin-top: 1.4rem;
+    margin: 1.4rem auto 0 auto;
 }
 
 .card-assinatura {
@@ -1097,7 +1119,7 @@ nav {
 
 
 .faq-section {
-    max-width: 62.5rem;
+    max-width: 65rem;
     margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
