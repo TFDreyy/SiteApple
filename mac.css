@@ -84,22 +84,27 @@
 .titulo-e-slogan h1 {
   font-size: 4.5rem;
   line-height: 1.1;
+  letter-spacing: -0.15rem;
 }
 
 .slogan {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.2;
 }
 
 .titulo-e-slogan2 {
-  font-size: 3.5rem;
+  font-size: 2.25rem;
   margin: 9rem 5rem 4rem 5rem;
   line-height: 1.1;
-  font-size: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.titulo-e-slogan2 h2 {
+  font-weight: 550;
+  letter-spacing: -0.15rem;
 }
 
 .titulo-e-texto {
@@ -217,17 +222,15 @@
   text-align: left;
   text-decoration: none;
   font-size: 1rem;
-  padding: 0.5cm;
-  padding-left: 0.9cm;
+  padding: 2.25rem 0 0.75rem 2.25rem;
   color: #1a1a1a;
   font-weight: 600;
 }
 
 .frase-escuro {
   text-align: left;
-  font-size: 1.7rem;
-  padding-left: 0.9cm;
-  padding-right: 0.7cm;
+  font-size: 1.5rem;
+  padding-left: 2.25rem;
   color: #1a1a1a;
 }
 
@@ -235,17 +238,15 @@
   text-align: left;
   text-decoration: none;
   font-size: 1rem;
-  padding: 0.5cm;
-  padding-left: 0.9cm;
+  padding: 2.25rem 0 0.75rem 2.25rem;
   color: #f5f5f5;
   font-weight: 600;
 }
 
 .frase-impacto {
   text-align: left;
-  font-size: 1.7rem;
-  padding-left: 0.9cm;
-  padding-right: 0.7cm;
+  font-size: 1.5rem;
+  padding-left: 2.25rem;
   color: #f5f5f5;
 
 }
@@ -485,130 +486,6 @@
   max-width: 100%;
   height: 100%;
 }
-
-.card-icon {
-  position: absolute;
-  bottom: 1.25rem;
-  right: 1.25rem;
-  width: 2rem;
-  height: 2rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #1d1d1f;
-  border: none;
-  border-radius: 50%;
-  font-size: 1.25rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-
-}
-
-.card-icon:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #f4f4f0;
-}
-
-/*position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 20px;
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-*/
-
-.cardinfo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  overflow: auto;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.cardinfo-content {
-  position: relative;
-  background-color: #f4f4f0;
-  width: 85%;
-  max-width: 800px;
-  max-height: 90vh;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-  overflow-y: auto;
-  animation: cardFadeIn 0.4s ease-out;
-}
-
-@keyframes cardFadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #333;
-}
-
-.cardinfo-body {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-
-.cardinfo-text {
-  flex: 1 1 300px;
-  font-size: 1.4rem;
-  line-height: 1.6;
-}
-
-.cardinfo-image {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cardinfo-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
-
-
 
 @-webkit-keyframes slide-in-right {
   0% {
@@ -881,10 +758,9 @@
 }
 
 .titulo-e-slogan3 {
-  font-size: 3.5rem;
+  font-size: 2.25rem;
   margin: 15rem 5rem 4rem 5rem;
   line-height: 1.1;
-  font-size: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -892,12 +768,13 @@
 
 .titulo-e-slogan3 h2 {
   padding-top: 9rem;
+  font-weight: 550;
+  letter-spacing: -0.15rem;
 }
 
 .link-comparar {
   font-size: 1.1rem;
-  padding-right: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: #0071e3;
   text-decoration: none;
   letter-spacing: -0.02rem;
@@ -1089,13 +966,13 @@
 
 .conteudo h3 {
   font-size: 2rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .conteudo p {
   font-size: 1.1rem;
-  margin: 0.5rem 0 0.5rem 0;
-  font-weight: 450;
+  margin: 0.5rem 0 1rem 0;
+  font-weight: 400;
 }
 
 .card-resolve img {
@@ -1107,7 +984,7 @@
 }
 
 .motivos-comprar {
-  padding-bottom: 15rem;
+  padding-bottom: 14rem;
 }
 
 .card-resolve:hover {
@@ -1310,21 +1187,21 @@
   text-align: left;
   text-decoration: none;
   font-size: 1rem;
-  margin: 0.5rem 1.5rem;
+  margin: 0 2.25rem;
   color: #1a1a1a;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .frase-escuro2 {
   text-align: left;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 2rem;
-  margin: 0 1.5rem;
+  margin: 0 2.25rem 0.5rem 2.25rem;
   color: #1a1a1a;
 }
 
 .imagem-motivo {
-  margin: 2.5rem 2rem 0.25rem 2rem;
+  margin: 2.25rem 2.25rem 1rem 2.25rem;
   display: flex;
 }
 
@@ -1342,7 +1219,7 @@
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2rem 2rem 0 2rem;
+  padding: 1rem 0.25rem 0 0.25rem;
   height: 95%;
 }
 
@@ -1443,6 +1320,22 @@
   color: #1a1a1a;
 }
 
+.titulo-e-slogan4 {
+  font-size: 2.25rem;
+  margin: 0 5rem 4rem 5rem;
+  padding-bottom: 1rem;
+  line-height: 1.1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.titulo-e-slogan4 h2 {
+  padding-top: 9rem;
+  font-weight: 550;
+  letter-spacing: -0.15rem;
+}
+
 .container-final {
   display: flex;
   justify-content: center;
@@ -1504,7 +1397,7 @@
 }
 
 .link-final {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   color: #0071e3;
   text-decoration: none;
@@ -1516,18 +1409,34 @@
   text-decoration-thickness: 0.1rem;
 }
 
+.escuro4 {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 1rem 1.5rem;
+  color: #1a1a1a;
+  font-weight: normal;
+}
+
+.frases-final {
+  margin: 1rem 1.5rem;
+}
+
+.escuro5 {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: normal;
+}
+
 .escuro3 {
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
-  margin: 0 1.5rem;
+  margin: 1rem 0;
   color: #1a1a1a;
   font-weight: 600;
-}
-
-.frases-final {
-  display: block;
-  margin: 0.5rem 0;
 }
 
 .conheca-familia2 {
@@ -1559,7 +1468,7 @@
 }
 
 .menu-explorar-final a {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 625;
   text-decoration: none;
   color: #1d1d1f;
