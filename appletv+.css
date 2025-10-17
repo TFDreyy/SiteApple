@@ -453,9 +453,13 @@ nav {
 .barra-anuncio a {
     color: #ffffff;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     fill: #ffffff;
 >>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
+=======
+    fill: #ffffff;
+>>>>>>> 0cfc05d89881fb65edc63b37f44e250fe834245e
     text-decoration: none;
     animation: color 1s ease-in-out 1.8s forwards;
 }
@@ -464,9 +468,13 @@ nav {
   0% {
     color: #ffffff;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     fill: #ffffff;
 >>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
+=======
+    fill: #ffffff;
+>>>>>>> 0cfc05d89881fb65edc63b37f44e250fe834245e
   }
   100% {
     color: rgb(41, 151, 255);
@@ -881,16 +889,21 @@ nav {
   margin-bottom: 60px;
   padding: 14px 18px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
 =======
   display: inline-flex;
 >>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
+=======
+  display: inline-flex;
+>>>>>>> 0cfc05d89881fb65edc63b37f44e250fe834245e
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
   border: 1px solid #ffffff;
   border-radius: 25px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   outline: none;
   overflow: hidden;
@@ -901,12 +914,20 @@ nav {
   color: #ffffff;
   text-align: center;
 >>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
+=======
+  color: #ffffff;
+  text-align: center;
+>>>>>>> 0cfc05d89881fb65edc63b37f44e250fe834245e
   left: 50%;
   transform: translate(-50%);
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .botaocatalogo:hover {
+=======
+.botaocatalogo:hover{
+>>>>>>> 0cfc05d89881fb65edc63b37f44e250fe834245e
     color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
@@ -936,6 +957,18 @@ nav {
 }
 >>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 
+.botaocatalogo span:hover, .botaocatalogo .setabranca:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.setabranca {
+  font-family: SF Pro Icons;
+  fill: #ffffff;
+  margin-left: 0.2em;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-flex !important;
+}
 
 
 
@@ -1135,12 +1168,13 @@ nav {
 
 .botaosaibamais3 {
   color: #06c;
-  font-size: 16px;
+  fill: #06c;
+  font-size: 17px;
   text-decoration: none;
   text-align: left;
   cursor: pointer;
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
 }
 
 .botaosaibamais3:hover {
@@ -1152,7 +1186,11 @@ nav {
 }
 
 .seta3 {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  fill: #06c;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex !important;
 }
 
 
@@ -1480,29 +1518,40 @@ nav {
     background-color: rgba(0, 102, 204, 0.8);
 }
 
+
 .botaosaibamaisfim {
-    color: #06c;
-    background: transparent;
-    border: none;
-    font-size: 17px;
-    font-weight: 400;
-    text-decoration: none;
-    outline: none;
-    text-align: center;
-    position: relative;
-    top: 15px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+  color: #06c;
+  fill: #06c;
+  font-size: 17px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+  top: 15px;
 }
 
-.botaosaibamaisfim p {
-    padding-right: 5px;
+.botaosaibamaisfim:hover {
+  text-decoration: none;
 }
 
-.botaosaibamaisfim:hover p {
-    text-decoration: underline;
+.botaosaibamaisfim:hover .texto-linkfim {
+  text-decoration: underline;
 }
+
+.setafim {
+  font-family: SF Pro Icons;
+  fill: #06c;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex !important;
+}
+
+
+
+
+
 
 .botoesfim {
     display: flex;

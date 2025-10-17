@@ -45,7 +45,7 @@
 =======
         <nav>
             <div class="logo">Apple</div>
-            <a href="home.html"><img src="imagens/simbolo_da_apple.png" class="simbolo_apple"></a>
+            <a href="index.html"><img src="imagens/simbolo_da_apple.png" class="simbolo_apple"></a>
             <div class="menu">
                 <a href="história.html">História</a>
                 <a href="brasil.html">Brasil</a>
@@ -158,105 +158,83 @@
       <div>
         <h6 class="titulo-iphone3 animated">Conheça melhor o iPhone.</h6>
       </div>
-      <section class="iphone-carousel animated">
-        <button class="arrow left" id="left1">&#10094;</button>
+ <div class="iphone-carousel-wrapper">
+  <button id="prevBtn">&#10094;</button>
+  <div class="iphone-carousel" data-aos="fade-up" id="carouselId">
 
-        <div class="iphone-scroll" id="carousel1">
-          <div class="iphone-card">
-            <div class="card-overlay">
-            <div class="card-textos">
-              <h5>Apple Intelligence</h5>
-              <h2>Possibilidades poderosas.</h2>
-            </div>
-              <button class="card-icon" data-cardinfo="cardinfo1">+</button>
-              <img src="imagens iphone/iphonecardgif1.gif" class="card-imagem" style="margin: -20px 0 0px -280px; width: 700px; transform: rotate(-20deg);">
-            </div>
-          </div>
+    <div data-aos="fade-up" data-aos-delay="100">
+      <div class="iphone-card" id="appleintelligence">
+        <h3 class="iphone-card-title">Apple Intelligence</h3>
+        <p class="iphone-card-text">Possibilidades poderosas</p>
+        <img src="imagens iphone/appleinteligence.png">
+        <button class="card-icon" data-cardinfo="cardinfo1">+</button>
+      </div>
+    </div>
 
-          <div class="iphone-card">
-            <div class="card-overlay">
-            <div class="card-textos">
-              <h5>Câmeras de última geração</h5>
-              <h2>Temos fotos e vídeos para provar.</h2>
-            </div>
-            <button class="card-icon" data-cardinfo="cardinfo2">+</button>
-            <img src="imagens iphone/iphonecard2.png" class="card-imagem" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
-          </div>
-          </div>
+    <div data-aos="fade-up" data-aos-delay="200">
+      <div class="iphone-card" id="produtividade">
+        <h3 class="iphone-card-title">Câmeras de última geração</h3>
+        <p class="iphone-card-text">Temos fotos e vídeos para provar.</p>
+        <img src="imagens iphone/iphonecard2.png">
+        <button class="card-icon" data-cardinfo="cardinfo2">+</button>
+      </div>
+    </div>
 
-          <div class="iphone-card card-tres">
-            <div class="card-overlay">
-              <div class="card-textos">
-                <h5>Chip e Bateria</h5>
-                <h2>Desempenho longa vida.</h2>
-              <div class="brilho-animado" style="display: flex; justify-content: center; align-items: center;">
-                <img src="imagens iphone/bateriaiphone.png" class="card-imagem" 
-                  style="margin: 100px 0 0 0; display: block; width: 160px; height: auto;" 
-                  data-aos="zoom-out" data-aos-duration="800" data-aos-delay="100">
-              </div>
-            </div>
-            <button class="card-icon" data-cardinfo="cardinfo3">+</button>
-          </div>
-        </div>
+    <div data-aos="fade-up" data-aos-delay="350">
+      <div class="iphone-card" id="criatividade">
+        <h3 class="iphone-card-title">Chip e Bateria</h3>
+        <p class="iphone-card-text">Desempenho longa vida.</p>
+        <img src="imagens iphone/bateriaiphone.png">
+        <button class="card-icon" data-cardinfo="cardinfo3">+</button>
+      </div>
+    </div>
 
-          <div class="iphone-card">
-            <div class="card-overlay">
-            <div class="card-textos">
-              <h5>Inovação</h5>
-              <h2>Projetado para durar.<br>E impressionar.</h2>
-              <img src="imagens iphone/iphonecard4gif.gif" class="card-imagem" style="width: 900px; margin: 10px 0 0 -337px;">
-            </div>
-            <button class="card-icon" data-cardinfo="cardinfo4">+</button>
-          </div>
-        </div>
+    <div data-aos="fade-up" data-aos-delay="400">
+      <div class="iphone-card" id="aprendizado">
+        <h3 class="iphone-card-title">Inovação</h3>
+        <p class="iphone-card-text">Projetado para durar.<br>E impressionar.</p>
+        <img src="imagens iphone/iphoneipad-removebg-preview.png">
+        <button class="card-icon" data-cardinfo="cardinfo4">+</button>
+      </div>
+    </div>
 
-          <div class="iphone-card card-cinco">
-            <div class="card-overlay">
-            <div class="card-textos">
-              <h5>Meio ambiente</h5>
-              <h2>Reciclar. Reutilizar. Repetir.</h2>
-              <img src="imagens iphone/iphonecard5.png" class="card-imagem" style="margin: -20px 0 0 -95px;">
-            </div>
-            <button class="card-icon" data-cardinfo="cardinfo5">+</button>
-          </div>
-          </div>
+    <div data-aos="fade-up" data-aos-delay="450">
+      <div class="iphone-card" id="entretenimento">
+        <h3 class="iphone-card-title">Meio ambiente</h3>
+        <p class="iphone-card-text">Reciclar. Reutilizar. Repetir.</p>
+        <img src="imagens iphone/iphonecard5.png">
+        <button class="card-icon" data-cardinfo="cardinfo5">+</button>
+      </div>
+    </div>
 
-          <div class="iphone-card " style="background: linear-gradient(45deg, rgb(56, 55, 55), rgba(255, 255, 255, 0.39))">
-            <div class="card-overlay">
-            <div class="card-textos">
-              <h5>Privacidade</h5>
-              <h2>Seus dados. Sempre nas suas mãos.</h2>
-              <img src="imagens iphone/iphonecard6.png" class="card-imagem" style="margin: 50px 0 0 -95px" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
-            </div>
-            <button class="card-icon" data-cardinfo="cardinfo6">+</button>
-          </div>
-          </div>
+    <div data-aos="fade-up" data-aos-delay="500">
+      <div class="iphone-card" id="inovacao">
+        <h3 class="iphone-card-title">Privacidade</h3>
+        <p class="iphone-card-text">Seus dados. Sempre nas suas mãos.</p>
+        <img src="imagens iphone/iphonecard6.png">
+        <button class="card-icon" data-cardinfo="cardinfo6">+</button>
+      </div>
+    </div>
 
-          <div class="iphone-card">
-            <div class="card-overlay">
-            <div class="card-textos">
-              <h5>Personalize seu iPhone</h5>
-              <h2>Espelho, espelho seu.</h2>
-              <img src="imagens iphone/applegif (2).gif" style="width: 900px; margin: -120px 0 0 -341px;">
-            </div>
-            <button class="card-icon" data-cardinfo="cardinfo7">+</button>
-          </div>
-          </div>
+    <div data-aos="fade-up" data-aos-delay="600">
+      <div class="iphone-card" id="personalizacao">
+        <h3 class="iphone-card-title">Personalize seu iPhone</h3>
+        <p class="iphone-card-text">Espelho, espelho seu.</p>
+        <button class="card-icon" data-cardinfo="cardinfo7">+</button>
+      </div>
+    </div>
 
-          <div class="iphone-card" style="background: rgb(35, 41, 41)">
-            <div class="card-overlay">
-            <div class="card-textos">
-              <h5 style="z-index: 3;">Tranquilidade</h5>
-              <h2>Recursos de segurança. Vai que você precisa.</h2>
-              <img src="imagens iphone/cardgif8 (2).gif" class="card-imagem" style="width: 300px; margin: -5px 0 0 -40px;">
-            </div>
-            <button class="card-icon" data-cardinfo="cardinfo8">+</button>
-          </div>
-        </div>
-        </div>
+    <div data-aos="fade-up" data-aos-delay="650">
+      <div class="iphone-card" id="tranquilidade">
+        <h3 class="iphone-card-title">Tranquilidade</h3>
+        <p class="iphone-card-text">Recursos de segurança. Vai que você precisa.</p>
+        <button class="card-icon" data-cardinfo="cardinfo8">+</button>
+      </div>
+    </div>
 
-          <button class="arrow right" id="right1">&#10095;</button>
-      </section>
+  </div>
+  <button id="nextBtn">&#10095;</button>
+</div>
   </main>
   <section>
     <div id="cardinfo1" class="cardinfo">
@@ -447,7 +425,7 @@
         <p>Inteligência visual para saber mais sobre o mundo</p>
       </div>
       <div class="spec-item">
-        <img src="imagens iphone/iphonebateria.png" data-dark="imagens iphone/iphonebateriabranco.png">
+        <img src="imagens iphone/iphonebateria (2).png" data-dark="imagens iphone/iphonebateriabranco.png">
         <p>Até 33h de vídeo</p>
       </div>
     </div>
@@ -471,7 +449,7 @@
         <p>Tradução em tempo real</p>
       </div>
       <div class="spec-item">
-        <img src="imagens iphone/iphonebateria.png" data-dark="imagens iphone/iphonebateriabranco.png">
+        <img src="imagens iphone/iphonebateria (2).png" data-dark="imagens iphone/iphonebateriabranco.png">
         <p>Até 27h de vídeo</p>
       </div>
     </div>
@@ -495,7 +473,7 @@
         <p>Geração de imagem e som</p>
       </div>
       <div class="spec-item">
-        <img src="imagens iphone/iphonebateria.png" data-dark="imagens iphone/iphonebateriabranco.png">
+        <img src="imagens iphone/iphonebateria (2).png" data-dark="imagens iphone/iphonebateriabranco.png">
         <p>Até 26h de vídeo</p>
       </div>
     </div>
@@ -523,56 +501,50 @@
   <a href="#" class="comprar-link">Comprar iPhone ›</a>
 </div>
 <section class="iphone-carousel animated">
-  <button class="arrow left" id="left2">&#10094;</button>
-
-  <div class="iphone-scroll" id="carousel2">
-    <div class="iphone-card2">
-      <div class="card-overlay2">
-        <div class="card-textos2">
-          <img src="imagens iphone/cartao.png" data-dark="imagens iphone/cartaobranco.png" class="card-imagem2">
-          <h2>Opções de pagamento.</h2>
-          <h4>Aproveite e parcele com a facilidade e conveniência.</h4>
-        </div>
-        <button class="card-icon2" data-cardinfo="cardinfo9">+</button>
+  <div class="caixa-beneficios"> 
+  
+    <div data-aos="fade-up" data-aos-delay="200">
+      <div class="beneficio">
+        <img src="imagens iphone/cartao.png" data-dark="imagens iphone/cartaobranco.png" alt="Opções de pagamento">
+        <h3>Opções de pagamento.</h3>
+        <p class="texto-beneficio">Aproveite e parcele com facilidade e conveniência.</p>
+        <button class="card-icon" data-cardinfo="cardinfo9">+</button>
       </div>
     </div>
 
-          <div class="iphone-card2">
-            <div class="card-overlay2">
-            <div class="card-textos2">
-              <img src="imagens iphone/caminhao.png" data-dark="imagens iphone/caminhaobranco.png" class="card-imagem2">
-              <h2>Frete grátis.</h2>
-              <h4>Em todo o Brasil. Em São Paulo, os pedidos qualificados têm envio no dia seguinte.</h4>
-            </div>
-            <button class="card-icon2" data-cardinfo="cardinfo10">+</button>
-          </div>
-          </div>
+  
+    <div data-aos="fade-up" data-aos-delay="300">
+      <div class="beneficio">
+        <img src="imagens iphone/caminhao.png" alt="Frete grátis" data-dark="imagens iphone/caminhaobranco.png">
+        <h3>Frete grátis.</h3>
+        <p class="texto-beneficio">Em todo o Brasil. Em São Paulo, os pedidos qualificados têm envio no dia seguinte.</p>
+        <button class="card-icon" data-cardinfo="cardinfo10">+</button>
+      </div>
+    </div>
 
-          <div class="iphone-card2">
-            <div class="card-overlay2">
-            <div class="card-textos2">
-              <img src="imagens iphone/balaofala.png" data-dark="imagens iphone/balaofalabranco.png" class="card-imagem2">
-              <h2>Compre com quem entende de iPhone.</h2>
-              <h4>Fale com especialistas para fazer a melhor escolha. Na lojas ou online.</h4>
-            </div>
-            <button class="card-icon2" data-cardinfo="cardinfo11">+</button>
-          </div>
-          </div>
-            <div class="iphone-card2">
-            <div class="card-overlay2">
-            <div class="card-textos2">
-              <img src="imagens iphone/bag.png" data-dark="imagens iphone/bagbranco.png" class="card-imagem2">
-              <h2>Uma experiência inspirada em você.</h2>
-              <h4>App Apple Store. Um jeito mais pessoal de comprar.</h4>
-            </div>
-          <button class="card-icon2" data-cardinfo="cardinfo12">+</button>
-          </div>
-          </div>
-          </div>
-         <button class="arrow right" id="right2">&#10095;</button>
+  
+    <div data-aos="fade-up" data-aos-delay="350">
+      <div class="beneficio">
+        <img src="imagens iphone/balaofala.png" data-dark="imagens iphone/balaofalabranco.png" alt="Atendimento especializado">
+        <h3>Compre com quem entende de iPad.</h3>
+        <p class="texto-beneficio">Fale com especialistas para fazer a melhor escolha. Na loja ou online.</p>
+        <button class="card-icon" data-cardinfo="cardinfo11">+</button>
+      </div>
+    </div>
 
-  </section>
+  
+    <div data-aos="fade-up" data-aos-delay="400">
+      <div class="beneficio">
+        <img src="imagens iphone/bag.png" data-dark="imagens iphone/bagbranco.png" alt="Experiência de compra">
+        <h3>Uma experiência de compra inspirada em você.</h3>
+        <p class="texto-beneficio">App Apple Store. Um jeito mais pessoal de comprar.</p>
+        <button class="card-icon" data-cardinfo="cardinfo12">+</button>
+      </div>
+    </div>
+  </div>
+</section>
 <section>
+
   <div id="cardinfo9" class="cardinfo">
     <div class="cardinfo-content">
       <button class="close-btn" onclick="fecharCardinfo('cardinfo9')">✕</button>
@@ -589,6 +561,7 @@
     </div>
   </div>
 
+
   <div id="cardinfo10" class="cardinfo">
     <div class="cardinfo-content">
       <button class="close-btn" onclick="fecharCardinfo('cardinfo10')">✕</button>
@@ -599,17 +572,18 @@
           <p><strong>Envio por nossa conta.</strong> Da nossa porta à sua, a entrega é sempre gratuita.</p>
         </div>
         <div class="cardinfo-image">
-          <img src="imagens iphone/caminhao.jpg">
+          <img src="imagens iphone/caminhao.jpg" alt="Frete grátis">
         </div>
       </div>
     </div>
   </div>
 
+
   <div id="cardinfo11" class="cardinfo">
     <div class="cardinfo-content">
       <button class="close-btn" onclick="fecharCardinfo('cardinfo11')">✕</button>
       <h4>Atendimento Especializado</h4>
-      <h1>Compre com quem entende de iPhone.</h1>
+      <h1>Compre com quem entende de iPad.</h1>
       <div class="cardinfo-body">
         <div class="cardinfo-text">
           <p><strong>Receba ajuda para encontrar o produto ideal.</strong> Conte com nossa assessoria online na hora de comprar.</p>
@@ -621,22 +595,22 @@
     </div>
   </div>
 
+
   <div id="cardinfo12" class="cardinfo">
     <div class="cardinfo-content">
       <button class="close-btn" onclick="fecharCardinfo('cardinfo12')">✕</button>
-      <h4>Uma experiência de compra inspiarada em você.</h4>
+      <h4>Uma experiência de compra inspirada em você.</h4>
       <h1>App Apple Store. Um jeito mais pessoal de comprar.</h1>
       <div class="cardinfo-body">
         <div class="cardinfo-text">
           <p><strong>Compre no app Apple Store. Feito sob medida para você.</strong> Receba recomendações personalizadas de produtos, compare modelos, acesse os itens salvos e acompanhe seus pedidos. Inscreva‑se para receber informações sobre produtos novos, promoções, opções flexíveis de pagamento e eventos da loja. Escaneie o código QR para começar.</p>
         </div>
         <div class="cardinfo-image">
-          <img src="imagens iphone/iphoneqrcode.jpg">
+          <img src="imagens iphone/iphoneqrcode.jpg" alt="App Apple Store">
         </div>
       </div>
     </div>
   </div>
-
 </section>
  <div class="motivos-header animated">
     <h1>Parceiros perfeitos para o iPhone.</h1>
@@ -669,58 +643,29 @@
 <div class="motivos-header animated">
     <h1>Companheiros ilustres.</h1>
   </div>
-<section class="iphone-integration animated">
-  <div class="integration-container">
-    <div class="integration-left">
-      <div class="accordion-item active" onclick="toggleAccordion(this, 0)">
-        <div class="accordion-header">
-          <h3>iPhone e Mac</h3>
-          <button class="accordion-arrow" aria-expanded="false">
-  <svg viewBox="0 0 24 24" width="24" height="24">
-    <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-  </svg>
-</button>
-        </div>
-        <div class="accordion-content">
-          <p>Com o Espelhamento do iPhone, você vê a tela do seu aparelho no Mac e controla tudo mesmo sem ele na mão. Use os recursos de Continuidade para atender ligações ou responder a mensagens direto no Mac. Dá até para copiar imagens, vídeos ou textos do iPhone e colar em outro app no seu Mac. E, com o iCloud, você consegue acessar seus arquivos de qualquer um dos dois.</p>
-        </div>
+
+<div class="companheiros-caixa" data-aos="fade-up" data-aos-delay="100">
+  <div class="companheiros">
+    <div class="dropdown-e-imagem">
+
+      <div class="texto-companheiros" id="ipad-e-iphone">
+        <h2>iPhone e Mac <i class="fas fa-chevron-up arrow-icon"></i></h2>
+        <p>Com o Espelhamento do iPhone, você vê a tela do seu aparelho no Mac e controla tudo mesmo sem ele na mão. Use os recursos de Continuidade para atender ligações ou responder a mensagens direto no Mac. Dá até para copiar imagens, vídeos ou textos do iPhone e colar em outro app no seu Mac. E, com o iCloud, você consegue acessar seus arquivos de qualquer um dos dois.</p>
       </div>
 
-      <div class="accordion-item" onclick="toggleAccordion(this, 1)">
-        <div class="accordion-header">
-          <h3>iPhone e Apple Watch</h3>
-         <button class="accordion-arrow" aria-expanded="false">
-  <svg viewBox="0 0 24 24" width="24" height="24">
-    <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-  </svg>
-</button>
-        </div>
-        <div class="accordion-content">
-          <p>Não lembra onde deixou seu iPhone? Os modelos mais recentes de Apple Watch podem mostrar a distância e a direção aproximadas14. Para tirar uma foto em grupo no iPhone, reúna a turma e use o Apple Watch como visor. E, quando atender uma chamada no Apple Watch, é só tocar no iPhone para continuar a conversa por lá.</p>
-        </div>
+      <div class="texto-companheiros" id="ipad-e-mac">
+        <h2>iPhone e Apple Watch <i class="fas fa-chevron-up arrow-icon"></i></h2>
+        <p>Não lembra onde deixou seu iPhone? Os modelos mais recentes de Apple Watch podem mostrar a distância e a direção aproximadas14. Para tirar uma foto em grupo no iPhone, reúna a turma e use o Apple Watch como visor. E, quando atender uma chamada no Apple Watch, é só tocar no iPhone para continuar a conversa por lá.</p>
       </div>
 
-      <div class="accordion-item" onclick="toggleAccordion(this, 2)">
-        <div class="accordion-header">
-          <h3>iPhone e AirPods</h3>
-         <button class="accordion-arrow" aria-expanded="false">
-  <svg viewBox="0 0 24 24" width="24" height="24">
-    <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-  </svg>
-</button>
-        </div>
-        <div class="accordion-content">
-          <p>Configure os AirPods no iPhone com apenas um toque. Você vai adorar o Áudio Adaptativo, que ajusta automaticamente a redução de ruídos de acordo com o ambiente e com suas interações ao longo do dia.</p>
-        </div>
+      <div class="texto-companheiros" id="ultimoitem">
+        <h2>iPhone e Airpods <i class="fas fa-chevron-up arrow-icon"></i></h2>
+        <p>Configure os AirPods no iPhone com apenas um toque. Você vai adorar o Áudio Adaptativo, que ajusta automaticamente a redução de ruídos de acordo com o ambiente e com suas interações ao longo do dia.</p>
       </div>
-    </div>
 
-    <div class="integration-right">
-      <img id="integration-image" src="imagens iphone/iphonemac.jpg.png" alt="Integração entre dispositivos Apple">
     </div>
   </div>
-</section>
-
+</div>
 <section>
   <div class="iphone-menu-container animated">
   <div class="iphone-menu">
@@ -776,7 +721,7 @@
 
     <div class="footer-store">
       
-      <a href="home.html">
+      <a href="index.html">
           <svg class="svg1" viewBox="0 0 17 20" width="16" height="19" fill="#414141">
             <path
               d="M13.74 10.92c.01 2.66 2.32 3.55 2.33 3.56-.02.06-.36 1.26-1.18 2.5-.71 1.06-1.44 2.11-2.6 2.14-1.14.02-1.51-.7-2.82-.7-1.31 0-1.72.68-2.8.72-1.12.04-1.98-1.15-2.7-2.2-1.47-2.12-2.6-5.98-1.08-8.6.74-1.29 2.05-2.11 3.48-2.13 1.1-.02 2.13.74 2.8.74.67 0 1.91-.92 3.23-.79.55.02 2.1.22 3.1 1.65-.08.05-1.84 1.08-1.82 3.23zM11.58 3.33c.51-.62.85-1.48.75-2.33-.72.03-1.59.48-2.1 1.1-.46.54-.86 1.41-.75 2.24.8.06 1.58-.41 2.1-1.01z" />
@@ -795,7 +740,7 @@
       <div>
         <h4>Descobrir e Comprar</h4>
         <ul>
-          <li><a href="home.html">Loja</a></li>
+          <li><a href="index.html">Loja</a></li>
           <li><a href="mac.html">Mac</a></li>
           <li><a href="ipad.html">iPad</a></li>
           <li><a href="iphone.html">iPhone</a></li>
