@@ -22,8 +22,7 @@ header {
 }
 
 header.active {
-    background-color: #000;
-<<<<<<< HEAD
+    background-color: #161617;
 }
 
 
@@ -36,20 +35,6 @@ nav {
     gap: 2.5rem;
 }
 
-=======
-}
-
-
-nav {
-    max-width: 75rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2.5rem;
-}
-
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 .logo {
     font-size: 0.9rem;
     font-weight: bold;
@@ -398,10 +383,7 @@ nav {
 
 .barra-anuncio a {
   color: #ffffff;
-<<<<<<< HEAD
-=======
   fill: #ffffff;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   animation: color 1s ease-in-out 1.8s forwards;
   display: inline-flex;
   align-items: center;
@@ -411,10 +393,7 @@ nav {
 @keyframes color {
   0% {
     color: #ffffff;
-<<<<<<< HEAD
-=======
     fill: #ffffff;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   }
   100% {
     color: rgb(41, 151, 255);
@@ -423,11 +402,7 @@ nav {
 }
 
 .botaosaibamais4 {
-<<<<<<< HEAD
-  color: #0071e3;
-=======
   color: rgb(41, 151, 255);
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
@@ -1942,6 +1917,150 @@ nav {
   align-items: center;
   display: inline-flex;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#entretenimento-menu {
+  position: fixed;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  background: #161617;
+  padding: 32px 0 40px;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-15px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+#entretenimento-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.entretenimento-menu-container {
+  background-color: #161617;
+}
+
+.entretenimento-menu {
+  width: 80%;
+  padding-top: 20px;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: -2%;
+}
+
+.menu-explorar h3 {
+  font-size: 0.75rem;
+  pointer-events: none;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  color: rgb(110, 110, 115);
+}
+
+.menu-explorar a {
+  font-size: 24px;
+  line-height: 1.1666666667;
+  font-weight: 600;
+  text-decoration: none;
+  color: #f5f5f7;
+}
+
+.menu-explorar li {
+  padding-bottom: 5px;
+}
+
+.menu-explorar a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.menu-explorar ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.menu-explorar h4 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  pointer-events: none;
+}
+
+.menu-explorar h4:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.menu-comprar-mais h3 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  color: rgb(110, 110, 115);
+  pointer-events: none;
+}
+
+.menu-comprar-mais ul {
+  list-style: none;
+}
+
+.menu-comprar-mais a {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #f5f5f7;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu-comprar-mais a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.body-blur::before {
+  content: '';
+  position: fixed;
+  top: 3.75rem;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 3.75rem);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.15rem);
+  -webkit-backdrop-filter: blur(0.15rem);
+  z-index: 2000;
+  pointer-events: none;
+}
+
+.entretenimento-menu-container {
+  left: -10vw;
+}
+
+.menu-explorar {
+  margin-right: 3rem;
+}
+
+
 
 
 

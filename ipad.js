@@ -159,7 +159,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateButtons();
 });
-<<<<<<< HEAD
-
-=======
->>>>>>> 0cfc05d89881fb65edc63b37f44e250fe834245e

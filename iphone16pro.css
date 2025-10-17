@@ -1,13 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    box-sizing: border-box; 
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-=======
     box-sizing: border-box;
     font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 
@@ -18,31 +13,6 @@ transition: 0.0s;
 }      
 
 header {
-<<<<<<< HEAD
-background-color: #000000;      
-padding: 0 24px;
-height: 44px;
-display: flex;                           
-width: 100%;                   
-top: 0;                          
-}
-
-nav {
-max-width: 1200px;               
-margin: 0 auto;                   
-display: flex;                    
-justify-content: space-between;    
-align-items: center;    
-gap: 45px;        
-z-index: 1000;
-}
-
-.logo {
-font-size: 0.9rem;               
-font-weight: bold;              
-color: #ffffff;   
-flex-shrink: 0;
-=======
     background-color: #000;
     padding: 0 1.5rem;
     height: 2.75rem;
@@ -70,18 +40,10 @@ nav {
     font-weight: bold;
     color: #ffffffaf;
     flex-shrink: 0;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 
 }
 
 .simbolo_apple {
-<<<<<<< HEAD
-height: 18.5px;
-width: auto;
-margin: 0 16px;
-flex-shrink: 0;
-font-weight: bold;
-=======
     height: 42px;
     width: 18px;
     margin: 0 1rem;
@@ -93,41 +55,15 @@ font-weight: bold;
 
 .simbolo_apple:hover {
   fill: #ffffff;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .menu {
     display: flex;
-<<<<<<< HEAD
-    gap:0.9rem;
-=======
     gap: 2.5rem;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 
 }
 
 .menu a {
-<<<<<<< HEAD
-font-size: 0.77rem;
-text-decoration: none;           
-color: #ffffff;                          
-transition: color 0.3s;
-margin-right: 2rem;
-     
-}
-
-.menu a:hover {
-color: rgb(0, 0, 0);        
-}
-
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-=======
     font-size: 0.75rem;
     text-decoration: none;
     color: #ffffffaf;
@@ -140,7 +76,6 @@ color: rgb(0, 0, 0);
 
 
 
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 
 
 
@@ -565,15 +500,9 @@ main {
 
 
 .footer {
-<<<<<<< HEAD
-  background-color: #000000;
-  padding: 40px 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
-=======
   background-color: rgb(245, 245, 247);
   padding: 40px 0;
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .footer-container {
@@ -583,14 +512,8 @@ main {
   font-size: 12px;
 }
 
-<<<<<<< HEAD
-
-.footer-warning {
-  background-color: #000000;
-=======
 .footer-warning {
   background-color: #eaeaea;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   padding: 10px 15px;
   border-radius: 8px;
   margin-bottom: 25px;
@@ -610,32 +533,6 @@ main {
   font-weight: bold;
 }
 
-<<<<<<< HEAD
-
-.footer-store {
-  border-top: 1px solid #000000;
-  padding-top: 20px;
-  margin-bottom: 25px;
-}
-
-.footer-store a {
-  display: inline-flex;
-  align-items: center;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.footer-store a svg {
-  margin-right: 6px;
-}
-
-.footer-store a span {
-  margin: 0 8px;
-  font-size: 16px;
-}
-
-=======
 .footer-store {
   border-top: 1px solid rgba(0, 0, 0, 0.16);
   padding-top: 20px;
@@ -677,7 +574,6 @@ main {
 }
 
 
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 
 .footer-links {
   display: flex;
@@ -687,13 +583,6 @@ main {
 }
 
 .footer-links h4 {
-<<<<<<< HEAD
-  color: #ffffff;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-=======
   color: rgba(0, 0, 0, 0.88);
   font-weight: 600;
   font-size: 12px;
@@ -702,7 +591,6 @@ main {
 
 
 
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 .footer-links ul {
   list-style: none;
   padding: 0;
@@ -710,19 +598,6 @@ main {
 }
 
 .footer-links li {
-<<<<<<< HEAD
-  margin-bottom: 6px;
-}
-
-.footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-
-.footer-info {
-  color: #ffffff;
-=======
   padding-bottom: 9px;
 }
 
@@ -737,7 +612,6 @@ main {
 
 .footer-info {
   color: #6e6e73;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .footer-info a {
@@ -745,33 +619,19 @@ main {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-
-.footer-bottom {
-  border-top: 1px solid #d2d2d7;
-=======
 .footer-bottom {
   border-top: 1px solid rgba(0, 0, 0, 0.16);
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   margin-top: 25px;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-<<<<<<< HEAD
-  color: #ffffff;
-=======
   color: #6e6e73;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .footer-bottom p {
   margin: 0;
-<<<<<<< HEAD
-  color: #ffffff;
-=======
   color: #6e6e73;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .footer-legal {
@@ -782,23 +642,13 @@ main {
 }
 
 .footer-legal a {
-<<<<<<< HEAD
-  color: #ffffff;
-=======
   color: #333336;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
   text-decoration: none;
 }
 
 .footer-legal span {
-<<<<<<< HEAD
-  color: #ffffff;
-}
-
-=======
   color: #6e6e73;
 }
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 .footer-links a:hover,
 .footer-store a:hover,
 .footer-info a:hover,
@@ -807,10 +657,6 @@ main {
   transition: color 0.3s ease;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 @media (max-width: 600px) {
   .footer-links {
     flex-direction: column;
@@ -825,11 +671,8 @@ main {
     gap: 5px;
   }
 }
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 .iphone-menu-container {
   background-color: #000000;
   padding: 40px 20px;
@@ -1215,8 +1058,6 @@ main {
     background-color: #f4f0f0;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
-<<<<<<< HEAD
-=======
 
 
 
@@ -1313,4 +1154,3 @@ main {
     font-style: normal;
     src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
 }
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b

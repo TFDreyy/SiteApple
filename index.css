@@ -11,17 +11,12 @@ body {
   color: #000;
 }
 
-<<<<<<< HEAD:home.css
-<<<<<<< HEAD
-=======
-=======
 header {
   position: sticky;
   z-index: 1000;
   background-color: rgba(255,255,255,0.8);
 }
 
->>>>>>> 0cfc05d89881fb65edc63b37f44e250fe834245e:index.css
 .hero {
   display: flex;
   flex-direction: column;
@@ -196,7 +191,6 @@ header {
     flex-direction: column;
   }
 }
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 
 
 

@@ -44,14 +44,9 @@ header {
 
 .barra-items-slide {
     width: 100%;
-<<<<<<< HEAD
-    z-index: 9990;
-    position: relative;
-=======
     z-index: 2;
     position: relative;
     background-color: #ffffff;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .slide-in-right {
@@ -364,27 +359,6 @@ header {
 .buttons{
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-    padding-top: 1.2rem;
-}
-.button_a{
-    background-color: rgb(0, 102, 234);
-    color: #fff;
-    padding:10px;
-    border-radius: 25px;
-    width: 110px;
-    margin-bottom: 10px;
-    margin-left: 25px;
-}
-.button_b{
-    color: rgb(0, 102, 234);
-    padding:15px;
-    border-radius: 25px;
-    width: 110px;
-    margin-bottom: 10px;
-    margin-right: 25px;
-}
-=======
     align-items: center;
     gap: 10px;
 }
@@ -441,7 +415,6 @@ header {
     text-decoration: none;
 }
 
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 .cont_t_boxes{
     display: flex;
     gap: 3rem;
@@ -527,10 +500,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-<<<<<<< HEAD
-=======
     color: #000;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .o_card p {
@@ -539,10 +509,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-<<<<<<< HEAD
-=======
     color: #000;
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 }
 
 .o_card1{
@@ -641,8 +608,6 @@ header {
 
 
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -830,7 +795,6 @@ video.imagem-hero {
 }
 
 
->>>>>>> 074bd5293a1d9feb3a8de332a282b97aad8b4e7b
 /* -----------------------------
    SF Pro Text
 ------------------------------ */
