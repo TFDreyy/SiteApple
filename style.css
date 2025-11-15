@@ -1,8 +1,7 @@
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -38,7 +37,7 @@ nav {
 }
 
 .logo {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #1d1d1f;
     flex-shrink: 0;
@@ -60,7 +59,7 @@ nav {
 }
 
 .menu a {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     text-decoration: none;
     color: #1d1d1fd3;
     transition: color 0.3s;
@@ -70,6 +69,10 @@ nav {
     color: rgb(0, 0, 0);
 }
 
+main {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 
 
 
