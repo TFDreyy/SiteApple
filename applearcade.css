@@ -46,7 +46,7 @@ nav {
 }
 
 .logo {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #ffffffaf;
     flex-shrink: 0;
@@ -74,7 +74,7 @@ nav {
 }
 
 .menu a {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     text-decoration: none;
     color: #ffffffaf;
     transition: color 0.3s;
