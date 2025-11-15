@@ -1,30 +1,14 @@
-<!--Página do Rodrigo-->
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>História da Apple - Apple (BR)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundação da Apple</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="footer.css" />
-  <link rel="stylesheet" href="história.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="shortcut icon" href="imagens/appleicon.ico" type="image/png">
-
+  <link rel="stylesheet" href="fundacao.css">
 </head>
-
 <body>
-
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true
-    });
-  </script>
-
   <header>
     <nav>
       <div class="logo">Apple</div>
@@ -44,57 +28,89 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h1 data-aos="fade-up">Steve Jobs</h1>
-      <p data-aos="fade-up" data-aos-delay="100">“As pessoas não sabem o que querem, até mostrarmos a elas.”</p>
+    <!-- Hero -->
+    <section class="hero fade-in">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo Apple antigo" />
+      <div class="hero-text">
+        <h2>A Origem da Apple</h2>
+        <p>Como Steve Jobs, Steve Wozniak e Ronald Wayne transformaram uma garagem em uma das empresas mais influentes do planeta.</p>
+      </div>
     </section>
 
-    <section class="cards">
-      <div class="card" data-aos="fade-up" data-aos-delay="200">
-        <h2 class="data">1955</h2>
-        <h2 class="titulo">Nascimento e Infância</h2>
-        <div class="imagem""><a href="infancia.html"><img src=" https://cdn.ipadizate.com/2020/04/steve-jobs-teenager-young-1972.jpg" /></a>
-
-
+    <!-- Seções de conteúdo (alternadas) -->
+    <section class="section fade-in">
+      <div class="text">
+        <h3>O Encontro Entre Jobs e Wozniak</h3>
+        <p>A história da Apple começa com a amizade entre Steve Jobs e Steve Wozniak. Wozniak era o mestre da engenharia — o cérebro técnico — enquanto Jobs tinha visão, senso de produto e habilidade para vender ideias. Juntos formaram a dupla que iniciaria a revolução dos computadores pessoais.</p>
       </div>
-      <p>Steve Jobs nasceu em 24 de fevereiro de 1955, em San Francisco. Foi
-        adotado por Paul e Clara Jobs. Desde pequeno, demonstrava interesse por eletrônicos. Cresceu em Cupertino, que
-        mais tarde se tornaria o coração do Vale do Silício.</p>
+      <div class="image">
+        <img src="imagensfundacao/05-steve-wozniak-steve-jobs.jpg" alt="Jobs e Wozniak jovens" />
       </div>
+    </section>
 
-  
-
-      <div class="card" data-aos="fade-up" data-aos-delay="400">
-        <h2 class="data">1976</h2>
-        <h2 class="titulo">Fundação da Apple</h2>
-        <div class="imagem"><a href="fundacao.html"><img src="https://macmagazine.com.br/wp-content/uploads/2009/06/14-garagem_apple_4.jpg" /></a>
-        </div>
-        <p>Junto com Steve Wozniak e Ronald Wayne, Jobs fundou a Apple na garagem da casa dos seus pais. O Apple I foi o
-          primeiro produto, vendendo peças montadas manualmente para hobistas e entusiastas.</p>
+    <section class="section reverse fade-in">
+      <div class="image">
+        <img src="imagensfundacao/apple1.jpg" alt="Apple I original" />
       </div>
-
-
-      <div class="card" data-aos="fade-up" data-aos-delay="600">
-        <h2 class="data">1985</h2>
-        <h2 class="titulo">Demissão da Apple</h2>
-        <div class="imagem"><img
-            src="https://th.bing.com/th/id/OIP._Gqmc3ed3Nh9F_8EIOacKgHaEi?w=264&h=180&c=7&r=0&o=7&dpr=1.2&pid=1.7&rm=3" />
-        </div>
-        <p>Após conflitos internos, Jobs saiu da Apple. Fundou a NeXT, que produziu computadores potentes para o setor
-          educacional e corporativo. Essa tecnologia futuramente seria a base do macOS.</p>
+      <div class="text">
+        <h3>A Criação do Apple I (1976)</h3>
+        <p>Em 1976, Wozniak projetou o Apple I — um computador simples, porém inovador para a época. Jobs percebeu o valor comercial e convenceu Wozniak a transformar o projeto em produto. O Apple I foi vendido como placa montada (algo incomum), abrindo caminho para as primeiras vendas da futura empresa.</p>
       </div>
+    </section>
 
-      <div class="card" data-aos="fade-up" data-aos-delay="800">
-        <h2 class="data">1997</h2>
-        <h2 class="titulo">Retorno e Legado</h2>
-        <img src="https://assets.entrepreneur.com/content/3x2/2000/20171211202713-GettyImages-177454317.jpeg" alt="">
-        <p>Com a Apple em crise, Jobs voltou após a empresa adquirir a NeXT. Reestruturou a linha de produtos e lançou o
-          iMac, iniciando a recuperação e crescimento da marca.</p>
+    <section class="section fade-in">
+      <div class="text">
+        <h3>A Garagem em Los Altos</h3>
+        <p>Com recursos limitados, os fundadores montaram as primeiras máquinas na garagem dos pais de Jobs, em Los Altos. A garagem virou símbolo: prototipagem na prática, semanas e noites de montagem e a cultura "faça você mesmo" do Vale do Silício nascente.</p>
       </div>
+      <div class="image">
+        <img src="imagensfundacao/garagemapple.jpg" alt="Garagem da Apple" />
+      </div>
+    </section>
+
+    <section class="section reverse fade-in">
+      <div class="image">
+        <img src="imagensfundacao/logoantiga.jpg" alt="Logo colorido da Apple (antigo)" />
+      </div>
+      <div class="text">
+        <h3>Fundação Oficial (1º de abril de 1976)</h3>
+        <p>Em 1º de abril de 1976, Jobs, Wozniak e Ronald Wayne registraram formalmente a Apple Computer Company. Wayne participou brevemente — ficou apenas alguns dias — e vendeu sua parte, mas contribuiu para os primeiros acordos e documentação.</p>
+      </div>
+    </section>
+
+    <section class="section fade-in">
+      <div class="text">
+        <h3>As Primeiras Vendas: Byte Shop</h3>
+        <p>O primeiro pedido de destaque veio da loja Byte Shop: 50 unidades do Apple I. Jobs organizou montagem e entrega, negociou com fornecedores e deu os primeiros passos do negócio. O sucesso nas primeiras vendas permitiu financiar o desenvolvimento do próximo produto.</p>
+      </div>
+      <div class="image">
+        <img src="imagensfundacao/byteshop.jpg" alt="Byte Shop" />
+      </div>
+    </section>
+
+    <section class="section reverse fade-in">
+      <div class="image">
+        <img src="imagensfundacao/aplle2.jpg" alt="Apple II" />
+      </div>
+      <div class="text">
+        <h3>O Lançamento do Apple II (1977)</h3>
+        <p>Em 1977 a Apple lançou o Apple II — um computador pessoal mais amigável, com gabinete, teclado e capacidade gráfica em cores. Foi um sucesso comercial e consolidou a Apple como empresa séria no mercado, permitindo expansão, financiamento e contratação de mais pessoal.</p>
+      </div>
+    </section>
+
+    <section class="section fade-in">
+      <div class="text">
+        <h3>Por que a Fundação Importa</h3>
+        <p>A combinação de engenharia inventiva, visão de produto e capacidade de execução transformou uma ideia de garagem em um negócio escalável. A cultura de obsessão pelo detalhe e design começou ali, nas decisões iniciais sobre produto, embalagem e público-alvo.</p>
+      </div>
+      <div class="image">
+        <img src="imagensfundacao/jobsfilme.jpg" alt="Apple II na época" />
+      </div>
+    </section>
 
   </main>
 
-<footer class="footer">
+    <footer class="footer">
   <div class="footer-container">
 
     <div class="footer-warning">
@@ -105,7 +121,7 @@
     </div>
 
     <div class="footer-store">
-
+      
       <a href="index.html">
           <svg class="svg1" viewBox="0 0 17 20" width="16" height="19" fill="#414141">
             <path
@@ -220,6 +236,21 @@
 
   </div>
 </footer>
-</body>
 
+  <script>
+    // Fade-in ao rolar
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.3, rootMargin: "0px 0px -50px 0px" };
+
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+</body>
 </html>
