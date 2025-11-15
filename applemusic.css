@@ -195,9 +195,9 @@ nav {
 
 
 .barraapple {
-    width: 100%;
+    max-width: 100%;
     background-color: #ffffff;
-    padding: 15px 0;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -206,6 +206,7 @@ nav {
     justify-content: space-between;
     transition: all 0.3s ease;
 }
+
 
 .barraapple.scrolled {
     background-color: rgba(255, 255, 255, 0.8);
@@ -217,22 +218,25 @@ nav {
     text-align: left;
     justify-content: center;
     align-items: center;
-    padding-left: 21.5vw;
+    padding-left: 17.25%;
     font-weight: 800;
     font-size: 1.25rem;
     color: #1d1d1f;
 }
 
+.barra_button {
+    margin-right: 17.25%;
+    position: relative;
+    display: flex;
+}
+
 .testar-button {
     padding: 0.25rem 0.5rem;
-    margin-right: 21.5vw;
     background-color: #fa243c;
     color: #ffffff;
     border: none;
     font-size: 0.75rem;
     font-weight: 600;
-    position: relative;
-    display: flex;
     text-decoration: none;
     cursor: pointer;
     border-radius: 1.5rem;
@@ -429,13 +433,13 @@ nav {
 }
 
 .linha-divisoria {
-    width: 100%;
+    width: 80%;
     height: 0.05rem;
-    margin: 0;
     background-color: rgb(210, 210, 215);
     opacity: 0.25;
     display: flex;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    display: block;
 }
 
 .button-opcoes {
@@ -608,10 +612,16 @@ nav {
 
 .p_cinza-cards {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 550;
-    color: #6e6e73;
-    letter-spacing: normal;
+    color: rgb(134, 134, 139);
+}
+
+.p_cinza-cards2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 550;
+    color: #f4f4f0;
 }
 
 .container-titulo-main {
@@ -630,6 +640,16 @@ nav {
     letter-spacing: -0.05em;
 }
 
+.titulo-main-branco2 {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-top: 0;
+    color: #f4f4f0;
+    letter-spacing: -0.05em;
+}
+
 .titulo-main-degrade {
     text-align: center;
     font-size: 5rem;
@@ -638,7 +658,6 @@ nav {
     margin-top: 0;
     background: linear-gradient(90deg, rgb(110, 110, 115), rgb(255, 121, 27), rgb(255, 48, 55));
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 100% 100%;
     letter-spacing: -0.05em;
@@ -677,6 +696,7 @@ nav {
 
 .texto-hover {
     max-width: 67%;
+    height: fit-content;
     text-align: justify;
     background-color: rgba(0, 0, 0, 0.79);
     border-radius: 1rem;
@@ -698,7 +718,7 @@ nav {
 }
 
 .p_cinza-hover {
-    text-align: left;
+    text-align: justify;
     font-size: 1.5rem;
     font-weight: 550;
     color: rgb(210, 210, 215);
@@ -893,10 +913,15 @@ nav {
 
 .titulo-pequeno {
     margin-top: 1.5rem;
-    font-weight: 600;
     color: #f4f4f0;
     text-align: center;
-    font-size: 1rem;
+}
+
+.titulo-pequeno h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+
 }
 
 .container-texto-plano {
@@ -924,11 +949,11 @@ nav {
     justify-content: center;
     align-items: stretch;
     gap: 1.4rem;
-    margin: 0 16rem;
-    margin-top: 4rem;
+    width: 66%;
+    margin: 4rem auto 0 auto;
 }
 
-.cardspreto-content {
+a .cardspreto-content {
     flex: 1 1 0;
     min-width: 0;
     display: flex;
@@ -986,7 +1011,7 @@ nav {
 }
 
 .cardpreto-imagem {
-    margin: 4rem 3rem 0 3rem;
+    margin: 7% 8% 0 8%;
     height: fit-content;
 }
 
@@ -1012,6 +1037,7 @@ nav {
 
 .cardpreto-logo {
     height: fit-content;
+    max-width: 8rem;
     margin-left: 3.5rem;
     margin-bottom: 0.25rem;
 }
@@ -1036,6 +1062,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin-top: 1.4rem;
+    margin: 1.4rem auto 0 auto;
 }
 
 .card-assinatura {
@@ -1098,7 +1125,7 @@ nav {
 
 
 .faq-section {
-    max-width: 62.5rem;
+    max-width: 65rem;
     margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
