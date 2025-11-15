@@ -1,0 +1,93 @@
+
+
+body {
+  background: #fff;
+  scroll-behavior: smooth;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  line-height: 1.6;
+}
+
+.hero img {
+  width: 350px;
+  max-width: 80%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.hero-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+  line-height: 1.6;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.section .text {
+  flex: 1 1 400px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.section .text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.section .text p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.section .image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.section .image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
