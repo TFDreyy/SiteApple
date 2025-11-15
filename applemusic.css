@@ -195,7 +195,7 @@ nav {
 
 
 .barraapple {
-    width: 100%;
+    max-width: 100%;
     background-color: #ffffff;
     padding: 1rem 0;
     position: sticky;
@@ -207,6 +207,7 @@ nav {
     transition: all 0.3s ease;
 }
 
+
 .barraapple.scrolled {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(2rem);
@@ -217,22 +218,25 @@ nav {
     text-align: left;
     justify-content: center;
     align-items: center;
-    padding-left: 22.5vw;
+    padding-left: 17.25%;
     font-weight: 800;
     font-size: 1.25rem;
     color: #1d1d1f;
 }
 
+.barra_button {
+    margin-right: 17.25%;
+    position: relative;
+    display: flex;
+}
+
 .testar-button {
     padding: 0.25rem 0.5rem;
-    margin-right: 22.5vw;
     background-color: #fa243c;
     color: #ffffff;
     border: none;
     font-size: 0.75rem;
     font-weight: 600;
-    position: relative;
-    display: flex;
     text-decoration: none;
     cursor: pointer;
     border-radius: 1.5rem;
@@ -654,7 +658,6 @@ nav {
     margin-top: 0;
     background: linear-gradient(90deg, rgb(110, 110, 115), rgb(255, 121, 27), rgb(255, 48, 55));
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 100% 100%;
     letter-spacing: -0.05em;
@@ -693,6 +696,7 @@ nav {
 
 .texto-hover {
     max-width: 67%;
+    height: fit-content;
     text-align: justify;
     background-color: rgba(0, 0, 0, 0.79);
     border-radius: 1rem;
@@ -1007,7 +1011,7 @@ a .cardspreto-content {
 }
 
 .cardpreto-imagem {
-    margin: 4rem 3rem 0 3rem;
+    margin: 7% 8% 0 8%;
     height: fit-content;
 }
 
@@ -1033,6 +1037,7 @@ a .cardspreto-content {
 
 .cardpreto-logo {
     height: fit-content;
+    max-width: 8rem;
     margin-left: 3.5rem;
     margin-bottom: 0.25rem;
 }
