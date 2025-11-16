@@ -35,7 +35,7 @@ header h1{ font-size:22px; font-weight:600; }
 
 main{ max-width:1200px; margin:0 auto; }
 
-/* Seções alternadas */
+
 .section{
   display:flex;
   align-items:center;
@@ -71,7 +71,7 @@ footer{
   color:var(--muted);
 }
 
-/* Fade-in anim */
+
 .fade-in{ opacity:0; transform:translateY(18px); transition:900ms ease-out; }
 .fade-in.appear{ opacity:1; transform:translateY(0); }
 

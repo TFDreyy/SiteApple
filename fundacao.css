@@ -1,4 +1,4 @@
-/* Reset e tipografia */
+
 * { margin:0; padding:0; box-sizing:border-box; }
 :root {
   --text:#1d1d1f;
@@ -9,7 +9,7 @@ body{
   scroll-behavior:smooth;
 }
 
-/* Header */
+
 header{
   background:var(--bg-bottom);
   border-bottom:1px solid #ffffff;
@@ -18,7 +18,7 @@ header{
 }
 header h1{ font-size:22px; font-weight:600; letter-spacing:0.2px; }
 
-/* Hero */
+
 .hero{
   display:flex;
   flex-direction:column;
@@ -33,7 +33,7 @@ header h1{ font-size:22px; font-weight:600; letter-spacing:0.2px; }
 .hero-text p{ font-size:18px; max-width:760px; color:var(--muted); line-height:1.6;}
 
 
-/* Sections (alternating) */
+
 main{ max-width:1200px; margin:0 auto; padding-bottom:40px; }
 
 .section{
@@ -46,7 +46,7 @@ main{ max-width:1200px; margin:0 auto; padding-bottom:40px; }
   line-height:1.6;
 }
 
-/* Explicit reverse class controls alternation */
+
 .section.reverse { flex-direction:row-reverse; }
 
 
@@ -64,7 +64,7 @@ main{ max-width:1200px; margin:0 auto; padding-bottom:40px; }
   display:inline-block;
 }
 
-/* Footer */
+
 footer{
   background:var(--bg-bottom);
   border-top:1px solid #d1d1d6;
@@ -74,7 +74,7 @@ footer{
   color:var(--muted);
 }
 
-/* Fade-in animation */
+
 .fade-in{ opacity:0; transform:translateY(18px); transition:opacity 900ms ease-out, transform 900ms ease-out; }
 .fade-in.appear{ opacity:1; transform:translateY(0); }
 
@@ -86,7 +86,7 @@ footer{
 }
 @media (max-width:620px){
   .section{ flex-direction:column; text-align:center; }
-  .section.reverse{ flex-direction:column; } /* mobile: todas ficam em coluna */
+  .section.reverse{ flex-direction:column; } 
   .section .text p{ text-align:left; }
   main{ padding:0 8px; }
 }

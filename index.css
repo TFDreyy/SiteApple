@@ -96,7 +96,7 @@ header {
 }
 
 #primeiro {
-  background: linear-gradient(135deg, #e0dfdf, #ffffff);
+  background: linear-gradient(135deg, #e0dfdf, );
 }
 
 #segundo {
@@ -113,11 +113,11 @@ header {
 }
 
 #terceiro {
-  background: linear-gradient(180deg, #e1e1e1, #ffffff);
+  background: linear-gradient(180deg, #ffffff, #d9d9d9);
 }
 
 #quarto {
-  background: linear-gradient(180deg, #fde0d1, #ffffff);
+  background: linear-gradient(180deg, #ffffff, );
 }
 
 .entertainment {
@@ -138,11 +138,10 @@ header {
 
 .carousel {
   display: flex;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
+  overflow-x: hidden; 
   gap: 20px;
   padding: 20px;
-  scrollbar-width: none;
+  white-space: nowrap; 
 }
 
 .carousel::-webkit-scrollbar {
@@ -151,28 +150,13 @@ header {
 
 .carousel img {
   flex: 0 0 auto;
-  width: 80vw;
+  width: 80vw; 
   height: auto;
   border-radius: 15px;
   object-fit: cover;
 }
 
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255,255,255,0.2);
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
-}
 
-.prev { left: 10px; }
-.next { right: 10px; }
 
 @media (max-width: 900px) {
   .hero {
@@ -281,3 +265,4 @@ header {
     font-style: normal;
     src: url('fontes/SF-Pro-Icons/sf-pro-icons_bold.woff2') format('woff2');
 }
+
