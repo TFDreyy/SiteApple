@@ -1,20 +1,15 @@
-
+/* Reset e tipografia */
 * { margin:0; padding:0; box-sizing:border-box; }
 :root {
   --text:#1d1d1f;
   --muted:#6b6b70;
-  --bg-top:#ffffff;
-  --bg-bottom:#f5f5f7;
 }
 body{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color:var(--text);
-  background: linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
-  line-height:1.6;
+  background: #fff;
   scroll-behavior:smooth;
 }
 
-
+/* Header */
 header{
   background:var(--bg-bottom);
   border-bottom:1px solid #ffffff;
@@ -23,7 +18,7 @@ header{
 }
 header h1{ font-size:22px; font-weight:600; letter-spacing:0.2px; }
 
-
+/* Hero */
 .hero{
   display:flex;
   flex-direction:column;
@@ -31,11 +26,14 @@ header h1{ font-size:22px; font-weight:600; letter-spacing:0.2px; }
   text-align:center;
   padding:56px 18px;
   gap:20px;
+  line-height:1.6;
 }
 .hero img{ width:160px; max-width:40vw; }
-.hero-text h2{ font-size:34px; margin-bottom:6px; }
-.hero-text p{ font-size:18px; max-width:760px; color:var(--muted); }
+.hero-text h2{ font-size:34px; margin-bottom:6px; line-height:1.6;}
+.hero-text p{ font-size:18px; max-width:760px; color:var(--muted); line-height:1.6;}
 
+
+/* Sections (alternating) */
 main{ max-width:1200px; margin:0 auto; padding-bottom:40px; }
 
 .section{
@@ -45,8 +43,10 @@ main{ max-width:1200px; margin:0 auto; padding-bottom:40px; }
   gap:40px;
   padding:56px 20px;
   flex-wrap:wrap;
+  line-height:1.6;
 }
 
+/* Explicit reverse class controls alternation */
 .section.reverse { flex-direction:row-reverse; }
 
 
@@ -64,6 +64,7 @@ main{ max-width:1200px; margin:0 auto; padding-bottom:40px; }
   display:inline-block;
 }
 
+/* Footer */
 footer{
   background:var(--bg-bottom);
   border-top:1px solid #d1d1d6;
@@ -73,7 +74,7 @@ footer{
   color:var(--muted);
 }
 
-
+/* Fade-in animation */
 .fade-in{ opacity:0; transform:translateY(18px); transition:opacity 900ms ease-out, transform 900ms ease-out; }
 .fade-in.appear{ opacity:1; transform:translateY(0); }
 
@@ -85,21 +86,8 @@ footer{
 }
 @media (max-width:620px){
   .section{ flex-direction:column; text-align:center; }
-  .section.reverse{ flex-direction:column; } 
+  .section.reverse{ flex-direction:column; } /* mobile: todas ficam em coluna */
   .section .text p{ text-align:left; }
   main{ padding:0 8px; }
 }
 
-header {
-    background-color: #ffffff;
-    padding: 0 1.5rem;
-    height: 2.75rem;
-    display: flex;
-    width: 100%;
-    top: 0;
-}
-
-header.active {
-    background-color: #f5f5f7;
-    transition: background-color 0.3s ease;
-}
