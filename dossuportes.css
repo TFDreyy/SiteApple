@@ -280,7 +280,7 @@ section h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   padding: 40px 20px;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -522,15 +522,19 @@ section h1 {
 
 .falsic {
   max-width: 1000px;
-  margin: 1rem 15rem 3rem 15rem;
-  padding: 0 20px;
+  margin: 0 auto 3rem auto;
+  padding: 20px;
+  background-color: #ffffff !important;
   font-size: 14px;
-  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+  border-radius: 8px;
 }
+
 
 .falsic h2 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 900;
   color: #121214;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -597,21 +601,28 @@ section h1 {
 
 
 
-
 .apple-support-options {
   display: flex;
-  justify-content: center;
-  gap: 70px;
-  padding: 80px 20px;
+  justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #ffffff;
+
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 0;
+  gap: 0;
+  /* o espaço será controlado pelos cards */
 }
 
+
+
 .support-card {
-  text-align: left;
-  max-width: 260px;
-  padding: 0 10px;
+  width: 320px;
+  padding: 0;
+  margin: 0;
 }
+
+
+
 
 .support-icon {
   width: 100px;
@@ -1234,4 +1245,137 @@ section h1 {
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .apple-support-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .apple-support-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Base global */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: fffffff;
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center
+}
+
+a {
+  text-decoration: none;
+  color: #0071e3;
+  text-align: left;
+}
+
+/* Cards de suporte */
+.apple-support-options {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 80px 0;
+}
+
+.support-card {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+.support-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.support-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.support-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0071e3;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Aviso educacional */
+.falsic {
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  padding: 0;
+  font-size: 14px;
+  color: #555;
+  background-color: #eaeaea;
+  text-align: justify;
+}
+
+/* Grade de produtos */
+.gridasso {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  text-align: justify;
+}
+
+/* Seção Mac */
+.mod-mac-section {
+  max-width: 1000px;
+  margin: 60px auto 40px auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  border-bottom: 1px solid #e0e0e0;
+  background: transparent;
+  text-align: justify;
+}
+
+/* Banner AppleCare */
+.applecare-top-banner {
+  max-width: 1000px;
+  margin: 60px auto 40px auto;
+  padding: 0;
+  text-align: justify;
+}
+
+/* Grade de informações */
+.info-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: justify;
+}
+
+/* Grade de suporte */
+.support-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: justify;
 }
