@@ -15,8 +15,11 @@ body {
 }
 
 .hero img{ 
-  width:160px; 
-  max-width:40vw; 
+  width: 350px;
+  max-width: 80%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .hero-text h2{ 
