@@ -39,15 +39,6 @@ main {
     background-color: #f4f0f0;
 }
 
-.carousel {
-  position: relative;
-  width: 80%;
-  max-width: 800px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
 .titulo_c {
     text-align: justify;
     padding: 5% 0 5% 5%;
@@ -90,57 +81,6 @@ main {
     font-weight: 400;
     font-style: normal;
     src: url('fontes/SF-Pro-Text/sf-pro-text_regular.woff2') format('woff2');
-}
-
-/* Container do carrossel */
-.carousel {
-  position: relative;
-  max-width: 100%; /* ocupa toda a largura */
-  margin: 80px auto;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-/* Faixa de slides */
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Cada slide */
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  background: #ffffff;
-  color: #000000;
-  padding: 60px 20px; /* aumentei a altura */
-}
-
-.carousel-item img {
-  max-width: 80%;   /* antes 60% */
-  margin-bottom: 30px;
-  border-radius: 12px;
-  justify-content: center;
-}
-
-/* Botões */
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255,255,255,0.2);
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  color: #000000;
-  transition: background 0.3s;
-}
-
-.carousel-btn:hover {
-  background: rgba(255,255,255,0.5);
 }
 
 .prev {
