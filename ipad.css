@@ -34,7 +34,7 @@ header,
   align-content: baseline;
   align-items: center;
   margin: 0 2rem;
-  gap: 2.33rem;
+  gap: 2rem;
   padding: 1rem;
 }
 
@@ -44,20 +44,21 @@ header,
   display: flex;
   flex-direction: column;
   transition: all ease 0.3s;
-  font-size: 0.75rem;
+  font-size: 0.66rem;
 }
 
 .elemento-header img {
-  height: 3.5rem;
+  height: 3.2rem;
 }
 
 .elemento-header p {
-  margin-top: 0.275rem;
+  margin-top: 0.25rem;
+  letter-spacing: 0.2px;
 }
 
 .header-ipad span {
-  font-size: 0.7rem;
-  margin-top: 0.125rem;
+  font-size: 0.66rem;
+  margin-top: 0.1rem;
 }
 .elemento-header:hover {
   cursor: pointer;
@@ -68,7 +69,8 @@ header,
 }
 #previa {
   color: #cc5500;
-  font-weight: bold;
+  font-weight: 400;
+  letter-spacing: 0.2px;
 }
 
 #ipadOS26 {
@@ -85,6 +87,7 @@ header,
 p.negrito {
   font-weight: 700;
   letter-spacing: 0.4px;
+  font-size: 0.8rem;
 }
 
 h2#motivosH2 {
@@ -98,9 +101,9 @@ h2#motivosH2 {
   align-content: baseline;
   word-wrap: break-word;
   flex-wrap: wrap;
-  margin: 5rem;
-  font-size: 1.75rem;
-  margin-right: 7.5rem;
+  margin: 3rem;
+  font-size: 1.25rem;
+  margin-right: 7.2rem;
   font-weight: 700;
   letter-spacing: -1px;
 }
@@ -111,17 +114,17 @@ h2#motivosH2 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 9rem;
-  font-size: 2.5rem;
+  margin: 8rem;
+  font-size: 2rem;
   overflow: hidden;
-  margin-right: 7.5rem;
+  margin-right: 7rem;
   letter-spacing: -0.105em;
   position: relative;
   z-index: 10;
 }
 
 .ipad h1 {
-  font-size: 4.7rem;
+  font-size: 3.25rem;
   font-weight: 600;
 }
 
@@ -130,12 +133,12 @@ h2#motivosH2 {
 }
 
 .titulo-e-slogan a {
-  font-size: 1.2rem;
+  font-size: 0.66rem;
   margin-right: 3px;
 }
 
 .titulo-e-slogan .saiba-mais a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
@@ -159,7 +162,7 @@ h2#motivosH2 {
 }
 .slogan {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: justify;
 }
 
@@ -192,9 +195,12 @@ h2#motivosH2 {
 }
 
 .caixa-imagem img {
+  position: absolute;
   width: 2.8rem;
   height: 2.8rem;
   transition: 0.5s all ease;
+  bottom: 0;
+  right: 0;
 }
 
 .caixa-imagem button:hover {
@@ -218,12 +224,21 @@ video.imagem-hero {
   position: relative;
 }
 .card-caixa {
-  display: flex;
-  justify-content: space-around;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0 auto;
   padding: 2rem;
-  border-bottom: 1px solid #ccc;
+  
+}
+
+.divider {
+  background-color: #ccc;
+  height: 1px;
+  width: 100vw;
+  color:  #ccc;
 }
 
 .especificacoes-caixa {
@@ -251,30 +266,31 @@ video.imagem-hero {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 24rem;
-  height: 12.5rem;
+  width: 23rem;
+  height: 12rem;
   text-align: center;
   padding: 4rem;
 }
 
 .especificacoes-item p {
   text-align: center;
-  font-size: 0.75rem;
-  line-height: 1.5rem;
+  font-size: 0.66rem;
+  line-height: 1.25rem;
   width: 80%;
 }
 
 .especificacoes-item h1 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .especificacoes-item img {
-  height: 6rem;
+  height: 3.66rem;
   width: auto;
 }
 .motivos-caixa {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem;
@@ -286,12 +302,11 @@ video.imagem-hero {
 }
 
 .card {
-  border-radius: 2rem;
-  width: 27rem;
+  width: 21rem;
+  height: 37rem;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  text-align: center;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .card .arrow-icon {
@@ -303,17 +318,16 @@ video.imagem-hero {
   transform: translate(5px, -1px);
 }
 
+
 .card img {
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-top: auto;
+  height: 15rem;
+  width: auto;
   transition: all 0.35s ease;
 }
 
 .card h3 {
   margin: 1rem 0 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.166rem;
   font-weight: 700;
 }
 
@@ -331,8 +345,8 @@ video.imagem-hero {
   padding: 2rem;
   border-radius: 1.75rem;
   background-color: white;
-  width: 25rem;
-  height: 18rem;
+  width: 24.5rem;
+  height: 17rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
   transition: all ease 0.3s;
@@ -346,27 +360,27 @@ video.imagem-hero {
 }
 
 .motivos h3 {
-  height: 3rem;
+  height: 2.75rem;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .motivos p {
   text-align: left;
   padding: 0 1rem 1rem;
   color: #444;
-  height: 13rem;
+  height: 11rem;
   line-height: 1.5em;
-  margin: 2.75rem 0;
+  margin: 2.5rem 0;
 }
 
 .motivos img {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.33rem;
 }
 
 .motivos-icone {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.66rem;
+  margin-bottom: 0.75rem;
 }
 
 .conheca {
@@ -375,7 +389,7 @@ video.imagem-hero {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.25rem;
   flex-wrap: nowrap;
   padding: 1rem;
   position: relative;
@@ -396,8 +410,8 @@ video.imagem-hero {
   align-content: center;
   align-items: center;
   border-radius: 50%;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.5rem;
+  aspect-ratio: 1/1;
   cursor: pointer;
   position: absolute;
   z-index: 2;
@@ -427,12 +441,13 @@ video.imagem-hero {
 }
 .card-conheca {
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 1rem;
   background-color: #f4f0f0;
   border-radius: 15px;
-  width: calc(400rem / 16);
-  height: calc(700rem / 16);
+  width: 375px;
+  aspect-ratio: 2/3.5;
   text-align: center;
   transition: transform 0.3s ease;
   background-size: cover;
@@ -440,6 +455,123 @@ video.imagem-hero {
   background-repeat: no-repeat;
   padding: 1.4rem;
   padding-left: 0.2rem;
+}
+
+button.botao-mais {
+  all: unset;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 70%;
+  right: 20px;
+  bottom: 20px;
+  transition: all ease 0.3s;
+  font-size: 25px;
+  font-weight: 400;
+  color:#222111;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+div.cardTelaCheia {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+  transition: all ease 0.3s;
+}
+
+div.cardTelaCheia.show {
+  display: flex;
+  overflow-y: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+div.conteudo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: white;
+  color: black;
+  padding: 4.25rem 2.75rem;
+  width: 600px;
+  height: fit-content;
+  aspect-ratio: 1/1.1;
+  border-radius: 1.25rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+div.conteudo h1 {
+  font-size: 2rem;
+  letter-spacing: -0.025em;
+}
+
+div.conteudo h4 {
+  font-size: 1.05rem;
+  letter-spacing: 0.25px;
+  font-weight: 600;
+}
+
+div.conteudo button {
+  all: unset;
+  width: 1rem;
+  height: 1rem; 
+  padding: 0.5rem;
+  border-radius: 70%;
+  justify-self: flex-end;
+  align-self: flex-end;
+  position: absolute;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+div.conteudo-interno {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  background:  #f5f5f7;
+  border-radius: 1.25rem;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 1.05rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+div.conteudo-interno p {
+  display: inline;
+  color: #6e6e73;
+
+}
+
+.conteudo-interno img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+button:hover.botao-mais {
+  transform: scale(1.1);
 }
 .card-conheca:hover {
   transform: scale(1.03);
@@ -468,15 +600,15 @@ video.imagem-hero {
 .conheca-descricao {
   text-align: left;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0.5;
-  padding-left: 0.9cm;
+  padding-left: 0.8cm;
   color: #e0e0e0;
 }
 
 .conheca-frase {
   text-align: left;
-  font-size: 1.7rem;
+  font-size: 1.33rem;
   padding-left: 0.9cm;
   padding-right: 0.7cm;
   color: #f5f5f5;
@@ -484,17 +616,18 @@ video.imagem-hero {
 }
 
 button {
-  margin-right: 1.25rem;
+  margin-right: 1rem;
   background-color: var(--sk-button-background);
   color: white;
   border-radius: 1.6rem;
-  width: 8.25rem;
-  height: 2.75rem;
+  width: 7rem;
+  height: 2.5rem;
   text-align: center;
   border: none;
   outline: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: all ease 0.5s;
+  padding: 0.25rem;
 }
 
 a {
@@ -526,7 +659,7 @@ a:hover {
   font-weight: bold;
   line-height: 1.25em;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .essenciais-caixa {
@@ -548,8 +681,8 @@ a:hover {
   padding: 2rem;
   border-radius: 1.5rem;
   background-color: white;
-  width: 50rem;
-  height: 37.5rem;
+  width: 40rem;
+  height: 35rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
   transition: transform 0.3s linear;
@@ -558,7 +691,7 @@ a:hover {
   background-position: bottom;
   background-repeat: no-repeat;
   padding-top: 4rem;
-  box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.2);
+  box-shadow: 0 0 16px hsl(0, 0%, 80%, 0.2);
 }
 
 .essenciais#appleteclado .arrow-icon {
@@ -576,7 +709,7 @@ a:hover {
   background-position: top;
 }
 .essenciais h3 {
-  font-size: 1.75rem;
+  font-size: 1.33rem;
   font-weight: 600;
 }
 
@@ -585,7 +718,7 @@ a:hover {
 }
 
 .essenciais:hover {
-  transform: translateY(-7.5px);
+  transform: scale(1.015);
   cursor: pointer;
 }
 
@@ -598,7 +731,7 @@ a:hover {
 .saiba-mais span {
   font-weight: bold;
   color: var(--sk-body-link-color);
-  font-size: 0.8rem;
+  font-size: 0.66rem;
 }
 
 .companheiros-caixa {
@@ -624,8 +757,8 @@ a:hover {
   overflow-wrap: break-word;
   transition: all 0.2s ease-out;
   text-align: left;
-  width: 90%;
-  height: 45rem;
+  width: 80%;
+  height: 40rem;
   background-size: 60%;
   background-position: right;
   background-repeat: no-repeat;
@@ -656,14 +789,15 @@ a:hover {
 }
 
 .texto-companheiros i {
-  font-size: 0.25rem;
+  font-size: 0.225rem;
 }
 #ultimoitem {
   border: none;
 }
 .texto-companheiros h2 {
-  font-size: 1.85rem;
+  font-size: 1.33rem;
   font-weight: 600;
+  margin-right: 0.5rem;
 }
 
 .texto-companheiros p {
@@ -671,6 +805,7 @@ a:hover {
   margin-top: 1rem;
   color: #222111;
   transition: all 0.2s ease;
+  font-size: 0.88rem;
 }
 
 .texto-companheiros.active p {
@@ -682,7 +817,7 @@ a:hover {
 }
 
 .texto-companheiros .arrow-icon {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #8d8d8d;
   font-weight: bold;
   transform: scaleY(-1);
@@ -699,72 +834,53 @@ a:hover {
 .footer-iPad {
   background-color: #fafafc;
 }
-.footer-secao {
+.menus {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: center;
-  gap: 0.75rem;
+  gap: 5%;
+  align-items: baseline;
+  padding: 0.25rem;
+  margin-bottom: 1.5rem;
+  
 }
-.footer-secundario {
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
-  flex-direction: column;
-  margin-left: 7rem;
-  gap: 0.575rem;
-  padding-top: 7rem;
-}
-.footer-secundario h1 {
-  font-size: 3.5rem;
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-  letter-spacing: -0.05em;
-}
-.footer-secundario h2 {
-  font-size: 1.7rem;
-  font-weight: 600;
-  letter-spacing: -0.05em;
-  cursor: pointer;
-  width: fit-content;
-  transition: all 0.3s ease;
+section#footers {
+  padding: 2rem 0.75rem;
+  background-color: #f5f5f7;
 }
 
-.footer-secundario p {
-  font-weight: 300;
-  width: fit-content;
+div.titulo-e-slogan#ipadfooter {
+  padding: 0;
 }
-.footer-mini {
+ul.menu-inferior {
+  list-style-type: none;
+  padding-left: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 0.3rem;
-  gap: 0.9rem;
-  padding-bottom: 5rem;
-}
-.footer-mini h2,
-.footer-mini p {
-  width: fit-content;
-  font-size: 1.1rem;
-  letter-spacing: -0.05em;
-  font-weight: 600;
-}
-.footer-mini p {
-  font-weight: 300;
-  letter-spacing: -0.065em;
+  gap: 0.5rem;
 }
 
-.footer-mini a {
+ul.menu-inferior li, ul.menu-inferior li a {
   text-decoration: none;
-  font-weight: 600;
-  color: #444;
-  transition: all ease 0.3s;
+  font-size: 0.9rem;
+  color: #6e6e73;
+  transition: all ease 0.2s;
 }
 
-.footer-secundario h2:hover,
-.footer-secundario a:hover {
+ul.menu-inferior li + li, ul.menu-inferior li a {
+  color: #3e3e3b;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.25rem;
+}
+ul.menu-inferior li + li:hover {
+  color: black
+}
+
+ul.menu-inferior li a:hover {
+  text-decoration: none;
   color: black;
 }
+
 
 /* -----------------------------
    SF Pro Text
@@ -894,9 +1010,6 @@ a:hover {
     max-height: 50vh;
   }
 
-  .titulo-e-slogan {
-    font-size: 1.25rem;
-  }
   nav {
     overflow-x: auto;
   }
@@ -904,10 +1017,6 @@ a:hover {
     border-radius: 0.75rem;
     width: 100vw;
     height: 70vh;
-  }
-  .titulo-e-slogan#titulo {
-    font-size: 2.5rem;
-    text-align: center;
   }
   .conheca {
     justify-content: center;
@@ -926,13 +1035,16 @@ a:hover {
 
 }
 
-@media (max-width: 1000px) {
-  .card-caixa,
-  .motivos-caixa {
-    justify-content: space-evenly;
+@media (max-width: 1400px) {
+  .card-caixa, .motivos-caixa {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin: 0 auto;
+    width: fit-content;
   }
+}
+@media (max-width: 1000px) {
   .card {
     justify-content: center;
     align-items: center;
@@ -970,5 +1082,15 @@ a:hover {
 @media (max-width: 1905px) {
   .especificacoes-caixa {
     display: none;
+  }
+}
+
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

@@ -159,3 +159,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateButtons();
 });
+
+function abrirCard(id) {
+  const el = document.getElementById(id);
+  if (!el) {
+    window.alert('Elemento não encontrado', id);
+    
+    return;
+  }
+  el.classList.add("show");
+  el.setAttribute('aria-hidden', 'false')
+  document.body.style.overflow = "hidden"
+}
+
+function fecharCard(card) {
+  const el = card;
+  el.classList.remove("show");
+  el.setAttribute('aria-hidden', 'true');
+  document.body.style.overflowY = "scroll"
+}
+document.querySelectorAll(".botao-mais").forEach(botao => {
+  botao.addEventListener("click", () => abrirCard(botao.dataset.cardMais));
+  
+});
+
+document.querySelectorAll('.botao-fechar').forEach(botaoFechar => {
+  botaoFechar.addEventListener("click", e => {
+    const card = e.target.closest(".cardTelaCheia");
+    fecharCard(card);
+  }
+  )});

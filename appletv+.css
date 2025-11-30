@@ -35,7 +35,7 @@ nav {
 }
 
 .logo {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #ffffffaf;
     flex-shrink: 0;
@@ -63,7 +63,7 @@ nav {
 }
 
 .menu a {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     text-decoration: none;
     color: #ffffffaf;
     transition: color 0.3s;
@@ -262,7 +262,7 @@ nav {
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.18);
 }
 
-.barraapple p {
+.barraapplelink1 {
     max-width: 980px;
     margin: 0 auto;
     text-align: center;
@@ -424,7 +424,7 @@ nav {
 
 .barra-anuncio {
     width: 100%;
-    background-color: #0071e3;
+    background-color: rgb(0, 113, 227);
     padding: 18px 0;
     border-bottom: 1px solid #202020;
     animation: animate-color 1s ease-in-out 1.8s forwards;
@@ -434,7 +434,7 @@ nav {
 
 @keyframes animate-color {
   0%{
-    background-color:#0071e3 ;
+    background-color:rgb(0, 113, 227);
   }
 
   100% {
@@ -452,6 +452,7 @@ nav {
 
 .barra-anuncio a {
     color: #ffffff;
+    fill: #ffffff;
     text-decoration: none;
     animation: color 1s ease-in-out 1.8s forwards;
 }
@@ -459,9 +460,11 @@ nav {
 @keyframes color {
   0% {
     color: #ffffff;
+    fill: #ffffff;
   }
   100% {
-    color: #0071e3;
+    color: rgb(41, 151, 255);
+    fill: rgb(41, 151, 255);
   }
 }
 
@@ -514,11 +517,13 @@ nav {
 }
 
 .botaosaibamais {
-  color: #0a84ff;
+  color: rgb(41, 151, 255);
+  fill: rgb(41, 151, 255);
   font-size: 17px;
   text-decoration: none;
   text-align: left;
   cursor: pointer;
+  align-items: center;
   display: inline-flex;
 }
 
@@ -531,12 +536,16 @@ nav {
 }
 
 .seta {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  fill: rgb(41, 151, 255);
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex !important;
 }
 
 
 .botaosaibamais2 {
-  color: #0a84ff;
+  color: rgb(41, 151, 255);
   font-size: 14px;
   text-decoration: none;
   text-align: left;
@@ -554,7 +563,10 @@ nav {
 }
 
 .seta2 {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex;
 }
 
 
@@ -862,27 +874,36 @@ nav {
   position: relative;
   margin-bottom: 60px;
   padding: 14px 18px;
-  display: flex;
+  display: inline-flex;
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
   border: 1px solid #ffffff;
   border-radius: 25px;
-  outline: none;
-  overflow: hidden;
   color: #ffffff;
   text-align: center;
-  width: fit-content;
   left: 50%;
   transform: translate(-50%);
 }
 
-.botaocatalogo:hover {
+.botaocatalogo:hover{
     color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
+.botaocatalogo span:hover, .botaocatalogo .setabranca:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.setabranca {
+  font-family: SF Pro Icons;
+  fill: #ffffff;
+  margin-left: 0.2em;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-flex !important;
+}
 
 
 
@@ -1082,12 +1103,13 @@ nav {
 
 .botaosaibamais3 {
   color: #06c;
-  font-size: 16px;
+  fill: #06c;
+  font-size: 17px;
   text-decoration: none;
   text-align: left;
   cursor: pointer;
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
 }
 
 .botaosaibamais3:hover {
@@ -1099,7 +1121,11 @@ nav {
 }
 
 .seta3 {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  fill: #06c;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex !important;
 }
 
 
@@ -1427,29 +1453,40 @@ nav {
     background-color: rgba(0, 102, 204, 0.8);
 }
 
+
 .botaosaibamaisfim {
-    color: #06c;
-    background: transparent;
-    border: none;
-    font-size: 17px;
-    font-weight: 400;
-    text-decoration: none;
-    outline: none;
-    text-align: center;
-    position: relative;
-    top: 15px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+  color: #06c;
+  fill: #06c;
+  font-size: 17px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+  top: 15px;
 }
 
-.botaosaibamaisfim p {
-    padding-right: 5px;
+.botaosaibamaisfim:hover {
+  text-decoration: none;
 }
 
-.botaosaibamaisfim:hover p {
-    text-decoration: underline;
+.botaosaibamaisfim:hover .texto-linkfim {
+  text-decoration: underline;
 }
+
+.setafim {
+  font-family: SF Pro Icons;
+  fill: #06c;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex !important;
+}
+
+
+
+
+
 
 .botoesfim {
     display: flex;

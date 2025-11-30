@@ -22,7 +22,7 @@ header {
 }
 
 header.active {
-    background-color: #000;
+    background-color: #161617;
 }
 
 
@@ -36,7 +36,7 @@ nav {
 }
 
 .logo {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #ffffffaf;
     flex-shrink: 0;
@@ -64,7 +64,7 @@ nav {
 }
 
 .menu a {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     text-decoration: none;
     color: #ffffffaf;
     transition: color 0.3s;
@@ -356,7 +356,7 @@ nav {
 
 .barra-anuncio {
   width: 100%;
-  background-color: #0071e3;
+  background-color: rgb(0, 113, 227);
   padding: 18px 0;
   border-bottom: 1px solid #202020;
   animation: animate-color 1s ease-in-out 1.8s forwards;
@@ -366,7 +366,7 @@ nav {
 
 @keyframes animate-color {
   0% {
-    background-color: #0071e3;
+    background-color: rgb(0, 113, 227);
   }
   100% {
     background-color: #202020;
@@ -383,6 +383,7 @@ nav {
 
 .barra-anuncio a {
   color: #ffffff;
+  fill: #ffffff;
   animation: color 1s ease-in-out 1.8s forwards;
   display: inline-flex;
   align-items: center;
@@ -392,14 +393,16 @@ nav {
 @keyframes color {
   0% {
     color: #ffffff;
+    fill: #ffffff;
   }
   100% {
-    color: #0071e3;
+    color: rgb(41, 151, 255);
+    fill: rgb(41, 151, 255);
   }
 }
 
 .botaosaibamais4 {
-  color: #0071e3;
+  color: rgb(41, 151, 255);
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
@@ -417,10 +420,10 @@ nav {
 }
 
 .seta2 {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  margin-left: 0.3em;
   text-decoration: none !important;
-  font-size: 14px;
-  align-items: center;
+  display: inline-flex;
 }
 
 
@@ -1906,6 +1909,156 @@ nav {
 
 
 
+
+.seta3 {
+  font-family: SF Pro Icons;
+  margin-left: 0.05em;
+  text-decoration: none !important;
+  align-items: center;
+  display: inline-flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#entretenimento-menu {
+  position: fixed;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  background: #161617;
+  padding: 32px 0 40px;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-15px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+#entretenimento-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.entretenimento-menu-container {
+  background-color: #161617;
+}
+
+.entretenimento-menu {
+  width: 80%;
+  padding-top: 20px;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: -2%;
+}
+
+.menu-explorar h3 {
+  font-size: 0.75rem;
+  pointer-events: none;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  color: rgb(110, 110, 115);
+}
+
+.menu-explorar a {
+  font-size: 24px;
+  line-height: 1.1666666667;
+  font-weight: 600;
+  text-decoration: none;
+  color: #f5f5f7;
+}
+
+.menu-explorar li {
+  padding-bottom: 5px;
+}
+
+.menu-explorar a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.menu-explorar ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.menu-explorar h4 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  pointer-events: none;
+}
+
+.menu-explorar h4:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.menu-comprar-mais h3 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  color: rgb(110, 110, 115);
+  pointer-events: none;
+}
+
+.menu-comprar-mais ul {
+  list-style: none;
+}
+
+.menu-comprar-mais a {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #f5f5f7;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu-comprar-mais a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.body-blur::before {
+  content: '';
+  position: fixed;
+  top: 3.75rem;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 3.75rem);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.15rem);
+  -webkit-backdrop-filter: blur(0.15rem);
+  z-index: 2000;
+  pointer-events: none;
+}
+
+.entretenimento-menu-container {
+  left: -10vw;
+}
+
+.menu-explorar {
+  margin-right: 3rem;
+}
 
 
 

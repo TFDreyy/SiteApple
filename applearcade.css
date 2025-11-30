@@ -46,7 +46,7 @@ nav {
 }
 
 .logo {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #ffffffaf;
     flex-shrink: 0;
@@ -74,7 +74,7 @@ nav {
 }
 
 .menu a {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     text-decoration: none;
     color: #ffffffaf;
     transition: color 0.3s;
@@ -493,7 +493,7 @@ nav {
     justify-content: flex-start;
 }
 
-.barraapple p {
+.barraapplelink1 {
     max-width: 980px;
     margin: 0 auto;
     text-align: center;
@@ -670,7 +670,7 @@ nav {
 
 .barra-anuncio {
     width: 100%;
-    background-color: #0071e3;
+    background-color: rgb(0, 113, 227);
     padding: 18px 0;
     border-bottom: 1px solid #202020;
     animation: animate-color 1s ease-in-out 1.8s forwards;
@@ -681,7 +681,7 @@ nav {
 
 @keyframes animate-color {
   0%{
-    background-color:#0071e3 ;
+    background-color:rgb(0, 113, 227);
   }
 
   100% {
@@ -699,6 +699,7 @@ nav {
 
 .barra-anuncio a {
     color: #ffffff;
+    fill: #ffffff;
     text-decoration: none;
     animation: color 1s ease-in-out 1.8s forwards;
 }
@@ -706,9 +707,11 @@ nav {
 @keyframes color {
   0% {
     color: #ffffff;
+    fill: #ffffff;
   }
   100% {
-    color: #0071e3;
+    color: rgb(41, 151, 255);
+    fill: rgb(41, 151, 255);
   }
 }
 
@@ -759,11 +762,13 @@ nav {
 }
 
 .botaosaibamais {
-  color: #0a84ff;
+  color: #06c;
+  fill: #06c;
   font-size: 17px;
   text-decoration: none;
   text-align: left;
   cursor: pointer;
+  align-items: center;
   display: inline-flex;
 }
 
@@ -776,12 +781,16 @@ nav {
 }
 
 .seta {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  fill: #06c;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex !important;
 }
 
 
 .botaosaibamais2 {
-  color: #0a84ff;
+  color: rgb(41, 151, 255);
   font-size: 14px;
   text-decoration: none;
   text-align: left;
@@ -799,7 +808,10 @@ nav {
 }
 
 .seta2 {
-  margin-left: 5px;
+  font-family: SF Pro Icons;
+  margin-left: 0.3em;
+  text-decoration: none !important;
+  display: inline-flex;
 }
 
 
