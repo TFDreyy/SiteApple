@@ -622,7 +622,7 @@ a:hover {
 }
 
 .texto-beneficio {
-  text-align: center;
+  text-align: justify;
 }
 
 .beneficio {
@@ -636,8 +636,8 @@ a:hover {
   padding: 1.5rem;
   border-radius: 1.5rem;
   background-color: white;
-  width: 22rem; 
-  height: 18rem;
+  width: 23rem; 
+  height: 19rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
   transition: all ease 0.3s;
@@ -679,11 +679,11 @@ a:hover {
 
 .beneficio p {
   text-align: left;
-  padding: 0 1rem 1rem;
+  padding: 4px;
   color: #000000;
   height: 13rem;
-  line-height: 1.5em;
-  margin: 2.75rem 0;
+  line-height: 1.5rem;
+  margin: 2rem 0;
 }
 
 .beneficio img {
@@ -773,6 +773,7 @@ a:hover {
 .card-imagem2 {
   width: 30%;
 }
+
 .card-icon2 {
   position: absolute;
   bottom: 20px;
@@ -1555,164 +1556,7 @@ a:hover {
   color: #CC5500;
   font-weight: bold;
 }
-body.dark-mode {
-  background: #18181a !important;
-  color: #f4f4f0 !important;
-}
-body.dark-node .comparison-header a,
-body.dark-mode .compare-link {
-  color: #0071e3 !important;
-}
 
-
-body.dark-mode .accordion-arrow,
-body.dark-mode .accordion-content,
-body.dark-mode .accordion-header,
-body.dark-mode .accordion-item,
-body.dark-mode .active,
-body.dark-mode .arrow,
-body.dark-mode .barra-items-slide,
-
-body.dark-mode .body-blur,
-body.dark-mode .buttons,
-body.dark-mode .caixa-video,
-body.dark-mode .comparison-header,
-body.dark-mode .desktop 
-body.dark-mode .item,
-body.dark-mode .iphone-carousel,
-body.dark-mode .iphone-comparison,
-body.dark-mode .iphone-integration,
-body.dark-mode .iphone-menu,
-body.dark-mode .iphone-menu-container,
-body.dark_mode .iphone-menu-title,
-body.dark-mode .iphone-specs,
-body.dark-mode .iphone-specs-container,
-body.dark-mode .iphonevideo,
-body.dark-mode .integration-container,
-body.dark-mode .integration-left,
-body.dark-mode .integration-right,
-body.dark-mode .iphone-scroll,
-body.dark-mode .iphone-block,
-body.dark-mode .item,
-body.dark-mode .menu-section-list,
-body.dark-mode .menu-section-title,
-body.dark-mode .preco,
-body.dark-mode .slide-in-right,
-body.dark-mode .spec-item,
-body.dark-mode .t-linha,
-body.dark-mode .titulo,
-body.dark-mode .titulo-iphone,
-body.dark-mode .titulo-iphone2,
-body.dark-mode .titulo-iphone3,
-body.dark-mode .video-toggle,
-body.dark-mode .slide-in-right,
-body.dark-mode .item,
-body.dark-mode .item span,
-body.dark-mode .section-ace,
-body.dark-mode footer,
-body.dark-mode footer a,
-body.dark-mode footer h4,
-body.dark-mode footer p,
-body.dark-mode .texto-beneficio,
-body.dark-mode .iphone-menu h2,
-body.dark-mode .beneficio,
-body.dark-mode .footer-warning {
-  background-color: #18181a !important;
-  color: #f4f4f0 !important;
-  
-}
-body.dark-mode .titulo,
-body.dark-mode .safaricard-text,
-body.dark-mode .cardinfo-text,
-body.dark-mode .accordion-arrow svg,
-body.dark-mode .menu-section-list a,
-body.dark-mode .accordion-header h3,
-body.dark-mode .accordion-content p,
-body.dark-mode .motivos-header .titulo h1, 
-body.dark-mode .motivos-header .titulo,
-body.dark-mode .motivos-header h1 {
-  color: #f4f4f0 !important;
-}
-body.dark-mode nav,
-body.dark-mode head,
-body.dark-mode header,
-body.dark-mode .logo {
-  background:#18181a;
-  color: #f4f4f0 !important;
-}
-body.dark-mode nav,
-body.dark-mode head a,
-body.dark-mode header a {
-  background:#18181a;
-  color: #f4f4f0 !important;
-}
-body.dark-mode .ios span {
-  color: #CC5500 !important;
-}
-body.dark-mode .card-overlay2,
-body.dark-mode .acessorio-card,
-body.dark-mode .acessorio-overlay,
-body.dark-mode .acessorio-textos h2,
-body.dark-mode .acessorio-textos h5 {
-  background-color: #202020 !important;
-  color: #ffffff !important;
-  
-}
-
-@keyframes darkmode-rotate {
-  0% { transform: rotate(0deg) scale(1); }
-  60% { transform: rotate(360deg) scale(1.15); }
-  100% { transform: rotate(360deg) scale(1); }
-}
-
-
-
-.trilho {
-  width: 100px;
-  height: 40px;
-  background-color: #a5a5a5;
-  border-radius: 300px;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  z-index: 9999; 
-}
-
-
-
-
-.trilho .indicador {
-  width: 25px;
-  height: 25px;
-  background-color: #ffffff;
-  color: #fff;
-  border-radius: 25px;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.4s cubic-bezier(.4,0,.2,1), background 0.2s;
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 12px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.trilho.dark .indicador {
-  transform: translateX(60px);
-  background-color: #000000;
-  color: #fff;
-}
-
-.trilho.dark .indicador span {
-  opacity: 1;
-}
 
 
 @font-face {

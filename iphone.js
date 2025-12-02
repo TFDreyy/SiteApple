@@ -156,65 +156,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const iphoneBtn = document.getElementById('iphone-menu-btn');
-  const iphoneTooltip = document.getElementById('iphone-tooltip');
-  let tooltipTimer;
+  
 
-  function showTooltip() {
-    clearTimeout(tooltipTimer);
-    iphoneTooltip.classList.remove('hidden');
-    void iphoneTooltip.offsetWidth;
-    iphoneTooltip.classList.add('show');
-  }
-
-  function hideTooltip() {
-    tooltipTimer = setTimeout(() => {
-      iphoneTooltip.classList.remove('show');
-      setTimeout(() => {
-        if(!iphoneTooltip.classList.contains('show')) iphoneTooltip.classList.add('hidden');
-      }, 280);
-    }, 80);
-  }
-
-  if(iphoneBtn && iphoneTooltip) {
-    iphoneBtn.addEventListener('mouseenter', showTooltip);
-    iphoneTooltip.addEventListener('mouseenter', showTooltip);
-    iphoneBtn.addEventListener('mouseleave', hideTooltip);
-    iphoneTooltip.addEventListener('mouseleave', hideTooltip);
-  }
-
-
-  const trilho = document.querySelector('.trilho');
-
-  function atualizarImagens() {
-    document.querySelectorAll("img[data-dark]").forEach(img => {
-      if(document.body.classList.contains("dark-mode")) {
-        img.dataset.light = img.dataset.light || img.src;
-        img.src = img.dataset.dark;
-      } else {
-        img.src = img.dataset.light || img.src;
-      }
-    });
-  }
-
-  if(trilho) {
-    trilho.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      trilho.classList.toggle('dark');
-      atualizarImagens();
-
-      if(document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('darkMode','enabled');
-      } else {
-        localStorage.setItem('darkMode','disabled');
-      }
-    });
-
-    if(localStorage.getItem('darkMode') === 'enabled') {
-      document.body.classList.add('dark-mode');
-      trilho.classList.add('dark');
-      atualizarImagens();
-    }
-  }
+  
 
 });
 const primeiroitem = document.getElementById("ipad-e-iphone");
@@ -223,7 +167,7 @@ const textoCompanheiros = document.querySelectorAll(".texto-companheiros");
 const companheiros = document.querySelector(".companheiros");
 
 companheiros.classList.add("ipadIphone");
-// efeito do texto dropdown
+
 
 textoCompanheiros.forEach((texto) => {
   texto.addEventListener("click", () => {
