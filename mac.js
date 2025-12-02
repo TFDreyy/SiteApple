@@ -5,10 +5,10 @@ const toggleIcon = document.getElementById("toggleIcon");
 function togglePlayPause() {
   if (video.paused) {
     video.play();
-    toggleIcon.src = "imagens_Mac/toggle-pause.png";
+    toggleIcon.src = "Imagens_Mac/toggle-pause.png";
   } else {
     video.pause();
-    toggleIcon.src = "imagens_Mac/toggle-play.png";
+    toggleIcon.src = "Imagens_Mac/toggle-play.png";
   }
 }
 
