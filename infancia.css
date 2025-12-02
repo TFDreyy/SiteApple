@@ -15,11 +15,8 @@ body {
 }
 
 .hero img{ 
-  width: 350px;
-  max-width: 80%;
-  border-radius: 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width:160px; 
+  max-width:40vw; 
 }
 
 .hero-text h2{ 
@@ -102,7 +99,6 @@ main{
   opacity:1; 
   transform:translateY(0); 
 }
-
 
 
 
