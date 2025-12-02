@@ -3,7 +3,7 @@ const carousel = document.querySelector('.carousel');
 
 carousel.innerHTML += carousel.innerHTML;
 
-let speed = 4; 
+let speed = 1.85; 
 let scrollPos = 0;
 
 function infiniteLoop() {
