@@ -93,17 +93,125 @@ main {
   color: #6e6e73;
   font-size: 12px;
 }
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 80px;
+}
 
 
+.item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.item a:hover {
+    color: #0071e3;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
+.item span {
+    font-size: 0.77rem;
+    margin-top: 0.1rem;
+}
+.item p {
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+}
+.slide-in-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    padding-bottom: 2rem;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 9999;
+    position: relative;
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(200px);
+                transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(200px);
+                transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+.ios img {
+    width: 35px;
+    height: auto;
+    align-self: center;
+    justify-content: center;
+    transform: translateY(15px);
+}
+.ios span {
+  color: #CC5500;
+  font-weight: bold;
+}
+
+.barra-items-slide {
+    background-color: #fff; 
+    width: 100%;
+    z-index: 3990; 
+    position: relative;
+}
 .barra-anuncio {
     width: 100%;
-    background-color: #ffffff69;
+    background-color: #0071e3;
     padding: 15px 0;
     border-bottom: 1px solid ffff69;
     animation: animate-color 1s ease-in-out 1.8s forwards;
     position: relative;
     z-index: 1;
 }
+
+@keyframes animate-color {
+  0%{
+    background-color:#0071e3 ;
+  }
+
+  100% {
+    background-color: #fff;
+  }
+}
+
 .barra-anuncio p {
     max-width: 980px;
     margin: 0 auto;
@@ -114,7 +222,7 @@ main {
 }
 
 .barra-anuncio a {
-    color: #f4f0f0;
+    color: #fff;
     text-decoration: none;
     animation: color 1s ease-in-out 1.8s forwards;
 }
@@ -125,7 +233,7 @@ main {
 
 @keyframes color {
   0% {
-    color: #f4f0f0;
+    color: #fff;
   }
   100% {
     color: #0071e3;
@@ -135,12 +243,13 @@ main {
 
 @keyframes color2 {
   0% {
-    color: #f4f0f0;
+    color: #fff;
   }
   100% {
     color: #000;
   }
 }
+
 .iphonetitulo {
   display: flex;
   flex-direction: column;   

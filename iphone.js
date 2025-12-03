@@ -95,7 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
       if(e.target === card) fecharCardinfo(card.id);
     });
   });
-
+document.querySelectorAll(".card-icon2").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const targetId = btn.getAttribute("data-cardinfo");
+    if(targetId) abrirCardinfo(targetId);
+  });
+});
 
   function toggleAccordion(element, index) {
     const wasActive = element.classList.contains('active');
