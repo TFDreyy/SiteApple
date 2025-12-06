@@ -107,7 +107,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: #fff;
     transition: color 0.3s;
 }
 
@@ -185,9 +185,15 @@ main {
   color: #CC5500;
   font-weight: bold;
 }
+.main-container {
+  max-width: 100%;
+  margin: 0 auto;
+  color: #6e6e73;
+  font-size: 12px;
+}
 
 .barra-items-slide {
-    background-color: #fff; 
+    background-color: #000000; 
     width: 100%;
     z-index: 3990; 
     position: relative;
@@ -208,7 +214,7 @@ main {
   }
 
   100% {
-    background-color: #fff;
+    background-color: #000000;
   }
 }
 
@@ -217,12 +223,12 @@ main {
     margin: 0 auto;
     text-align: center;
     font-size: 14px;
-    color: #f4f4f0;
+    color: #000000;
     animation: color2 1s ease-in-out 1.8s forwards;
 }
 
 .barra-anuncio a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     animation: color 1s ease-in-out 1.8s forwards;
 }
@@ -233,7 +239,7 @@ main {
 
 @keyframes color {
   0% {
-    color: #fff;
+    color: #000000;
   }
   100% {
     color: #0071e3;
@@ -243,10 +249,10 @@ main {
 
 @keyframes color2 {
   0% {
-    color: #fff;
+    color: #000000;
   }
   100% {
-    color: #000;
+    color: #fff;
   }
 }
 
@@ -274,24 +280,24 @@ main {
   line-height: 1.05;
 }
 .exploredetalhes {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     width: 100%;
-    padding: 40px 20px;
+    padding: 20px 10px;
     box-sizing: border-box;
     margin: 0 0 100px 0;
 }
 .exploredetalhes-section {
-    background-color: #1d1d1f;
+    background-color: rgb(14, 14, 14);
     padding: 20px;
 }
 .exploredetalhes .card {
-    background: black;
+    background: #000000;
     border-radius: 20px;
     padding: 25px;
-    width: 85%;
+    width: 100%;
     max-width: 1000px;
     height: 500px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -320,7 +326,7 @@ main {
   text-align: justify;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .exploredetalhes .card {
         width: 95%;
@@ -367,7 +373,7 @@ main {
 }
 
 .titulo-iphone-gray {
-  font-size: 4vw; /* tamanho relativo à largura da viewport */
+  font-size: 4vw;  
   font-weight: 1000;
   color: #bfbfbf; 
   margin: 0;
@@ -455,7 +461,7 @@ main {
 
 
 .titanio .card2 {
-  padding: 0; /* Remove o padding */
+  padding: 0; 
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.8);
   box-shadow:
@@ -470,13 +476,13 @@ main {
   border: 1px solid rgba(100, 180, 255, 0.3);
   backdrop-filter: blur(10px);
   margin: 15px auto;
-  overflow: hidden; /* Impede que a imagem ultrapasse os limites */
+  overflow: hidden;
 }
 
 .titanio .card2 img {
-  width: 100%; /* Ocupa 100% da largura */
-  height: 100%; /* Ocupa 100% da altura */
-  object-fit: cover; /* Preenche todo o espaço mantendo a proporção */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
   border-radius: 12px;
   margin: 0;
   padding: 0;
@@ -609,7 +615,7 @@ main {
 
 
 .footer {
-  background-color: rgb(245, 245, 247);
+  background-color: rgb(0, 0, 0); 
   padding: 40px 0;
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -617,12 +623,12 @@ main {
 .footer-container {
   max-width: 1000px;
   margin: 0 auto;
-  color: #6e6e73;
+  color: #d2d2d7;
   font-size: 12px;
 }
 
 .footer-warning {
-  background-color: #eaeaea;
+  background-color: rgb(51, 51, 53); 
   padding: 10px 15px;
   border-radius: 8px;
   margin-bottom: 25px;
@@ -633,17 +639,18 @@ main {
 
 .footer-warning span {
   font-size: 16px;
+  color: #f5f5f7; 
 }
 
 .footer-warning p {
   margin: 0;
-  color: #333336;
+  color: #f5f5f7;
   font-size: 12px;
   font-weight: bold;
 }
 
 .footer-store {
-  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
   padding-top: 20px;
   margin-bottom: 25px;
   display: flex;
@@ -652,7 +659,7 @@ main {
 
 .footer-store span {
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.72);
+  color: rgba(255, 255, 255, 0.72);
   display: flex;
   align-items: flex-end;
   margin-bottom: 0;
@@ -660,29 +667,25 @@ main {
 
 .footer-store a {
   display: flex;
-  color: #333336;
+  color: #f5f5f7;
   text-decoration: none;
   font-size: 12px;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 .footer-store a .svg1 {
-  fill: #414141;
+  fill: #f5f5f7;
   margin-right: 7px;
-
 }
 
 .footer-store a .svg1:hover {
-  fill: rgb(36, 36, 38);
+  fill: #ffffff;
 }
 
 .footer-store .svg2 {
-  fill: rgba(55, 55, 55, 0.72);
+  fill: rgba(255, 255, 255, 0.72);
   margin-right: 14px;
-
 }
-
-
 
 .footer-links {
   display: flex;
@@ -692,13 +695,11 @@ main {
 }
 
 .footer-links h4 {
-  color: rgba(0, 0, 0, 0.88);
+  color: #ffffff;
   font-weight: 600;
   font-size: 12px;
   margin-bottom: 10px;
 }
-
-
 
 .footer-links ul {
   list-style: none;
@@ -711,7 +712,7 @@ main {
 }
 
 .footer-links a {
-  color: rgba(0, 0, 0, 0.72);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 12px;
   text-decoration: none;
   line-height: 1.3333733333;
@@ -720,27 +721,27 @@ main {
 }
 
 .footer-info {
-  color: #6e6e73;
+  color: #d2d2d7;
 }
 
 .footer-info a {
-  color: #06c;
+  color: #0af;
   text-decoration: none;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
   margin-top: 25px;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #6e6e73;
+  color: #d2d2d7;
 }
 
 .footer-bottom p {
   margin: 0;
-  color: #6e6e73;
+  color: #d2d2d7;
 }
 
 .footer-legal {
@@ -751,20 +752,24 @@ main {
 }
 
 .footer-legal a {
-  color: #333336;
+  color: #f5f5f7;
   text-decoration: none;
 }
 
 .footer-legal span {
-  color: #6e6e73;
+  color: #d2d2d7;
 }
+
+
 .footer-links a:hover,
 .footer-store a:hover,
 .footer-info a:hover,
 .footer-legal a:hover {
   text-decoration: underline;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
+
 
 @media (max-width: 600px) {
   .footer-links {
@@ -912,17 +917,8 @@ main {
     position: relative;
 }
 
-.item {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transform: translateX(100vw);
-    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
-    
-}
+
+
 
 .active {
     opacity: 1;
