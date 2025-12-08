@@ -470,6 +470,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+    color: #000;
 }
 
 .o_card p {
@@ -478,6 +479,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+    color: #000;
 }
 
 .o_card1{
@@ -508,6 +510,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+    color: #000;
 }
 
 .o_card1 p {
@@ -516,6 +519,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+    color: #000;
 }
 
 .b_card{
