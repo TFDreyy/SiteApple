@@ -6,7 +6,7 @@
 }
 
 main {
-    background-color: #f4f0f0;
+    background-color: #fff;
 }
 
 .vid_cont {
@@ -36,13 +36,13 @@ main {
     position: relative;
     z-index: 3;
     font-size: 2rem;
-    background-color: #f4f0f0;
+    background-color: #fff;
 }
 
 .titulo_c {
     text-align: justify;
     padding: 5% 0 5% 5%;
-    background-color: #f4f0f0;
+    background-color: #fff;
 }
 
 .titulo_c h1 {
@@ -56,15 +56,45 @@ main {
     gap: 1.4rem;
     flex-wrap: wrap;
     padding: 2rem;
-    background-color: #f4f0f0;
+    background-color: #fff;
 }
 
 .t_card {
-    background-color: #fff;
+    background-color: lightgray;
     border-radius: 30px;
     justify-content: center;
     padding: 30px;
     width: 380px;
+}
+
+.sec_img_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+    gap: 40px;
+}
+
+.im_lateral {
+    width: 480px;
+    height: auto;
+    object-fit: cover;
+}
+
+.text_lateral {
+    max-width: 400px;
+    font-family: inherit;
+}
+
+.text_lateral h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text_lateral p {
+    font-size: 18px;
+    color: #555;
 }
 
 .t_card h2 {
