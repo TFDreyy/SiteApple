@@ -510,29 +510,53 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
+  AOS.init({
+    duration: 800,
+    once: true
+  });
 
+  let currentIndex = 0;
 
+  function scrollApps(direction) {
+    const track = document.querySelector('.apps-track');
+    const items = document.querySelectorAll('.app-item');
+    const itemsPerPage = 2;
+    const totalItems = items.length;
+    const maxIndex = Math.ceil(totalItems / itemsPerPage) - 1;
 
-        let currentIndex = 0;
+    currentIndex += direction;
 
-        function scrollApps(direction) {
-            const track = document.querySelector('.apps-track');
-            const itemsPerPage = 5;
-            const totalItems = document.querySelectorAll('.app-item').length;
-            const maxIndex = Math.ceil(totalItems / itemsPerPage) - 1;
+    // Bloqueio: não deixa passar do limite
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
 
-            currentIndex += direction;
-            if (currentIndex < 0) currentIndex = 0;
-            if (currentIndex > maxIndex) currentIndex = maxIndex;
+    const itemWidth = items[0].offsetWidth;
+    const itemMargin = parseInt(getComputedStyle(items[0]).marginRight || 0);
+    const offset = currentIndex * (itemWidth + itemMargin) * itemsPerPage;
 
-            const offset = currentIndex * (80 + 12) * itemsPerPage;
-            track.style.transform = `translateX(-${offset}px)`;
-        }
-    </script>
+    track.style.transform = `translateX(-${offset}px)`;
+
+    // Atualiza estado dos botões
+    updateButtons(currentIndex, maxIndex);
+  }
+
+  function updateButtons(currentIndex, maxIndex) {
+    const prevBtn = document.querySelector('.btn-prev');
+    const nextBtn = document.querySelector('.btn-next');
+
+    if (prevBtn) prevBtn.disabled = currentIndex === 0;
+    if (nextBtn) nextBtn.disabled = currentIndex === maxIndex;
+  }
+
+  // Inicializa estado dos botões
+  document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.app-item');
+    const itemsPerPage = 5;
+    const totalItems = items.length;
+    const maxIndex = Math.ceil(totalItems / itemsPerPage) - 1;
+    updateButtons(currentIndex, maxIndex);
+  });
+</script>
 
 </body>
 
