@@ -60,12 +60,21 @@ main {
 }
 
 .t_card {
-    background-color: #eeeeee;
+    background-color: #fff;
     border-radius: 30px;
     justify-content: center;
     padding: 30px;
     width: 380px;
+    height: 280px;
+    transition: all ease 0.3s;
+    box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.6);
 }
+
+.t_card:hover {
+  transform: translateY(-7.5px);
+  cursor: pointer;
+}
+
 
 .sec_img_text {
     display: flex;
