@@ -22,3 +22,31 @@ prevBtn.addEventListener('click', () => {
     });
 });
 
+// --- vídeo: seleção segura e listeners protegidos ---
+const videosContainer = document.querySelector('.videos-scroll')
+    || document.querySelector('.videos-grid');
+const nextVideoBtn = document.querySelector('.video-carousel .next')
+    || document.querySelector('.next-video');
+const prevVideoBtn = document.querySelector('.video-carousel .prev')
+    || document.querySelector('.prev-video');
+
+let scrollVideoAmount = 0;
+const scrollVideoStep = 260;
+
+if (videosContainer && (nextVideoBtn || prevVideoBtn)) {
+    if (nextVideoBtn) {
+        nextVideoBtn.addEventListener('click', () => {
+            scrollVideoAmount += scrollVideoStep;
+            videosContainer.scrollTo({ left: scrollVideoAmount, behavior: 'smooth' });
+        });
+    }
+    if (prevVideoBtn) {
+        prevVideoBtn.addEventListener('click', () => {
+            scrollVideoAmount -= scrollVideoStep;
+            if (scrollVideoAmount < 0) scrollVideoAmount = 0;
+            videosContainer.scrollTo({ left: scrollVideoAmount, behavior: 'smooth' });
+        });
+    }
+}
+
+

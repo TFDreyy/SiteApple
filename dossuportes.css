@@ -447,7 +447,6 @@ section h1 {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-
 .specs-menu ul {
   display: flex;
   gap: 40px;
@@ -480,7 +479,7 @@ section h1 {
   flex-direction: column;
   padding: 40px 20px;
   border-bottom: 1px solid #e0e0e0;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -1030,7 +1029,7 @@ section h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 200px;
   flex-wrap: wrap;
   max-width: 1000px;
   width: 100%;
@@ -1155,8 +1154,10 @@ section h1 {
 }
 
 .info-icon {
-  width: 48px;
-  height: auto;
+  max-width: 48px;
+  max-height: 48px;
+  height: 100%;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -1218,7 +1219,7 @@ section h1 {
 
 .apps-scroll {
   overflow: hidden;
-  width: 590px;
+  max-width: 860px;
 }
 
 .apps-track {
@@ -1581,3 +1582,156 @@ a {
     margin-bottom: 1rem;
   }
 }
+
+.video-carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.videos-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0.25rem 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.videos-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.videos-scroll a {
+    flex: 0 0 auto;
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    scroll-snap-align: start;
+    transition: 0.3s ease;
+}
+
+.videos-scroll a:hover {
+    transform: scale(1.05);
+}
+
+.videos-scroll img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-video-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #121214;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-video-btn:hover {
+    background-color: #1d1d1f;
+}
+
+.prev-video {
+    left: -3rem;
+}
+.next-video {
+    right: -3rem;
+}
+
+
+.video-carousel .carousel-btn {
+position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #121214;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+.video-carousel .prev-video {
+    left: -48px;
+}
+
+.video-carousel .next-video {
+    right: -48px;
+
+}
+
+.carousel-btn img {
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+}
+.carousel-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+/* Botão do carrossel — completamente limpo */
+.carousel-btn,
+.prev, 
+.next,
+.prev-video,
+.next-video {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: none !important;
+    background: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+/* Remove QUALQUER pseudo-elemento que possa estar criando fundo */
+.carousel-btn::before,
+.carousel-btn::after,
+.prev::before,
+.prev::after,
+.next::before,
+.next::after,
+.prev-video::before,
+.prev-video::after,
+.next-video::before,
+.next-video::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* SVG dentro do botão */
+.carousel-btn img,
+.prev img,
+.next img,
+.prev-video img,
+.next-video img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    pointer-events: none;
+}
+.carousel-btn img {
+  pointer-events: none;
+}
+
