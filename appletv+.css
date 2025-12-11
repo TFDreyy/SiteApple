@@ -471,7 +471,7 @@ nav {
 
 .card-caixa {
   display: flex;
-  gap: 2rem;
+  gap: 3.2rem;
   justify-content: center;
   flex-wrap: wrap;
   padding: 2rem;
