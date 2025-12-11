@@ -352,6 +352,7 @@ video.imagem-hero {
   transition: all ease 0.3s;
   text-align: left;
   box-shadow: 0 2px 16px hsl(0, 0%, 80%, 0.6);
+  position: relative;
 }
 
 .motivos:hover {
@@ -393,6 +394,33 @@ video.imagem-hero {
   flex-wrap: nowrap;
   padding: 1rem;
   position: relative;
+}
+
+.motivo-mais {
+  position: absolute;
+  right: 8px;
+  bottom: 16px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 70%;
+  font-size: 2rem;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #080808;
+}
+
+.conteudo.motivo h1 {
+  font-size: 32px;
+  text-align: left;
+}
+
+.conteudo.motivo p {
+  margin-top: 32px;
+  font-weight: 400 !important;
+  text-align: left  !important;
+  line-height: 1.5;
+  font-size: 22px;
+
 }
 
 #carouselId {
