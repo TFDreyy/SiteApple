@@ -51,31 +51,29 @@
           
     </div>
 
+    
     <main>
         
     <div class="text_title">
         <h1>Comece pelos destaques.</h1>
     </div>
 
-    <div class="carousel">
-        <div class="carousel-track">
-            <div class="carousel-item">
-                <img src="c:\Users\Alunos\Downloads\imageoriginal.jpg" alt="AirPods Max">
-            </div>
-            <div class="carousel-item">
-                <img src="c:\Users\Alunos\Downloads\x.Burguer (2).png" alt="iPhone">
-            </div>
-            <div class="carousel-item">
-                <img src="c:\Users\Alunos\Downloads\who.oper.png" alt="parte fone">
-            </div>
-        </div>
+  <div class="cont_t_card">
+           <img src="imagens/airmax.jpg" alt="fone">
+           </div>
 
+           <section class="sec_img_text">
+    <img src="imagens/airmaxbranco.jpg" alt="Airbranco" class="im_lateral">
 
-        <button class="carousel-btn prev">&#10094;</button>
-        <button class="carousel-btn next">&#10095;</button>
+    <div class="text_lateral">
+        <h1>O som como você nunca viu.</h1>
+        <p>
+            Cancelamento Ativo de Ruído de nível profissional. Com um desempenho até duas vezes melhor, o Cancelamento Ativo de Ruído dos AirPods Max neutraliza sons externos com uma onda sonora invertida da mesma amplitude. Assim, você tem mais controle sobre o que quer — e não quer — ouvir. Sinta-se dentro de suas músicas e podcasts favoritos ou mantenha o foco com mais facilidade do que nunca.
+        </p>
     </div>
+</section>
 
-    
+          </div>
      </main>
 
     <div class="titulo_c">
@@ -88,7 +86,7 @@
             <p>Em todo o Brasil. Em São Paulo,<br>os pedidos qualificados têm envio<br>no dia seguinte.</p>
         </div>
         <div class="t_card">
-            <img src="https://www.apple.com/bhtr/watch/images/overview/incentive/icon_apple_card__cqqvo9cxav2a_large.png">
+            <img src="https://www.apple.com/br/airpods-max/images/overview/icon-card/icon_financing__d54b2wu0xtua_large.png">
             <h2>Opções de<br>pagamento.</h2>
             <p>Aproveite e parcele com facilidade<br>e conveniência</p>
         </div>
@@ -229,28 +227,5 @@
 
   </div>
 </footer>
-
-    <script>
-        const track = document.querySelector('.carousel-track');
-        const items = document.querySelectorAll('.carousel-item');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-
-        let currentIndex = 0;
-
-        function updateCarousel() {
-            track.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % items.length;
-            updateCarousel();
-        });
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + items.length) % items.length;
-            updateCarousel();
-        });
-    </script>
 </body>
 </html>
