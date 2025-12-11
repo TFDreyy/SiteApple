@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="watch.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="shortcut icon" href="imagens/appleicon.ico" type="image/png">
 </head>
 <body>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+
   <header>
     <nav>
             <div class="logo">Apple</div>
-            <a href="index.html"><img src="simbolo_da_apple.png" class="simbolo_apple"></a>
+            <a href="index.html"><img src="imagens/simbolo_da_apple.png" class="simbolo_apple"></a>
             <div class="menu">
                 <a href="história.html">História</a>
                 <a href="brasil.html">Brasil</a>
@@ -102,20 +113,30 @@
       </div>
     </div>
         <main>
-        <!--faz o L-->
-        <div class="text_space">
-          <p>Treine 3 meses de graça com o Apple Fitness+ na compra de um Apple Watch1. Comprar Apple Watch</p>
-        </div>
-        <nav class="titulo">
-            <h1>Apple Watch</h1>
-            <p>O aparelho ideal <br> para uma vida saudável.</p>
-        </nav>
 
-        <div class="vid_cont">
-          <video autoplay muted loop playsinline>
-            <source src="https://www.apple.com/105/media/ww/watch/2024/f0b51c31-e8a5-44d7-b23d-51bd2858454a/anim/hero/large.mp4" width="50%" type="video/mp4">
-          </video> 
-        </div>  
+  <div class="desconto" data-aos="fade-down">
+      <h4>Treine 3 meses de graça com o Apple Fitness+ na compra de um Apple Watch <span>1</span>.</h4>
+      <a href="#">Comprar Apple Watch ></a>
+    </div>
+
+
+
+        <div class="ipad" data-aos="fade-down">
+          <h1 id="titulo">Apple Watch</h1>
+          <p class="slogan" data-aos="fade-down" data-aos-delay="100">O aparelho ideal <br> para uma vida saudável.</p>
+        </div>
+        <br>
+      <div class="centralizar" >
+        <div class="caixa-imagem" id="containerHero">
+          <video autoplay muted loop class="imagem-hero" id="videoHero">
+            <source src="https://www.apple.com/105/media/ww/watch/2024/f0b51c31-e8a5-44d7-b23d-51bd2858454a/anim/hero/large.mp4" type="video/mp4">
+          </video>
+          <button id="botaoDePause">
+            <img src="imagensipad/toggle-pause.png" id="imagemBotao">
+          </button>
+        </div>
+      </div>
+
         <div class="titulo_b">
             <h1>Conheça melhor<br>o Apple Watch.</h1>
         </div>
@@ -133,52 +154,31 @@
             <div class="card1">
                 <p>Saúde</p>
                 <h2>Escuta seu coração.</h2>
-                <div class="btn_card">
-                  <p>+</p>
-                </div>
               </div>
               <div class="card2">
                 <p>Fitness</p>
                 <h2>Cada movimento conta.</h2> 
-                <div class="btn_card">
-                  <p>+</p>
-                </div>
               </div>
               <div class="card3">
                 <p>Conectividade</p>
                 <h2>Mantenha a conexão,<br>contato ou contatinho.</h2>
-                <div class="btn_card2">
-                  <p>+</p>
-                </div>
               </div>
               <div class="card4">
                 <p>Segurança</p>
                 <h2>Ajuda sempre<br>à mão.</h2>
-                <div class="btn_card2">
-                  <p>+</p>
-                </div>
               </div>
               <div class="card5">
                 <p>Apple Watch + Iphone</p>
                 <h2>Uma união de forças.</h2>
-                <div class="btn_card">
-                  <p>+</p>
-                </div>
               </div>
               <div class="card6">
                 <p>Personalização</p>
                 <h2>Deixe do seu jeito.</h2>
-                <div class="btn_card">
-                  <p>+</p>
-                </div>
               </div>
               <div class="card7">
                 <div class="card7texto">
                 <p>Apple Watch Ultra 2</p>
                 <h2>O relógio definitivo para<br>esportes e aventuras.</h2>
-                <div class="btn_card2">
-                  <p>+</p>
-                </div>
                 </div>
               </div>
           </div>
@@ -341,11 +341,8 @@
           </div>
         </div>
 
-        
 
-        
-
-        <div class="titulo_b">
+	<div class="titulo_b">
           <h1>Essenciais para<br>o Apple Watch.</h1>
           
         </div>
@@ -361,10 +358,16 @@
             <div class="o_card">
               <h2>A magia<br>vem de família</h2>
               <p>Descubra todos os modelos de<br>AirPods e encontre os que mais<br>combinam com você.<br>Saiba mais></p>
-              <img src="https://www.apple.com/br/watch/images/overview/essentials/banner_airpods__dc2h7dg71l0m_medium.jpg">
+              <img src="imagens/watch_ipods.png">
             </div> 
           </a>      
         </div>
+
+        
+
+        
+
+
 
         <div class="titulo_b">
           <h1>Feitos um para o outro.</h1>
@@ -511,5 +514,7 @@
   </div>
 </footer>
 </body>
-<script type="text/javascript" src="watch.js"></script>
+
+<script src="watch.js"></script>
+
 </html>
