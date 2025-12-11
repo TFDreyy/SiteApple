@@ -7,25 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="watch.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="shortcut icon" href="imagens/appleicon.ico" type="image/png">
 </head>
 <body>
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true
-    });
-  </script>
-
-
   <header>
-        <nav>
+    <nav>
             <div class="logo">Apple</div>
-            <a href="index.html"><img src="imagens/simbolo_da_apple.png" class="simbolo_apple"></a>
+            <a href="index.html"><img src="simbolo_da_apple.png" class="simbolo_apple"></a>
             <div class="menu">
                 <a href="história.html">História</a>
                 <a href="brasil.html">Brasil</a>
@@ -38,7 +26,8 @@
                 <a href="suporte.html">Suporte</a>
             </div>
         </nav>
-    </header>
+      
+      </header>
     <div class="barra-items-slide">
       <div class="slide-in-right">
         <div class="items">
@@ -112,7 +101,6 @@
         </div>
       </div>
     </div>
-  </div>
         <main>
         <!--faz o L-->
         <div class="text_space">
@@ -128,50 +116,76 @@
             <source src="https://www.apple.com/105/media/ww/watch/2024/f0b51c31-e8a5-44d7-b23d-51bd2858454a/anim/hero/large.mp4" width="50%" type="video/mp4">
           </video> 
         </div>  
-        <nav class="titulo_b">
+        <div class="titulo_b">
             <h1>Conheça melhor<br>o Apple Watch.</h1>
-        </nav>
-
-        <div id="btn-left" onclick="direcao1(1)">
-
-        </div>
-        <div id="btn-right" onclick="direcao1(2)">
-
         </div>
 
-        <div id="contentSlide">
-          <div class="card1">
-              <p>Saúde</p>
-              <h2>Escuta seu coração.</h2>
-            </div>
-            <div class="card2">
-              <p>Fitness</p>
-              <h2>Cada movimento conta.</h2> 
-            </div>
-            <div class="card3">
-              <p>Conectividade</p>
-              <h2>Mantenha a conexão,<br>contato ou contatinho.</h2>
-            </div>
-            <div class="card4">
-              <p>Segurança</p>
-              <h2>Ajuda sempre<br>à mão.</h2>
-            </div>
-            <div class="card5">
-              <p>Apple Watch + Iphone</p>
-              <h2>Uma união de forças.</h2>
-            </div>
-            <div class="card6">
-              <p>Personalização</p>
-              <h2>Deixe do seu jeito.</h2>
-            </div>
-            <div class="card7">
-              <div class="card7texto">
-              <p>Apple Watch Ultra 2</p>
-              <h2>O relógio definitivo para<br>esportes e aventuras.</h2>
+
+        
+        <div class="cont_contentSlide">
+          <button class="btn left" id="btn-left" onclick="direcao1(1)">&#10094;</button>
+          <button class="btn right" id="btn-right" onclick="direcao1(2)">&#10095;</button>
+          
+          
+
+          <div id="contentSlide">
+            
+            <div class="card1">
+                <p>Saúde</p>
+                <h2>Escuta seu coração.</h2>
+                <div class="btn_card">
+                  <p>+</p>
+                </div>
               </div>
-            </div>
+              <div class="card2">
+                <p>Fitness</p>
+                <h2>Cada movimento conta.</h2> 
+                <div class="btn_card">
+                  <p>+</p>
+                </div>
+              </div>
+              <div class="card3">
+                <p>Conectividade</p>
+                <h2>Mantenha a conexão,<br>contato ou contatinho.</h2>
+                <div class="btn_card2">
+                  <p>+</p>
+                </div>
+              </div>
+              <div class="card4">
+                <p>Segurança</p>
+                <h2>Ajuda sempre<br>à mão.</h2>
+                <div class="btn_card2">
+                  <p>+</p>
+                </div>
+              </div>
+              <div class="card5">
+                <p>Apple Watch + Iphone</p>
+                <h2>Uma união de forças.</h2>
+                <div class="btn_card">
+                  <p>+</p>
+                </div>
+              </div>
+              <div class="card6">
+                <p>Personalização</p>
+                <h2>Deixe do seu jeito.</h2>
+                <div class="btn_card">
+                  <p>+</p>
+                </div>
+              </div>
+              <div class="card7">
+                <div class="card7texto">
+                <p>Apple Watch Ultra 2</p>
+                <h2>O relógio definitivo para<br>esportes e aventuras.</h2>
+                <div class="btn_card2">
+                  <p>+</p>
+                </div>
+                </div>
+              </div>
+          </div>
           
         </div>
+
+        
 
           
         
@@ -180,135 +194,151 @@
             <h1>Conheça a família.</h1>
         </div>
         <div class="boxes">
-          <div class="box">
-            <img src="https://www.apple.com/v/watch/br/images/overview/select/product_se__c83w8hz9gre6_large.png">
-            <h3>Apple Watch SE</h3>
-            <p>Tudo que é essencial <br> ao alcance do seu pulso.</p>
-            <p class="negrito" >A partir de R$ 274,92/mês <br> ou R$ 3.299</p>
-            <div class="buttons">
-              <div class="button_a">Saiba mais</div>
-              <div class="button_b">Comprar</div>
+          <div class="el_cont">
+            <div class="box">
+              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_se__c83w8hz9gre6_large.png">
+              <h3>Apple Watch SE</h3>
+              <p>Tudo que é essencial <br> ao alcance do seu pulso.</p>
+              <p class="negrito" >A partir de R$ 274,92/mês <br> ou R$ 3.299</p>
+              <div class="buttons">
+                <div class="button_a">Saiba mais</div>
+                <div class="button_b">Comprar</div>
+              </div>
+            </div>
+            <div class="t_boxes">
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case_sizes__b1qdj0t9l8k2_large.png">
+                <p>Caixa de alumínio<br>de 44 mm ou 40 mm</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case_fill__e6beid0z2gia_large.png">
+                <p>Tela Retina<br>até 1000 nits de brilho</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_chip_s8__cnwtvef6rxg2_large.png">
+                <p>S8 SiP<br>—<br>Buscar iPhone</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_heart__bdruv1reptci_large.png">
+                <p>—<br>—<br>Notificações de frequência cardíaca alta e baixa<br>Notificações de ritmo cardíaco irregular4<br>Notificações de preparo cardiovascular baixo<br>—</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_battery__duz6yadjto4m_large.png">
+                <p>Até 18 horas20<br>Modo Pouca Energia<br>—</p>
+              </div>
             </div>
           </div>
-          <div class="box">
-            <img src="https://www.apple.com/v/watch/br/images/overview/select/product_s10__c724044usymq_large.png">
-            <h3>Apple Watch Series 10</h3>
-            <p>O mais fino. Com a maior tela.Δ <br>E recursos avançados de saúde.</p>
-            <p class="negrito" >A partir de R$ 458,25/mês <br> ou R$ 5.499◊</p>
-            <div class="buttons">
-              <div class="button_a">Saiba mais</div>
-              <div class="button_b">Comprar</div>
+          <div class="el_cont">
+            <div class="box">
+              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_s10__c724044usymq_large.png">
+              <h3>Apple Watch Series 10</h3>
+              <p>O mais fino. Com a maior tela.Δ <br>E recursos avançados de saúde.</p>
+              <p class="negrito" >A partir de R$ 458,25/mês <br> ou R$ 5.499◊</p>
+              <div class="buttons">
+                <div class="button_a">Saiba mais</div>
+                <div class="button_b">Comprar</div>
+              </div>
+            </div>
+            <div class="t_boxes">
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case_sizes__b1qdj0t9l8k2_large.png">
+                <p>Caixa de alumínio ou titânio<br>de 46 mm ou 42 mm</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case_fill__e6beid0z2gia_large.png">
+                <p>Tela Retina Sempre Ativa<br>até 2000 nits de brilho</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_chip_s10_fill__ge4rm874e92e_large.png">
+                <p>S10 SiP<br>Gesto de toque duplo<br>Busca Precisa para iPhone18</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_heart__bdruv1reptci_large.png">
+                <p>ECG app3<br>App Oxigênio no Sangue2<br>Notificações de frequência cardíaca alta e baixa<br>Notificações de ritmo cardíaco irregular4<br>Notificações de preparo cardiovascular baixo<br>Notificações de apneia do sono6</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_battery__duz6yadjto4m_large.png">
+                <p>Até 18 horas21<br>Até 36 horas no Modo Pouca Energia21<br>Recarga rápida22</p>
+              </div>            
+            </div>
+
+          </div>
+          <div class="el_cont">
+            <div class="box">
+              <img src="https://www.apple.com/br/watch/images/overview/select/product_u2__hedpiz396nue_large.png">
+              <h3>Apple Watch Ultra 2</h3>
+              <p>O relógio definitivo <br> para esportes e aventura.</p>
+              <p class="negrito">A partir de R$ 874,92/mês <br> ou R$ 10.499◊</p>
+              <div class="buttons">
+                <div class="button_a">Saiba mais</div>
+                <div class="button_b">Comprar</div>
+              </div>
+            </div>
+            <div class="t_boxes">
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case__f8z6kesshgmm_large.png">
+                <p>Caixa de titânio<br>de 49 mm</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case_fill__e6beid0z2gia_large.png">
+                <p>Tela Retina Sempre Ativa<br>até 3000 nits de brilho</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_chip_s9__bpbhs9jwhcb6_large.png">
+                <p>S9 SiP<br>Gesto de toque duplo<br>Busca Precisa para iPhone18</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_heart__bdruv1reptci_large.png">
+                <p>ECG app3<br>App Oxigênio no Sangue2<br>Notificações de frequência cardíaca alta e baixa<br>Notificações de ritmo cardíaco irregular4<br>Notificações de preparo cardiovascular baixo<br>Notificações de apneia do sono6</p>
+              </div>
+              <div class="t_box">
+                <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_battery__duz6yadjto4m_large.png">
+                <p>Até 36 horas18<br>Até 72 horas no Modo Pouca Energia18<br>Recarga rápida21</p>
+              </div>            
             </div>
           </div>
-          <div class="box">
-            <img src="https://www.apple.com/br/watch/images/overview/select/product_u2__hedpiz396nue_large.png">
-            <h3>Apple Watch Ultra 2</h3>
-            <p>O relógio definitivo <br> para esportes e aventura.</p>
-            <p class="negrito">A partir de R$ 874,92/mês <br> ou R$ 10.499◊</p>
-            <div class="buttons">
-              <div class="button_a">Saiba mais</div>
-              <div class="button_b">Comprar</div>
-            </div>
-          </div>
+
+
+
+
+
         </div>
-        <div class="cont_t_boxes">
-          <div class="t_boxes">
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case_sizes__b1qdj0t9l8k2_large.png">
-              <p>Caixa de alumínio<br>de 44 mm ou 40 mm</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case_fill__e6beid0z2gia_large.png">
-              <p>Tela Retina<br>até 1000 nits de brilho</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_chip_s8__cnwtvef6rxg2_large.png">
-              <p>S8 SiP<br>—<br>Buscar iPhone</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_heart__bdruv1reptci_large.png">
-              <p>—<br>—<br>Notificações de frequência cardíaca alta e baixa<br>Notificações de ritmo cardíaco irregular4<br>Notificações de preparo cardiovascular baixo<br>—</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_battery__duz6yadjto4m_large.png">
-              <p>Até 18 horas20<br>Modo Pouca Energia<br>—</p>
-            </div>
-          </div>
 
-          <div class="t_boxes">
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case_sizes__b1qdj0t9l8k2_large.png">
-              <p>Caixa de alumínio ou titânio<br>de 46 mm ou 42 mm</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case_fill__e6beid0z2gia_large.png">
-              <p>Tela Retina Sempre Ativa<br>até 2000 nits de brilho</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_chip_s10_fill__ge4rm874e92e_large.png">
-              <p>S10 SiP<br>Gesto de toque duplo<br>Busca Precisa para iPhone18</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_heart__bdruv1reptci_large.png">
-              <p>ECG app3<br>App Oxigênio no Sangue2<br>Notificações de frequência cardíaca alta e baixa<br>Notificações de ritmo cardíaco irregular4<br>Notificações de preparo cardiovascular baixo<br>Notificações de apneia do sono6</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_battery__duz6yadjto4m_large.png">
-              <p>Até 18 horas21<br>Até 36 horas no Modo Pouca Energia21<br>Recarga rápida22</p>
-            </div>            
-          </div>
 
-          <div class="t_boxes">
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case__f8z6kesshgmm_large.png">
-              <p>Caixa de titânio<br>de 49 mm</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_case_fill__e6beid0z2gia_large.png">
-              <p>Tela Retina Sempre Ativa<br>até 3000 nits de brilho</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_chip_s9__bpbhs9jwhcb6_large.png">
-              <p>S9 SiP<br>Gesto de toque duplo<br>Busca Precisa para iPhone18</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_heart__bdruv1reptci_large.png">
-              <p>ECG app3<br>App Oxigênio no Sangue2<br>Notificações de frequência cardíaca alta e baixa<br>Notificações de ritmo cardíaco irregular4<br>Notificações de preparo cardiovascular baixo<br>Notificações de apneia do sono6</p>
-            </div>
-            <div class="t_box">
-              <img src="https://www.apple.com/v/watch/br/images/overview/select/product_tile_icon_battery__duz6yadjto4m_large.png">
-              <p>Até 36 horas18<br>Até 72 horas no Modo Pouca Energia18<br>Recarga rápida21</p>
-            </div>            
-          </div>
 
-        </div>
+        
         <div class="titulo_c">
           <h1>Motivos para comprar seu<br>Apple Watch na Apple.</h1>
         </div>
         
 
-        <div class="cont_t_card">
-          <div class="t_card">
-                <img src="https://www.apple.com/br/watch/images/overview/incentive/icon_apple_card__cqqvo9cxav2a_large.png">
-                <h2>Opções de<br>pagamento.</h2>
-                <p>Aproveite e parcele com facilidade<br>e conveniência</p>
-              </div>
-              <div class="t_card">
-                <img src="https://www.apple.com/v/watch/br/images/overview/incentive/icon_delivery__fyzt43z8dfu6_large.png">
-                <h2>Frete grátis.</h2>
-                <p>Em todo o Brasil. Em São Paulo,<br>os pedidos qualificados têm envio<br>no dia seguinte.</p>
-              </div>
-              <div class="t_card">
-                <img src="https://www.apple.com/br/watch/images/overview/incentive/icon_specialist_alt__fwx7pesuftme_large.png">
-                <h2>Compre com quem<br>entende de<br>Apple Watch.</h2>
-                <p>Fale com especialistas para fazer<br>a melhor escolha. Na loja ou<br>online</p>
-              </div>
-              <div class="t_card">
-                <img src="https://www.apple.com/v/watch/br/images/overview/incentive/icon_asa__o48x6o2ctqqa_large.png">
-                <h2>Uma experiência de<br>combra inspirada<br>em você.</h2>
-                <p>App Apple Store. Um jeito mais<br>pessoal de comprar.</p>
-              </div>
-          
+        <div class="cont_contentSlide">
+          <button class="btn2 left" id="btn-left" onclick="direcao2(1)">&#10094;</button>
+          <button class="btn2 right" id="btn-right" onclick="direcao2(2)">&#10095;</button>
+
+          <div id="content2_Slide">
+            <div class="t_card">
+                  <img src="https://www.apple.com/br/watch/images/overview/incentive/icon_apple_card__cqqvo9cxav2a_large.png">
+                  <h2>Opções de<br>pagamento.</h2>
+                  <p>Aproveite e parcele com facilidade<br>e conveniência</p>
+                </div>
+                <div class="t_card">
+                  <img src="https://www.apple.com/v/watch/br/images/overview/incentive/icon_delivery__fyzt43z8dfu6_large.png">
+                  <h2>Frete grátis.</h2>
+                  <p>Em todo o Brasil. Em São Paulo,<br>os pedidos qualificados têm envio<br>no dia seguinte.</p>
+                </div>
+                <div class="t_card">
+                  <img src="https://www.apple.com/br/watch/images/overview/incentive/icon_specialist_alt__fwx7pesuftme_large.png">
+                  <h2>Compre com quem<br>entende de<br>Apple Watch.</h2>
+                  <p>Fale com especialistas para fazer<br>a melhor escolha. Na loja ou<br>online</p>
+                </div>
+                <div class="t_card">
+                  <img src="https://www.apple.com/v/watch/br/images/overview/incentive/icon_asa__o48x6o2ctqqa_large.png">
+                  <h2>Uma experiência de<br>combra inspirada<br>em você.</h2>
+                  <p>App Apple Store. Um jeito mais<br>pessoal de comprar.</p>
+                </div>
+            
+          </div>
         </div>
 
         
@@ -320,19 +350,22 @@
           
         </div>
         <div class="o_cont_card">
-          <div class="o_card1">
-            <h2>Espalhe suas cores.</h2>
-            <p>Comprar pulseiras para Apple Watch></p>
-            <img src="https://www.apple.com/v/watch/br/images/overview/essentials/banner_bands__cd5m1690azaq_large.jpg">
-          </div>
+          <a href="watch.html">
+            <div class="o_card1">
+              <h2>Espalhe suas cores.</h2>
+              <p>Comprar pulseiras para Apple Watch></p>
+              <img src="https://www.apple.com/v/watch/br/images/overview/essentials/banner_bands__cd5m1690azaq_large.jpg">
+            </div>
+          </a>
           <a href="airpods.html">
             <div class="o_card">
               <h2>A magia<br>vem de família</h2>
               <p>Descubra todos os modelos de<br>AirPods e encontre os que mais<br>combinam com você.<br>Saiba mais></p>
-              <img src="Imagens-Watch/Design sem nome (1).png">
+              <img src="https://www.apple.com/br/watch/images/overview/essentials/banner_airpods__dc2h7dg71l0m_medium.jpg">
             </div> 
           </a>      
         </div>
+
         <div class="titulo_b">
           <h1>Feitos um para o outro.</h1>
         </div>
@@ -354,7 +387,6 @@
 <footer class="footer">
   <div class="footer-container">
 
-
     <div class="footer-warning">
       <span>❗</span>
       <p>
@@ -363,37 +395,38 @@
     </div>
 
     <div class="footer-store">
-      <a href="#">
-        <svg viewBox="0 0 17 20" width="17" height="20" fill="currentColor">
-          <path d="M13.74 10.92c.01 2.66 2.32 3.55 2.33 3.56-.02.06-.36 1.26-1.18 2.5-.71 1.06-1.44 2.11-2.6 2.14-1.14.02-1.51-.7-2.82-.7-1.31 0-1.72.68-2.8.72-1.12.04-1.98-1.15-2.7-2.2-1.47-2.12-2.6-5.98-1.08-8.6.74-1.29 2.05-2.11 3.48-2.13 1.1-.02 2.13.74 2.8.74.67 0 1.91-.92 3.23-.79.55.02 2.1.22 3.1 1.65-.08.05-1.84 1.08-1.82 3.23zM11.58 3.33c.51-.62.85-1.48.75-2.33-.72.03-1.59.48-2.1 1.1-.46.54-.86 1.41-.75 2.24.8.06 1.58-.41 2.1-1.01z"></path>
-        </svg>
-        <span>&gt;</span> Watch
+      
+      <a href="index.html">
+          <svg class="svg1" viewBox="0 0 17 20" width="16" height="19" fill="#414141">
+            <path
+              d="M13.74 10.92c.01 2.66 2.32 3.55 2.33 3.56-.02.06-.36 1.26-1.18 2.5-.71 1.06-1.44 2.11-2.6 2.14-1.14.02-1.51-.7-2.82-.7-1.31 0-1.72.68-2.8.72-1.12.04-1.98-1.15-2.7-2.2-1.47-2.12-2.6-5.98-1.08-8.6.74-1.29 2.05-2.11 3.48-2.13 1.1-.02 2.13.74 2.8.74.67 0 1.91-.92 3.23-.79.55.02 2.1.22 3.1 1.65-.08.05-1.84 1.08-1.82 3.23zM11.58 3.33c.51-.62.85-1.48.75-2.33-.72.03-1.59.48-2.1 1.1-.46.54-.86 1.41-.75 2.24.8.06 1.58-.41 2.1-1.01z" />
+          </svg>
       </a>
+
+      <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="8px" height="19px" viewBox="0 0 50 49"><path d="M19.817 61.863c1.48 0 2.672-.515 3.702-1.546l24.243-23.63c1.352-1.385 1.996-2.737 2.028-4.443 0-1.674-.644-3.09-2.028-4.443L23.519 4.138c-1.03-.998-2.253-1.513-3.702-1.513-2.994 0-5.409 2.382-5.409 5.344 0 1.481.612 2.833 1.739 3.96l20.99 20.347-20.99 20.283c-1.127 1.126-1.739 2.478-1.739 3.96 0 2.93 2.415 5.344 5.409 5.344"></path></svg>
+      
+      <span>Watch</span>
+      
     </div>
+
 
     <div class="footer-links">
 
       <div>
-        <h4>Explorar</h4>
+        <h4>Descobrir e Comprar</h4>
         <ul>
-          <li><a href="home.html">Loja</a></li>
+          <li><a href="index.html">Loja</a></li>
           <li><a href="mac.html">Mac</a></li>
           <li><a href="ipad.html">iPad</a></li>
           <li><a href="iphone.html">iPhone</a></li>
           <li><a href="watch.html">Watch</a></li>
           <li><a href="airpods.html">AirPods</a></li>
         </ul>
+
       </div>
 
       <div>
-        <h4>Institucional</h4>
-        <ul>
-          <li><a href="história.html">História</a></li>
-          <li><a href="brasil.html">Brasil</a></li>
-        </ul>
-      </div>
 
-      <div>
       <h4>Entretenimento</h4>
         <ul>
           <li><a href="appleone.html">Apple One</a></li>
@@ -407,19 +440,58 @@
       </div>
 
       <div>
-        <h4>Suporte</h4>
+        <h4>Suporte a produtos</h4>
         <ul>
-          <li><a href="suporte.html">Suporte</a></li>
+          <li><a href="suporte.html">Home</a></li>
+          <li><a href="suporte - principaliphone.html">iPhone</a></li>
+          <li><a href="suporte - principalmac.html">Mac</a></li>
+          <li><a href="suporte-ipad.html">iPad</a></li>
+          <li><a href="suporte - principalapplewatch.html">Watch</a></li>
+          <li><a href="suporte - principalairpods.html">AirPods</a></li>
+          <li><a href="suporte - musica.html">Music</a></li>
+          <li><a href="suporte - appletv.html">TV</a></li>
+          
         </ul>
-      </div>
-      <div>
-        <h4>Login</h4>
-        <ul>
-          <li><a href="login.html">Página de login</a></li>
-        </ul>
-      </div>
-
     </div>
+
+
+    <div>
+
+      <h4>Serviço e reparos</h4>
+        <ul>
+          <li><a href="suporte - principalapplecare.html">Produtos AppleCare</a></li>
+          <li><a href="suporte - applecareipad.html">iPad</a></li>
+          <li><a href="suporte - applecaremac.html">Mac</a></li>
+          <li><a href="suporte - applecaretv.html">TV</a></li>
+        </ul>
+    </div>
+
+
+
+    <div>
+      <h4>Especificações Técnicas</h4>
+        <ul>
+          <li><a href="suporte - specsmini.html">Mac Mini</a></li>
+          <li><a href="suporte - specspro.html">Mac Pro</a></li>
+          <li><a href="suporte - specsstudio.html">Mac Studio</a></li>
+        </ul>
+    </div>
+
+    <div>
+
+      <h4>Sobre a Apple</h4>
+        <ul>
+          <li><a href="história.html">História</a></li>
+          <li><a href="brasil.html">Brasil</a></li>
+          <li><a href="login.html">Contato</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+  </div>
 
     <p class="footer-info">
       Outros modos de comprar: <a href="#">Encontre uma Apple Store</a> ou <a href="#">revendedor</a> perto de você. Ou ligue para 0800-XXXX-XXXX.
