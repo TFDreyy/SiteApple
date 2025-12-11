@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="airpodsmax.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="imagens/appleicon.ico" type="image/png">
 </head>
 <body>
@@ -16,7 +18,7 @@
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
-      once: true
+      once: false
     });
   </script>
 
@@ -42,8 +44,8 @@
     
     <div class="vid_cont">
         <div class="text_vid">
-            <h3><p>AirPods Max</p></h3>
-            <h1>Som que quebra barreiras</h1>
+            <h3 data-aos="fade-up" data-aos-duration="800"><p>AirPods Max</p></h3>
+            <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Som que quebra barreiras</h1>
         </div>
           <video class="vid" autoplay muted loop playsinline>
             <source src="https://www.apple.com/105/media/us/airpods-max/2024/e8f376d6-82b2-40ca-8a22-5f87de755d6b/anim/max-loop/xlarge.mp4" width="50%" type="video/mp4">
@@ -54,20 +56,29 @@
     
     <main>
         
+<div data-aos="fade-up" data-aos-duration="1200">
     <div class="text_title">
         <h1>Comece pelos destaques.</h1>
     </div>
+</div>
 
-  <div class="cont_t_card">
+
+    <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+    <div class="cont_t_card">
            <img src="imagens/airmax.jpg" alt="fone">
-           </div>
+    </div>
+    </div>
+    
+    
+    <section class="sec_img_text">
 
-           <section class="sec_img_text">
+      <div data-aos="fade-up">
     <img src="imagens/airmaxbranco.jpg" alt="Airbranco" class="im_lateral">
+    </div>
 
     <div class="text_lateral">
-        <h1>O som como você nunca viu.</h1>
-        <p>
+        <h1 data-aos="fade-up">O som como você nunca viu.</h1>
+        <p data-aos="fade-up" data-aos-delay="100">
             Cancelamento Ativo de Ruído de nível profissional. Com um desempenho até duas vezes melhor, o Cancelamento Ativo de Ruído dos AirPods Max neutraliza sons externos com uma onda sonora invertida da mesma amplitude. Assim, você tem mais controle sobre o que quer — e não quer — ouvir. Sinta-se dentro de suas músicas e podcasts favoritos ou mantenha o foco com mais facilidade do que nunca.
         </p>
     </div>
@@ -76,21 +87,21 @@
           </div>
      </main>
 
-    <div class="titulo_c">
+    <div class="titulo_c" data-aos="fade-up">
         <h1>Motivos para comprar<br>seus AirPods na Apple</h1>
     </div>
-    <div class="cont_t_card">
+    <div class="cont_t_card" data-aos="fade-up" data-aos-delay="100">
         <div class="t_card">
             <img src="https://www.apple.com/v/watch/br/images/overview/incentive/icon_delivery__fyzt43z8dfu6_large.png">
             <h2>Frete grátis.</h2>
             <p>Em todo o Brasil. Em São Paulo,<br>os pedidos qualificados têm envio<br>no dia seguinte.</p>
         </div>
-        <div class="t_card">
+        <div class="t_card" data-aos="fade-up" data-aos-delay="200">
             <img src="https://www.apple.com/br/airpods-max/images/overview/icon-card/icon_financing__d54b2wu0xtua_large.png">
             <h2>Opções de<br>pagamento.</h2>
             <p>Aproveite e parcele com facilidade<br>e conveniência</p>
         </div>
-        <div class="t_card">
+        <div class="t_card" data-aos="fade-up" data-aos-delay="300">
             <img src="https://www.apple.com/br/watch/images/overview/incentive/icon_specialist_alt__fwx7pesuftme_large.png">
             <h2>Compre com quem<br>entende de<br>AirPods Max.</h2>
             <p>Fale com especialistas para fazer<br>a melhor escolha. Na loja ou<br>online</p>
