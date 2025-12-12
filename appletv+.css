@@ -1406,7 +1406,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   box-sizing: border-box;
-
+  bottom: -2px;
 }
 
 
