@@ -1373,7 +1373,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   box-sizing: border-box;
-
+  bottom: -2.7px;
 }
 
 .appletv4klogo {
