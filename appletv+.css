@@ -471,7 +471,7 @@ nav {
 
 .card-caixa {
   display: flex;
-  gap: 3.2rem;
+  gap: 6.6rem;
   justify-content: center;
   flex-wrap: wrap;
   padding: 2rem;
@@ -1373,7 +1373,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   box-sizing: border-box;
-
+  bottom: -2.7px;
 }
 
 .appletv4klogo {
@@ -1406,7 +1406,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   box-sizing: border-box;
-
+  bottom: -2px;
 }
 
 
