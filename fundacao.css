@@ -1,18 +1,8 @@
-* { 
-  margin:0; 
-  padding:0; 
-  box-sizing:border-box; 
-}
 
-:root {
-  --text:#1d1d1f;
-  --muted:#6b6b70;
-}
-body{
+body {
   background: #fff;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
-
 
 .hero{
   display:flex;
@@ -23,12 +13,33 @@ body{
   gap:20px;
   line-height:1.6;
 }
-.hero img{ width:160px; max-width:40vw; }
-.hero-text h2{ font-size:34px; margin-bottom:6px; line-height:1.6;}
-.hero-text p{ font-size:18px; max-width:760px; color:var(--muted); line-height:1.6;}
+
+.hero img{ 
+  width:160px; 
+  max-width:40vw; 
+}
+
+.hero-text h2{ 
+  font-size:34px; 
+  margin-bottom:6px; 
+  line-height:1.6;
+
+}
+
+.hero-text p{ 
+  font-size:18px; 
+  max-width:760px; 
+  color:#6b6b70; 
+  line-height:1.6;
+}
 
 
-main{ max-width:1200px; margin:0 auto; padding-bottom:40px; line-height:1.6; }
+
+main{ 
+  max-width:1200px; 
+  margin:0 auto; 
+  padding-bottom:40px; 
+}
 
 .section{
   display:flex;
@@ -41,15 +52,32 @@ main{ max-width:1200px; margin:0 auto; padding-bottom:40px; line-height:1.6; }
 }
 
 
-.section.reverse { flex-direction:row-reverse; }
+.section.reverse { 
+  flex-direction:row-reverse; 
+}
 
 
-.section .text{ flex:1 1 420px; max-width:600px; }
-.section .text h3{ font-size:26px; margin-bottom:12px; }
-.section .text p{ font-size:18px; color:var(--text); text-align:justify; }
+.section .text{ 
+  flex:1 1 420px; 
+  max-width:600px; 
+}
+
+.section .text h3{ 
+  font-size:26px; 
+  margin-bottom:12px; 
+}
+
+.section .text p{ 
+  font-size:18px; 
+  color:#1d1d1f; 
+  text-align:justify; 
+}
 
 
-.section .image{ flex:1 1 380px; text-align:center; }
+.section .image{ 
+  flex:1 1 380px; 
+  text-align:center; 
+}
 .section .image img{
   width:100%;
   max-width:420px;
@@ -60,19 +88,18 @@ main{ max-width:1200px; margin:0 auto; padding-bottom:40px; line-height:1.6; }
 
 
 
-.fade-in{ opacity:0; transform:translateY(18px); transition:opacity 900ms ease-out, transform 900ms ease-out; }
-.fade-in.appear{ opacity:1; transform:translateY(0); }
+.fade-in{ 
+  opacity:0; 
+  transform:translateY(18px); 
+  transition:opacity 900ms ease-out, 
+  transform 900ms ease-out; 
+}
+
+.fade-in.appear{ 
+  opacity:1; 
+  transform:translateY(0); 
+}
 
 
-@media (max-width:900px){
-  .section{ padding:36px 14px; gap:28px; }
-  .section .image img{ max-width:360px; }
-  .hero-text h2{ font-size:28px; }
-}
-@media (max-width:620px){
-  .section{ flex-direction:column; text-align:center; }
-  .section.reverse{ flex-direction:column; }
-  .section .text p{ text-align:left; }
-  main{ padding:0 8px; }
-}
+
 

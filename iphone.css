@@ -6,13 +6,13 @@
 }
 
 body {
-background-color: #f4f0f0; 
+background-color: #fff; 
 color: rgba(0, 0, 0, 0.767);         
 transition: 0.0s;  
 }      
 
 header {
-    background-color: #f4f0f0;
+    background-color: #fff;
     padding: 0 1.5rem;
     height: 2.75rem;
     display: flex;
@@ -21,7 +21,7 @@ header {
 }
 
 header.active {
-    background-color: #f4f0f0;
+    background-color: #fff;
     transition: background-color 0.3s ease;
 }
 
@@ -102,7 +102,7 @@ main {
   }
 
   100% {
-    background-color: #f4f0f0;
+    background-color: #fff;
   }
 }
 
@@ -116,7 +116,7 @@ main {
 }
 
 .barra-anuncio a {
-    color: #f4f0f0;
+    color: #fff;
     text-decoration: none;
     animation: color 1s ease-in-out 1.8s forwards;
 }
@@ -127,7 +127,7 @@ main {
 
 @keyframes color {
   0% {
-    color: #f4f0f0;
+    color: #fff;
   }
   100% {
     color: #0071e3;
@@ -137,7 +137,7 @@ main {
 
 @keyframes color2 {
   0% {
-    color: #f4f0f0;
+    color: #fff;
   }
   100% {
     color: #000;
@@ -257,7 +257,7 @@ main {
   cursor: pointer;
   position: absolute;
   z-index: 2;
-  background-color: white;
+  background-color: #fff;
   color: black;
   font-size: 1.25rem;
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.2);
@@ -287,7 +287,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: #f4f0f0;
+  background-color: #fff;
   border-radius: 15px;
   width: calc(400rem / 16);
   height: calc(700rem / 16);
@@ -305,19 +305,17 @@ main {
 .card-icon {
   position: absolute;
   bottom: 20px;
-  right: 0px;
-  background: rgb(104, 104, 104);
-  color: rgb(82, 82, 82);
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  background: #222121;
+  color: white;
   border: none;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
   font-size: 20px;
-  font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s, background 0.3s;
 }
-
 .card-icon:hover {
   transform: scale(1.15);
   background: #444;
@@ -454,7 +452,7 @@ a:hover {
 
 .cardinfo-content {
   position: relative; 
-  background-color: #f4f4f0;
+  background-color: #fff;
   width: 85%;
   max-width: 800px;
   max-height: 90vh;
@@ -622,7 +620,7 @@ a:hover {
 }
 
 .texto-beneficio {
-  text-align: center;
+  text-align: justify;
 }
 
 .beneficio {
@@ -635,9 +633,9 @@ a:hover {
   align-items: flex-start;
   padding: 1.5rem;
   border-radius: 1.5rem;
-  background-color: white;
-  width: 22rem; 
-  height: 18rem;
+  background-color: #fff;
+  width: 23rem; 
+  height: 19rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
   transition: all ease 0.3s;
@@ -679,11 +677,11 @@ a:hover {
 
 .beneficio p {
   text-align: left;
-  padding: 0 1rem 1rem;
+  padding: 4px;
   color: #000000;
   height: 13rem;
-  line-height: 1.5em;
-  margin: 2.75rem 0;
+  line-height: 1.5rem;
+  margin: 2rem 0;
 }
 
 .beneficio img {
@@ -773,6 +771,7 @@ a:hover {
 .card-imagem2 {
   width: 30%;
 }
+
 .card-icon2 {
   position: absolute;
   bottom: 20px;
@@ -824,7 +823,7 @@ a:hover {
   justify-content: flex-start;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: rgb(243, 243, 243);
+  background-color: #fff;
   margin: 0 auto;
   transition: transform 0.3s ease;
   z-index: 1;
@@ -866,7 +865,7 @@ a:hover {
   justify-content: center;
   padding: 20px;
   border-radius: 28px;
-  background-color: white;
+  background-color: #fff;
 }
 .acessorio-textos h2 {
   font-size: 30px;
@@ -889,11 +888,11 @@ a:hover {
   gap: 20px;      
   justify-content: center;
   padding: 40px 40px;
-  background-color: #f4f4f0;
+  background-color: #fff;
 }
 
 .iphone-integration {
-  background-color: #f4f4f0;
+  background-color: #fff;
   padding: 80px 20px;
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -1041,7 +1040,7 @@ a:hover {
 }
 
 .iphone-menu-container {
-  background-color: #f4f4f0;
+  background-color: #fff;
   padding: 40px 20px;
   font-family: 'SF Pro Text', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -1095,7 +1094,7 @@ a:hover {
 
 .iphone-menu-container.hover {
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-  background-color: #ececec;
+  background-color: #fff;
   transition: box-shadow 0.2s, background 0.2s;
 }
 
@@ -1133,50 +1132,9 @@ a:hover {
   opacity: 1;
 }
 
-.tooltip {
-  position: absolute;
-  top: 40px; 
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-  background: #1d1d1f;
-  color: white;
-  padding: 10px 14px;
-  border-radius: 8px;
-  font-size: 14px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s ease;
-  white-space: nowrap;
-  z-index: 5000;
-}
 
-.tooltip.hidden {
-  display: none;
-}
-
-.tooltip.show {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-}
-
-.tooltip-container {
-  animation: tooltipIn 0.28s ease forwards;
-}
-
-@keyframes tooltipIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .barra-items-slide {
-    background-color: #f4f0f0; 
+    background-color: #fff; 
     width: 100%;
     z-index: 3990; 
     position: relative;
@@ -1199,7 +1157,7 @@ a:hover {
   align-items: space-around;
   padding: 7.5rem;
   border-radius: 1.75rem;
-  background-color: #f5f5f5;
+  background-color: #fff;
   word-wrap: break-word;
   overflow-wrap: break-word;
   transition: all 0.2s ease-out;
@@ -1367,7 +1325,7 @@ a:hover {
     margin-top: 1.4rem;
 }
 .conheca-familia2 {
-  background-color: #f5f5f7;
+  background-color: #fff;
   overflow: auto;
   margin-top: 10rem;
 }
@@ -1377,7 +1335,7 @@ a:hover {
   top: 2.75rem;
   left: 0;
   width: 100%;
-  background: #f5f5f7;
+  background: #fff;
   padding: 0.5rem 5rem 10rem 5rem;
   gap: 3.5rem;
 }
@@ -1489,9 +1447,7 @@ a:hover {
 }
 
 
-/* -----------------------------
-   SF Pro Display
------------------------------- */
+
 @font-face {
   font-family: 'SF Pro Display';
   font-weight: 600;
@@ -1507,9 +1463,7 @@ a:hover {
 }
 
 
-/* -----------------------------
-   SF Pro Icons
------------------------------- */
+
 @font-face {
   font-family: 'SF Pro Icons';
   font-weight: 300;
@@ -1555,164 +1509,7 @@ a:hover {
   color: #CC5500;
   font-weight: bold;
 }
-body.dark-mode {
-  background: #18181a !important;
-  color: #f4f4f0 !important;
-}
-body.dark-node .comparison-header a,
-body.dark-mode .compare-link {
-  color: #0071e3 !important;
-}
 
-
-body.dark-mode .accordion-arrow,
-body.dark-mode .accordion-content,
-body.dark-mode .accordion-header,
-body.dark-mode .accordion-item,
-body.dark-mode .active,
-body.dark-mode .arrow,
-body.dark-mode .barra-items-slide,
-
-body.dark-mode .body-blur,
-body.dark-mode .buttons,
-body.dark-mode .caixa-video,
-body.dark-mode .comparison-header,
-body.dark-mode .desktop 
-body.dark-mode .item,
-body.dark-mode .iphone-carousel,
-body.dark-mode .iphone-comparison,
-body.dark-mode .iphone-integration,
-body.dark-mode .iphone-menu,
-body.dark-mode .iphone-menu-container,
-body.dark_mode .iphone-menu-title,
-body.dark-mode .iphone-specs,
-body.dark-mode .iphone-specs-container,
-body.dark-mode .iphonevideo,
-body.dark-mode .integration-container,
-body.dark-mode .integration-left,
-body.dark-mode .integration-right,
-body.dark-mode .iphone-scroll,
-body.dark-mode .iphone-block,
-body.dark-mode .item,
-body.dark-mode .menu-section-list,
-body.dark-mode .menu-section-title,
-body.dark-mode .preco,
-body.dark-mode .slide-in-right,
-body.dark-mode .spec-item,
-body.dark-mode .t-linha,
-body.dark-mode .titulo,
-body.dark-mode .titulo-iphone,
-body.dark-mode .titulo-iphone2,
-body.dark-mode .titulo-iphone3,
-body.dark-mode .video-toggle,
-body.dark-mode .slide-in-right,
-body.dark-mode .item,
-body.dark-mode .item span,
-body.dark-mode .section-ace,
-body.dark-mode footer,
-body.dark-mode footer a,
-body.dark-mode footer h4,
-body.dark-mode footer p,
-body.dark-mode .texto-beneficio,
-body.dark-mode .iphone-menu h2,
-body.dark-mode .beneficio,
-body.dark-mode .footer-warning {
-  background-color: #18181a !important;
-  color: #f4f4f0 !important;
-  
-}
-body.dark-mode .titulo,
-body.dark-mode .safaricard-text,
-body.dark-mode .cardinfo-text,
-body.dark-mode .accordion-arrow svg,
-body.dark-mode .menu-section-list a,
-body.dark-mode .accordion-header h3,
-body.dark-mode .accordion-content p,
-body.dark-mode .motivos-header .titulo h1, 
-body.dark-mode .motivos-header .titulo,
-body.dark-mode .motivos-header h1 {
-  color: #f4f4f0 !important;
-}
-body.dark-mode nav,
-body.dark-mode head,
-body.dark-mode header,
-body.dark-mode .logo {
-  background:#18181a;
-  color: #f4f4f0 !important;
-}
-body.dark-mode nav,
-body.dark-mode head a,
-body.dark-mode header a {
-  background:#18181a;
-  color: #f4f4f0 !important;
-}
-body.dark-mode .ios span {
-  color: #CC5500 !important;
-}
-body.dark-mode .card-overlay2,
-body.dark-mode .acessorio-card,
-body.dark-mode .acessorio-overlay,
-body.dark-mode .acessorio-textos h2,
-body.dark-mode .acessorio-textos h5 {
-  background-color: #202020 !important;
-  color: #ffffff !important;
-  
-}
-
-@keyframes darkmode-rotate {
-  0% { transform: rotate(0deg) scale(1); }
-  60% { transform: rotate(360deg) scale(1.15); }
-  100% { transform: rotate(360deg) scale(1); }
-}
-
-
-
-.trilho {
-  width: 100px;
-  height: 40px;
-  background-color: #a5a5a5;
-  border-radius: 300px;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  z-index: 9999; 
-}
-
-
-
-
-.trilho .indicador {
-  width: 25px;
-  height: 25px;
-  background-color: #ffffff;
-  color: #fff;
-  border-radius: 25px;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.4s cubic-bezier(.4,0,.2,1), background 0.2s;
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 12px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.trilho.dark .indicador {
-  transform: translateX(60px);
-  background-color: #000000;
-  color: #fff;
-}
-
-.trilho.dark .indicador span {
-  opacity: 1;
-}
 
 
 @font-face {
