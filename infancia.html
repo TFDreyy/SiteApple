@@ -2,11 +2,13 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steve Jobs - Infância</title>
-  <link rel="stylesheet" href="style0.css">
+  <link rel="stylesheet" href="infancia.css">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="footer.css" />
+  <link rel="shortcut icon" href="imagens/appleicon.ico" type="image/png">
 </head>
 <body>
   <header>
@@ -27,17 +29,17 @@
     </nav>
   </header>
 
-  <main>
+ <main>
 
     <section class="hero fade-in">
-      <img src="imagens infancia/OIP.jpg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo Apple antigo" />
       <div class="hero-text">
         <h2>Infância de Steve Jobs</h2>
         <p>Explore os primeiros anos do gênio que transformou o mundo da tecnologia, desde seu nascimento até o despertar da curiosidade e criatividade.</p>
       </div>
     </section>
 
-
+    
     <section class="section fade-in">
       <div class="text">
         <h3>Nascimento e Adoção</h3>
@@ -91,14 +93,8 @@
         <img src="imagens infancia/diversão.png" alt="Steve Jobs jovem criativo">
       </div>
     </section>
+</main>
 
-    <section class="section fade-in">
-      <div class="text">
-        <h3>Resumo da Infância</h3>
-        <p>A infância de Steve Jobs foi marcada por curiosidade, criatividade e estímulo intelectual. Sua educação em casa e na escola, combinada com o incentivo dos pais adotivos e o interesse precoce por tecnologia, preparou o terreno para que ele se tornasse um dos maiores inovadores da história.</p>
-      </div>
-    </section>
-  </main>
 
   <footer class="footer">
   <div class="footer-container">
@@ -120,11 +116,13 @@
       </a>
 
       <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="8px" height="19px" viewBox="0 0 50 49"><path d="M19.817 61.863c1.48 0 2.672-.515 3.702-1.546l24.243-23.63c1.352-1.385 1.996-2.737 2.028-4.443 0-1.674-.644-3.09-2.028-4.443L23.519 4.138c-1.03-.998-2.253-1.513-3.702-1.513-2.994 0-5.409 2.382-5.409 5.344 0 1.481.612 2.833 1.739 3.96l20.99 20.347-20.99 20.283c-1.127 1.126-1.739 2.478-1.739 3.96 0 2.93 2.415 5.344 5.409 5.344"></path></svg>
-      
-      <span>História</span>
-      
-    </div>
 
+      <span><a href="história.html" style="margin-right: 7px;">História</a></span>
+
+      <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="8px" height="19px" viewBox="0 0 50 49"><path d="M19.817 61.863c1.48 0 2.672-.515 3.702-1.546l24.243-23.63c1.352-1.385 1.996-2.737 2.028-4.443 0-1.674-.644-3.09-2.028-4.443L23.519 4.138c-1.03-.998-2.253-1.513-3.702-1.513-2.994 0-5.409 2.382-5.409 5.344 0 1.481.612 2.833 1.739 3.96l20.99 20.347-20.99 20.283c-1.127 1.126-1.739 2.478-1.739 3.96 0 2.93 2.415 5.344 5.409 5.344"></path></svg>
+      
+      <span>Infância</span>
+    </div>
 
     <div class="footer-links">
 
@@ -228,24 +226,19 @@
 </footer>
 
   <script>
-
+ 
     const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = {
-      threshold: 0.3,
-      rootMargin: "0px 0px -50px 0px"
-    };
+    const appearOptions = { threshold: 0.3, rootMargin: "0px 0px -50px 0px" };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
-        if(!entry.isIntersecting) return;
+        if (!entry.isIntersecting) return;
         entry.target.classList.add('appear');
-        appearOnScroll.unobserve(entry.target);
+        observer.unobserve(entry.target);
       });
     }, appearOptions);
 
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
+    faders.forEach(fader => appearOnScroll.observe(fader));
   </script>
 </body>
 </html>
