@@ -189,3 +189,9 @@ document.querySelectorAll('.botao-fechar').forEach(botaoFechar => {
     fecharCard(card);
   }
   )});
+  
+document.querySelectorAll(".motivo-mais").forEach(botaomotivo => {
+  botaomotivo.addEventListener('click', () => {
+    abrirCard(botaomotivo.dataset.cardMais)
+  })
+})
