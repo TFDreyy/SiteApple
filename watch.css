@@ -411,7 +411,8 @@ body {
 }
 .t_boxes{
     flex-wrap: wrap;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .t_box{
     text-align: center;
@@ -1017,4 +1018,5 @@ video.imagem-hero {
 .button_c:hover {
     text-decoration: underline;
 }
+
 
