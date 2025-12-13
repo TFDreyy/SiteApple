@@ -4,30 +4,13 @@
   box-sizing: border-box; 
   font-family: 'SF Pro Text', 'SF Pro Display', BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-header, nav, .menu, .logo {
-  background: transparent !important;
-  
-  
-}
-header{
-  border: 0.1px solid rgba(255, 255, 255, 0.6);
-  border-top: 0;
-}
 
-.menu a, .logo {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.menu a:hover {
-  color: #76b5dcdd;
-}
 
 body {
-  background-image: linear-gradient(to bottom right, #ff3861, #1e8acd);
-  color: white;
-}
-.fundobranco {
-  background-color: transparent;
+  background-image: linear-gradient(to bottom right, hsl(0, 0%, 95%), hsl(0, 0%, 100%),  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #080808;
 }
 
 .formulario-caixa {
@@ -36,16 +19,16 @@ body {
   align-content: center;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 40%;
   height: 80%;
-  background-color: rgba(250, 250, 250, 0.3);
+  background-color: white;
   backdrop-filter: blur(3px);
   padding: 5.5rem;
   padding-top: 2rem;
-  border-radius: 1.75rem;
+  border-radius: 16px;
   border: solid #ccc 0.5px;
-  box-shadow: 0px 2px 2px 2px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 5px #ccc;
+  color: #080808;
   font-weight: 600;
 }
 
@@ -80,37 +63,46 @@ input {
   height: 3rem;
   border-radius: 0.5rem;
   padding: 1rem;
-  box-shadow: 0 2px 1px 2px rgba(255, 255, 255, 0.5);
-  border: none;
+  border: solid #ccc 2px;
   outline: none;
   width: 100%;
   text-align: justify;
   transition: 0.4s ease;
   font-size: 0.75rem;
-  background-color: transparent;
+  background-color: white;
   backdrop-filter: blur(3px);
 }
 
 
-
+form {
+  margin-top: 64px;
+}
 input {
   font-size: 0.75rem;
-  color: white;
+  color: black;
   font-weight: 700;
+  background-color: #f9f9f9;
 }
 
 input::placeholder{
-  color: rgba(255, 255, 255, 0.8)
+  color: #635f5f;
 }
 .formulario-caixa button {
   margin-left: 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 1px 2px rgba(255, 255, 255, 0.5);
+  background-color: white;
   letter-spacing: 1.25px;
   font-weight: 700;
-  color: white;
+  color: #080808;
   align-self: center;
+  border: solid #ccc 2px;
+  border-radius: 48px;
+}
+
+.centralizado {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 128px;
 }
 
 input:hover {
@@ -121,37 +113,8 @@ form button:hover {
   transform: translateY(-2px);
 }
 
-.container-imagem {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  transform: translateY(-50px);
-  width: 100vw;
-  height: 70vh;
-}
 
-.footer, .footer-links a, .footer-links h4, p.footer-info, p, .footer-legal a, .footer-bottom p {
-  background: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 300;
-}
 
-a.textobranco {
-  color: #f3b8c4;
-}
-
-.footer-warning {
-  background-color: rgba(255, 255, 255, 0.5)
-}
-
-i.fas {
-  transform: translateY(2px);
-  color: white;
-  margin-right: 10px
-}
-p#faleconosco {
-  transform: translateY(1.975px);
-}
 
 /* -----------------------------
    SF Pro Text

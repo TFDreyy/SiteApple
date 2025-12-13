@@ -1,13 +1,21 @@
-  const carousel = document.querySelector('.carousel');
-const nextBtn = document.querySelector('.next');
-const prevBtn = document.querySelector('.prev');
+const carousel = document.querySelector('.carousel');
 
-const cardWidth = document.querySelector('.card').offsetWidth + 20; 
 
-nextBtn.addEventListener('click', () => {
-  carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
-});
+carousel.innerHTML += carousel.innerHTML;
 
-prevBtn.addEventListener('click', () => {
-  carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-});
+let speed = 1.85; 
+let scrollPos = 0;
+
+function infiniteLoop() {
+  scrollPos += speed;
+  carousel.scrollLeft = scrollPos;
+
+  if (scrollPos >= carousel.scrollWidth / 2) {
+    scrollPos = 0;
+  }
+
+  requestAnimationFrame(infiniteLoop);
+}
+
+infiniteLoop();
+
